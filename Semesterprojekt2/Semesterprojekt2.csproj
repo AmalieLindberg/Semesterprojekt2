@@ -9,12 +9,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="MockData\" />
-    <Folder Include="Pages\Info\" />
-    <Folder Include="Pages\Login\" />
-    <Folder Include="Pages\ShoppingCard\" />
-    <Folder Include="Pages\Shop\" />
-    <Folder Include="Pages\Prices\" />
-    <Folder Include="Pages\BookATime\" />
     <Folder Include="Service\" />
   </ItemGroup>
 
