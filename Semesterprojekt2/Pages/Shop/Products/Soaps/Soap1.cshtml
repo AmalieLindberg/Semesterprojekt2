@@ -1,0 +1,104 @@
+﻿@page
+@model Semesterprojekt2.Pages.Shop.Products.Soaps.Soap1Model
+@{
+}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        .product-container {
+            display: flex;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-image {
+            flex: 0 1 auto; 
+            width: 50%;
+        }
+
+        .product-image img {
+            max-width: 90%;
+            height: auto;
+        }
+
+        .product-details {
+            margin-left: 20px;
+            flex-grow: 1;
+        }
+
+            .product-details h1 {
+                font-size: 24px;
+                margin: 10px 0;
+            }
+
+            .product-details .price {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+        .size-options a {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            text-decoration: none;
+            color: #000;
+            background-color: #fff;
+        }
+
+            .size-options a:hover {
+                background-color: #000;
+                color: #fff;
+            }
+
+        .add-to-cart {
+            display: block;
+            width: max-content;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+            .add-to-cart:hover {
+                opacity: 0.8;
+            }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="/Images/Shop/testbillede.jpg" />
+            </div>
+            <div class="product-details">
+                <h1>Overskriften til det første sæbeprodukt</h1>
+                <p class="price">249,00 kr.</p>
+                <p>Duft - Ananas</p>
+                <p>Vælg farve</p>
+                <div class="size-options">
+                    <a href="#">Gul</a>
+                    <a href="#">Hvid</a>
+                    <a href="#">Grøn</a>
+                <br />
+                <br />
+                <p>Yderligere beskrivelse af produktet, ......................................<br />................................................................<br />.....................................................................<br />......................................................</p>
+                </div>
+                <button class="add-to-cart">Tilføj til kurv</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
