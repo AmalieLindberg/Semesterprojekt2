@@ -1,7 +1,10 @@
+using Semesterprojekt2.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddSingleton<TidsbestillingService, TidsbestillingService>();
 
 var app = builder.Build();
 

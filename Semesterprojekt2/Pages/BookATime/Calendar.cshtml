@@ -1,0 +1,182 @@
+﻿@page
+@using Semesterprojekt2.Service;
+@model Semesterprojekt2.Pages.BookATime.CalendarModel
+@{
+}
+
+<html>
+    <head>
+        <style>
+            table 
+                {
+                   width: 100%;
+                   border-collapse: collapse;
+                }
+
+            td 
+                {
+                    border: 1px solid #ddd;
+                    text-align: center;
+                    padding: 8px;
+                }
+
+
+           .button-like-text 
+                {
+                    background: none; /* Fjerner baggrundsstil */
+                    color: inherit; /* Arver tekstfarven fra omgivende element */
+                    border: none; /* Fjerner rammen */
+                    padding: 0; /* Fjerner padding */
+                    font: inherit; /* Arver skriftstil */
+                    cursor: pointer; /* Bevarer musepeger som klikbar */
+                }
+
+           .button-like-text:hover 
+                {
+                    text-decoration: underline; /* Tilføjer understregning ved hover for at indikere klikbarhed */
+                }
+
+
+           .orange-day 
+                {
+                    background-color: darkorange;
+                    color: white; /* White text for better readability */
+                }
+
+           .yellow-day 
+                {
+                    background-color: #E9CF1C;
+                    color: white;
+                }
+                    /* DDC62F */
+           .skrift-mellem-månederne 
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            .Forrige-måned 
+                {
+    
+                }
+            .Næste-måned 
+                {
+    
+                }
+            h1
+                {
+                    text-align: center;
+                }
+            h2
+                {
+                    text-align: center;
+                }
+            .AltTekstIToppen
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            .OBS
+                {
+
+                }
+            .farvedag
+                {
+                }
+            .År-Måned
+                {
+                }
+            .past-day 
+                {
+                    color: white;
+                    background-color: grey; /* Or any other color that indicates non-selectability */
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Tidsbestilling</h1>
+        <hr /> 
+        <div class="År-Måned">
+            <h2>@Model.MonthName @Model.Year</h2> 
+        </div>
+        <div class="AltTekstIToppen">
+            <div class="farvedag">
+                <p>Lør-Tirs (Gul): Mobil service. <br /> Ons-Fre (Orange): Salon. <br /> Rød: er dagen optaget.</p>
+            </div>  
+            <div class="OBS">
+                <p><b>OBS!! Jeg har både en butik, <br /> og en mobil service</b></p>
+            </div>
+        </div>
+        @* ? fungere som en kort form for en if-else sætning. 
+        : Model.Year, hvis måneden ikke er december(plus)/januar(minus), vil det returnere Model.Year. Dette betyder, at hvis måneden ikke er december, forbliver årstallet uændret. *@
+ 
+        <div class="skrift-mellem-månederne">
+            <div class="Forrige-måned">
+                <a asp-page="/Tidsbestilling/Kalender" asp-route-Year="@(Model.Month == 1 ? Model.Year - 1 : Model.Year)" asp-route-Month="@(Model.Month == 1 ? 12 : Model.Month - 1)">Forrige Måned</a>
+            </div>
+            <div class="Næste-måned">
+                <a asp-page="/Tidsbestilling/Kalender" asp-route-Year="@(Model.Month == 12 ? Model.Year + 1 : Model.Year)" asp-route-Month="@(Model.Month == 12 ? 1 : Model.Month + 1)">Næste Måned</a>
+            </div>
+        </div>
+    <table>
+        @{
+            int dayCounter = 0; // Initialize the counter for days in the week. hvorfor vi starter på 0?
+            // Når man arbejder med tællere i programmering, starter man ofte fra 0 afhængigt af konteksten. Dette skyldes, at mange programmeringssprog og datamodeller bruger 0-baserede indeksering.
+            DateTime today = DateTime.Today; 
+
+           
+        }
+       
+        <tr>
+            @foreach (var day in Model.DaysInMonth)
+            {
+                if (dayCounter == 7)
+                {
+                    // When there are 7 days, close the current row and start a new one
+                    @: </tr><tr>
+                    dayCounter = 0; // Reset the counter for the new row
+                }
+                
+                var date = new DateTime(Model.Year, Model.Month, day);
+               
+            
+                DateTime currentDate = new DateTime(Model.Year, Model.Month, day);
+                // Denne linje bestemmer CSS-klassen for en given dag. 
+                // Hvis 'currentDate' repræsenterer en dato, der allerede er forbi (dvs. før 'today'), 
+                // bliver 'dayClass' sat til "past-day". 
+                // Hvis 'currentDate' er i dag eller i fremtiden, hentes klassen ved at kalde 'GetDayClass' metoden.
+                 string dayClass = currentDate < today ? "past-day" : TidsbestillingService.GetDayClass(date);
+                // Denne boolean ('isPast') er sand (true), hvis 'currentDate' er før 'today', hvilket indikerer 
+                // at det er en dato i fortiden. Denne værdi bruges til at afgøre, om den tilsvarende dag 
+                // skal kunne klikkes på eller ej i brugergrænsefladen.
+                bool isPast = currentDate < today;
+                <td class="@dayClass">
+                    @if (!isPast)
+                    {
+                        <form method="get" asp-page="/Tidsbestilling/Tidsbestilling">
+
+                            <input type="hidden" name="Year" value="@Model.Year" />
+                            <input type="hidden" name="Month" value="@Model.Month" />
+                            <input type="hidden" name="Day" value="@day" />
+                            <button type="submit" class="button-like-text">@day</button>
+                        </form>
+                    }
+                    else
+                    {
+                        @day
+                    }
+                </td>
+
+                dayCounter++; // Increment the counter
+            }
+    
+            @if (dayCounter > 0)
+            {
+                // Close the last row if it's not empty
+        <tr> </tr>
+            }
+      
+    </table>
+       
+
+  </body>
+</html>
