@@ -2,18 +2,18 @@
 
 namespace Semesterprojekt2.Service
 {
-    public class TidsbestillingService
+    public class BookATimeService
     {
       
-        public TidsbestillingService()
+        public BookATimeService()
         {
             
         }
-        public List<Tidsbestilling> Tidsbestillings { get; set; }
+        public List<BookATime> BookATimeList { get; set; }
 
-        public async Task addTidsbestilling(Tidsbestilling tidsbestilling)
+        public async Task addTidsbestilling(BookATime bookATime)
         {
-            Tidsbestillings.Add(tidsbestilling);
+            BookATimeList.Add(bookATime);
             
 
         }

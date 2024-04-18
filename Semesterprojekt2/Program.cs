@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddSingleton<TidsbestillingService, TidsbestillingService>();
+builder.Services.AddSingleton<BookATimeService, BookATimeService>();
 
 var app = builder.Build();
 

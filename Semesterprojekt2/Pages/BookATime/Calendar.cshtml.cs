@@ -7,11 +7,11 @@ namespace Semesterprojekt2.Pages.BookATime
     public class CalendarModel : PageModel
     {
       
-            public CalendarModel(TidsbestillingService tidsbestillingService)
+            public CalendarModel(BookATimeService tidsbestillingService)
             {
                 _tidsbestillingService = tidsbestillingService;
             }
-            private TidsbestillingService _tidsbestillingService { get; set; }
+            private BookATimeService _tidsbestillingService { get; set; }
             [BindProperty(SupportsGet = true)]
             public int Year { get; set; }
             public string MonthName { get; set; }

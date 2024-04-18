@@ -93,28 +93,29 @@
         </style>
     </head>
     <body>
-        <h1>Tidsbestilling</h1>
+        <h1>Book A Time</h1>
         <hr /> 
         <div class="År-Måned">
             <h2>@Model.MonthName @Model.Year</h2> 
         </div>
         <div class="AltTekstIToppen">
             <div class="farvedag">
-                <p>Lør-Tirs (Gul): Mobil service. <br /> Ons-Fre (Orange): Salon. <br /> Rød: er dagen optaget.</p>
+                <p>Sat-Tue (Yellow): Mobile service. <br />Wed-Fri (Orange): Salon. <br /> Red: The day is booked.</p>
             </div>  
             <div class="OBS">
-                <p><b>OBS!! Jeg har både en butik, <br /> og en mobil service</b></p>
+                <p><b>NOTE!! I have both a store <br /> and a mobile service.</b></p>
             </div>
         </div>
+       
         @* ? fungere som en kort form for en if-else sætning. 
         : Model.Year, hvis måneden ikke er december(plus)/januar(minus), vil det returnere Model.Year. Dette betyder, at hvis måneden ikke er december, forbliver årstallet uændret. *@
  
         <div class="skrift-mellem-månederne">
             <div class="Forrige-måned">
-                <a asp-page="/Tidsbestilling/Kalender" asp-route-Year="@(Model.Month == 1 ? Model.Year - 1 : Model.Year)" asp-route-Month="@(Model.Month == 1 ? 12 : Model.Month - 1)">Forrige Måned</a>
+                <a asp-page="/BookATime/Calendar" asp-route-Year="@(Model.Month == 1 ? Model.Year - 1 : Model.Year)" asp-route-Month="@(Model.Month == 1 ? 12 : Model.Month - 1)">Last Month</a>
             </div>
             <div class="Næste-måned">
-                <a asp-page="/Tidsbestilling/Kalender" asp-route-Year="@(Model.Month == 12 ? Model.Year + 1 : Model.Year)" asp-route-Month="@(Model.Month == 12 ? 1 : Model.Month + 1)">Næste Måned</a>
+                <a asp-page="/BookATime/Calendar" asp-route-Year="@(Model.Month == 12 ? Model.Year + 1 : Model.Year)" asp-route-Month="@(Model.Month == 12 ? 1 : Model.Month + 1)">Next Month</a>
             </div>
         </div>
     <table>
@@ -136,23 +137,24 @@
                     dayCounter = 0; // Reset the counter for the new row
                 }
                 
-                var date = new DateTime(Model.Year, Model.Month, day);
-               
-            
                 DateTime currentDate = new DateTime(Model.Year, Model.Month, day);
+
                 // Denne linje bestemmer CSS-klassen for en given dag. 
                 // Hvis 'currentDate' repræsenterer en dato, der allerede er forbi (dvs. før 'today'), 
                 // bliver 'dayClass' sat til "past-day". 
                 // Hvis 'currentDate' er i dag eller i fremtiden, hentes klassen ved at kalde 'GetDayClass' metoden.
-                 string dayClass = currentDate < today ? "past-day" : TidsbestillingService.GetDayClass(date);
+
+                 string dayClass = currentDate < today ? "past-day" : BookATimeService.GetDayClass(currentDate);
+
                 // Denne boolean ('isPast') er sand (true), hvis 'currentDate' er før 'today', hvilket indikerer 
                 // at det er en dato i fortiden. Denne værdi bruges til at afgøre, om den tilsvarende dag 
                 // skal kunne klikkes på eller ej i brugergrænsefladen.
+
                 bool isPast = currentDate < today;
                 <td class="@dayClass">
                     @if (!isPast)
                     {
-                        <form method="get" asp-page="/Tidsbestilling/BookATime">
+                        <form method="get" asp-page="/BookATime/BookATime">
 
                             <input type="hidden" name="Year" value="@Model.Year" />
                             <input type="hidden" name="Month" value="@Model.Month" />

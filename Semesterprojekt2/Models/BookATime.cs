@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Semesterprojekt2.Models
 {
-    public class Tidsbestilling
+    public class BookATime
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -16,7 +16,7 @@ namespace Semesterprojekt2.Models
         [DisplayFormat(DataFormatString = "{0:HH:mm}")]
         public DateTime Tidspunkt { get; set; }
 
-        public Tidsbestilling(string kommentar, DateTime Dato, DateTime Tidspunkt)
+        public BookATime(string kommentar, DateTime Dato, DateTime Tidspunkt)
         {
 
             Kommentar = kommentar;
@@ -26,7 +26,7 @@ namespace Semesterprojekt2.Models
 
         }
 
-        public Tidsbestilling()
+        public BookATime()
         {
         }
     }
