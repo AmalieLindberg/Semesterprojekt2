@@ -39,16 +39,16 @@
 
            .orange-day 
                 {
-                    background-color: darkorange;
-                    color: white; /* White text for better readability */
+                    background-color: #FCC681;
+                    color: dimgrey; /* White text for better readability */
                 }
 
            .yellow-day 
                 {
-                    background-color: #E9CF1C;
-                    color: white;
+                    background-color:#F0E9AA;  
+                    color: dimgrey; 
                 }
-                    /* DDC62F */
+                    /* Røde: */ /* #EAA193 */
            .skrift-mellem-månederne 
                 {
                     display: flex;
@@ -87,8 +87,20 @@
                 }
             .past-day 
                 {
-                    color: white;
-                    background-color: grey; /* Or any other color that indicates non-selectability */
+                    color: dimgrey;
+                    background-color: rgb(239,231,225); /* Or any other color that indicates non-selectability */
+                }
+                .Yellow
+                {
+                    background-color: #F0E9AA
+                }
+                .Orange
+                {
+                    background-color: #FCC681;
+                }
+                .Red
+                {
+                    background-color:#EAA193;
                 }
         </style>
     </head>
@@ -100,7 +112,7 @@
         </div>
         <div class="AltTekstIToppen">
             <div class="farvedag">
-                <p>Sat-Tue (Yellow): Mobile service. <br />Wed-Fri (Orange): Salon. <br /> Red: The day is booked.</p>
+               <p> <div class="Yellow"> Sat-Tue (Yellow): Mobile service. </div> <br /> <div class="Orange"> Wed-Fri (Orange): Salon.</div> <br /> <div class="Red">Red: The day is booked.</p></div>
             </div>  
             <div class="OBS">
                 <p><b>NOTE!! I have both a store <br /> and a mobile service.</b></p>
