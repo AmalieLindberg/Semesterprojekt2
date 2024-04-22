@@ -3,8 +3,132 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<head>
+    <style>
+        body {
+            align-content: center;
+        }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+        img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 20%;
+            padding: 5px;
+        }
+
+
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+
+        .spacing {
+            height: 0;
+        }
+
+        .image-block {
+            width: 100%;
+            height: 300px;
+        }
+
+        .img-box {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box {
+            text-align: center;
+            width: 400px;
+            margin-left: 135px;
+            margin-top: 10px;
+            padding: 5px;
+            border: 2px solid black;
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img-box">
+        <div class="spacing"></div> @*Baggrunds foto, der er stationær (det bevæger sig ikke, når man ruler ned på siden) og der er i midten*@
+        <div class="image-block" style="background:url('../Images/Home/Overskrift billede.jpg') no-repeat center center fixed; opacity: 0.7;"></div>
+        <div class="centered"><h1 style="text-align: center;">@ViewData["Title"]</h1></div> @*Tekst i midten af fotoet*@
+    </div>
+
+    <hr />
+    <p style="text-align: center;">
+        Dog grooming in a calm and comfortable environment
+        Your dog's well-being is my first priority
+    </p>
+    <hr />
+    <div id="img">
+        @*3 rækker med kolonner i række 1 og 3 er der 3 kolonner, og i række 2 er der 5 kolonner*@
+        <div class="row">
+            <div class="column">
+                <img src="../Images/Home/Katz hug.jpg" />
+            </div>
+            <div class="column">
+                <img src="../Images/Home/Katz kiss.jpg" />
+            </div>
+            <div class="column">
+                <img src="../Images/Home/Katz lay.jpg" />
+            </div>
+            <div class="column">
+                <img src="../Images/Home/Katz smile.jpg" />
+            </div>
+        </div>
+    <div>
+            <br />
+
+            <div class="row">
+                <div class="col">
+                    <h3 style="text-align:center"> About me </h3>
+                </div>
+                <br />
+                <br />
+
+ <hr />
+                <br />
+    <div class="row">
+        <div class="col">
+            <p style="text-align: center;">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                     Hi there! My name is Krisztina and I am the founder of Shampoodle. I am based in Greve Hundesalon og Spa where I am an apprentice as a professional dog groomer.
+                     I know how important it is for dog owners to trust the person taking care of their dog. That is why all of my services will be tailored to accommodate your dog’s needs and unique personality. This is to make sure your furry friend is happy, healthy, and looking at their finest.
+                     I am dedicated to giving your dog the best care and attention by using high-quality and specialized grooming products designed for your dog’s particular grooming needs.
+                     Now that I have introduced myself, I am looking forward to meeting you and your dog!
+            </p>
+        </div>
+        <div class="box">
+            <div class="column">
+                <img src="../Images/Home/Katz Diploma.jpg" />
+            </div>
+        </div>
+
+</body>
+</html>
