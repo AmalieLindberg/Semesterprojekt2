@@ -8,5 +8,6 @@ namespace Semesterprojekt2.Pages.Shop
         public void OnGet()
         {
         }
+
     }
 }
