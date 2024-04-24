@@ -53,6 +53,7 @@
                 {
                     display: flex;
                     justify-content: space-between;
+
                 }
             .Forrige-måned 
                 {
@@ -74,6 +75,8 @@
                 {
                     display: flex;
                     justify-content: space-between;
+                     align-items: center;
+                    
                 }
             .OBS
                 {
@@ -102,6 +105,19 @@
                 {
                     background-color:#EAA193;
                 }
+                .Skriftmellemmånderne
+                {
+                 background-color: rgb(239,231,225);
+                  
+                  border: none;
+                     
+                }
+                .non-link 
+                {
+                    color: dimgray; /* or the color of your normal text */
+                    text-decoration: none; /* removes underline */
+                    cursor: pointer; /* Bevarer musepeger som klikbar */
+                 }
         </style>
     </head>
     <body>
@@ -112,7 +128,19 @@
         </div>
         <div class="AltTekstIToppen">
             <div class="farvedag">
-               <p> <div class="Yellow"> Sat-Tue (Yellow): Mobile service. </div> <br /> <div class="Orange"> Wed-Fri (Orange): Salon.</div> <br /> <div class="Red">Red: The day is booked.</p></div>
+               <p> 
+                   <div class="Yellow"> 
+                       Sat-Tue (Yellow): Mobile service. 
+                   </div> 
+                   <br /> 
+                   <div class="Orange"> 
+                       Wed-Fri (Orange): Salon.
+                   </div> 
+                   <br /> 
+                   <div class="Red"> 
+                       Red: The day is booked.
+                   </div>
+               </p>
             </div>  
             <div class="OBS">
                 <p><b>NOTE!! I have both a store <br /> and a mobile service.</b></p>
@@ -124,12 +152,14 @@
  
         <div class="skrift-mellem-månederne">
             <div class="Forrige-måned">
-                <a asp-page="/BookATime/Calendar" asp-route-Year="@(Model.Month == 1 ? Model.Year - 1 : Model.Year)" asp-route-Month="@(Model.Month == 1 ? 12 : Model.Month - 1)">Last Month</a>
+              <button class="Skriftmellemmånderne"> <a asp-page="/BookATime/Calendar" asp-route-Year="@(Model.Month == 1 ? Model.Year - 1 : Model.Year)" asp-route-Month="@(Model.Month == 1 ? 12 : Model.Month - 1)" class="non-link">Last Month</a></button> 
             </div>
             <div class="Næste-måned">
-                <a asp-page="/BookATime/Calendar" asp-route-Year="@(Model.Month == 12 ? Model.Year + 1 : Model.Year)" asp-route-Month="@(Model.Month == 12 ? 1 : Model.Month + 1)">Next Month</a>
+              <button class="Skriftmellemmånderne">  <a asp-page="/BookATime/Calendar" asp-route-Year="@(Model.Month == 12 ? Model.Year + 1 : Model.Year)" asp-route-Month="@(Model.Month == 12 ? 1 : Model.Month + 1)" class="non-link">Next Month</a></button>
+      
             </div>
-        </div>
+        </div>       
+        <br />
     <table>
         @{
             int dayCounter = 0; // Initialize the counter for days in the week. hvorfor vi starter på 0?
