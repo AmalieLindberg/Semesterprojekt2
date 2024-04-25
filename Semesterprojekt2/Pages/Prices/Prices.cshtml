@@ -1,6 +1,271 @@
 ﻿@page
 @model Semesterprojekt2.Pages.Prices.PricesModel
 @{
+    ViewData["Title"] = "Prices";
 }
 
-<center><h1>Prices</h1></center>
+<html>
+<head>
+    <title> Prices | Shampoodle </title>
+
+    <meta charset="UTF-8"> <!-- document encoded using UTF-8, character encoding standards. Ensures that the browser interprets the text content of the document correctly, allowing it to display characters from different languages and character sets accurately.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!-- Controls behavior and apperance. Viewport: Set to width of devices screen. Scale: Sets initial and maximum zoom level. User-scalable = no: To prevent user from zooming -> maintains consistent layout and design -->
+
+    <link rel="stylesheet" href="~/css/stylesprice.css" />
+
+    <!-- css for Additional Services + Map -->
+    <style>
+        
+
+        .product-container {
+            display: flex;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-image {
+            flex: 0 1 auto;
+            width: 50%;
+
+        }
+
+            .product-image img {
+                max-width: 90%;
+                height: auto;
+            }
+
+        .product-details {
+            margin-left: 20px;
+            flex-grow: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in the width calculation */
+            border: none; /* Remove borders */
+        }
+
+            .service {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+            }
+
+            .description {
+                flex: 1;
+            }
+
+            .price {
+                flex: 0 0 120px; /* Adjust the width as needed */
+                text-align: right;
+            }
+
+
+        .mobile-price {
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="header-container">
+        <img src="/Images/Prices/prices_dogs_running.jpg" alt="Header Image" class="header-image">
+        <h1>Prices</h1>
+    </div>
+
+
+    <hr />
+    <p style="text-align: center; font-weight:bold">
+    The prices are indicative and may vary depending on the breed, the quality of the fur, time spent, degree of difficulty, hairstyle and how well-groomed your dog is in general.
+    </p>
+
+    <p style="text-align: center">
+        As I am a newly trained dog groomer, I will only be able to offer limited haircuts / hairstyles in the beginning.
+    </p>
+    <hr />
+
+    <!--Prices. Divided into three boxes -->
+    <div class="text-container">
+        <!--1st box-->
+        <div class="prices-text-block">
+            <div class="title_price_dog" <br />
+                <span style="font-weight: bold;">COMPLETE SERVICE</span>
+            </div>
+            <div class="prices_description_dog">
+                <span style="font-style: italic;">
+                    incl. bathing, blow-drying and nail clipping. <br /> <br />
+                </span>
+                <span>
+                    Short-haired <br />
+                    Short-haired    | Cut to a style or breed standard style<br />
+                    Long-haired     | Cut to a style or breed standard style
+
+                </span>
+            </div>
+        </div>
+
+
+
+        <!--2nd box-->
+        <div class="prices-text-block">
+            <div class="title_price_dog">
+                <span style="font-weight: bold;">SMALL-SIZED DOGS</span>
+            </div>
+            <div class="prices_description_dog">
+                <span style="font-style: italic;">
+                    e.g. Bichon Havanese, Shih Tzu, Jack Russell Terrier
+                    <br />
+                    <br />
+                </span>
+
+                <span>
+                    550 - 650 DKK
+                    <br />
+                </span>
+                <span>
+                    650 - 750 DKK
+                    <br />
+                </span>
+                <span>
+                    750 - 850 DKK
+                    <br />
+                </span>
+            </div>
+
+            <br />
+
+
+        </div>
+        <!--3rd box-->
+        <div class="prices-text-block">
+            <div class="title_price_dog">
+                <span style="font-weight: bold;">MEDIUM-SIZED DOGS</span>
+            </div>
+            <div class="prices_description_dog">
+                <span style="font-style: italic;">
+                    e.g. Cocker/Springer Spaniel, Cockapoo, Corgi
+                    <br />
+                    <br />
+                </span>
+
+                <span>
+                    650 - 750 DKK
+                    <br />
+                </span>
+                <span>
+                    750 - 950 DKK
+                    <br />
+                </span>
+                <span>
+                    750 - 1050 DKK
+                    <br />
+                </span>
+
+            </div>
+
+            <br />
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Additional Services -->
+
+
+    <hr />
+    <p style="text-align: center; font-weight: bold;">
+        ADDITIONAL SERVICES
+    </p>
+    <hr />
+
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="/Images/Kort/Mobil Grooming kort.jpg" />
+            </div>
+
+            <div class="product-details">
+
+                <div class="service">
+                    <div class="description" style="font-weight: bold;">
+                        INDIVIDUAL SERVICES <br />
+                    </div>
+                </div>
+
+
+                <div class="service">
+                    <div class="description">Stand-alone nail clipping</div>
+                    <div class="price">80 DKK</div>
+                </div>
+
+                <div class="service">
+                    <div class="description">Stand-alone paw and nail clipping</div>
+                    <div class="price">250 - 300 DKK</div>
+                </div>
+
+                <div class="service">
+                    <div class="description">Toothbrushing</div>
+                    <div class="price">35 DKK</div>
+                </div>
+
+                <div class="service">
+                    <div class="description">Bath, trimming around paws and eyes, clipping of nails</div>
+                    <div class="price">450 - 750 DKK</div>
+                </div>
+
+                <div class="service">
+                    <div class="description">Matted and extremely tangled fur care</div>
+                    <div class="price">from 100 DKK</div>
+                </div>
+
+                <div class="service">
+                    <div class="description" style="font-weight: bold;"> <br /> 
+                        MOBILE HOME-GROOMING SERVICE <br/></div>
+            
+                </div>
+
+                <div class="service">
+                    <div class="description"> Dark-Green Zone</div>
+                    <div class="price"> max. 120 DKK</div>
+                </div>
+
+                <div class="service">
+                    <div class="description"> Light-Green Zone</div>
+                    <div class="price"> max. 240 DKK </div>
+                </div>
+
+                <div class="service">
+                    <div class="description">
+                        <span style="font-weight:bold"> <br /> PLEASE NOTE: <br /> </span>
+         
+                        <span>
+                        Payment methods are either cash or via mobilepay. Dankort or other card payments are not accepted at the moment.
+                        </span>
+                    </div>
+         
+                </div>
+                </div>
+
+                                
+            </div>
+        
+    </main>
+    
+
+
+
+   
+    
+
+</body>
+
+
+</html>
+
+        
+
