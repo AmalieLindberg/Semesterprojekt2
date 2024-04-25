@@ -1,0 +1,52 @@
+﻿@page
+@model Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel
+@{
+}
+
+<center><h1>Orderhistory</h1></center>
+<hr />
+
+<div class="test">
+    <table class="table table-bordered table-hover table-striped" width="60%">
+        <colgroup>
+            <col style="width : 5%">
+            <col style="width : 25%">
+            <col style="width : 50%">
+            <col style="width : 20%">
+        </colgroup>
+        <thead >
+            <tr class="btn-secondary active" >
+                <th>ID</th>
+                <th>Fotos</th>
+                <th>Info</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        @* <tbody>
+            @if (@Model.Orderhistory != null)
+            {
+                foreach (var order in Model.Orderhistory)
+                {
+                    <tr class="btn-secondary">
+                        <td>
+                            @order.OrderId
+                        </td>
+                        <td>                                Mangler data
+                            @order.Date
+                        </td>
+
+                        <td>
+                            @order.ItemId
+                        </td>
+                        <td>
+                            @order.ItemName
+                    </tr>
+                }
+            }
+        </tbody> *@
+    </table>
+</div>
+
+
+<center><h1>History</h1></center>
+<hr />
