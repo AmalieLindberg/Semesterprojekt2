@@ -10,23 +10,19 @@ namespace Semesterprojekt2.Models
         public int UserId { get; set; }
 
         [Required]
-        public string UserName { get; set; }
-
-        [Required]
         public string Password { get; set; }
 
         [Required]
         public string Name { get; set; }
         [Required]
         public int Telefonnummer { get; set; }
-        [Required]
+        [Required, EmailAddress]
         public string Email { get; set; }
         
         public string Role { get; set; }
 
-        public User(string userName, string password, string name, int telefonnummer, string email)
+        public User(string password, string name, int telefonnummer, string email)
         {
-            UserName = userName;
             Password = password;
             Name = name;
             Telefonnummer = telefonnummer;
@@ -35,7 +31,7 @@ namespace Semesterprojekt2.Models
 
         public User()
         {
-            UserName = "";
+         
             Password = "";
             Name = "";
             Telefonnummer = 0;
