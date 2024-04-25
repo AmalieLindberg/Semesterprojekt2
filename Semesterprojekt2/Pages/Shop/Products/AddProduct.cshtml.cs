@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Semesterprojekt2.Models.Shop;
 using Semesterprojekt2.Service;
 
 namespace Semesterprojekt2.Pages.Shop.Products
@@ -14,7 +15,7 @@ namespace Semesterprojekt2.Pages.Shop.Products
         }
 
         [BindProperty]
-        public Models.Product Product { get; set; }
+        public Product Product { get; set; }
 
         public IActionResult OnGet()
         {

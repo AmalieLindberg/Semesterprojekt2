@@ -1,4 +1,4 @@
-﻿using Semesterprojekt2.Models;
+﻿using Semesterprojekt2.Models.Shop;
 
 namespace Semesterprojekt2.Service
 {
@@ -6,5 +6,7 @@ namespace Semesterprojekt2.Service
     {
         List<Product> GetProducts();
         void AddProduct(Product product);
-    }
+		IEnumerable<Product> NameSearch(string str);
+		IEnumerable<Product> PriceFilter(int maxPrice, int minPrice = 0);
+	}
 }

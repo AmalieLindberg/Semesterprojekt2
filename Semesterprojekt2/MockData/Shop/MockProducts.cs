@@ -1,4 +1,4 @@
-﻿using Semesterprojekt2.Models;
+﻿using Semesterprojekt2.Models.Shop;
 namespace Semesterprojekt2.MockData.Shop
 {
     public class MockProducts
