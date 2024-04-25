@@ -13,7 +13,7 @@
 
         .sidenav {
             width: 130px;
-            height: 1230px;
+            height: 600px;
             position: absolute;
             z-index: 1;
             top: 100px;
@@ -40,10 +40,9 @@
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             max-width: 300px;
-            margin: auto;
+            margin: 25px;
             text-align: center;
             font-family: arial;
-            margin-left: 100px;
         }
 
         .price {
@@ -69,8 +68,22 @@
 
         .card-container {
             display: flex;
-            justify-content: space-around;
-            align-items: stretch;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-left: 60px;
+        }
+
+        .description {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .btn {
+            float: right; 
+            position: absolute;
+            right: 0;
+            top: 100px;
         }
 
     </style>
@@ -83,55 +96,28 @@
         <a asp-page="/Shop/Brushes">Brushes</a>
         <a asp-page="/Shop/Treats">Treats</a>
     </div>
+    <p>
+        <a class="btn btn-primary" style="background-color: #C65127;; color: #ffffff;" asp-page="Products/AddProduct">Create a new Product</a>
+    </p>
 
     <br>
     <br>
+    
+    <div class="card-container">
 
-    <div class="card-container">
-        <div class="card">
-            <img src="/Images/Shop/testbillede.jpg" style="width:100%">
-            <h2 style="color: #C65127;">Produkt 1</h2>
-            <p class="price">50kr</p>
-            <p>Beskrivelse til produktet.......................................................................................</p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card">
-            <img src="/Images/Shop/testbillede.jpg" style="width:100%">
-            <h2 style ="color: #C65127;">Produkt 2</h2>
-            <p class="price">50kr</p>
-            <p>Beskrivelse til produktet.......................................................................................</p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card">
-            <img src="/Images/Shop/testbillede.jpg" style="width:100%">
-            <h2 style="color: #C65127;">Produkt 3</h2>
-            <p class="price">50kr</p>
-            <p>Beskrivelse til produktet.......................................................................................</p>
-            <p><button>Add to Cart</button></p>
-        </div>
-    </div>
-    <br />
-    <div class="card-container">
-        <div class="card">
-            <img src="/Images/Shop/testbillede.jpg" style="width:100%">
-            <h2 style="color: #C65127;">Produkt 4</h2>
-            <p class="price">50kr</p>
-            <p>Beskrivelse til produktet.......................................................................................</p><p><button>Add to Cart</button></p>
-        </div>
-        <div class="card">
-            <img src="/Images/Shop/testbillede.jpg" style="width:100%">
-            <h2 style="color: #C65127;">Produkt 5</h2>
-            <p class="price">50kr</p>
-            <p>Beskrivelse til produktet.......................................................................................</p>
-            <p><button>Add to Cart</button></p>
-        </div>
-        <div class="card">
-            <img src="/Images/Shop/testbillede.jpg" style="width:100%">
-            <h2 style="color: #C65127;">Produkt 6</h2>
-            <p class="price">50kr</p>
-            <p>Beskrivelse til produktet.......................................................................................</p>
-            <p><button>Add to Cart</button></p>
-        </div>
+    @if (@Model.Products != null)
+    {
+        foreach (var product in Model.Products)
+        {
+                <div class="card">
+                    <img src="/Images/Shop/testbillede.jpg" style="width:100%">
+                    <h3 style="color: #C65127;">@product.Name</h3>
+                    <p class="price">@product.Price</p>
+                    <p class="description">@product.Description</p>
+                    <p><button>Add to Cart</button></p>
+                </div>
+        }
+    }
     </div>
 
 </body>

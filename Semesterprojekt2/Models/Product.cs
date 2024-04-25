@@ -1,4 +1,4 @@
-﻿namespace Semesterprojekt2.Models.Shop
+﻿namespace Semesterprojekt2.Models
 {
     public class Product
     {
@@ -6,14 +6,22 @@
         public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
-        public Type Type { get; set; }
+        public ProductType Type { get; set; }
         public string Brand { get; set; }
         public int Amount { get; set; }
         public string Description { get; set; }
 
-        public Product(string name, double price, Type type, string brand, int amount, string description)
+        public enum ProductType
         {
-            Id = nextId++;  
+            Clothing,
+            Soap,
+            Treats,
+            Toy
+        }
+
+        public Product(string name, double price, ProductType type, string brand, int amount, string description)
+        {
+            Id = nextId++;
             Name = name;
             Price = price;
             Type = type;
@@ -25,7 +33,5 @@
         public Product()
         {
         }
-
-
     }
 }
