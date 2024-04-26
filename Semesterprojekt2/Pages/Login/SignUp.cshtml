@@ -126,9 +126,27 @@
         <div class="wrapper">
             <form action="">
                 <h1>Sign Up</h1>
+
+                <div class="input-box">
+                    <label class="hidden" for="fullName">Enter full name</label>
+                    <input type="text" placeholder="Full Name" required />
+                    <i class='bx bxs-user'></i>
+                </div>
+
                 <div class="input-box">
                     <label class="hidden" for="email">Enter Email</label>
                     <input type="email" placeholder="Email" required />
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                <div class="input-box">
+                    <label class="hidden" for="email">Enter Phone</label>
+                    <!-- RegEx Pattern that checks: Input can start with + (optional), max karakter 13, digits 0-9
+                     ^: Asserts the start of the string.
+                    \+?: Matches the plus sign + zero or one time. The ? makes the plus sign optional.
+                    [0-9]{1,12}: Matches digits from 0 to 9, occurring between 1 to 13 times -> We do this cause we expect international numbers
+                    $: Asserts the end of the string. -->
+                    <input type="tel" id="phone" placeholder="Phone" pattern="^\+?[0-9]{1,13}$" required />
                     <i class='bx bxs-user'></i>
                 </div>
                 
@@ -172,9 +190,7 @@
         /* Function responsible for validating password inputs:
         - Retrieves the current values 
         - Defines a regular expression (passwordRegex) for validating format. 
-        - Checks if the password contains at least one letter, one digit, and is at least 8 characters long.
-        
-        */
+        - Checks if the password contains at least one letter, one digit, and is at least 8 characters long.*/
         function validatePassword() {
             const password = passwordInput.value;
             const repeatPassword = repeatPasswordInput.value;
