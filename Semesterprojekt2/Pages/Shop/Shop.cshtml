@@ -53,7 +53,7 @@
         .card button {
             border: none;
             outline: 0;
-            padding: 12px;
+            padding: 6px;
             color: white;
             background-color: #000;
             text-align: center;
@@ -79,15 +79,14 @@
             text-overflow: ellipsis;
         }
 
-        .btn {
-            float: right; 
-            position: absolute;
-            right: 0;
-            top: 103px;
-        }
-
         .input-group {
             margin-left: 85px;
+        }
+
+        .edit-delete-button-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Adjust as necessary */
         }
 
     </style>
@@ -127,28 +126,31 @@
     </form>
 
     <p>
-        <a class="btn btn-primary" style="background-color: #C65127;; color: #ffffff;" asp-page="Products/AddProduct">Create a new Product</a>
+        <a class="btn btn-primary" style="float: right; position: absolute; right: 10px; top: 103px; background-color: #C65127;; color: #ffffff;" asp-page="Products/AddProduct">Create a new Product</a>
     </p>
 
     <br>
     <br>
     
     <div class="card-container">
-
-    @if (@Model.Products != null)
-    {
-        foreach (var product in Model.Products)
+        @if (@Model.Products != null)
         {
+            foreach (var product in Model.Products)
+            {
                 <div class="card">
-                    <img src="/Images/Shop/testbillede.jpg" style="width:100%">
+                    <img src="/Images/Shop/testbillede.jpg" alt="Product Image" style="width:100%">
                     <h3 style="color: #C65127;">@product.Name</h3>
                     <p class="price">@product.Price</p>
                     <p class="description">@product.Description</p>
                     <p class="description">@product.Id</p>
+                    <div class="edit-delete-button-container">
+                        <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Shop/Products/EditProduct" asp-route-id="@product.Id">Edit</a>
+                        <a class="btn btn-danger btn-sm" title="Delete" asp-page="/Shop/Products/DeleteProduct" asp-route-id="@product.Id">Delete</a>
+                    </div>
                     <p><button>Add to Cart</button></p>
                 </div>
+            }
         }
-    }
     </div>
 
 </body>

@@ -1,0 +1,51 @@
+﻿@page
+@model Semesterprojekt2.Pages.Shop.Products.EditProductModel
+@{
+}
+
+<form method="post">
+	<div class="form-group">
+		<label asp-for="Product.Id" class="control-label"></label>
+		<input asp-for="Product.Id" class="form-control" readonly="@(true)" />
+	</div>
+	<div class="form-group">
+		<label asp-for="Product.Name" class="control-label"></label>
+		<input asp-for="Product.Name" class="form-control" />
+		<span asp-validation-for="Product.Name" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Product.Price" class="control-label"></label>
+		<input asp-for="Product.Price" class="form-control" />
+		<span asp-validation-for="Product.Price" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Product.Type" class="control-label"></label>
+		<input asp-for="Product.Type" class="form-control" />
+		<span asp-validation-for="Product.Type" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Product.Brand" class="control-label"></label>
+		<input asp-for="Product.Brand" class="form-control" />
+		<span asp-validation-for="Product.Brand" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Product.Amount" class="control-label"></label>
+		<input asp-for="Product.Amount" class="form-control" />
+		<span asp-validation-for="Product.Amount" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Product.Description" class="control-label"></label>
+		<input asp-for="Product.Description" class="form-control" />
+		<span asp-validation-for="Product.Description" class="text-danger"></span>
+	</div>
+
+	<p>
+		<div class="form-group">
+			<input type="submit" value="Update" class="btn btn-primary" />
+		</div>
+	</p>
+</form>
+
+<p>
+	<a asp-page="/Shop/Shop">Back to List</a>
+</p>

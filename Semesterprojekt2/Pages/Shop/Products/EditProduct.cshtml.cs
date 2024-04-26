@@ -5,11 +5,11 @@ using Semesterprojekt2.Service;
 
 namespace Semesterprojekt2.Pages.Shop.Products
 {
-    public class AddProductModel : PageModel
+    public class EditProductModel : PageModel
     {
         private IProductService _productService;
 
-        public AddProductModel(IProductService productService)
+        public EditProductModel(IProductService productService)
         {
             _productService = productService;
         }
@@ -17,8 +17,12 @@ namespace Semesterprojekt2.Pages.Shop.Products
         [BindProperty]
         public Models.Shop.Product Product { get; set; }
 
-        public IActionResult OnGet()
+        public IActionResult OnGet(int id)
         {
+            Product = _productService.GetProduct(id);
+            if (Product == null)
+                return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
+
             return Page();
         }
 
@@ -29,7 +33,7 @@ namespace Semesterprojekt2.Pages.Shop.Products
                 return Page();
             }
 
-            _productService.AddProduct(Product);
+            _productService.UpdateProduct(Product);
             return RedirectToPage("/Shop/Shop");
         }
     }
