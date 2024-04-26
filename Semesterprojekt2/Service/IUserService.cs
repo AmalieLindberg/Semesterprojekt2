@@ -1,6 +1,9 @@
-﻿namespace Semesterprojekt2.Service
+﻿using Semesterprojekt2.Models.Shop;
+using Semesterprojekt2.Models;
+
+namespace Semesterprojekt2.Service
 {
-    public class IUserService
+    public interface IUserService
     {
     }
 }
