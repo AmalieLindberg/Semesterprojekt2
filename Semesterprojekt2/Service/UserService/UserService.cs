@@ -5,7 +5,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
 {
     public class UserService : IUserService
     {
-        private List<User> _users { get; set; }
+        public List<User> _users { get; set; }
 
         public UserService()
         {
