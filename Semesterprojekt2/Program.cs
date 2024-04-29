@@ -1,13 +1,15 @@
 using Semesterprojekt2.Service;
+using Semesterprojekt2.Service.BookATimeService;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddSingleton<BookATimeService, BookATimeService>();
+builder.Services.AddSingleton<IBookATimeService, BookATimeService>();
 builder.Services.AddSingleton<IProductService, ProductService>();
 builder.Services.AddTransient<JsonFileProductService>();
 builder.Services.AddSingleton<IUserService, UserService>();
+builder.Services.AddSingleton<YdelseService, YdelseService>();
 
 var app = builder.Build();
 
