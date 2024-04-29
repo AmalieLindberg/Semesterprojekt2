@@ -17,11 +17,13 @@
         </div>
     </div>
 
-    <form action="/action_page.php" id="usrform">
-        <div>
-            <textarea rows="4" cols="50" name="comment" form="usrform">
-Comment her!</textarea>
-        </div>
-        <input type="submit">
-    </form>
+    @if (Model.Users != null)
+    {
+        foreach (var user in Model.Users)
+        {
+                <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@user.UserId">Edit</a>
+                <a class="btn btn-danger btn-sm" title="Delete" asp-page="/Profil/DeleteUser" asp-route-id="@user.UserId">Delete</a>
+        }
+    }
+    
 </body>

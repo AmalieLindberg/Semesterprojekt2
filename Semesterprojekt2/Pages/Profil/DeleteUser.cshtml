@@ -1,0 +1,12 @@
+﻿@page
+@model Semesterprojekt2.Pages.Profil.DeleteUserModel
+@{
+}
+<h1>Delete Confirmation></h1>
+<div class="alert alert-danger">
+	<h5>Are you sure you want to delete User - @Model.user.Name</h5>
+	<form method="post">
+		<button type="submit" class="btn btn-danger">Yes</button>
+		<a class="btn btn-primary" asp-page="/Profil/Profil">No</a>
+	</form>
+</div>
