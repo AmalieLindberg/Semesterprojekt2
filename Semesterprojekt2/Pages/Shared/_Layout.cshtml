@@ -39,11 +39,7 @@
                             <div class="dropdown" style="float:right;">
                                 <i class="bi bi-person" style="font-size:25px"></i>
                                 <div class="dropdown-content" style="right:0;">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Login/Login">Login</a>
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Profil/Profil">Profil</a>
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Orderhistory/Orderhistory">Orderhistory</a>
-                                    <a class="nav-link text-dark" asp-area="" asp-page="">Logout</a>
-                                    @* @{
+                                    @{
                                         if (Context.User.Identity == null)
                                         {
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Login/Login">Login</a>
@@ -54,7 +50,7 @@
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Orderhistory/Orderhistory">Orderhistory</a>
                                             <a class="nav-link text-dark" asp-area="" asp-page="">Logout</a>
                                         }
-                                    } *@
+                                    }
                                 </div>
                             </div>
                         </li>
