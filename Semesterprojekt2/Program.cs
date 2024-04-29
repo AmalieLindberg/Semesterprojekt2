@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<BookATimeService, BookATimeService>();
 builder.Services.AddSingleton<IProductService, ProductService>();
+builder.Services.AddTransient<JsonFileProductService>();
 builder.Services.AddSingleton<IUserService, UserService>();
 
 var app = builder.Build();
