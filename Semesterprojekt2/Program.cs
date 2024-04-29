@@ -6,7 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<BookATimeService, BookATimeService>();
 builder.Services.AddSingleton<IProductService, ProductService>();
+<<<<<<< Updated upstream
 builder.Services.AddTransient<JsonFileProductService>();
+=======
+builder.Services.AddSingleton<IUserService, UserService>();
+>>>>>>> Stashed changes
 
 var app = builder.Build();
 
