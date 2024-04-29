@@ -6,7 +6,7 @@ namespace Semesterprojekt2.MockData.Profil
     {
         public static List<User> users = new List<User>
         {
-            new User("123", "Admin", 12345678, "Email@email.dk" )
+            new User("123", "Admin", 12345678, "Email@email.dk")
 
         };
 
