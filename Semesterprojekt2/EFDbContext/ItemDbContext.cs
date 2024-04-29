@@ -9,7 +9,7 @@ namespace Semesterprojekt2.EFDbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ItemDB; Integrated Security=True; Connect Timeout=30; Encrypt=False");
+            options.UseSqlServer(@"Data Source=mssql1.unoeuro.com;Initial Catalog=beckyblau_dk_db_shampoodle; Integrated Security=True; Connect Timeout=30; Encrypt=False");
 
         }
 
