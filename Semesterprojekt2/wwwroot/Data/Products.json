@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "Name": "Lavender Shampoo",
+    "Price": 59.5,
+    "Type": 1,
+    "Brand": "Nivea",
+    "Amount": 1,
+    "Description": "Shampoo with smell of lavender",
+    "ProductImage":  "testbillede.jpg"
+  },
+  {
+    "Id": 2,
+    "Name": "Lever Treats",
+    "Price": 150,
+    "Type": 2,
+    "Brand": "Dog Treats",
+    "Amount": 250,
+    "Description": "Treats with a taste of lever",
+    "ProductImage": "testbillede.jpg"
+  },
+  {
+    "Id": 3,
+    "Name": "Squeaky Cat",
+    "Price": 125,
+    "Type": 3,
+    "Brand": "ToysRUs",
+    "Amount": 1,
+    "Description": "A toy cat, that makes a squeaky sound when the dog bites it.",
+    "ProductImage": "testbillede.jpg"
+  }
+]

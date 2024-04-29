@@ -9,7 +9,7 @@ namespace Semesterprojekt2.Models.Shop
 
         [Display(Name = "Name")]
         [Required(ErrorMessage = "The product must be given a name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [Display(Name = "Price")]
         [Required(ErrorMessage = "The product must be given a price")]
@@ -17,11 +17,11 @@ namespace Semesterprojekt2.Models.Shop
 
         [Display(Name = "Type")]
         [Required(ErrorMessage = "The product must be given a type")]
-        public ProductType Type { get; set; }
+        public ProductType? Type { get; set; }
 
         [Display(Name = "Brand")]
         [Required(ErrorMessage = "The product must be given a brand")]
-        public string Brand { get; set; }
+        public string? Brand { get; set; }
 
         [Display(Name = "Amount")]
         [Required(ErrorMessage = "The product must be given an amount")]
@@ -29,7 +29,11 @@ namespace Semesterprojekt2.Models.Shop
 
         [Display(Name = "Description")]
         [Required(ErrorMessage = "The product must be given a description")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
+
+        [Display(Name = "Image")]
+        [Required(ErrorMessage = "The product must be given an image")]
+        public string? ProductImage { get; set; }
 
         public enum ProductType
         {
