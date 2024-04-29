@@ -89,6 +89,21 @@
             gap: 30px; /* Adjust as necessary */
         }
 
+        .card {
+            position: relative;
+            cursor: pointer;
+        }
+
+            .card a {
+                display: block;
+                color: inherit; /* Keep link color consistent with the rest of the text */
+                text-decoration: none; /* No underline */
+            }
+
+            .card button {
+                cursor: default;
+            }
+
     </style>
 </head>
 <body>
@@ -138,17 +153,12 @@
             foreach (var product in Model.Products)
             {
                 <div class="card">
-                    <img src="/Images/Shop/testbillede.jpg" alt="Product Image" style="width:100%">
-                    <h3 style="color: #C65127;">@product.Name</h3>
-                    <p class="price">@product.Price</p>
-                    <p class="description">@product.Description</p>
-                    <p class="description">@product.Id</p>
-                    <div class="edit-delete-button-container">
-                        <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Shop/Products/EditProduct" asp-route-id="@product.Id">Edit</a>
-                        <a class="btn btn-danger btn-sm" title="Delete" asp-page="/Shop/Products/DeleteProduct" asp-route-id="@product.Id">Delete</a>
-                        <a class="btn btn-primary btn-sm" type="button" title="Detail" asp-page="/Shop/Products/DetailProduct" asp-route-id="@product.Id"><i class="fa fa-info"></i></a>
-                    </div>
-                    <p><button>Add to Cart</button></p>
+                    <a href="@Url.Page("/Shop/Products/DetailProduct", new { id = product.Id })" style="text-decoration:none; color:inherit; display:block; position:relative;">
+                        <img src="/Images/Shop/testbillede.jpg" alt="Product Image" style="width:80%">
+                        <h3 style="color: #C65127;">@product.Name</h3>
+                        <p class="price">@product.Price</p>
+                        <p class="description">@product.Description</p>
+                    <p style="position: absolute; bottom:-16px; right: 0px; left: 0px;"><button onclick="event.stopPropagation();">Add to Cart</button></p>
                 </div>
             }
         }
