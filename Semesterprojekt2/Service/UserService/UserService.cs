@@ -7,15 +7,26 @@ namespace Semesterprojekt2.Service.UserService.UserService
     {
         public List<User> _users { get; set; }
 
-        public UserService()
-        {
-            _users = MockUsers.GetMockUser();
-        }
+		private JsonFileUserService JsonFileUserService { get; set; }
 
-        public void AddUser(User user)
+		public UserService(JsonFileUserService jsonFileUserService)
+		{
+			_users = MockUsers.GetMockUser();
+			JsonFileUserService = jsonFileUserService;
+			//_users = JsonFileUserService.GetJsonUsers().ToList();
+			JsonFileUserService.SaveJsonUsers(_users);
+		}
+
+		public UserService()
+		{
+			_users = MockUsers.GetMockUser().ToList();
+		}
+
+		public void AddUser(User user)
         {
             _users.Add(user);
-        }
+            JsonFileUserService.SaveJsonUsers(_users);
+		}
 
         public User GetUser(int id)
         {
@@ -42,22 +53,31 @@ namespace Semesterprojekt2.Service.UserService.UserService
                         u.Telefonnummer = user.Telefonnummer;
                     }
                 }
-            }
+                JsonFileUserService.SaveJsonUsers(_users);
+			}
         }
 
-        public User DeleteUser(int? userId)
-        {
-            foreach (User user in _users)
-            {
-                if (user.UserId == userId)
-                {
-                    _users.Remove(user);
-                    return user;
-                }
-            }
-            return null;
-        }
+		public User DeleteUser(int? userId)
+		{
+			User userToBeDeleted = null;
+			foreach (User user in _users)
+			{
+				if (user.UserId == userId)
+				{
+                    userToBeDeleted = user;
+					break;
+				}
+			}
 
-        public List<User> GetUsers() { return _users; }
+			if (userToBeDeleted != null)
+			{
+				_users.Remove(userToBeDeleted);
+                JsonFileUserService.SaveJsonUsers(_users);
+			}
+
+			return userToBeDeleted;
+		}
+
+		public List<User> GetUsers() { return _users; }
     }
 }
