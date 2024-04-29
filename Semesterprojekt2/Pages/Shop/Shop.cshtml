@@ -154,10 +154,9 @@
             {
                 <div class="card">
                     <a href="@Url.Page("/Shop/Products/DetailProduct", new { id = product.Id })" style="text-decoration:none; color:inherit; display:block; position:relative;">
-                        <img src="/Images/Shop/testbillede.jpg" alt="Product Image" style="width:80%">
+                        <img src="/Images/Shop/testbillede.jpg" alt="Product Image" style="width:100%">
                         <h3 style="color: #C65127;">@product.Name</h3>
-                        <p class="price">@product.Price</p>
-                        <p class="description">@product.Description</p>
+                        <p style=" margin-bottom: 50px;" class="price">@product.Price,-</p> </a>
                     <p style="position: absolute; bottom:-16px; right: 0px; left: 0px;"><button onclick="event.stopPropagation();">Add to Cart</button></p>
                 </div>
             }

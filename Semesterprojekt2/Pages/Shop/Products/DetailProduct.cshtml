@@ -24,12 +24,11 @@
         }
 
             .product-image img {
-                max-width: 90%;
+                max-width: 80%;
                 height: auto;
             }
 
         .product-details {
-            margin-left: 20px;
             flex-grow: 1;
         }
 
@@ -43,20 +42,52 @@
                 font-weight: bold;
             }
 
-        .add-to-cart {
+            .product-details .brand {
+                margin: 5px 0;
+            }
+
+        .product-actions {
+            margin-top: 20px;
+        }
+
+        .btn {
             display: block;
             width: max-content;
             padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #000;
+            margin-top: 10px; /* Adjust as needed */
+            text-align: center;
+            text-decoration: none;
             color: #fff;
+            background-color: #000;
             border: none;
             cursor: pointer;
         }
 
-            .add-to-cart:hover {
-                opacity: 0.8;
-            }
+        .add-to-cart {
+            display: block;
+            padding: 10px 20px;
+            width: 50%; /* This will make the 'Add to Cart' button longer */
+            box-sizing: border-box; /* Ensures padding is included in width */
+            margin-bottom: 10px; /* Adds space between this and the next set of buttons */
+        }
+
+        /* Container for Edit/Delete which will align them side by side */
+        .edit-delete-container {
+            display: flex;
+            justify-content: space-between; /* Spaces out buttons */
+            width: 50%; /* Same width as the 'Add to Cart' button */
+            box-sizing: border-box; /* Ensures padding is included in width */
+            background-color: #C65127;
+        }
+
+        /* Style for both Edit and Delete buttons */
+        .edit-button, .delete-button {
+            flex: 1; /* Each button takes up half the width of their container */
+            margin: 0 5px; /* Add some space between the buttons */
+            width: 50%;
+            background-color: #C65127;
+        }
+
 
     </style>
 </head>
@@ -64,18 +95,22 @@
     <main>
         <div class="product-container">
             <div class="product-image">
-                <img src="~/images/Shop/@Model.Product.ProductImage"  />
+                <img src="~/images/Shop/@Model.Product.ProductImage" />
             </div>
             <div class="product-details">
                 <h1>@Model.Product.Name</h1>
-                <p>@Model.Product.Description</p>
                 <p class="price">@Model.Product.Price,-</p>
-                <p>Brand: @Model.Product.Brand</p>
-            </div>
-            <div>
-                <button class="add-to-cart">Add to cart</button>
-            <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Shop/Products/EditProduct" asp-route-id="@Model.Product.Id">Edit</a>
-            <a class="btn btn-danger btn-sm" title="Delete" asp-page="/Shop/Products/DeleteProduct" asp-route-id="@Model.Product.Id">Delete</a>
+                <p class="brand">Brand: @Model.Product.Brand</p>
+                <p>@Model.Product.Description</p>
+
+                <!-- Actions (buttons/links) now under product details -->
+                <div class="product-actions">
+                    <button class="btn add-to-cart">Add to cart</button>
+                    <div class="edit-delete-container">
+                        <a class="btn btn-primary edit-button" title="Edit" asp-page="/Shop/Products/EditProduct" asp-route-id="@Model.Product.Id">Edit</a>
+                        <a class="btn btn-danger delete-button" title="Delete" asp-page="/Shop/Products/DeleteProduct" asp-route-id="@Model.Product.Id">Delete</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
