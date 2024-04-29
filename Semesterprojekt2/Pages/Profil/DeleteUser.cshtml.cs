@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Semesterprojekt2.Service;
+using Semesterprojekt2.Service.UserService.UserService;
 
 namespace Semesterprojekt2.Pages.Profil
 {
@@ -32,7 +32,7 @@ namespace Semesterprojekt2.Pages.Profil
             if (deletedUser == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 
-            return RedirectToPage("/Shop/Shop");
+            return RedirectToPage("/Index");
         }
     }
 }
