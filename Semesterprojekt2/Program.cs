@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using Semesterprojekt2.Service;
 using Semesterprojekt2.Service.BookATimeService;
 using Semesterprojekt2.Service.UserService;
@@ -10,8 +12,27 @@ builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IBookATimeService, BookATimeService>();
 builder.Services.AddSingleton<IProductService, ProductService>();
 builder.Services.AddTransient<JsonFileProductService>();
+<<<<<<< Updated upstream
 builder.Services.AddSingleton<IUserService, UserService>();
 builder.Services.AddSingleton<YdelseService, YdelseService>();
+=======
+builder.Services.AddSingleton<UserService, UserService>();
+
+builder.Services.Configure<CookiePolicyOptions>(options => {
+    // This lambda determines whether user consent for non-essential cookies is needed for a given request. options.CheckConsentNeeded = context => true;
+    options.MinimumSameSitePolicy = SameSiteMode.None;
+
+});
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(cookieOptions => {
+    cookieOptions.LoginPath = "/Login/Login";
+
+});
+builder.Services.AddMvc().AddRazorPagesOptions(options => {
+    options.Conventions.AuthorizeFolder("/Item");
+
+}).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+>>>>>>> Stashed changes
 
 var app = builder.Build();
 
@@ -27,6 +48,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

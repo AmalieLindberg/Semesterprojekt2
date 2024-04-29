@@ -1,9 +1,19 @@
+<<<<<<< Updated upstream
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Models;
 using Semesterprojekt2.Service.UserService.UserService;
+=======
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Semesterprojekt2.Models;
+using Semesterprojekt2.Service;
+>>>>>>> Stashed changes
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 
@@ -29,7 +39,11 @@ namespace Semesterprojekt2.Pages.Login
         public async Task<IActionResult> OnPost()
         {
 
+<<<<<<< Updated upstream
             List<User> users = _userService._users;
+=======
+            List<User> users = _userService.Users;
+>>>>>>> Stashed changes
             foreach (User user in users)
             {
 
@@ -51,5 +65,10 @@ namespace Semesterprojekt2.Pages.Login
             Message = "Invalid attempt";
             return Page();
         }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     }
+
 }
