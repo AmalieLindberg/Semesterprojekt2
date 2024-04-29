@@ -13,14 +13,19 @@ namespace Semesterprojekt2.Pages.Login
     {
 
         public static User LoggedInUser { get; set; } = null;
-        private UserService _userService;
+        private IUserService _userService;
 
         [BindProperty]
-        public string UserName { get; set; }
+        public string Email { get; set; }
 
         [BindProperty, DataType(DataType.Password)]
         public string Password { get; set; }
         public string Message { get; set; }
+
+        public LoginModel(IUserService userService)
+        {
+            _userService = userService;
+        }
 
         public void OnGet()
         {
@@ -29,16 +34,16 @@ namespace Semesterprojekt2.Pages.Login
         public async Task<IActionResult> OnPost()
         {
 
-            List<User> users = _userService._users;
+            List<User> users = _userService.GetUsers();
             foreach (User user in users)
             {
 
-                if (UserName == user.Name && Password == user.Password)
+                if (Email == user.Email && Password == user.Password)
                 {
 
                     LoggedInUser = user;
 
-                    var claims = new List<Claim> { new Claim(ClaimTypes.Name, UserName) };
+                    var claims = new List<Claim> { new Claim(ClaimTypes.Email, Password) };
 
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
