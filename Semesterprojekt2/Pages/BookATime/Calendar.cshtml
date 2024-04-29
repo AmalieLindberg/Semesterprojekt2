@@ -1,5 +1,6 @@
 ﻿@page
 @using Semesterprojekt2.Service;
+@using Semesterprojekt2.Service.BookATimeService;
 @model Semesterprojekt2.Pages.BookATime.CalendarModel
 @{
 }
@@ -48,6 +49,12 @@
                     background-color:#F0E9AA;  
                     color: dimgrey; 
                 }
+                 .red-day
+                {
+                    background-color:#EAA193;
+                    
+                }
+
                     /* Røde: */ /* #EAA193 */
            .skrift-mellem-månederne 
                 {
@@ -104,6 +111,7 @@
                 .Red
                 {
                     background-color:#EAA193;
+                    
                 }
                 .Skriftmellemmånderne
                 {
@@ -118,6 +126,15 @@
                     text-decoration: none; /* removes underline */
                     cursor: pointer; /* Bevarer musepeger som klikbar */
                  }
+                   .transparent-select 
+                {
+                    background-color: transparent; /* Gør baggrunden gennemsigtig */
+                    border: none; /* Fjerner rammen */
+                    color: black; /* Sætter tekstfarven til sort eller enhver farve der matcher baggrunden */
+                    -webkit-appearance: none; /* Fjerner standard browser styling for WebKit-browsere */
+                    -moz-appearance: none; /* Fjerner standard browser styling for Mozilla Firefox */
+                    appearance: none; /* Fjerner standard browser styling */
+                }
         </style>
     </head>
     <body>
@@ -160,7 +177,103 @@
             </div>
         </div>       
         <br />
-    <table>
+         <table>
+        @{
+            int dayCounter = 0; // Initialize the counter for days in the week. hvorfor vi starter på 0?
+            // Når man arbejder med tællere i programmering, starter man ofte fra 0 afhængigt af konteksten. Dette skyldes, at mange programmeringssprog og datamodeller bruger 0-baserede indeksering.
+           
+            DateTime today = DateTime.Today; 
+
+           
+        
+    //         var bookedTimesDict = new Dictionary<DateTime, List<string>>();
+           
+    //          for (int day = 1; day <= DateTime.DaysInMonth(Model.Year, Model.Month); day++)
+    // {
+    //     var date = new DateTime(Model.Year, Model.Month, day);
+    //     var bookedTimes = await TidsbestillingService.GetBookedTimesForDate(date);
+    //     bookedTimesDict[date] = bookedTimes;
+    // }
+
+    
+        }
+       
+        <tr>
+            @foreach (var day in Model.DaysInMonth)
+            {
+              
+            DateTime date = new DateTime(Model.Year, Model.Month, day);
+            string dayClass = date < today ? "past-day" : (Model.DayClasses.ContainsKey(date) ? Model.DayClasses[date] : "");           
+            var availableTimes = Model.AvailableTimesDict.ContainsKey(date) ? Model.AvailableTimesDict[date] : new List<string>();
+
+                if (dayCounter == 7)
+                {
+                    // When there are 7 days, close the current row and start a new one
+                    @: </tr><tr>
+                    dayCounter = 0; // Reset the counter for the new row
+                }
+         
+                @*    string dayClass = TidsbestillingService.GetDayClass(date); *@
+
+
+                // Denne linje bestemmer CSS-klassen for en given dag. 
+                // Hvis 'currentDate' repræsenterer en dato, der allerede er forbi (dvs. før 'today'), 
+                // bliver 'dayClass' sat til "past-day".
+                // Hvis 'currentDate' er i dag eller i fremtiden, hentes klassen ved at kalde 'GetDayClass' metoden.
+             // Denne boolean ('isPast') er sand (true), hvis 'currentDate' er før 'today', hvilket indikerer 
+                // at det er en dato i fortiden. Denne værdi bruges til at afgøre, om den tilsvarende dag 
+                // skal kunne klikkes på eller ej i brugergrænsefladen.
+                bool isPast = date < today;
+             
+               
+                <td class="@dayClass">
+                    @if (!isPast)
+                    {
+
+                        <form method="post">
+
+                            <input type="hidden" name="Year" value="@Model.Year" />
+                            <input type="hidden" name="Month" value="@Model.Month" />
+                            <input type="hidden" name="Day" value="@day" />
+                            
+                           
+                           
+                        <select asp-for="Tidspunkt" required class="transparent-select">
+                            @foreach(var time in availableTimes)
+                            {
+                            
+                                <option value="@time">@time</option>
+                                
+                            }
+                        </select> 
+                        <br />
+                        <button type="submit" class="button-like-text">@day</button>
+                        </form>
+
+                         
+                       
+
+
+                    }
+                    else
+                    {
+                        @day
+                    }
+                </td>
+
+                dayCounter++; // Increment the counter
+            }
+    
+            @if (dayCounter > 0)
+            {
+                // Close the last row if it's not empty
+        <tr> </tr>
+            }
+      
+    </table>
+       
+ @* Første forsøg!! gem hvis noget går forkert
+     <table>
         @{
             int dayCounter = 0; // Initialize the counter for days in the week. hvorfor vi starter på 0?
             // Når man arbejder med tællere i programmering, starter man ofte fra 0 afhængigt af konteksten. Dette skyldes, at mange programmeringssprog og datamodeller bruger 0-baserede indeksering.
@@ -219,7 +332,7 @@
         <tr> </tr>
             }
       
-    </table>
+    </table> *@
        
 
   </body>

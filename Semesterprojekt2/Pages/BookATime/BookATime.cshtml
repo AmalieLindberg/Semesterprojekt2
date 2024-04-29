@@ -1,6 +1,214 @@
 ﻿@page
+@using Semesterprojekt2.Models.BookATime
 @model Semesterprojekt2.Pages.BookATime.BookATimeModel
 @{
 }
 
-<center><h1>Book A Time</h1></center>
+<html>
+<style>
+    .text-box {
+        width: 390px; /*    Bestemmer bredde på element (i dette tilfælde 390px) */
+        resize: none; /* Gør at bruger ikke kan ændre på størrelse af textarea'en */
+        overflow: auto; /* Gør at hvis bruger skriver mere end det synlige området så styre hvordan den skal håndtere  */
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+</style>
+<body>
+    <h2>
+        Booking for @Model.Day-@Model.Month-@Model.Year @Model.Tidspunkt
+    </h2>
+
+    <hr />
+
+
+
+    <div class="Alle">
+        <form method="post" enctype="multipart/form-data">
+            @if (@Model.fuldDatoOgTid.DayOfWeek == DayOfWeek.Wednesday ||
+            @Model.fuldDatoOgTid.DayOfWeek == DayOfWeek.Thursday ||
+            @Model.fuldDatoOgTid.DayOfWeek == DayOfWeek.Friday)
+            {
+                <h4>Du er ved at booke en tid i salonen</h4>
+                <div class="form-group">
+
+                    <input asp-for="BookATime.DateForBooking" readonly class="text-box" value="@Model.fuldDatoOgTid.ToString("yyyy-MM-dd HH:mm")" />
+                  
+                </div>
+
+
+
+                <div class="form-group">
+                    <label asp-for="User.Name" class="control-lable">Your name:</label> <br />
+                    <input asp-for="User.Name" class="text-box" />
+                    <span asp-validation-for="User.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="User.Email" class="control-lable">Your Email:</label> <br />
+                    <input asp-for="User.Email" class="text-box" />
+                    <span asp-validation-for="User.Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="User.Telefonnummer" class="control-lable">Your phonenummer:</label> <br />
+                    <input asp-for="User.Telefonnummer" class="text-box">
+                    <span asp-validation-for="User.Telefonnummer" class="text-danger"></span>
+                </div>
+               
+                <div class="form-group">
+                    <label asp-for="Ydelse.Type"> Which Service Type: </label> <br />
+                    <select asp-for="Ydelse.Type" asp-items="Html.GetEnumSelectList<ServiceType>()" class="text-box"></select>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Ydelse.HundeStørrelse"> Which dog size: </label> <br />
+                    <select asp-for="Ydelse.HundeStørrelse" asp-items="Html.GetEnumSelectList<DogSize>()" class="text-box"></select>
+                </div>
+               
+                <div class="form-group">
+                    <div class="form-group">
+                        <label asp-for="@Model.DogPhoto" class="control-label"></label>
+                        <div class="custom-file">
+                            <input asp-for="@Model.DogPhoto" class="custom-file-input text-box" />
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="BookATime.Kommentar" class="control-lable"> Do you have any comments on how your dog's haircut should look?:    </label>
+                    <br />
+                    <textarea asp-for="BookATime.Kommentar" rows="4" cols="50"> </textarea>
+                </div>
+
+                <input type="submit" value="Book nu" />
+                <div class="form-group">
+                    <label asp-for="@Model.BathPhoto" class="control-label" hidden></label>
+                    <div class="custom-file">
+                        <input asp-for="@Model.BathPhoto" class="custom-file-input text-box" hidden />
+                    </div>
+                </div>
+                
+
+                <div class="form-group">
+                    <label hidden asp-for="User.Password" class="control-lable">Email:</label> <br />
+                    <input hidden asp-for="User.Password" class="text-box" />
+                    <span hidden asp-validation-for="User.Password" class="text-danger"></span>
+                </div>
+            }
+        </form>
+
+
+
+
+
+        <form method="post" enctype="multipart/form-data">
+            @if (@Model.fuldDatoOgTid.DayOfWeek == DayOfWeek.Saturday ||
+            @Model.fuldDatoOgTid.DayOfWeek == DayOfWeek.Sunday ||
+            @Model.fuldDatoOgTid.DayOfWeek == DayOfWeek.Monday ||
+            @Model.fuldDatoOgTid.DayOfWeek == DayOfWeek.Tuesday)
+            {
+                <h4>  You are about to book an appointment at your home. </h4>
+                <p style="text-align:center">
+                    <b>
+                        Remember!! There is an extra charge for the distance from my home. It can be seen here.
+
+                    </b>
+                </p>
+                <div class="form-group">
+
+                    <input asp-for="BookATime.DateForBooking" readonly class="text-box" value="@Model.fuldDatoOgTid.ToString("yyyy-MM-dd HH:mm")" />
+                    @*    <!-- Dette felt er skrivebeskyttet og bruges kun til at vise dato og tidspunkt for brugeren -->
+                <input readonly asp-for="fuldDatoOgTid" class="text-box" />
+
+                <!-- Dette skjulte felt bruges til at sende den fulde dato og tid tilbage til serveren når formen indsendes -->
+                <input asp-for="Tidsbestilling.Dato" type="hidden" value="@Model.fuldDatoOgTid.ToString("yyyy-MM-dd HH:mm")" /> *@
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Ydelse.Type"> Which Service Type: </label> <br />
+                    <select asp-for="Ydelse.Type" asp-items="Html.GetEnumSelectList<ServiceType>()" class="text-box"></select>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Ydelse.HundeStørrelse"> Which dog size: </label> <br />
+                    <select asp-for="Ydelse.HundeStørrelse" asp-items="Html.GetEnumSelectList<DogSize>()" class="text-box"></select>
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="User.Name" class="control-lable">Your name:</label> <br />
+                    <input asp-for="User.Name" class="text-box" />
+                    <span asp-validation-for="User.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="User.Email" class="control-lable">Your email:</label> <br />
+                    <input asp-for="User.Email" class="text-box" />
+                    <span asp-validation-for="User.Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="User.Telefonnummer" class="control-lable">Your phone number:</label> <br />
+                    <input asp-for="User.Telefonnummer" class="text-box">
+                    <span asp-validation-for="User.Telefonnummer" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="form-group">
+                        <label asp-for="@Model.DogPhoto" class="control-label">Please upload a image of your dog:</label>
+                        <div class="custom-file">
+                            <input asp-for="@Model.DogPhoto" class="custom-file-input text-box" required />
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="@Model.BathPhoto" class="control-label">Please upload a image of your bathroom:</label>
+                    <div class="custom-file">
+                        <input asp-for="@Model.BathPhoto" class="custom-file-input text-box" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="BookATime.Elevator" class="control-lable">Do you have an elevator?</label> <br />
+                    <select asp-for="BookATime.Elevator" class="text-box">
+                        <option value="True">Ja</option>
+                        <option value="False">Nej</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BookATime.Floor" class="control-lable">Which floor do you live on?</label> <br />
+                    <input asp-for="BookATime.Floor" class="text-box" required />
+                    <span asp-validation-for="BookATime.Floor" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="BookATime.Kommentar" class="control-lable">  du nogle kommentar til hvordan klipning af din hunde skal se ud: </label>
+                    <br />
+                    <textarea asp-for="BookATime.Kommentar" rows="4" cols="50"> </textarea>
+                </div>
+
+                <input type="submit" value="Book nu" />
+               
+
+                <div class="form-group">
+                    <label hidden asp-for="User.Password" class="control-lable">Password:</label> <br />
+                    <input hidden asp-for="User.Password" class="text-box" />
+                    <span hidden asp-validation-for="User.Password" class="text-danger"></span>
+                </div>
+            }
+        </form>
+
+    </div>
+</body>
+</html>
