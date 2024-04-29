@@ -1,5 +1,7 @@
 using Semesterprojekt2.Service;
 using Semesterprojekt2.Service.BookATimeService;
+using Semesterprojekt2.Service.UserService;
+using Semesterprojekt2.Service.UserService.UserService;
 
 var builder = WebApplication.CreateBuilder(args);
 

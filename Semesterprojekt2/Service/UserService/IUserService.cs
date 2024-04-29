@@ -1,7 +1,7 @@
 ﻿using Semesterprojekt2.Models.Shop;
 using Semesterprojekt2.Models;
 
-namespace Semesterprojekt2.Service
+namespace Semesterprojekt2.Service.UserService.UserService
 {
     public interface IUserService
     {

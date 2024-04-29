@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Models;
-using Semesterprojekt2.Service;
+using Semesterprojekt2.Service.UserService.UserService;
 
 namespace Semesterprojekt2.Pages.Profil
 {

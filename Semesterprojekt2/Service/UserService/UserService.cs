@@ -1,9 +1,7 @@
 ﻿using Semesterprojekt2.MockData.Profil;
-using Semesterprojekt2.MockData.Shop;
 using Semesterprojekt2.Models;
-using Semesterprojekt2.Models.Shop;
 
-namespace Semesterprojekt2.Service
+namespace Semesterprojekt2.Service.UserService.UserService
 {
     public class UserService : IUserService
     {
