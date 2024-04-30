@@ -17,18 +17,21 @@ namespace Semesterprojekt2.Models
         [Required]
         public string Name { get; set; }
         [Required]
-        public int Telefonnummer { get; set; }
+        public string Telefonnummer { get; set; }
         [Required, EmailAddress]
         public string Email { get; set; }
         
         public string Role { get; set; }
 
-        public User(string password, string name, int telefonnummer, string email)
+        public string ConfirmPassword { get; set; }
+
+        public User(string password, string name, string telefonnummer, string email, string role)
         {
             Password = password;
             Name = name;
             Telefonnummer = telefonnummer;
             Email = email;
+            Role = role;
         }
 
         public User()
@@ -36,7 +39,7 @@ namespace Semesterprojekt2.Models
          
             Password = "";
             Name = "";
-            Telefonnummer = 0;
+            Telefonnummer = "";
             Email = "";
         }
 
