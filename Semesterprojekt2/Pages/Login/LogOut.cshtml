@@ -2,3 +2,24 @@
 @model Semesterprojekt2.Pages.Login.LogOutModel
 @{
 }
+
+<ul class="navbar-nav">
+    @{
+        if (LoginModel.LoggedInUser == null)
+        {
+            <li class="nav-item">
+                <a class="nav-link text-white" asp-area="" asp-page="/Login/Login">Login</a>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item nav-link text-white me-3">
+                User: @LoginModel.LoggedInUser.Email
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" asp-area="" asp-page="/Login/LogOut">Logout</a>
+            </li>
+        }
+    }
+</ul>
