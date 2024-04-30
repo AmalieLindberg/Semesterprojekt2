@@ -4,6 +4,7 @@ using Semesterprojekt2.Service;
 using Semesterprojekt2.Service.BookATimeService;
 using System.Diagnostics;
 using Semesterprojekt2.Models.BookATime;
+using Semesterprojekt2.Service.UserService.UserService;
 
 namespace Semesterprojekt2.Pages.BookATime
 {
@@ -18,6 +19,8 @@ namespace Semesterprojekt2.Pages.BookATime
 
         [BindProperty]
         public Models.User User { get; set; }
+        [BindProperty]
+        public Models.Dog Dog { get; set; }
 
         // Ensure these properties are bound correctly in the form
         //Når du sætter SupportsGet = true, fortæller man ASP.NET Core,
@@ -41,17 +44,18 @@ namespace Semesterprojekt2.Pages.BookATime
         public IFormFile? DogPhoto { get; set; }
         [BindProperty]
         public IFormFile? BathPhoto { get; set; }
-        private readonly IBookATimeService _bookATimeService;
-       
-        private readonly YdelseService _ydelseService;
-        //private readonly IUserService _userService;
 
-        public BookATimeModel(IBookATimeService bookATimeService/*, IUserService userService*/, YdelseService ydelseService, IWebHostEnvironment webHostEnvironment)
+        private readonly IBookATimeService _bookATimeService;
+        private readonly YdelseService _ydelseService;
+        private readonly IUserService _userService;
+        private readonly DogService _dogService;
+        public BookATimeModel(IBookATimeService bookATimeService, IUserService userService, YdelseService ydelseService, IWebHostEnvironment webHostEnvironment, DogService dogService)
         {
             _bookATimeService = bookATimeService;
-            //_userService = userService;
+            _userService = userService;
             _ydelseService = ydelseService;
             _webHostEnvironment = webHostEnvironment;
+            _dogService = dogService;
         }
 
         public void OnGet()
@@ -144,9 +148,6 @@ namespace Semesterprojekt2.Pages.BookATime
             BookATime.YdelseId = Ydelse.Id;
           _bookATimeService.addTidsbestilling(BookATime);
 
-
-
-
             return RedirectToPage("/Index");
         }
 
@@ -168,7 +169,7 @@ namespace Semesterprojekt2.Pages.BookATime
         private string ProcessUploadedBathFile()
         {
             string uniqueFileName = null;
-            if (DogPhoto != null)
+            if (BathPhoto != null)
             {
                 string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "ImagesForBookATime", "Bath");
                 uniqueFileName = Guid.NewGuid().ToString() + "_" + BathPhoto.FileName;

@@ -5,8 +5,10 @@ namespace Semesterprojekt2.Models.BookATime
 {
     public class BookATime
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //Vi skal ikke brug dem, da vi oprette database manuelt hvis vi har oprette den via Entity Framework.
+        //havde vi brugt denne til at fortælle database hvad.
+        //[Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string? Kommentar { get; set; }
         [Required]
@@ -20,7 +22,7 @@ namespace Semesterprojekt2.Models.BookATime
         public string? BathRoomImage { get; set; }
 
         public bool? Elevator { get; set; }
-        public string? Floor { get; set; }
+        public string? Floors { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
 
@@ -36,7 +38,7 @@ namespace Semesterprojekt2.Models.BookATime
         [Required]
         public int DogId { get; set; }
         public Dog Dog { get; set; }
-        public string Status { get; set; }
+        public string StatusForBooking { get; set; }
         public BookATime(string kommentar, DateTime Date, Ydelse ydelse, User user, Dog dog)
         {
 

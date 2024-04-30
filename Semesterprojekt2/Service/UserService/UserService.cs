@@ -7,26 +7,28 @@ namespace Semesterprojekt2.Service.UserService.UserService
     {
         public List<User> _users { get; set; }
 
-		private JsonFileUserService JsonFileUserService { get; set; }
+        private JsonFileUserService _jsonFileUserService { get; set; }
 
-		public UserService(JsonFileUserService jsonFileUserService)
-		{
-			_users = MockUsers.GetMockUser();
-			JsonFileUserService = jsonFileUserService;
-			//_users = JsonFileUserService.GetJsonUsers().ToList();
-			JsonFileUserService.SaveJsonUsers(_users);
-		}
+        public UserService(JsonFileUserService jsonFileUserService)
+        {
+            _users = MockUsers.GetMockUser();
+            _jsonFileUserService = jsonFileUserService;
+            //_users = JsonFileUserService.GetJsonUsers().ToList();
+            _jsonFileUserService.SaveJsonUsers(_users);
 
-		public UserService()
-		{
-			_users = MockUsers.GetMockUser().ToList();
-		}
 
-		public void AddUser(User user)
+        }
+
+        public UserService()
+        {
+            _users = MockUsers.GetMockUser().ToList();
+        }
+
+        public void AddUser(User user)
         {
             _users.Add(user);
-            JsonFileUserService.SaveJsonUsers(_users);
-		}
+            _jsonFileUserService.SaveJsonUsers(_users);
+        }
 
         public User GetUser(int id)
         {
@@ -53,31 +55,31 @@ namespace Semesterprojekt2.Service.UserService.UserService
                         u.Telefonnummer = user.Telefonnummer;
                     }
                 }
-                JsonFileUserService.SaveJsonUsers(_users);
-			}
+                _jsonFileUserService.SaveJsonUsers(_users);
+            }
         }
 
-		public User DeleteUser(int? userId)
-		{
-			User userToBeDeleted = null;
-			foreach (User user in _users)
-			{
-				if (user.UserId == userId)
-				{
+        public User DeleteUser(int? userId)
+        {
+            User userToBeDeleted = null;
+            foreach (User user in _users)
+            {
+                if (user.UserId == userId)
+                {
                     userToBeDeleted = user;
-					break;
-				}
-			}
+                    break;
+                }
+            }
 
-			if (userToBeDeleted != null)
-			{
-				_users.Remove(userToBeDeleted);
-                JsonFileUserService.SaveJsonUsers(_users);
-			}
+            if (userToBeDeleted != null)
+            {
+                _users.Remove(userToBeDeleted);
+                _jsonFileUserService.SaveJsonUsers(_users);
+            }
 
-			return userToBeDeleted;
-		}
+            return userToBeDeleted;
+        }
 
-		public List<User> GetUsers() { return _users; }
+        public List<User> GetUsers() { return _users; }
     }
 }
