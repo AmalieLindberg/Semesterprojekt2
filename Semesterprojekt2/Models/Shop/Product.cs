@@ -4,11 +4,15 @@ namespace Semesterprojekt2.Models.Shop
 {
     public class Product
     {
+        // En statisk variabel til at holde styr på det næste unikke ID for et produkt.
         private static int nextId = 1;
-        public int Id { get; set; }
+		// En property til at repræsentere produktets ID.
+		public int Id { get; set; }
 
-        [Display(Name = "Name")]
-        [Required(ErrorMessage = "The product must be given a name")]
+		// [Display(Name = "Name")] - Annoteringen bruges til at vise et label i brugergrænsefladen.
+		[Display(Name = "Name")]
+		// [Required(ErrorMessage = "The product must be given a name")] - Gør feltet obligatorisk og angiver en fejlbesked.
+		[Required(ErrorMessage = "The product must be given a name")]
         public string? Name { get; set; }
 
         [Display(Name = "Price")]
@@ -35,7 +39,8 @@ namespace Semesterprojekt2.Models.Shop
         [Required(ErrorMessage = "The product must be given an image")]
         public string? ProductImage { get; set; }
 
-        public enum ProductType
+		// En enumeration der definerer de forskellige typer af produkter som kan eksistere.
+		public enum ProductType
         {
             Clothing,
             Soap,
@@ -43,10 +48,11 @@ namespace Semesterprojekt2.Models.Shop
             Toy
         }
 
-        public Product(string name, double price, ProductType type, string brand, int amount, string description)
+		// En konstruktør der initialiserer et nyt produkt med specifikke værdier for hver egenskab.
+		public Product(string name, double price, ProductType type, string brand, int amount, string description)
         {
-            Id = nextId++;
-            Name = name;
+            Id = nextId++; // Tildeler et unikt ID til produktet og inkrementerer det næste ID.
+			Name = name;
             Price = price;
             Type = type;
             Brand = brand;
@@ -54,7 +60,8 @@ namespace Semesterprojekt2.Models.Shop
             Description = description;
         }
 
-        public Product()
+		// En standard konstruktør uden parametre. Dette er nyttigt, hvis man opretter et produkt uden straks at kende alle detaljerne.
+		public Product()
         {
         }
     }

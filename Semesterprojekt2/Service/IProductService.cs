@@ -5,7 +5,7 @@ namespace Semesterprojekt2.Service
     public interface IProductService
     {
         List<Product> GetProducts();
-        void AddProduct(Product product);
+        Task AddProductAsync(Product product);
         void UpdateProduct(Product product);
         Product GetProduct(int id);
         Product DeleteProduct(int? productId);

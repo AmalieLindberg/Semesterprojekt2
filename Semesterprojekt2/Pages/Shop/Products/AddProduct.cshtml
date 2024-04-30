@@ -2,14 +2,18 @@
 @model Semesterprojekt2.Pages.Shop.Products.AddProductModel
 @{
 }
+<!-- Overskrift for siden, hvor man kan oprette et nyt produkt -->
 <h1>Create new Product</h1>
 
-<form method="post">
+<!-- Formular til at tilføje et nyt produkt. Bruger POST metode og understøtter filupload. -->
+<form method="post" enctype="multipart/form-data">
+	<!-- Formularfelt for produktnavn. -->
 	<div class="form-group">
 		<label asp-for="@Model.Product.Name" class="control-label"></label>
 		<input asp-for="@Model.Product.Name" class="form-control" />
 		<span asp-validation-for="Product.Name" class="text-danger"></span>
 	</div>
+	<!-- -||- -->
 	<div class="form-group">
 		<label asp-for="@Model.Product.Price" class="control-label"></label>
 		<input asp-for="@Model.Product.Price" class="form-control" />
@@ -35,12 +39,16 @@
 		<input asp-for="@Model.Product.Description" class="form-control" />
 		<span asp-validation-for="Product.Description" class="text-danger"></span>
 	</div>
+	<!-- Formularfelt for produktbillede med tilpasset filvælger. -->
 	<div class="form-group">
 		<label asp-for="@Model.Product.ProductImage" class="control-label"></label>
-		<input asp-for="@Model.Product.ProductImage" class="form-control" />
-		<span asp-validation-for="Product.ProductImage" class="text-danger"></span>
+		<div class="custom-file">
+			<input asp-for="@Model.Product.ProductImage" class="custom-file-input form-control" />
+			<label class="custom-file-label">Save photo</label>
+		</div>
 	</div>
 
+	<!-- Submit-knap til at sende formular data. -->
 	<p>
 		<div class="form-group">
 			<input type="submit" value="Create" class="btn btn-primary" />

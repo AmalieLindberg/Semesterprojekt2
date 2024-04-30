@@ -2,17 +2,20 @@
 @model Semesterprojekt2.Pages.Shop.Products.EditProductModel
 @{
 }
-
+<!-- Formularopsætning til at sende opdateringer af produktet via POST-metoden -->
 <form method="post">
+	<!-- Produktets ID-felt (skrivebeskyttet), der unikt identificerer produktet under opdateringsoperationer -->
 	<div class="form-group">
 		<label asp-for="Product.Id" class="control-label"></label>
 		<input asp-for="Product.Id" class="form-control" readonly="@(true)" />
 	</div>
+	<!-- Produktets navn felt med valideringsfeedback -->
 	<div class="form-group">
 		<label asp-for="Product.Name" class="control-label"></label>
 		<input asp-for="Product.Name" class="form-control" />
 		<span asp-validation-for="Product.Name" class="text-danger"></span>
 	</div>
+	<!-- -||- -->
 	<div class="form-group">
 		<label asp-for="Product.Price" class="control-label"></label>
 		<input asp-for="Product.Price" class="form-control" />
@@ -38,18 +41,22 @@
 		<input asp-for="Product.Description" class="form-control" />
 		<span asp-validation-for="Product.Description" class="text-danger"></span>
 	</div>
+	<!-- Produktbillede upload med tilpasset filinput-stil -->
 	<div class="form-group">
-		<label asp-for="Product.ProductImage" class="control-label"></label>
-		<input asp-for="Product.ProductImage" class="form-control" />
-		<span asp-validation-for="Product.ProductImage" class="text-danger"></span>
+		<label asp-for="@Model.Product.ProductImage" class="control-label"></label>
+		<div class="custom-file">
+			<input asp-for="@Model.Product.ProductImage" class="custom-file-input form-control" />
+			<label class="custom-file-label">Save picture</label>
+		</div>
 	</div>
+	<!-- Send-knap for formularen -->
 	<p>
 		<div class="form-group">
 			<input type="submit" value="Update" class="btn btn-primary" />
 		</div>
 	</p>
 </form>
-
+<!-- Link tilbage til produktlistesiden -->
 <p>
 	<a asp-page="/Shop/Shop">Back to List</a>
 </p>

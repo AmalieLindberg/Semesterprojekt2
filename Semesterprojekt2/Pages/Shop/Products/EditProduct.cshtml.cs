@@ -5,36 +5,47 @@ using Semesterprojekt2.Service;
 
 namespace Semesterprojekt2.Pages.Shop.Products
 {
-    public class EditProductModel : PageModel
+	// Denne klasse håndterer logikken bag redigering af et eksisterende produkt.
+	public class EditProductModel : PageModel
     {
-        private IProductService _productService;
+		// Reference til en service, der styrer produktrelaterede dataoperationer.
+		private IProductService _productService;
 
-        public EditProductModel(IProductService productService)
+		// Konstruktør, der initialiserer productService via dependency injection.
+		public EditProductModel(IProductService productService)
         {
             _productService = productService;
         }
 
-        [BindProperty]
+		// Denne property binder automatisk modellen fra en HTTP-forespørgsel til produktet.
+		[BindProperty]
         public Models.Shop.Product Product { get; set; }
 
-        public IActionResult OnGet(int id)
+		// OnGet metoden kaldes ved GET-forespørgsler og bruges til at indlæse produktet fra databasen baseret på et produkt-id.
+		public IActionResult OnGet(int id)
         {
+            // Henter et produkt baseret på id. Bruger _productService for at tilgå produktinformationerne.
             Product = _productService.GetProduct(id);
-            if (Product == null)
-                return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
-
-            return Page();
+			// Hvis det anmodede produkt ikke findes, omdirigeres brugeren til en 'Ikke fundet' side.
+			if (Product == null)
+                return RedirectToPage("/NotFound");
+	        // Returnerer den aktuelle side med produktinformationen klar til redigering.
+			return Page();
         }
 
-        public IActionResult OnPost()
-        {
-            if (!ModelState.IsValid)
-            {
-                return Page();
-            }
-
-            _productService.UpdateProduct(Product);
-            return RedirectToPage("/Shop/Shop");
+		// OnPost metoden kaldes ved POST-forespørgsler, når formen indsendes, og håndterer opdatering af produktet.
+		public IActionResult OnPost()
+		{
+			// Tjekker at ModelState er gyldig (alle form-krav er opfyldt).
+			if (!ModelState.IsValid)
+			{
+				// Returnerer den samme side for at tillade korrektion af formularindtastninger.
+				return Page();
+			}
+			// Opdaterer produktet i databasen via productService.
+			_productService.UpdateProduct(Product);
+			// Efter succesfuld opdatering omdirigeres brugeren til produktoverblikssiden.
+			return RedirectToPage("/Shop/Shop");
         }
     }
 }

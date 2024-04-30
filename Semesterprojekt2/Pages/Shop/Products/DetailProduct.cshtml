@@ -7,85 +7,84 @@
     <title>Product Page</title>
     <style>
         body {
-            font-family: 'Lato', sans-serif;
-            background-color: rgba(198, 81, 39, 0.08);
+            font-family: 'Lato', sans-serif; /* Sætter skrifttypen for siden */
+            background-color: rgba(198, 81, 39, 0.08); /* Let orange baggrundsfarve */
         }
 
+        /* Container der centrerer produktinformationen og giver spacing */
         .product-container {
-            display: flex;
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
+            display: flex; /* Flexbox til at arrangere billede og detaljer side om side */
+            padding: 20px; /* Afstand inden i containeren */
+            max-width: 1200px; /* Maksimal bredde for at undgå for bred visning */
+            margin: auto; /* Centrerer containeren horisontalt */
         }
 
+        /* Styling specifikt for produktbilledet */
         .product-image {
-            flex: 0 1 auto;
-            width: 50%;
+            flex: 0 1 auto; /* Flex item der ikke vokser, men kan krympe */
+            width: 50%; /* Halvdelen af containerens bredde */
         }
 
             .product-image img {
-                max-width: 80%;
-                height: auto;
+                max-width: 80%; /* Billedets maksimale bredde relativt til dets container */
+                height: auto; /* Automatisk højde for at bevare billedets proportioner */
             }
 
+        /* Container for tekstlige produktinformationer */
         .product-details {
-            flex-grow: 1;
+            flex-grow: 1; /* Tager den resterende plads i containeren */
         }
 
             .product-details h1 {
-                font-size: 24px;
-                margin: 10px 0;
+                font-size: 24px; /* Større skriftstørrelse for produktnavn */
+                margin: 10px 0; /* Vertikal margin omkring produktnavnet */
             }
 
             .product-details .price {
-                font-size: 20px;
-                font-weight: bold;
+                font-size: 20px; /* Skriftstørrelse for pris */
+                font-weight: bold; /* Fed skrift for at fremhæve pris */
             }
 
-            .product-details .brand {
-                margin: 5px 0;
-            }
-
+        /* Container til handlingsknapper under produktinformationer */
         .product-actions {
-            margin-top: 20px;
+            margin-top: 20px; /* Afstand fra produktinformationerne til knapperne */
         }
 
+        /* Generel knap styling */
         .btn {
-            display: block;
-            width: max-content;
-            padding: 10px 20px;
-            margin-top: 10px; /* Adjust as needed */
-            text-align: center;
-            text-decoration: none;
-            color: #fff;
-            background-color: #000;
-            border: none;
-            cursor: pointer;
+            display: block; /* Knapper vises som blokelementer */
+            width: max-content; /* Bredden af knappen bestemmes af indholdet */
+            padding: 10px 20px; /* Padding omkring knappens tekst */
+            margin-top: 10px; /* Afstand fra elementer over knappen */
+            text-align: center; /* Centrerer teksten i knappen */
+            text-decoration: none; /* Fjerner understregning fra links */
+            color: #fff; /* Hvid tekstfarve */
+            background-color: #000; /* Sort baggrundsfarve */
+            border: none; /* Ingen ramme omkring knappen */
+            cursor: pointer; /* Cursor ændres til pegefinger ved hover */
         }
 
+
+        /* Specifik styling for "Add to Cart" knappen */
         .add-to-cart {
-            display: block;
-            padding: 10px 20px;
-            width: 50%; /* This will make the 'Add to Cart' button longer */
-            box-sizing: border-box; /* Ensures padding is included in width */
-            margin-bottom: 10px; /* Adds space between this and the next set of buttons */
+            width: 50%; /* Gør knappen bredere */
         }
 
-        /* Container for Edit/Delete which will align them side by side */
+        /* Container der holder Rediger/Slet knapper ved siden af hinanden */
         .edit-delete-container {
-            display: flex;
-            justify-content: space-between; /* Spaces out buttons */
-            width: 50%; /* Same width as the 'Add to Cart' button */
-            box-sizing: border-box; /* Ensures padding is included in width */
-            background-color: #C65127;
+            display: flex; /* Bruger flexbox til at arrangere knapperne */
+            justify-content: space-between; /* Fordeler knapperne jævnt */
+            width: 50%; /* Bredde som 'Add to Cart' knappen */
+            box-sizing: border-box; /* Gør så padding er inkluderet i bredde */
+            background-color: #C65127; /* Orange baggrundsfarve */
         }
 
-        /* Style for both Edit and Delete buttons */
+        /* Ens stil for både rediger og slet knapperne */
         .edit-button, .delete-button {
-            flex: 1; /* Each button takes up half the width of their container */
-            margin: 0 5px; /* Add some space between the buttons */
-            width: 50%;
-            background-color: #C65127;
+            flex: 1; /* Begge knapper fylder lige meget */
+            margin: 0 5px; /* Afstand mellem knapperne */
+            width: 50%; /*Bredde af delete og edit knapperne.*/
+            background-color: #C65127; /*Baggrundfarve*/
         }
 
 
@@ -93,17 +92,20 @@
 </head>
 <body>
     <main>
+        <!-- Hoved container for produktvisning -->
         <div class="product-container">
+            <!-- Billede container -->
             <div class="product-image">
                 <img src="~/images/Shop/@Model.Product.ProductImage" />
             </div>
+            <!-- Detaljer container -->
             <div class="product-details">
                 <h1>@Model.Product.Name</h1>
                 <p class="price">@Model.Product.Price,-</p>
                 <p class="brand">Brand: @Model.Product.Brand</p>
                 <p>@Model.Product.Description</p>
 
-                <!-- Actions (buttons/links) now under product details -->
+                <!-- Knapper til produktaktioner som tilføj til kurv, rediger og slet -->
                 <div class="product-actions">
                     <button class="btn add-to-cart">Add to cart</button>
                     <div class="edit-delete-container">

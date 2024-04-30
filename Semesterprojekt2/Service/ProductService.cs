@@ -21,7 +21,7 @@ namespace Semesterprojekt2.Service
             _products = MockProducts.GetMockProducts();
         }
 
-        public void AddProduct(Product product)
+        public async Task AddProductAsync(Product product)
         {
             _products.Add(product);
             JsonFileProductService.SaveJsonProducts(_products);
