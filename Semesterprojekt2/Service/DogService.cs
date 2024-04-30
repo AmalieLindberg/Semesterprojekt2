@@ -13,7 +13,7 @@ namespace Semesterprojekt2.Service
 
         }
 
-        public void AddYdelseAsync(Dog dog)
+        public void AddDogAsync(Dog dog)
         {
             DogList.Add(dog);
 
