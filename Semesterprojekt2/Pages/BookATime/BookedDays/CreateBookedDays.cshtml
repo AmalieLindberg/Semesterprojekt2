@@ -2,3 +2,49 @@
 @model Semesterprojekt2.Pages.BookATime.BookedDays.CreateBookedDaysModel
 @{
 }
+<html>
+    <style>
+        h1
+        {
+            text-align: center;
+        }
+      
+/* 
+    html, body {
+        height: 100%;
+        margin: 0; /* Fjerner standardmargenen */
+    } */
+
+    .container {
+       
+    }
+
+    .form {
+        position: relative;
+        width: 50%; /* Sætter formens bredde til 50% af containerens bredde */
+        /* Tilføj yderligere CSS her for at style formen */
+       left: 41%;
+    }
+
+    </style>
+    <body>
+<h1 >Create Booked Days</h1>
+<div class="container">
+  
+<form method="post" class="form" style="align-items: center;">
+    <div class="form-group">
+        <label asp-for="BookedDays.StartDate" class="control-lable">Start Date:</label> <br />
+            <input asp-for="BookedDays.StartDate" class="text-box" />
+            <span asp-validation-for="BookedDays.StartDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="BookedDays.EndDate" class="control-lable">End Dato:</label> <br />
+        <input asp-for="BookedDays.EndDate" class="text-box" />
+        <span asp-validation-for="BookedDays.EndDate" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Oprette feriedag" />
+    </form>
+    </div>
+    
+</body>
+</html>

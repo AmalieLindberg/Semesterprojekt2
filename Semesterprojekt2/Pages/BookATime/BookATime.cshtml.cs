@@ -111,6 +111,7 @@ namespace Semesterprojekt2.Pages.BookATime
                         Debug.WriteLine(error.ErrorMessage);
                     }
                 }
+                return RedirectToPage("/Error/Error");
             }
 
             if (BathPhoto != null)

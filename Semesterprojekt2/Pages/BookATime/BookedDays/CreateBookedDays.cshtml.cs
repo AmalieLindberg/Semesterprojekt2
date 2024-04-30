@@ -25,7 +25,7 @@ namespace Semesterprojekt2.Pages.BookATime.BookedDays
             }
 
             await BookedDaysService.AddBookedDays(BookedDays.StartDate, BookedDays.EndDate);
-            return RedirectToPage("/BookATime/Kalender");
+            return RedirectToPage("/BookATime/Calendar");
         }
     }
 }
