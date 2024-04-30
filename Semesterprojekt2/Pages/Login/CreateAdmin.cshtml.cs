@@ -59,7 +59,7 @@ namespace Semesterprojekt2.Pages.Login
                 }
                 return Page();
             }
-            _userService.AddUser(new User(Password, Name, Phone, Email, Role));
+            _userService.AddUser(new Users(Password, Name, Phone, Email, Role));
             return RedirectToPage("Login"); //Skift ud
         }
 

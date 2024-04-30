@@ -1,4 +1,5 @@
 ﻿@using Semesterprojekt2.Pages.Login
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,6 +51,14 @@
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Profil/Profil">Profil</a>
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Orderhistory/Orderhistory">Orderhistory</a>
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Login/LogOut">LogOut</a>
+                                             
+                                            /* Testing Admin visibility for CreateAdmin Page */
+                                            if (LoginModel.LoggedInUser.Role == "Admin")
+                                            {
+                                                <a class="nav-link text-dark" asp-area="" asp-page="/Login/CreateAdmin">Create Admin</a>
+                                            }
+
+                                            
                                         }
                                     }
                                 </div>
