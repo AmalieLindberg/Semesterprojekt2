@@ -52,6 +52,7 @@
                 <div class="container">
             <div class="Højre">
                 <div class="form-group">
+                            <label asp-for="BookATime.DateForBooking"> Date for booking: </label> <br />
                     <input asp-for="BookATime.DateForBooking" readonly class="text-box" value="@Model.fuldDatoOgTid.ToString("yyyy-MM-dd HH:mm")" />
                 </div>
 
@@ -167,7 +168,7 @@
                     </b> 
                 </p>
                 <div class="form-group">
-             
+                    <label asp-for="BookATime.DateForBooking"> Date for booking: </label> <br />
                     <input asp-for="BookATime.DateForBooking" readonly class="text-box" value="@Model.fuldDatoOgTid.ToString("yyyy-MM-dd HH:mm")" />
                
                 </div>
@@ -277,8 +278,8 @@
                     <span hidden asp-validation-for="User.Password" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label hidden asp-for="BookATime.Status" class="control-lable">Status:</label> <br />
-                    <input hidden asp-for="BookATime.Status" class="text-box" value="Pending" />
+                    <label hidden asp-for="BookATime.StatusForBooking" class="control-lable">Status:</label> <br />
+                    <input hidden asp-for="BookATime.StatusForBooking" class="text-box" value="Pending" />
                     <span hidden asp-validation-for="User.Password" class="text-danger"></span>
                 </div>
             }

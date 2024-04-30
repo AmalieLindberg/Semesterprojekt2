@@ -38,7 +38,7 @@ namespace Semesterprojekt2.Models.BookATime
         [Required]
         public int DogId { get; set; }
         public Dog Dog { get; set; }
-        public string Status { get; set; }
+        public string StatusForBooking { get; set; }
         public BookATime(string kommentar, DateTime Date, Ydelse ydelse, User user, Dog dog)
         {
 
