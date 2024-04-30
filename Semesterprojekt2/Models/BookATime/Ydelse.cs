@@ -30,18 +30,18 @@ namespace Semesterprojekt2.Models.BookATime
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
-        public DogSize HundeStørrelse { get; set; }
+        public DogSize DogSize { get; set; }
         [Required]
-        public ServiceType Type { get; set; }
+        public ServiceType ServiceType { get; set; }
 
         public static int id = 1;
 
 
-        public Ydelse(DogSize HundeStørrelse, ServiceType Type)
+        public Ydelse(DogSize Dogsize, ServiceType serviceType)
         {
 
-            this.HundeStørrelse = HundeStørrelse;
-            this.Type = Type;
+            this.DogSize = Dogsize;
+            this.ServiceType = serviceType;
             Id = id++;
 
         }

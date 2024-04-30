@@ -19,6 +19,21 @@
     h4 {
         text-align: center;
     }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Højre, .Venstre {
+        flex: 1;
+        margin: 10px; /* Adjust spacing around the content as needed */
+        padding: 20px; /* Provides internal space around the content */
+    }
+
+    .form-group {
+        margin-bottom: 20px; /* Space between form groups */
+    }
 </style>
 <body>
     <h2>
@@ -34,6 +49,7 @@
             @Model.fuldDatoOgTid.DayOfWeek == DayOfWeek.Friday)
             {
                 <h4>Du er ved at booke en tid i salonen</h4>
+                <div class="container">
             <div class="Højre">
                 <div class="form-group">
                     <input asp-for="BookATime.DateForBooking" readonly class="text-box" value="@Model.fuldDatoOgTid.ToString("yyyy-MM-dd HH:mm")" />
@@ -57,27 +73,26 @@
                     <span asp-validation-for="User.Telefonnummer" class="text-danger"></span>
                 </div>
                
-                <div class="form-group">
-                    <label asp-for="Ydelse.Type"> Which Service Type: </label> <br />
-                    <select asp-for="Ydelse.Type" asp-items="Html.GetEnumSelectList<ServiceType>()" class="text-box"></select>
-                </div>
+                
+                        <div class="form-group">
+                            <label asp-for="BookATime.Kommentar" class="control-lable"> Do you have any comments on how your dog's haircut should look?:    </label>
+                            <br />
+                            <textarea asp-for="BookATime.Kommentar" rows="4" cols="50"> </textarea>
+                        </div>
              </div>
 
             <div class="Venstre">
+                        <div class="form-group">
+                            <label asp-for="Ydelse.ServiceType"> Which Service Type: </label> <br />
+                            <select asp-for="Ydelse.ServiceType" asp-items="Html.GetEnumSelectList<ServiceType>()" class="text-box"></select>
+                        </div>
                 <div class="form-group">
-                    <label asp-for="Ydelse.HundeStørrelse"> Which dog size: </label> <br />
-                    <select asp-for="Ydelse.HundeStørrelse" asp-items="Html.GetEnumSelectList<DogSize>()" class="text-box"></select>
+                    <label asp-for="Ydelse.DogSize"> Which dog size: </label> <br />
+                    <select asp-for="Ydelse.DogSize" asp-items="Html.GetEnumSelectList<DogSize>()" class="text-box"></select>
                 </div>
                
-                <div class="form-group">
-                    <div class="form-group">
-                        <label asp-for="@Model.DogPhoto" class="control-label"></label>
-                        <div class="custom-file">
-                            <input asp-for="@Model.DogPhoto" class="custom-file-input text-box" />
-                        </div>
-                    </div>
-
-                </div>
+                
+                    
               
                 <div class="form-group">
                     <label asp-for="Dog.Name" class="control-lable">Your name:</label> <br />
@@ -102,13 +117,18 @@
                         <option value="False">Nej</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label asp-for="BookATime.Kommentar" class="control-lable"> Do you have any comments on how your dog's haircut should look?:    </label>
-                    <br />
-                    <textarea asp-for="BookATime.Kommentar" rows="4" cols="50"> </textarea>
-                </div>
+                        <div class="form-group">
+                            <label asp-for="@Model.DogPhoto" class="control-label"></label>
+                            <div class="custom-file">
+                                <input asp-for="@Model.DogPhoto" class="custom-file-input text-box" />
+                            </div>
+
+
+                        </div>
+             
             </div>
-                <input type="submit" value="Book nu" />
+            </div>
+                <input type="submit" value="Book nu" style="margin-top: 20px; display: block; width: 100%;" />
                 
                 <div class="form-group">
                     <label asp-for="@Model.BathPhoto" class="control-label" hidden></label>
@@ -153,14 +173,14 @@
                 </div>
 
                 <div class="form-group">
-                    <label asp-for="Ydelse.Type"> Which Service Type: </label> <br />
-                    <select asp-for="Ydelse.Type" asp-items="Html.GetEnumSelectList<ServiceType>()" class="text-box"></select>
+                    <label asp-for="Ydelse.ServiceType"> Which Service Type: </label> <br />
+                    <select asp-for="Ydelse.ServiceType" asp-items="Html.GetEnumSelectList<ServiceType>()" class="text-box"></select>
                 </div>
 
                 <div class="form-group">
 
-                    <label asp-for="Ydelse.HundeStørrelse"> Which dog size: </label> <br />
-                    <select asp-for="Ydelse.HundeStørrelse" asp-items="Html.GetEnumSelectList<DogSize>()" class="text-box"></select>
+                    <label asp-for="Ydelse.DogSize"> Which dog size: </label> <br />
+                    <select asp-for="Ydelse.DogSize" asp-items="Html.GetEnumSelectList<DogSize>()" class="text-box"></select>
                
                 </div>
 
@@ -243,7 +263,7 @@
                     <textarea asp-for="BookATime.Kommentar" rows="4" cols="50"> </textarea>
                 </div>
 
-                <input type="submit" value="Book nu" />
+                <input type="submit" value="Book nu" style="margin-top: 20px; display: block; width: 100%;"/>
                
 
                 <div class="form-group">
