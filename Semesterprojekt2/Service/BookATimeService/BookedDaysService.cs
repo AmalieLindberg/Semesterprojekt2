@@ -91,5 +91,51 @@ namespace Semesterprojekt2.Service.BookATimeService
         //    }
         //    return false;
         //}
+
+
+
+        public IEnumerable<BookedDays> SortById()
+        {
+            var ById = from BookedDays in _bookedDays
+                       orderby BookedDays.Id
+                       select BookedDays;
+            return ById;
+        }
+        public IEnumerable<BookedDays> SortByIdDescending()
+        {
+            var ByIdDescending = from BookedDays in _bookedDays
+                                 orderby BookedDays.Id descending
+                                 select BookedDays;
+            return ByIdDescending;
+        }
+        public IEnumerable<BookedDays> SortByStartDate()
+        {
+            var ById = from BookedDays in _bookedDays
+                       orderby BookedDays.StartDate
+                       select BookedDays;
+            return ById;
+        }
+        public IEnumerable<BookedDays> SortByStartDateDescending()
+        {
+            var ByIdDescending = from BookedDays in _bookedDays
+                                 orderby BookedDays.StartDate descending
+                                 select BookedDays;
+            return ByIdDescending;
+        }
+        public IEnumerable<BookedDays> SortByEndDate()
+        {
+            var ById = from BookedDays in _bookedDays
+                       orderby BookedDays.EndDate
+                       select BookedDays;
+            return ById;
+        }
+        public IEnumerable<BookedDays> SortByEndDateDescending()
+        {
+            var ByIdDescending = from BookedDays in _bookedDays
+                                 orderby BookedDays.EndDate descending
+                                 select BookedDays;
+            return ByIdDescending;
+        }
+
     }
 }

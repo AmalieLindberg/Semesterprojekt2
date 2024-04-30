@@ -7,44 +7,48 @@
         h1
         {
             text-align: center;
+            color: black;
         }
-      
-/* 
-    html, body {
-        height: 100%;
-        margin: 0; /* Fjerner standardmargenen */
-    } */
 
-    .container {
-       
+
+    .Buttons 
+    {
+     display: flex; 
+     justify-content: 
+     space-between; margin: 20px 0;
     }
 
-    .form {
-        position: relative;
-        width: 50%; /* Sætter formens bredde til 50% af containerens bredde */
-        /* Tilføj yderligere CSS her for at style formen */
-       left: 41%;
-    }
+   
 
     </style>
     <body>
 <h1 >Create Booked Days</h1>
+<hr />
+<br />
 <div class="container">
   
 <form method="post" class="form" style="align-items: center;">
     <div class="form-group">
-        <label asp-for="BookedDays.StartDate" class="control-lable">Start Date:</label> <br />
-            <input asp-for="BookedDays.StartDate" class="text-box" />
+        <label asp-for="BookedDays.StartDate" class="control-lable">Start Date:</label> <br /> 
+                <input asp-for="BookedDays.StartDate" class="form-control" />
             <span asp-validation-for="BookedDays.StartDate" class="text-danger"></span>
     </div>
+    <br />
     <div class="form-group">
-        <label asp-for="BookedDays.EndDate" class="control-lable">End Dato:</label> <br />
-        <input asp-for="BookedDays.EndDate" class="text-box" />
+        <label asp-for="BookedDays.EndDate" class="control-lable">End Dato:</label>
+        <br />
+
+                <input asp-for="BookedDays.EndDate" class="form-control" />
         <span asp-validation-for="BookedDays.EndDate" class="text-danger"></span>
     </div>
-    <input type="submit" value="Oprette feriedag" />
+
+    <div class="Buttons">
+                <input type="submit" value="Create booked days" />
+                <a class="btn btn-primary btn-sm" type="button" data-toggle="tooltip" title="Calendar" asp-page="/BookATime/Calendar"><i class="bi bi-calendar"></i>Go back to the calendar</a>
+    </div>
     </form>
     </div>
-    
+    <br />
+      
 </body>
 </html>

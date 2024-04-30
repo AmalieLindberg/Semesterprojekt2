@@ -1,5 +1,5 @@
 ﻿@page
-@model Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel
+@model BookedDaysModel
 @{
 }
 
@@ -10,17 +10,38 @@
     <h1>Booked Days</h1>
     <hr />
 
-    <table style="align-content: center;"> 
-       
-        <a class="btn btn-primary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookedDays/CreateBookedDays"> <i class="fa fa-edit"></i></a>
-      
-        <thead>
+    <table class="table table-bordered table-hover table-striped table-opacity" width="60%">
+        <col style="width: 25%" />
+        <col style="width: 25%" />
+        <col style="width: 25%" />
+        <col style="width: 25%" />
+
+        <a class="btn btn-primary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="CreateBookedDays"> <i class="fa fa-edit"></i></a>
+      <br />
+        <tr class="btn-secondary active">
             <tr>
-            
-                <th>Id</th>
-                <th>Start Date</th>
-                <th>End Date</th> 
-                <th>Delete</th>
+            <th>
+                <h5>Id</h5>
+                <div>
+                    <a data-toggle="tooltip" title="Sort By Id" asp-page-handler="SortById"><i class="fa fa-angle-up"></i></a>
+                    <a data-toggle="tooltip" title="Sort By Id Descending" asp-page-handler="SortByIdDescending"><i class="fa fa-angle-down"></i></a>
+                </div>
+            </th>
+            <th>
+                <h5>Start Date</h5>
+                <div>
+                    <a data-toggle="tooltip" title="Sort By StartDate" asp-page-handler="SortByStartDate"><i class="fa fa-angle-up"></i></a>
+                    <a data-toggle="tooltip" title="Sort By StartDate Descending" asp-page-handler="SortByStartDateDescending"><i class="fa fa-angle-down"></i></a>
+                </div>
+            </th>
+            <th>
+                <h5>End Date</h5>
+                <div>
+                    <a data-toggle="tooltip" title="Sort By EndDate" asp-page-handler="SortByEndDate"><i class="fa fa-angle-up"></i></a>
+                    <a data-toggle="tooltip" title="Sort By EndDate Descending" asp-page-handler="SortByEndDateDescending"><i class="fa fa-angle-down"></i></a>
+                </div>
+            </th>
+            <th><h5>Delete</h5></th>
             </tr>
         </thead>
         <tbody>

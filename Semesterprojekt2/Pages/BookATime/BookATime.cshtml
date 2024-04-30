@@ -206,6 +206,11 @@
                     <input hidden asp-for="User.Password" class="text-box" />
                     <span hidden asp-validation-for="User.Password" class="text-danger"></span>
                 </div>
+                <div class="form-group">
+                    <label hidden asp-for="BookATime.Status" class="control-lable">Status:</label> <br />
+                    <input hidden asp-for="BookATime.Status" class="text-box" value="Pending" />
+                    <span hidden asp-validation-for="User.Password" class="text-danger"></span>
+                </div>
             }
         </form>
 

@@ -28,7 +28,7 @@ namespace Semesterprojekt2.Pages.BookATime.BookedDays
             Models.BookATime.BookedDays deletedItem = await BookedDaysService.RemoveBookedDaysById(BookedDays.Id);
             if (deletedItem == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
-            return RedirectToPage("GetAllItems");
+            return RedirectToPage("/BookATime/Calendar");
         }
     }
 }
