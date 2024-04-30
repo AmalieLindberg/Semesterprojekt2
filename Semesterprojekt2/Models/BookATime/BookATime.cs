@@ -32,6 +32,7 @@ namespace Semesterprojekt2.Models.BookATime
         [Required]
         public int UserId { get; set; }
         public User User { get; set; }
+        public string Status { get; set; }
         public BookATime(string kommentar, DateTime Date, Ydelse ydelse, User user)
         {
 
