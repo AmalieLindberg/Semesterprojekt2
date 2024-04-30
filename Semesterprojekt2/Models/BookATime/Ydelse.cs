@@ -24,8 +24,10 @@ namespace Semesterprojekt2.Models.BookATime
     public class Ydelse
     {
 
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //Vi skal ikke brug dem, da vi oprette database manuelt hvis vi har oprette den via Entity Framework.
+        //havde vi brugt denne til at fortælle database hvad.
+        //[Key]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         public DogSize HundeStørrelse { get; set; }
