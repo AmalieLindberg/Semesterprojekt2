@@ -22,7 +22,7 @@ namespace Semesterprojekt2.Models.BookATime
         public string? BathRoomImage { get; set; }
 
         public bool? Elevator { get; set; }
-        public string? Floor { get; set; }
+        public string? Floors { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
 

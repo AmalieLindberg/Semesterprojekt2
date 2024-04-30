@@ -148,9 +148,6 @@ namespace Semesterprojekt2.Pages.BookATime
             BookATime.YdelseId = Ydelse.Id;
           _bookATimeService.addTidsbestilling(BookATime);
 
-
-
-
             return RedirectToPage("/Index");
         }
 
@@ -172,7 +169,7 @@ namespace Semesterprojekt2.Pages.BookATime
         private string ProcessUploadedBathFile()
         {
             string uniqueFileName = null;
-            if (DogPhoto != null)
+            if (BathPhoto != null)
             {
                 string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "ImagesForBookATime", "Bath");
                 uniqueFileName = Guid.NewGuid().ToString() + "_" + BathPhoto.FileName;
