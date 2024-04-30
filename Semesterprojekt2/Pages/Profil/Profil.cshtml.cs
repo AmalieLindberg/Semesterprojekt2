@@ -12,7 +12,7 @@ namespace Semesterprojekt2.Pages.Profil
         {
             _userService = userService;
         }
-        public List<User>? Users { get; private set; }
+        public List<Users>? Users { get; private set; }
 
         public void OnGet()
         {

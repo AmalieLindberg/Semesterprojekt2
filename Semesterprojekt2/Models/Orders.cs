@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Semesterprojekt2.Models
 {
-    public class Order
+    public class Orders
     {
         //Vi skal ikke brug dem, da vi oprette database manuelt hvis vi har oprette den via Entity Framework.
         //havde vi brugt denne til at fortælle database hvad.
@@ -17,12 +17,12 @@ namespace Semesterprojekt2.Models
 
         public string Comments { get; set; }
 
-        public Order()
+        public Orders()
         {
             
         }
 
-        public Order(string info)
+        public Orders(string info)
         {
             Info = info;
         }

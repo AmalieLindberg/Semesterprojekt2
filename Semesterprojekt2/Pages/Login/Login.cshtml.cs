@@ -12,7 +12,7 @@ namespace Semesterprojekt2.Pages.Login
     public class LoginModel : PageModel
     {
         // Gemmer den aktuelle logget ind bruger
-        public static User LoggedInUser { get; set; } = null;
+        public static Users LoggedInUser { get; set; } = null;
         // Reference til IUserService interface
         private IUserService _userService;
         //BindProperty til email-inputfeltet på login-siden
@@ -37,9 +37,9 @@ namespace Semesterprojekt2.Pages.Login
         public async Task<IActionResult> OnPost()
         {
             //Hent en liste af brugere fra IUserService
-            List<User> users = _userService.GetUsers();
+            List<Users> users = _userService.GetUsers();
             //Gennemgå hver bruger i listen
-            foreach (User user in users)
+            foreach (Users user in users)
             {
                 //tjek om indtastet email og password matcher en bruger i lsten
                 if (Email == user.Email && Password == user.Password)

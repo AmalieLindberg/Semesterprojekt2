@@ -4,13 +4,13 @@ namespace Semesterprojekt2.MockData.Profil
 {
     public class MockUsers
     {
-        public static List<User> users = new List<User>
+        public static List<Users> users = new List<Users>
         {
-            new User("123", "Admin", "12345678", "Email@email.dk", "Admin")
+            new Users("123", "Admin", "12345678", "Email@email.dk", "Admin")
 
         };
 
-        public static List<User> GetMockUser()
+        public static List<Users> GetMockUser()
         {
             return users;
         }

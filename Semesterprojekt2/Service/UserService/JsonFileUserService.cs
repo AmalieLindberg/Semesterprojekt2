@@ -17,7 +17,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
 			get { return Path.Combine(WebHostEnvironment.WebRootPath, "Data", "User.json"); }
 		}
 
-		public void SaveJsonUsers(List<User> users)
+		public void SaveJsonUsers(List<Users> users)
 		{
 			using (FileStream jsonFileWriter = File.Create(JsonFileName))
 			{
@@ -26,15 +26,15 @@ namespace Semesterprojekt2.Service.UserService.UserService
 					SkipValidation = false,
 					Indented = true
 				});
-				JsonSerializer.Serialize<User[]>(jsonWriter,  users.ToArray());
+				JsonSerializer.Serialize<Users[]>(jsonWriter,  users.ToArray());
 			}
 		}
 
-		public IEnumerable<User> GetJsonUsers()
+		public IEnumerable<Users> GetJsonUsers()
 		{
 			using (StreamReader jsonFileReader = File.OpenText(JsonFileName))
 			{
-				return JsonSerializer.Deserialize<User[]>(jsonFileReader.ReadToEnd());
+				return JsonSerializer.Deserialize<Users[]>(jsonFileReader.ReadToEnd());
 			}
 		}
 	}

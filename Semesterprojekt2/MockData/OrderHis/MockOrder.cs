@@ -4,13 +4,13 @@ namespace Semesterprojekt2.MockData.OrderHis
 {
     public class MockOrder
     {
-        public static List<Order> orders = new List<Order>
+        public static List<Orders> orders = new List<Orders>
         {
-            new Order("Hel")
+            new Orders("Hel")
 
         };
          
-        public static List<Order> GetMockOrder()
+        public static List<Orders> GetMockOrder()
         {
             return orders;
         }

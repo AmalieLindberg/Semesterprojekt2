@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Semesterprojekt2.Models
 {
-    public class User
+    public class Users
     {
         //Vi skal ikke brug dem, da vi oprette database manuelt hvis vi har oprette den via Entity Framework.
         //havde vi brugt denne til at fortælle database hvad.
@@ -25,7 +25,7 @@ namespace Semesterprojekt2.Models
 
         public string ConfirmPassword { get; set; }
 
-        public User(string password, string name, string telefonnummer, string email, string role)
+        public Users(string password, string name, string telefonnummer, string email, string role)
         {
             Password = password;
             Name = name;
@@ -34,7 +34,7 @@ namespace Semesterprojekt2.Models
             Role = role;
         }
 
-        public User()
+        public Users()
         {
          
             Password = "";

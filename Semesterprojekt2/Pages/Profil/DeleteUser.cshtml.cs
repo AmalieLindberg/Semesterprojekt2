@@ -14,7 +14,7 @@ namespace Semesterprojekt2.Pages.Profil
         }
 
         [BindProperty]
-        public Models.User user { get; set; }
+        public Models.Users user { get; set; }
 
 
         public IActionResult OnGet(int id)
@@ -28,7 +28,7 @@ namespace Semesterprojekt2.Pages.Profil
 
         public IActionResult OnPost()
         {
-            Models.User deletedUser = _userService.DeleteUser(user.UserId);
+            Models.Users deletedUser = _userService.DeleteUser(user.UserId);
             if (deletedUser == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 

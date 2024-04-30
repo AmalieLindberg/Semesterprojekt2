@@ -14,7 +14,7 @@ namespace Semesterprojekt2.Pages.Profil
         }
 
         [BindProperty]
-        public Models.User User{ get; set; }
+        public Models.Users User{ get; set; }
 
         public IActionResult OnGet(int id)
         {

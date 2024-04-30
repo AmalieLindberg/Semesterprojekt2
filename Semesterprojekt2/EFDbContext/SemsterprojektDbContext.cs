@@ -14,8 +14,8 @@ namespace Semesterprojekt2.EFDbContext
         }
 
         public DbSet<BookATime> BookATimes { get; set; }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Order> Orders { get; set; }
+        public DbSet<Users> Users { get; set; }
+        public DbSet<Orders> Orders { get; set; }
         public DbSet<Ydelse> Ydelses { get; set; }
         public DbSet<Dog> Dogs { get; set; }
         public DbSet<Product> Products { get; set; }

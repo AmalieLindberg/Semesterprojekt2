@@ -5,14 +5,14 @@ namespace Semesterprojekt2.Service
 {
     public class OrderService
     {
-        public List<Order> OrderList { get; set; }
+        public List<Orders> OrderList { get; set; }
 
         public OrderService()
         {
             OrderList = MockOrder.GetMockOrder();
         }
 
-        public async void AddOrder(Order order)
+        public async void AddOrder(Orders order)
         {
             OrderList.Add(order);
         }

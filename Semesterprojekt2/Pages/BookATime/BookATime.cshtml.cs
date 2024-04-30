@@ -18,7 +18,7 @@ namespace Semesterprojekt2.Pages.BookATime
         public Models.BookATime.Ydelse Ydelse { get; set; }
 
         [BindProperty]
-        public Models.User User { get; set; }
+        public Models.Users User { get; set; }
         [BindProperty]
         public Models.Dog Dog { get; set; }
 

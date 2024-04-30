@@ -5,7 +5,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
 {
     public class UserService : IUserService
     {
-        public List<User> _users { get; set; }
+        public List<Users> _users { get; set; }
 
         private JsonFileUserService _jsonFileUserService { get; set; }
 
@@ -24,15 +24,15 @@ namespace Semesterprojekt2.Service.UserService.UserService
             _users = MockUsers.GetMockUser().ToList();
         }
 
-        public void AddUser(User user)
+        public void AddUser(Users user)
         {
             _users.Add(user);
             _jsonFileUserService.SaveJsonUsers(_users);
         }
 
-        public User GetUser(int id)
+        public Users GetUser(int id)
         {
-            foreach (User user in _users)
+            foreach (Users user in _users)
             {
                 if (user.UserId == id)
                     return user;
@@ -41,11 +41,11 @@ namespace Semesterprojekt2.Service.UserService.UserService
             return null;
         }
 
-        public void UpdateUser(User user)
+        public void UpdateUser(Users user)
         {
             if (user != null)
             {
-                foreach (User u in _users)
+                foreach (Users u in _users)
                 {
                     if (u.UserId == user.UserId)
                     {
@@ -59,10 +59,10 @@ namespace Semesterprojekt2.Service.UserService.UserService
             }
         }
 
-        public User DeleteUser(int? userId)
+        public Users DeleteUser(int? userId)
         {
-            User userToBeDeleted = null;
-            foreach (User user in _users)
+            Users userToBeDeleted = null;
+            foreach (Users user in _users)
             {
                 if (user.UserId == userId)
                 {
@@ -80,6 +80,6 @@ namespace Semesterprojekt2.Service.UserService.UserService
             return userToBeDeleted;
         }
 
-        public List<User> GetUsers() { return _users; }
+        public List<Users> GetUsers() { return _users; }
     }
 }
