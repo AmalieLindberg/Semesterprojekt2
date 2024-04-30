@@ -21,6 +21,8 @@ namespace Semesterprojekt2.Models
         
         public string Role { get; set; }
 
+        public string ConfirmPassword { get; set; }
+
         public User(string password, string name, int telefonnummer, string email)
         {
             Password = password;
