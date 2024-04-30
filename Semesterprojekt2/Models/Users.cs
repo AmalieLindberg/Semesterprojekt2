@@ -41,6 +41,7 @@ namespace Semesterprojekt2.Models
             Name = "";
             Telefonnummer = "";
             Email = "";
+            Role = "";
         }
 
 
