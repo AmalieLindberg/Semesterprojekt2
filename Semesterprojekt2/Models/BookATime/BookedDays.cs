@@ -27,5 +27,7 @@ namespace Semesterprojekt2.Models.BookATime
             StartDate = startDate;
             EndDate = endDate;
         }
+
+     
     }
 }

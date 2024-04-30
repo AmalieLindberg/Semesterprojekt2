@@ -2,3 +2,49 @@
 @model Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel
 @{
 }
+
+<head>
+
+</head>
+<body>
+    <h1>Booked Days</h1>
+    <hr />
+
+    <table style="align-content: center;"> 
+       
+        <a class="btn btn-primary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookedDays/CreateBookedDays"> <i class="fa fa-edit"></i></a>
+      
+        <thead>
+            <tr>
+            
+                <th>Id</th>
+                <th>Start Date</th>
+                <th>End Date</th> 
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.BookedDays != null)
+            {
+                foreach (var bookedDays in Model.BookedDays)
+                {
+                    <tr>
+                   
+                        <td>
+                            @bookedDays.Id
+                        </td>
+                        <td>
+                            @bookedDays.StartDate.ToString("dd-MM-yyyy HH:mm")
+                        </td>
+                        <td>
+                            @bookedDays.EndDate.ToString("dd-MM-yyyy HH:mm") 
+                        </td>
+                        <td>
+                            <a class="btn btn-danger btn-sm " type="button" data-toggle="tooltip" title="Delete" asp-page="DeleteBookedDays" asp-route-id="@bookedDays.Id"><i class="fa fa-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</body>

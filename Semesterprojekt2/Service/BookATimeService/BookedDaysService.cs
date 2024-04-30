@@ -5,41 +5,42 @@ namespace Semesterprojekt2.Service.BookATimeService
     public class BookedDaysService
     {
         //private DbGenericService<BookedDays> _BookedDaysDbService { get; set; }
-        private List<BookedDays> blokeredeDage;
+        private List<BookedDays> _bookedDays;
 
         public BookedDaysService(/*DbGenericService<BookedDays> bookedDaysDbService*/)
         {
-            blokeredeDage = new List<BookedDays>();
+            _bookedDays = new List<BookedDays>();
             //_BookedDaysDbService = bookedDaysDbService;
             //blokeredeDage = _BookedDaysDbService.GetObjectsAsync().Result.ToList();
         }
 
         public async Task AddBookedDays(DateTime start, DateTime slut)
         {
-            blokeredeDage.Add(new BookedDays { StartDate = start, EndDate = slut });
+            _bookedDays.Add(new BookedDays { StartDate = start, EndDate = slut });
             //await _BookedDaysDbService.AddObjectAsync(new BookedDays { StartDate = start, EndDate = slut });
         }
-        public async Task RemoveBookedDays(int id)
+        public async Task<BookedDays> RemoveBookedDaysById(int id)
         {
-            foreach (var bookedDays in blokeredeDage)
+            foreach (var bookedDays in _bookedDays)
             {
-                if (bookedDays.Id == id) { 
-               blokeredeDage.Remove(bookedDays);
-                //await _BookedDaysDbService.DeleteObjectAsync(ferieTilSletning);
+                if (bookedDays.Id == id) {
+                    _bookedDays.Remove(bookedDays);
+                    //await _BookedDaysDbService.DeleteObjectAsync(bookedDays); 
+                    return bookedDays;
                 }
             }
-            
+            return null;
 
         }
 
         public List<BookedDays> GetBookedDaysList()
         {
-            return blokeredeDage;
+            return _bookedDays;
         }
         public async Task RevomeBookedDays(BookedDays bookedDays)
         {
 
-            blokeredeDage.Remove(bookedDays);
+            _bookedDays.Remove(bookedDays);
             //await _BookedDaysDbService.DeleteObjectAsync(bookedDays);
 
         }
@@ -67,7 +68,17 @@ namespace Semesterprojekt2.Service.BookATimeService
         //}
         public bool ErDatoBlokeret(DateTime dato)
         {
-            return blokeredeDage.Any(ferie => dato >= ferie.StartDate && dato <= ferie.EndDate);
+            return _bookedDays.Any(ferie => dato >= ferie.StartDate && dato <= ferie.EndDate);
+        }
+
+        public BookedDays GetBookedDaysById(int id)
+        {
+            foreach (var i in _bookedDays)
+            {
+                if (i.Id == id)
+                    return i;
+            }
+            return null;
         }
         //public bool ErDatoBlokeret(DateTime dato)
         //{
