@@ -1,30 +1,40 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Semesterprojekt2.Models.Shop;
 
 namespace Semesterprojekt2.Models
 {
     public class Orders
     {
-        //Vi skal ikke brug dem, da vi oprette database manuelt hvis vi har oprette den via Entity Framework.
-        //havde vi brugt denne til at fortælle database hvad.
-        //[Key]
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+		public int OrderId { get; set; }
 
-        //billed 
+		[Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
+		public int Count { get; set; }
 
-        public string Info { get; set; }
+		[DataType(DataType.Date)]
+		[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
+		public DateTime Date { get; set; }
 
-        public string Comments { get; set; }
+		[Required]
+		public int UserId { get; set; }
 
-        public Orders()
-        {
-            
-        }
+		public Users Users { get; set; }
 
-        public Orders(string info)
-        {
-            Info = info;
-        }
-    }
+		[Required]
+		public int ItemId { get; set; }
+
+		public Product Product { get; set; }
+
+		public Orders()
+		{
+
+		}
+
+		public Orders(Users users, Product product)
+		{
+			Date = DateTime.Now;
+			Users = users;
+			Product = product;
+		}
+	}
 }
