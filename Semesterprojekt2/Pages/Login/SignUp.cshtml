@@ -138,6 +138,7 @@
                 <div class="input-box">
                     <label asp-for="@Model.Email" class="hidden" class="control-lable">Enter Email</label>
                     <input asp-for="@Model.Email" class="form-control" type="email" placeholder="Email" required />
+                    <span asp-validation-for="@Model.Email" class="text-danger"></span>
                     <i class='bx bxs-user'></i>
                 </div>
 
@@ -149,6 +150,7 @@
                     [0-9]{1,12}: Matches digits from 0 to 9, occurring between 1 to 13 times -> We do this cause we expect international numbers
                     $: Asserts the end of the string. -->
                     <input asp-for="@Model.Phone" type="tel" placeholder="Phone" pattern="^\+?[0-9]{1,13}$" required />
+                    <span asp-validation-for="@Model.Phone" class="text-danger"></span>
                     <i class='bx bxs-user'></i>
                 </div>
                 
@@ -156,12 +158,14 @@
                 <div class="input-box">
                     <label asp-for="@Model.Password" class="hidden" class="control-lable">Enter Password: 6 characters minimum</label>
                     <input asp-for="@Model.Password" class="form-control" type="password" placeholder="Password" required />
+                    <span asp-validation-for="@Model.Password" class="text-danger"></span>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
 
                 <div class="input-box">
                     <label asp-for="@Model.ConfirmPassword" class="hidden" class="control-lable">  Enter Password: 6 characters minimum</label>
                     <input asp-for="@Model.ConfirmPassword" class="form-control" type="password" placeholder="Password" required />
+                    <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
 

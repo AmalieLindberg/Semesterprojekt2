@@ -10,11 +10,13 @@ namespace Semesterprojekt2.Pages.Login
     public class SignUpModel : PageModel
     {
         private UserService _userService;
+        
 
         [BindProperty]
         public string Name { get; set; }
 
-        [BindProperty]
+        [BindProperty, DataType(DataType.EmailAddress)]
+        [EmailAddress(ErrorMessage = "Email already exists.")]
         public string Email { get; set; }
 
         [BindProperty]
@@ -45,26 +47,38 @@ namespace Semesterprojekt2.Pages.Login
 
         public IActionResult OnPost()
         {
+            
             if (!ModelState.IsValid)
             {
-                // Udskriver fejl til output-vinduet eller logger dem.
+                // Log validation errors
                 foreach (var modelStateKey in ModelState.Keys)
                 {
                     var modelStateVal = ModelState[modelStateKey];
                     foreach (var error in modelStateVal.Errors)
                     {
-                        // Her kan du logge fejlen eller se den i debug-vinduet
                         Debug.WriteLine(error.ErrorMessage);
                     }
                 }
                 return Page();
             }
+
+            foreach (var user in _userService.GetUsers())
+            {
+                if (user.Email == Email)
+                {
+                    ModelState.AddModelError(nameof(Email), "Email already exists.");
+                    return Page();
+                }
+  
+            }
+
             _userService.AddUser(new Users(Password, Name, Phone, Email, Role));
             return RedirectToPage("Login");
         }
 
 
-
     }
+
+
 }
 

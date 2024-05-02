@@ -50,14 +50,17 @@
                                         {
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Profil/Profil">Profile</a>
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Orderhistory/Orderhistory">Orderhistory</a>
-                                            <a class="nav-link text-dark" asp-area="" asp-page="/Login/LogOut">Log Out</a>
+                        
                                              
                                             /*  CreateAdmin Page: Accessible as Admin */
                                             if (LoginModel.LoggedInUser.Role == "Admin")
                                             {
                                                 <a class="nav-link text-dark" asp-area="" asp-page="/Login/CreateAdmin">Create Admin</a>
                                                 <a class="nav-link text-dark" asp-area="" asp-page="/Login/UserOverview">User Overview</a>
+                                                
                                             }
+
+                                            <a class="nav-link text-dark" asp-area="" asp-page="/Login/LogOut">Log Out</a>
 
                                         }
                                     }

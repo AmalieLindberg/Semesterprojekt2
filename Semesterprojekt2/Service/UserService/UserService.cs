@@ -16,12 +16,6 @@ namespace Semesterprojekt2.Service.UserService.UserService
             _users = jsonFileUserService.GetJsonUsers().ToList();
             _jsonFileUserService.SaveJsonUsers(_users);
 
-
-        }
-
-        public UserService()
-        {
-            _users = MockUsers.GetMockUser().ToList();
         }
 
         public async Task AddUser(Users user)
