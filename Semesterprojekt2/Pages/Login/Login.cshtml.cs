@@ -6,6 +6,8 @@ using Semesterprojekt2.Models;
 using Semesterprojekt2.Service.UserService.UserService;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
+using System.Data;
+using System.Runtime.ConstrainedExecution;
 
 namespace Semesterprojekt2.Pages.Login
 {
@@ -47,11 +49,20 @@ namespace Semesterprojekt2.Pages.Login
                     //Gem den logget ind bruger
                     LoggedInUser = user;
                     //Opret en claim for brugerens email
-                    var claims = new List<Claim> { new Claim(ClaimTypes.Email, Password) };
-                    //Opret en ClaimIdentity med email-claiet
+                    var claims = new List<Claim> { new Claim(ClaimTypes.Email, Email) };
+                    
+                    //Hvis User har Role="admin" tilføjes et nyt Claim-objekt, hvor ClaimTypes.Role sættes til "Admin"
+                    if (user.Role == "Admin")
+                    {
+                        claims.Add(new Claim(ClaimTypes.Role, "Admin"));
+                    }
+
+                    //Opret en ClaimIdentity med email-claimet
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
                     //Log brugeren in ved at oprette et cookie og tiltøje en climIdentety
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+
                     //Redirect til startsiden
                     return RedirectToPage("/Index");
 

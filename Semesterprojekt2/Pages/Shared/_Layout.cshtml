@@ -52,13 +52,13 @@
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Orderhistory/Orderhistory">Orderhistory</a>
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Login/LogOut">Log Out</a>
                                              
-                                            /* Testing Admin visibility for CreateAdmin Page */
+                                            /*  CreateAdmin Page: Accessible as Admin */
                                             if (LoginModel.LoggedInUser.Role == "Admin")
                                             {
                                                 <a class="nav-link text-dark" asp-area="" asp-page="/Login/CreateAdmin">Create Admin</a>
+                                                <a class="nav-link text-dark" asp-area="" asp-page="/Login/UserOverview">User Overview</a>
                                             }
 
-                                            
                                         }
                                     }
                                 </div>

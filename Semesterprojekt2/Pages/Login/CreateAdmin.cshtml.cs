@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Models;
@@ -7,6 +8,7 @@ using System.Diagnostics;
 
 namespace Semesterprojekt2.Pages.Login
 {
+    [Authorize(Roles = "Admin")] //Access to page only allowed if logged in as Admin
     public class CreateAdminModel : PageModel
     {
         private UserService _userService;
@@ -60,7 +62,7 @@ namespace Semesterprojekt2.Pages.Login
                 return Page();
             }
             _userService.AddUser(new Users(Password, Name, Phone, Email, Role));
-            return RedirectToPage("Login"); //Skift ud
+            return RedirectToPage("Login"); //Skift ud -> Naviger til Bruger-oversigten
         }
 
 
