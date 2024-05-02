@@ -2,21 +2,21 @@
   {
     "Id": 2,
     "Name": "Lever Treats",
-    "Price": 160,
+    "Price": 170,
     "Type": 2,
-    "Brand": "Dog Treats",
-    "Amount": 250,
+    "Brand": "Dog Treatssss",
+    "Amount": 255,
     "Description": "Treats with a taste of lever",
-    "ProductImage": "testbillede.jpg"
+    "ProductImage": null
   },
   {
     "Id": 0,
     "Name": "ds",
-    "Price": 323,
+    "Price": 355,
     "Type": 0,
     "Brand": "ds",
     "Amount": 23,
     "Description": "ds",
-    "ProductImage": "7d965234-82fd-41e2-ae79-2325b46ce163_logitech-g-pro-gaming-keyboard-nordic-layout--pdp_main-1920.jpg"
+    "ProductImage": "4f87e553-edd4-4ff3-a912-7242d25ea39e_PineappleShampoo.jpg"
   }
 ]

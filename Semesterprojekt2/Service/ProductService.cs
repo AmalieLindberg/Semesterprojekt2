@@ -37,7 +37,7 @@ namespace Semesterprojekt2.Service
             return null;
         }
 
-        public void UpdateProduct(Product product)
+        public async Task UpdateProductAsync(Product product)
         {
             if (product != null)
             {
@@ -51,6 +51,7 @@ namespace Semesterprojekt2.Service
                         p.Brand = product.Brand;
                         p.Amount = product.Amount;
                         p.Description = product.Description;
+                        p.ProductImage = product.ProductImage;
                     }
                 }
                 JsonFileProductService.SaveJsonProducts(_products);

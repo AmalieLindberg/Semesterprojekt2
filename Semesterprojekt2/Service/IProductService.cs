@@ -6,7 +6,7 @@ namespace Semesterprojekt2.Service
     {
         List<Product> GetProducts();
         Task AddProductAsync(Product product);
-        void UpdateProduct(Product product);
+        Task UpdateProductAsync(Product product);
         Product GetProduct(int id);
         Product DeleteProduct(int? productId);
         IEnumerable<Product> NameSearch(string str);
