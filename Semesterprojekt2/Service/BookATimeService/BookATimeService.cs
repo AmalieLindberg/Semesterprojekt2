@@ -4,41 +4,25 @@ namespace Semesterprojekt2.Service.BookATimeService
 {
     public class BookATimeService : IBookATimeService
     {
+        private BookATimeDbService _bookATimeDbService {  get; set; }
 
         public BookATimeService()
         {
-
+            //BookATimeList = _bookATimeDbService.GetObjectsAsync().Result.ToList();
         }
         public List<BookATime> BookATimeList { get; set; }
 
         public async Task addTidsbestilling(BookATime bookATime)
         {
             BookATimeList.Add(bookATime);
-
+            //await _bookATimeDbService.AddObjectAsync(bookATime);
 
         }
         public List<BookATime> GetBookATimes()
         { return BookATimeList ?? new List<BookATime>(); ; }
 
 
-        public static string GetDayClass(DateTime date)
-        {
-            switch (date.DayOfWeek)
-            {
-                case DayOfWeek.Saturday:
-                case DayOfWeek.Sunday:
-                case DayOfWeek.Monday:
-                case DayOfWeek.Tuesday:
-                    return "yellow-day";
-                case DayOfWeek.Wednesday:
-                case DayOfWeek.Thursday:
-                case DayOfWeek.Friday:
-                    return "orange-day";
-                default:
-                    return string.Empty; // Eller en standard klasse, hvis du foretrækker
-            }
-
-        }
+      
 
         public (int Year, int Month) AdjustYearAndMonth(int year, int month)
         {
@@ -69,21 +53,21 @@ namespace Semesterprojekt2.Service.BookATimeService
         //Bruger databasene
         //public async Task<List<string>> GetUpdatedAvailableTimes(DateTime date, List<string> additionalBookedTimes)
         //{
-        //    List<string> bookedTimesFromDb = await GetBookedTimesForDate(date);
+        //    List<string> bookedTimesFromDb = await _bookATimeDbService.GetBookedTimesForDate(date);
 
         //    // Kombiner bookede tider fra databasen med den ekstra liste
         //    var allBookedTimes = bookedTimesFromDb.Concat(additionalBookedTimes).Distinct().ToList();
 
         //    // Få den opdaterede liste over tilgængelige tider ved at passere alle bookede tider
-        //    List<string> availableTimes = TidsbestillingService.GetAvailableTimes(date, allBookedTimes);
+        //    List<string> availableTimes = GetAvailableTimes(date, allBookedTimes);
 
         //    return availableTimes;
         //}
         public List<string> GetUpdatedAvailableTimes(DateTime date, List<string> additionalBookedTimes)
         {
-        
-            List<BookATime> bookedTimesFromDb = GetBookATimes();   
-           
+
+            List<BookATime> bookedTimesFromDb = GetBookATimes();
+
             // Konverter bookedTimesFromDb til en liste af strengrepræsentationer af tidspunkter
             List<string> bookedTimes = bookedTimesFromDb
                                         .Where(t => t.DateForBooking == date.Date)

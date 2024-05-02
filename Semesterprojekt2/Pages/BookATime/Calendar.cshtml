@@ -20,6 +20,7 @@
                     text-align: center;
                     padding: 8px;
                 }
+               
 
 
            .button-like-text 
@@ -133,8 +134,11 @@
                     color: black; /* Sætter tekstfarven til sort eller enhver farve der matcher baggrunden */
                     -webkit-appearance: none; /* Fjerner standard browser styling for WebKit-browsere */
                     -moz-appearance: none; /* Fjerner standard browser styling for Mozilla Firefox */
-                    appearance: none; /* Fjerner standard browser styling */
-                }
+                    appearance: none; /* Fjerner standard browser styling   */
+                    content: '▼';
+                } 
+           
+} 
         </style>
     </head>
     <body>
@@ -177,6 +181,7 @@
             </div>
         </div>       
         <br />
+        <div class="Card">
          <table>
         @{
             int dayCounter = 0; // Initialize the counter for days in the week. hvorfor vi starter på 0?
@@ -236,17 +241,17 @@
                             <input type="hidden" name="Month" value="@Model.Month" />
                             <input type="hidden" name="Day" value="@day" />
                             
-                           
-                           
-                        <select asp-for="Tidspunkt" required class="transparent-select">
-                            @foreach(var time in availableTimes)
-                            {
-                            
-                                <option value="@time">@time</option>
-                                
-                            }
-                        </select> 
-                        <br />
+                     
+    
+    <select asp-for="Tidspunkt" required class="transparent-select">
+        @foreach(var time in availableTimes)
+        {
+            <option value="@time" >@time</option>
+        }
+    </select>
+ 
+    
+<br />
                         <button type="submit" class="button-like-text">@day</button>
                         </form>
 
@@ -269,9 +274,9 @@
                 // Close the last row if it's not empty
         <tr> </tr>
             }
-      
+       
     </table>
-              
+    </div>          
      <a class="btn btn-primary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookedDays/CreateBookedDays"> <i class="fa fa-edit"></i></a>
                 
      <a class="btn btn-danger btn-sm " type="button" data-toggle="tooltip" title="Info" asp-page="BookedDays/BookedDays"><i class="fa fa-info"></i></a>

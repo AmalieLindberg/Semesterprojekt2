@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Semesterprojekt2.EFDbContext;
 using Semesterprojekt2.Models.BookATime;
 using Semesterprojekt2.Service;
 using Semesterprojekt2.Service.BookATimeService;
@@ -16,7 +17,8 @@ builder.Services.AddSingleton<YdelseService, YdelseService>();
 builder.Services.AddSingleton<UserService, UserService>();
 builder.Services.AddSingleton<DogService, DogService>();
 builder.Services.AddSingleton<BookedDaysService, BookedDaysService>();
-builder.Services.AddSingleton<JsonFileUserService>();
+builder.Services.AddTransient<JsonFileUserService>();
+builder.Services.AddDbContext<SemsterprojektDbContext>();
 
 
 builder.Services.Configure<CookiePolicyOptions>(options => {

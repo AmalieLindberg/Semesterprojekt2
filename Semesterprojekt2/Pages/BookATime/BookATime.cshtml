@@ -23,6 +23,9 @@
     .container {
         display: flex;
         justify-content: space-between;
+        
+        justify-content: center; /* Centers horizontally in the flex container */
+     /* /*    align-items: center;  */ */
     }
 
     .Højre, .Venstre {
@@ -51,6 +54,7 @@
                 <h4>Du er ved at booke en tid i salonen</h4>
                 <div class="container">
             <div class="Højre">
+                <div class="smideud"></div>
                 <div class="form-group">
                             <label asp-for="BookATime.DateForBooking"> Date for booking: </label> <br />
                     <input asp-for="BookATime.DateForBooking" readonly class="text-box" value="@Model.fuldDatoOgTid.ToString("yyyy-MM-dd HH:mm")" />
@@ -73,12 +77,12 @@
                     <input asp-for="User.Telefonnummer" class="text-box">
                     <span asp-validation-for="User.Telefonnummer" class="text-danger"></span>
                 </div>
-               
-                
+
+                     
                         <div class="form-group">
-                            <label asp-for="BookATime.Kommentar" class="control-lable"> Do you have any comments on how your dog's haircut should look?:    </label>
+                            <label asp-for="BookATime.Comments" class="control-lable"> Do you have any comments on how your dog's haircut should look?:    </label>
                             <br />
-                            <textarea asp-for="BookATime.Kommentar" rows="6" cols="43"> </textarea>
+                            <textarea asp-for="BookATime.Comments" rows="6" cols="43"> </textarea>
                         </div>
              </div>
 
@@ -163,28 +167,17 @@
                 <h4>  You are about to book an appointment at your home. </h4>
                 <p style="text-align:center">
                     <b>
-                        Remember!! There is an extra charge for the distance from my home.<a asp-page="/Info/Info">It can be seen here.</a>
+                        Remember!! There is an extra charge for the distance from my home.<a asp-page="/Price/Price">It can be seen here.</a>
 
                     </b> 
                 </p>
+                  <div class="container">
+            <div class="Højre">
                 <div class="form-group">
                     <label asp-for="BookATime.DateForBooking"> Date for booking: </label> <br />
                     <input asp-for="BookATime.DateForBooking" readonly class="text-box" value="@Model.fuldDatoOgTid.ToString("yyyy-MM-dd HH:mm")" />
                
                 </div>
-
-                <div class="form-group">
-                    <label asp-for="Ydelse.ServiceType"> Which Service Type: </label> <br />
-                    <select asp-for="Ydelse.ServiceType" asp-items="Html.GetEnumSelectList<ServiceType>()" class="text-box"></select>
-                </div>
-
-                <div class="form-group">
-
-                    <label asp-for="Ydelse.DogSize"> Which dog size: </label> <br />
-                    <select asp-for="Ydelse.DogSize" asp-items="Html.GetEnumSelectList<DogSize>()" class="text-box"></select>
-               
-                </div>
-
 
                 <div class="form-group">
                     <label asp-for="User.Name" class="control-lable">Your name:</label> <br />
@@ -203,7 +196,68 @@
                     <span asp-validation-for="User.Telefonnummer" class="text-danger"></span>
                 </div>
 
+                
+                <div class="form-group">
+                    <label asp-for="BookATime.Elevator" class="control-lable">Do you have an elevator?</label> <br />
+                    <select asp-for="BookATime.Elevator" class="text-box">
+                        <option value="True">Ja</option>
+                        <option value="False">Nej</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BookATime.Floors" class="control-lable">Which floor do you live on?</label> <br />
+                    <input asp-for="BookATime.Floors" class="text-box" required />
+                    <span asp-validation-for="BookATime.Floors" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                            <label asp-for="BookATime.Comments" class="control-lable">  du nogle kommentar til hvordan klipning af din hunde skal se ud: </label>
+                    <br />
+                            <textarea asp-for="BookATime.Comments" rows="6" cols="43"> </textarea>
+                </div>
+                </div>
+                    <div class="Venstre">
+                        <div class="form-group">
+                            <label asp-for="BookATime.Address" class="control-lable">Address for where you want the dogs cared for:</label> <br />
+                            <input asp-for="BookATime.Address" class="text-box" />
+                            <span asp-validation-for="BookATime.Address" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                    <label asp-for="Ydelse.ServiceType"> Which Service Type: </label> <br />
+                    <select asp-for="Ydelse.ServiceType" asp-items="Html.GetEnumSelectList<ServiceType>()" class="text-box"></select>
+                </div>
 
+                <div class="form-group">
+
+                    <label asp-for="Ydelse.DogSize"> Which dog size: </label> <br />
+                    <select asp-for="Ydelse.DogSize" asp-items="Html.GetEnumSelectList<DogSize>()" class="text-box"></select>
+
+                </div>
+               
+
+                <div class="form-group">
+                    <label asp-for="Dog.Name" class="control-lable">Your dogs name:</label> <br />
+                    <input asp-for="Dog.Name" class="text-box" />
+                    <span asp-validation-for="Dog.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Dog.Age" class="control-lable">When is your dog born?</label> <br />
+                    <input asp-for="Dog.Age" class="text-box" />
+                    <span asp-validation-for="Dog.Age" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Dog.Race" class="control-lable">Which race is your dog?</label> <br />
+                    <input asp-for="Dog.Race" class="text-box" />
+                    <span asp-validation-for="Dog.Race" class="text-danger"></span>
+
+                </div>
+                <div class="form-group">
+                            <label asp-for="Dog.FirstTime" class="control-lable">Is this the dog's first visit to a groomer??</label> <br />
+                    <select asp-for="Dog.FirstTime" class="text-box">
+                        <option value="True">Ja</option>
+                        <option value="False">Nej</option>
+                    </select>
+                </div>
+            
                 <div class="form-group">
                     <div class="form-group">
                         <label asp-for="@Model.DogPhoto" class="control-label">Please upload a image of your dog:</label>
@@ -221,49 +275,8 @@
                         <input asp-for="@Model.BathPhoto" class="custom-file-input text-box" required />
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <label asp-for="Dog.Name" class="control-lable">Your name:</label> <br />
-                    <input asp-for="Dog.Name" class="text-box" />
-                    <span asp-validation-for="Dog.Name" class="text-danger"></span>
+               </div>
                 </div>
-                <div class="form-group">
-                    <label asp-for="Dog.Age" class="control-lable">Your name:</label> <br />
-                    <input asp-for="Dog.Age" class="text-box" />
-                    <span asp-validation-for="Dog.Age" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Dog.Race" class="control-lable">Your name:</label> <br />
-                    <input asp-for="Dog.Race" class="text-box" />
-                    <span asp-validation-for="Dog.Race" class="text-danger"></span>
-
-                </div>
-                <div class="form-group">
-                    <label asp-for="Dog.FirstTime" class="control-lable">Is it your first time here?</label> <br />
-                    <select asp-for="Dog.FirstTime" class="text-box">
-                        <option value="True">Ja</option>
-                        <option value="False">Nej</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label asp-for="BookATime.Elevator" class="control-lable">Do you have an elevator?</label> <br />
-                    <select asp-for="BookATime.Elevator" class="text-box">
-                        <option value="True">Ja</option>
-                        <option value="False">Nej</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label asp-for="BookATime.Floors" class="control-lable">Which floor do you live on?</label> <br />
-                    <input asp-for="BookATime.Floors" class="text-box" required />
-                    <span asp-validation-for="BookATime.Floors" class="text-danger"></span>
-                </div>
-
-                <div class="form-group">
-                    <label asp-for="BookATime.Kommentar" class="control-lable">  du nogle kommentar til hvordan klipning af din hunde skal se ud: </label>
-                    <br />
-                    <textarea asp-for="BookATime.Kommentar" rows="4" cols="50"> </textarea>
-                </div>
-
                 <input type="submit" value="Book nu" style="margin-top: 20px; display: block; width: 100%;"/>
                
 

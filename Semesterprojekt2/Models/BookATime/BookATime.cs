@@ -10,13 +10,14 @@ namespace Semesterprojekt2.Models.BookATime
         //[Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string? Kommentar { get; set; }
+        public string? Comments { get; set; }
         [Required]
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:mm}")]
 
+        
         public DateTime DateForBooking { get; set; }
-
+        public string? Address {  get; set; }
         public string? DogImage { get; set; }
 
         public string? BathRoomImage { get; set; }
@@ -39,10 +40,10 @@ namespace Semesterprojekt2.Models.BookATime
         public int DogId { get; set; }
         public Dog Dog { get; set; }
         public string StatusForBooking { get; set; }
-        public BookATime(string kommentar, DateTime Date, Ydelse ydelse, Users user, Dog dog)
+        public BookATime(string comments, DateTime Date, Ydelse ydelse, Users user, Dog dog)
         {
 
-            Kommentar = kommentar;
+            Comments = comments;
             this.DateForBooking = Date;
             this.User = user;
             this.Ydelse = ydelse;
