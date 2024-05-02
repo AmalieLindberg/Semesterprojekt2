@@ -42,17 +42,18 @@
            .orange-day 
                 {
                     background-color: #FCC681;
-                    color: dimgrey; /* White text for better readability */
+                    color: black; /* White text for better readability */
                 }
 
            .yellow-day 
                 {
                     background-color:#F0E9AA;  
-                    color: dimgrey; 
+                    color: black; 
                 }
                  .red-day
                 {
                     background-color:#EAA193;
+                    color: black;
                     
                 }
 
@@ -98,7 +99,7 @@
                 }
             .past-day 
                 {
-                    color: dimgrey;
+                    color: black;
                     background-color: rgb(239,231,225); /* Or any other color that indicates non-selectability */
                 }
                 .Yellow
@@ -123,7 +124,7 @@
                 }
                 .non-link 
                 {
-                    color: dimgray; /* or the color of your normal text */
+                    color: black; /* or the color of your normal text */
                     text-decoration: none; /* removes underline */
                     cursor: pointer; /* Bevarer musepeger som klikbar */
                  }
@@ -132,13 +133,12 @@
                     background-color: transparent; /* Gør baggrunden gennemsigtig */
                     border: none; /* Fjerner rammen */
                     color: black; /* Sætter tekstfarven til sort eller enhver farve der matcher baggrunden */
-                    -webkit-appearance: none; /* Fjerner standard browser styling for WebKit-browsere */
-                    -moz-appearance: none; /* Fjerner standard browser styling for Mozilla Firefox */
-                    appearance: none; /* Fjerner standard browser styling   */
-                    content: '▼';
+           
                 } 
            
-} 
+}  
+                  
+                   
         </style>
     </head>
     <body>
@@ -243,15 +243,15 @@
                             
                      
     
-    <select asp-for="Tidspunkt" required class="transparent-select">
-        @foreach(var time in availableTimes)
-        {
-            <option value="@time" >@time</option>
-        }
-    </select>
+                             <select asp-for="Tidspunkt" required class="transparent-select">
+                                @foreach(var time in availableTimes)
+                                  {
+                                    <option value="@time" >@time</option>
+                                  }
+                             </select>
  
     
-<br />
+                        <br />
                         <button type="submit" class="button-like-text">@day</button>
                         </form>
 

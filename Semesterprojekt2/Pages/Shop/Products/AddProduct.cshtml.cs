@@ -48,7 +48,7 @@ namespace Semesterprojekt2.Pages.Shop.Products
 				// Hvis der allerede er et billede tilknyttet produktet, slettes det gamle først.
 				if (Product.ProductImage != null)
 				{
-					string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/Images/Shop", Product.ProductImage);
+					string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/Images", "Shop", Product.ProductImage);
 					System.IO.File.Delete(filePath);
 				}
 				// ProcessUploadedFile håndterer oprettelse af filnavn og gemning af filen.
@@ -66,7 +66,7 @@ namespace Semesterprojekt2.Pages.Shop.Products
 			string uniqueFileName = null;
 			if (Photo != null)
 			{
-				string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images");
+				string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images", "Shop");
 				uniqueFileName = Guid.NewGuid().ToString() + "_" + Photo.FileName;
 				string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 				using (var fileStream = new FileStream(filePath, FileMode.Create))

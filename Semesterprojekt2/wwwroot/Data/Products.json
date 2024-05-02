@@ -8,5 +8,15 @@
     "Amount": 250,
     "Description": "Treats with a taste of lever",
     "ProductImage": "testbillede.jpg"
+  },
+  {
+    "Id": 0,
+    "Name": "ds",
+    "Price": 323,
+    "Type": 0,
+    "Brand": "ds",
+    "Amount": 23,
+    "Description": "ds",
+    "ProductImage": "7d965234-82fd-41e2-ae79-2325b46ce163_logitech-g-pro-gaming-keyboard-nordic-layout--pdp_main-1920.jpg"
   }
 ]

@@ -150,7 +150,7 @@
                 <div class="card">
                     <!-- Link til produktdetaljer med produktbillede, navn og pris -->
                     <a href="@Url.Page("/Shop/Products/DetailProduct", new { id = product.Id })" style="text-decoration:none; color:inherit; display:block; position:relative;">
-                        <img src="/Images/Shop/testbillede.jpg" alt="Product Image" style="width:100%">
+                        <img src="~/images/Shop/@product.ProductImage" alt="Product Image" style="width:100%">
                         <h3 style="color: #C65127;">@product.Name</h3>
                         <p style=" margin-bottom: 50px;" class="price">@product.Price,-</p>
                     </a>

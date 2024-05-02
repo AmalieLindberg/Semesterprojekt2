@@ -2,7 +2,15 @@
 
 namespace Semesterprojekt2.Models.Shop
 {
-    public class Product
+	// En enumeration der definerer de forskellige typer af produkter som kan eksistere.
+	public enum ProductType
+	{
+		Clothing,
+		Soap,
+		Treats,
+		Toy
+	}
+	public class Product
     {
         // En statisk variabel til at holde styr på det næste unikke ID for et produkt.
         private static int nextId = 1;
@@ -36,17 +44,10 @@ namespace Semesterprojekt2.Models.Shop
         public string? Description { get; set; }
 
         [Display(Name = "Image")]
-        [Required(ErrorMessage = "The product must be given an image")]
+    
         public string? ProductImage { get; set; }
 
-		// En enumeration der definerer de forskellige typer af produkter som kan eksistere.
-		public enum ProductType
-        {
-            Clothing,
-            Soap,
-            Treats,
-            Toy
-        }
+		
 
 		// En konstruktør der initialiserer et nyt produkt med specifikke værdier for hver egenskab.
 		public Product(string name, double price, ProductType type, string brand, int amount, string description)
