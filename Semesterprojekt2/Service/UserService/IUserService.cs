@@ -6,9 +6,11 @@ namespace Semesterprojekt2.Service.UserService.UserService
     public interface IUserService
     {
         List<Users> GetUsers();
-        void AddUser(Users user);
-        public void UpdateUser(Users user);
-        public Users GetUser(int id);
+        Task AddUser(Users user);
+        void UpdateUser(Users user);
+        Users GetUser(int id);
         Users DeleteUser(int? userId);
-    }
+        //Users GetUserByUserName(string name);
+
+	}
 }

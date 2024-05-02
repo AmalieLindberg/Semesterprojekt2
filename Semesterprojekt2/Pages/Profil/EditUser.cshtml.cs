@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Service.UserService.UserService;
+using System.Diagnostics;
 
 namespace Semesterprojekt2.Pages.Profil
 {
@@ -29,7 +30,8 @@ namespace Semesterprojekt2.Pages.Profil
         {
             if (!ModelState.IsValid)
             {
-                return Page();
+				
+				return Page();
             }
 
             _userService.UpdateUser(User);

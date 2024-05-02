@@ -48,9 +48,9 @@
                                         }
                                         else
                                         {
-                                            <a class="nav-link text-dark" asp-area="" asp-page="/Profil/Profil">Profil</a>
+                                            <a class="nav-link text-dark" asp-area="" asp-page="/Profil/Profil">Profile</a>
                                             <a class="nav-link text-dark" asp-area="" asp-page="/Orderhistory/Orderhistory">Orderhistory</a>
-                                            <a class="nav-link text-dark" asp-area="" asp-page="/Login/LogOut">LogOut</a>
+                                            <a class="nav-link text-dark" asp-area="" asp-page="/Login/LogOut">Log Out</a>
                                              
                                             /* Testing Admin visibility for CreateAdmin Page */
                                             if (LoginModel.LoggedInUser.Role == "Admin")
@@ -151,8 +151,8 @@
                             <br />
                             <br />
                             <br />
-                            Terms & conditions <br />
-                            FAQ
+                            <a style="text-decoration:none; color:#495057BF;" asp-area="" asp-page="/FooterPages/Terms and Conditions">Terms & conditions</a> <br />
+                            <a style="text-decoration:none; color:#495057BF;" asp-area="" asp-page="/FooterPages/FAQ">FAQ</a>
                         </p>
                     </center>
                 </div>

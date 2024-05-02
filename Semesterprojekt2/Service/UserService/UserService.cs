@@ -11,9 +11,9 @@ namespace Semesterprojekt2.Service.UserService.UserService
 
         public UserService(JsonFileUserService jsonFileUserService)
         {
-            _users = MockUsers.GetMockUser();
+            //_users = MockUsers.GetMockUser();
             _jsonFileUserService = jsonFileUserService;
-            //_users = JsonFileUserService.GetJsonUsers().ToList();
+            _users = jsonFileUserService.GetJsonUsers().ToList();
             _jsonFileUserService.SaveJsonUsers(_users);
 
 
@@ -24,7 +24,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
             _users = MockUsers.GetMockUser().ToList();
         }
 
-        public void AddUser(Users user)
+        public async Task AddUser(Users user)
         {
             _users.Add(user);
             _jsonFileUserService.SaveJsonUsers(_users);
@@ -49,10 +49,12 @@ namespace Semesterprojekt2.Service.UserService.UserService
                 {
                     if (u.UserId == user.UserId)
                     {
+                        u.UserId = user.UserId;
                         u.Name = user.Name;
                         u.Email = user.Email;
                         u.Password = user.Password;
                         u.Telefonnummer = user.Telefonnummer;
+                        u.Role = user.Role;
                     }
                 }
                 _jsonFileUserService.SaveJsonUsers(_users);
@@ -81,5 +83,11 @@ namespace Semesterprojekt2.Service.UserService.UserService
         }
 
         public List<Users> GetUsers() { return _users; }
-    }
+
+		//public Users GetUserByUserName(string name)
+		//{
+		//	//return DbService.GetObjectByIdAsync(name).Result;
+		//	return Users.Find(user => users.Name == name);
+		//}
+	}
 }

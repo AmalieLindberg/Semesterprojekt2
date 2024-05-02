@@ -32,7 +32,7 @@ namespace Semesterprojekt2.Pages.Profil
             if (deletedUser == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 
-            return RedirectToPage("/Index");
+            return RedirectToPage("/Login/LogOut");
         }
     }
 }

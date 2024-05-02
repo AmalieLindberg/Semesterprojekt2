@@ -9,7 +9,7 @@ namespace Semesterprojekt2.Models
         //havde vi brugt denne til at fortælle database hvad.
         //[Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int UserId { get; set; }
+        public int UserId{ get; set; }
 
         [Required]
         public string Password { get; set; }
@@ -23,7 +23,6 @@ namespace Semesterprojekt2.Models
         
         public string Role { get; set; }
 
-        public string ConfirmPassword { get; set; }
 
         public Users(string password, string name, string telefonnummer, string email, string role)
         {

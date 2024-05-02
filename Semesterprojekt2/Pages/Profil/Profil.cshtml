@@ -17,13 +17,7 @@
         </div>
     </div>
 
-    @if (Model.Users != null)
-    {
-        foreach (var user in Model.Users)
-        {
-                <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@user.UserId">Edit</a>
-                <a class="btn btn-danger btn-sm" title="Delete" asp-page="/Profil/DeleteUser" asp-route-id="@user.UserId">Delete</a>
-        }
-    }
+                <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@Model.Users.UserId">Edit</a>
+    <a class="btn btn-danger btn-sm" title="Delete" asp-page="/Profil/DeleteUser" asp-route-id="@Model.Users.UserId">Delete</a>
     
 </body>

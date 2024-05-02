@@ -1,11 +1,10 @@
 [
   {
     "UserId": 0,
-    "Password": "123",
+    "Password": "ab1234567",
     "Name": "Admin",
     "Telefonnummer": "12345678",
     "Email": "Email@email.dk",
-    "Role": "Admin",
-    "ConfirmPassword": null
+    "Role": "Admin"
   }
 ]

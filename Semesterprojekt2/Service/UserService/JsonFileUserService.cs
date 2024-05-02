@@ -1,7 +1,7 @@
 ﻿using Semesterprojekt2.Models;
 using System.Text.Json;
 
-namespace Semesterprojekt2.Service.UserService.UserService
+namespace Semesterprojekt2.Service.UserService
 {
 	public class JsonFileUserService
 	{
