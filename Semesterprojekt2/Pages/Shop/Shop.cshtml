@@ -42,14 +42,28 @@
 
         /* Styling for produktkort */
         .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
-            max-width: 300px; /* Maksimal bredde */
-            margin: 10px; /* Margin omkring kort */
-            text-align: center; /* Tekstcentrering */
-            font-family: arial; /* Skrifttype */
-            position: relative; /* Position relativt til nærmeste positionerede forfader */
-            cursor: pointer; /* Cursor ændres til pointer */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 300px; /* Fixed width for all cards */
+            margin: 10px;
+            text-align: center;
+            font-family: arial;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            height: 400px;
         }
+
+            .card img {
+                width: 100%; /* Ensure image takes full width of card */
+                height: 270px; /* Fixed height for images */
+                object-fit: cover; /* Ensures image covers the area without distorting aspect ratio */
+            }
+
+            .card h3, .card p {
+                margin: 10px 0; /* Consistent spacing for title and price */
+            }
+
 
         /* Styling for prisindikation på kort */
         .price {
@@ -68,6 +82,7 @@
             cursor: pointer; /* Cursor ændres til pointer */
             width: 100%; /* Bredde fylder hele kortet */
             font-size: 18px; /* Størrelse på tekst */
+            margin-top: auto; /* Pushes the button to the bottom of the card */
         }
 
             /* Hover-effekt for knapper */
@@ -77,10 +92,10 @@
 
         /* Container til kort, som viser flere produkter */
         .card-container {
-            display: flex; /* Flexbox display til at placere kortene */
-            flex-wrap: wrap; /* Tillader kortene at wrappe på flere rækker */
-            justify-content: flex-start; /* Justering af indhold */
-            margin-left: 135px; /* Venstre margin */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-left: 135px;
         }
 
         /* Stil for links inden i kort, så de nedarver farve og ingen dekoration */
@@ -152,7 +167,7 @@
                     <a href="@Url.Page("/Shop/Products/DetailProduct", new { id = product.Id })" style="text-decoration:none; color:inherit; display:block; position:relative;">
                         <img src="~/images/Shop/@product.ProductImage" alt="Product Image" style="width:100%">
                         <h3 style="color: #C65127;">@product.Name</h3>
-                        <p style=" margin-bottom: 50px;" class="price">@product.Price,-</p>
+                        <p style=" margin-bottom: 10px;" class="price">@product.Price,-</p>
                     </a>
                     <!-- Knappen 'Tilføj til kurv' -->
                     <form method="post" asp-page-handler="AddToCart">
