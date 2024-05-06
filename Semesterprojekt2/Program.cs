@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Semesterprojekt2.EFDbContext;
 using Semesterprojekt2.Models.BookATime;
 using Semesterprojekt2.Service;
@@ -31,6 +32,7 @@ builder.Services.Configure<CookiePolicyOptions>(options => {
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(cookieOptions => {
     cookieOptions.LoginPath = "/Login/Login";
+    cookieOptions.AccessDeniedPath = "/Login/AcessDenied"; //If user tries to navigate to Admin page
 
 });
 //builder.Services.AddMvc().AddRazorPagesOptions(options => {

@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace Semesterprojekt2.Models
 {
@@ -9,6 +10,7 @@ namespace Semesterprojekt2.Models
         //havde vi brugt denne til at fortælle database hvad.
         //[Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
         public int UserId{ get; set; }
 
         [Required]

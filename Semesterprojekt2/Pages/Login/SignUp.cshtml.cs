@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Models;
@@ -10,7 +11,8 @@ namespace Semesterprojekt2.Pages.Login
     public class SignUpModel : PageModel
     {
         private UserService _userService;
-        
+        private PasswordHasher<string> passwordHasher;
+
 
         [BindProperty]
         public string Name { get; set; }
@@ -38,6 +40,7 @@ namespace Semesterprojekt2.Pages.Login
         public SignUpModel(UserService userService)
         {
             _userService = userService;
+            passwordHasher = new PasswordHasher<string>();
         }
 
         public IActionResult OnGet()
@@ -72,7 +75,9 @@ namespace Semesterprojekt2.Pages.Login
   
             }
 
-            _userService.AddUser(new Users(Password, Name, Phone, Email, Role));
+            string hashedPassword = passwordHasher.HashPassword(null, Password);
+           
+            _userService.AddUser(new Users(hashedPassword, Name, Phone, Email, Role));
             return RedirectToPage("Login");
         }
 

@@ -11,7 +11,8 @@ namespace Semesterprojekt2.Service.UserService.UserService
 
         public UserService(JsonFileUserService jsonFileUserService)
         {
-            //_users = MockUsers.GetMockUser();
+            //_users = MockUsers.GetMockUser(); //Used to populate User.json once to create Admin Login
+            
             _jsonFileUserService = jsonFileUserService;
             _users = jsonFileUserService.GetJsonUsers().ToList();
             _jsonFileUserService.SaveJsonUsers(_users);
@@ -20,9 +21,16 @@ namespace Semesterprojekt2.Service.UserService.UserService
 
         public async Task AddUser(Users user)
         {
+            if (!_users.Any())
+                user.UserId = 1;
+            else
+                user.UserId = _users.Max(u => u.UserId) + 1;
+
             _users.Add(user);
             _jsonFileUserService.SaveJsonUsers(_users);
         }
+
+
 
         public Users GetUser(int id)
         {
@@ -76,7 +84,11 @@ namespace Semesterprojekt2.Service.UserService.UserService
             return userToBeDeleted;
         }
 
-        public List<Users> GetUsers() { return _users; }
+        public List<Users> GetUsers() 
+        {
+            _users = _jsonFileUserService.GetJsonUsers().ToList(); //reload data from JSON file when method is called.
+            return _users; 
+        }
 
 		//public Users GetUserByUserName(string name)
 		//{

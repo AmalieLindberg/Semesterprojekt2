@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 using System.Data;
 using System.Runtime.ConstrainedExecution;
+using Microsoft.AspNetCore.Identity;
 
 namespace Semesterprojekt2.Pages.Login
 {
@@ -43,29 +44,35 @@ namespace Semesterprojekt2.Pages.Login
             //Gennemgå hver bruger i listen
             foreach (Users user in users)
             {
-                //tjek om indtastet email og password matcher en bruger i lsten
-                if (Email == user.Email && Password == user.Password)
+                //tjek om indtastet email matcher en bruger i lsten
+                if (Email == user.Email)
                 {
-                    //Gem den logget ind bruger
-                    LoggedInUser = user;
-                    //Opret en claim for brugerens email
-                    var claims = new List<Claim> { new Claim(ClaimTypes.Email, Email) };
-                    
-                    //Hvis User har Role="admin" tilføjes et nyt Claim-objekt, hvor ClaimTypes.Role sættes til "Admin"
-                    if (user.Role == "Admin")
+
+                    var passwordHasher = new PasswordHasher<string>();
+
+                    if (passwordHasher.VerifyHashedPassword(null, user.Password, Password) == PasswordVerificationResult.Success)
                     {
-                        claims.Add(new Claim(ClaimTypes.Role, "Admin"));
+                        //Gem den logget ind bruger
+                        LoggedInUser = user;
+
+                        //Opret en claim for brugerens email
+                        var claims = new List<Claim> { new Claim(ClaimTypes.Email, Email) };
+
+                        //Hvis User har Role="admin" tilføjes et nyt Claim-objekt, hvor ClaimTypes.Role sættes til "Admin"
+                        if (user.Role == "Admin")
+                        {
+                            claims.Add(new Claim(ClaimTypes.Role, "Admin"));
+                        }
+
+                        //Opret en ClaimIdentity med email-claimet
+                        var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+                        //Log brugeren in ved at oprette et cookie og tiltøje en climIdentety
+                        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+
+                        //Redirect til startsiden
+                        return RedirectToPage("/Index");
                     }
-
-                    //Opret en ClaimIdentity med email-claimet
-                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
-                    //Log brugeren in ved at oprette et cookie og tiltøje en climIdentety
-                    await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
-
-                    //Redirect til startsiden
-                    return RedirectToPage("/Index");
-
                 }
 
             }

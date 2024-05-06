@@ -22,6 +22,7 @@
         }
 
         .container {
+            display: flex;
             justify-content: center;
             align-items: center;
             /* height: 100vh; */
@@ -121,7 +122,7 @@
     </style>
 </head>
 <body>
-    <div class="container" style="display: flex;">
+    <div class="container">
         <div class="wrapper">
             <form method="post">
                 <h1>Sign Up</h1>
@@ -137,8 +138,9 @@
 
                 <div class="input-box">
                     <label asp-for="@Model.Email" class="hidden" class="control-lable">Enter Email</label>
-                    <input asp-for="@Model.Email" class="form-control" type="email" placeholder="Email" required />
-                    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                    <input asp-for="@Model.Email" class="form-control" placeholder="Email" required />
+                    <span asp-validation-for="@Model.Email" class="text-danger"></span> 
+                    <!-- If there's error, this validation tag displays it on the page -->
                     <i class='bx bxs-user'></i>
                 </div>
 

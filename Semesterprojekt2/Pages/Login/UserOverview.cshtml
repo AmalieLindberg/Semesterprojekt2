@@ -22,34 +22,38 @@
                 Role
             </th>
             <th>
-                Sign-Up Date
-            </th>
-            <th>
                 Action <!-- This is for the options: Password Reset, Delete and Edit User -->
             </th>
         </tr>
     </thead>
     <tbody>
+
+
+        @if (Model.Users != null)
+        {
+            foreach (var obj in Model.Users)
+            { 
                 <tr>
                     <td>
-                            
+                        @obj.UserId
                     </td>
                     <td>
-                            
+                        @obj.Name
                     </td>
                     <td>
-                            
+                        @obj.Email
                     </td>
                     <td>
-                            
+                        @obj.Role  
                     </td>
-                    <td>
-                            
-                    </td>
-                    <td>
-
+                    <td> <!-- Har ikke nogen funktionalitet -->
+                        <button style="text-align: center, border:none, color:white">Reset Password</button>
+                   
                     </td>
                 </tr>
+
+            }
+        }
 
     </tbody>
 </table>
