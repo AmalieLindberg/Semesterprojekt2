@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 using Semesterprojekt2.EFDbContext;
 using Semesterprojekt2.Models.BookATime;
 using Semesterprojekt2.Service;
@@ -21,8 +20,7 @@ builder.Services.AddSingleton<DogService, DogService>();
 builder.Services.AddSingleton<BookedDaysService, BookedDaysService>();
 builder.Services.AddTransient<JsonFileUserService>();
 builder.Services.AddDbContext<SemsterprojektDbContext>();
-
-
+builder.Services.AddSingleton<ShoppingCartService, ShoppingCartService>();
 
 builder.Services.Configure<CookiePolicyOptions>(options => {
     // This lambda determines whether user consent for non-essential cookies is needed for a given request. options.CheckConsentNeeded = context => true;
@@ -32,7 +30,6 @@ builder.Services.Configure<CookiePolicyOptions>(options => {
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(cookieOptions => {
     cookieOptions.LoginPath = "/Login/Login";
-    cookieOptions.AccessDeniedPath = "/Login/AcessDenied"; //If user tries to navigate to Admin page
 
 });
 //builder.Services.AddMvc().AddRazorPagesOptions(options => {
