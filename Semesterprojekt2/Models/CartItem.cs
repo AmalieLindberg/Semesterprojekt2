@@ -5,7 +5,7 @@ namespace Semesterprojekt2.Models
 {
     public class CartItem
     {
-        public string CartId { get; set; }
+        public int CartId { get; set; }
         public int Quantity { get; set; }
         public Product Product { get; set; }
 
