@@ -1,6 +1,9 @@
-﻿namespace Semesterprojekt2.Service.UserService
+﻿using Semesterprojekt2.Models;
+
+namespace Semesterprojekt2.Service.UserService
 {
-    public class UserDbService
+    public class UserDbService : DbGenericService<Users>
     {
+
     }
 }
