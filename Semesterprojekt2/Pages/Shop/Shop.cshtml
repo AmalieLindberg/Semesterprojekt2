@@ -155,7 +155,10 @@
                         <p style=" margin-bottom: 50px;" class="price">@product.Price,-</p>
                     </a>
                     <!-- Knappen 'Tilføj til kurv' -->
-                    <p style="position: absolute; bottom:-16px; right: 0px; left: 0px;"><button onclick="event.stopPropagation();">Tilføj til kurv</button></p>
+                    <form method="post" asp-page-handler="AddToCart">
+                        <input type="hidden" name="productId" value="@product.Id" />
+                        <button type="submit">Add to cart</button>
+                    </form>
                 </div>
             }
         }

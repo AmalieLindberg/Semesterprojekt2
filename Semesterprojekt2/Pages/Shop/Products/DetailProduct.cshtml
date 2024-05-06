@@ -107,7 +107,10 @@
 
                 <!-- Knapper til produktaktioner som tilføj til kurv, rediger og slet -->
                 <div class="product-actions">
-                    <button class="btn add-to-cart">Add to cart</button>
+                    <form method="post" asp-page-handler="AddToCart">
+                        <input type="hidden" name="productId" value="@Model.Product.Id" />
+                        <button class="btn add-to-cart" type="submit">Add to cart</button>
+                    </form>
                     <div class="edit-delete-container">
                         <a class="btn btn-primary edit-button" title="Edit" asp-page="/Shop/Products/EditProduct" asp-route-id="@Model.Product.Id">Edit</a>
                         <a class="btn btn-danger delete-button" title="Delete" asp-page="/Shop/Products/DeleteProduct" asp-route-id="@Model.Product.Id">Delete</a>

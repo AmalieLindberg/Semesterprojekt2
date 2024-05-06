@@ -21,7 +21,7 @@ namespace Semesterprojekt2.Models
 		public Users Users { get; set; }
 
 		[Required]
-		public int ItemId { get; set; }
+		public int ProductId { get; set; }
 
 		public Product Product { get; set; }
 

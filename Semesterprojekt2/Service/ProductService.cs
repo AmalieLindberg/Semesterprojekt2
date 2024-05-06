@@ -27,11 +27,11 @@ namespace Semesterprojekt2.Service
             JsonFileProductService.SaveJsonProducts(_products);
         }
 
-        public Product GetProduct(int id)
+        public Product GetProduct(int productId)
         {
             foreach (Product product in _products)
             {
-                if (product.Id == id)
+                if (product.Id == productId)
                     return product;
             }
             return null;

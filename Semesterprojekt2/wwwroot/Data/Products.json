@@ -1,22 +1,22 @@
 [
   {
-    "Id": 2,
-    "Name": "Lever Treats",
-    "Price": 170,
-    "Type": 2,
-    "Brand": "Dog Treatssss",
-    "Amount": 255,
-    "Description": "Treats with a taste of lever",
-    "ProductImage": null
+    "Id": 1,
+    "Name": "Squeaky Cat",
+    "Price": 370,
+    "Type": 3,
+    "Brand": "ToysRUs",
+    "Amount": 1,
+    "Description": "This toy is supposed to be a cat, that makes a squeaky sound when the dog bites it.",
+    "ProductImage": "4a8467e8-1a4f-4bbf-a1d9-7326d72961c7_SqueakyCat.jpg"
   },
   {
-    "Id": 0,
-    "Name": "ds",
-    "Price": 355,
-    "Type": 0,
-    "Brand": "ds",
-    "Amount": 23,
-    "Description": "ds",
-    "ProductImage": "4f87e553-edd4-4ff3-a912-7242d25ea39e_PineappleShampoo.jpg"
+    "Id": 2,
+    "Name": "Shampoo",
+    "Price": 200,
+    "Type": 2,
+    "Brand": "Maui",
+    "Amount": 1,
+    "Description": "This Shampoo has the smell of Pineapple",
+    "ProductImage": "7a322c5e-eaf1-4693-9faf-3f532de8ea88_PineappleShampoo.jpg"
   }
 ]

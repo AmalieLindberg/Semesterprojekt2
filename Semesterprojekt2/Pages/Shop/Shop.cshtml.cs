@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Semesterprojekt2.Models;
 using Semesterprojekt2.Models.Shop;
 using Semesterprojekt2.Service;
 
@@ -11,11 +13,16 @@ namespace Semesterprojekt2.Pages.Shop
         // Reference til en service, der styrer produktrelaterede dataoperationer.
         private IProductService _productService;
 
+        private readonly ShoppingCartService _shoppingCartService; // The service where GetCartItem() is defined
+
         // Konstruktør, der initialiserer productService via dependency injection.
-        public ShopModel(IProductService productService)
+        public ShopModel(IProductService productService, ShoppingCartService shoppingCartService)
         {
             _productService = productService;
+            _shoppingCartService = shoppingCartService;
         }
+
+        private List<CartItem>? CartItems { get; set; }
 
         // Liste af produkter der skal vises på siden.
         public List<Product>? Products { get; private set; }
@@ -54,5 +61,22 @@ namespace Semesterprojekt2.Pages.Shop
             // Returnerer den aktuelle side med de opdaterede produktresultater.
             return Page();
 		}
-	}
+
+        public IActionResult OnPostAddToCart(int productId, int quantity)
+        {
+            // Assume ProductService is available through dependency injection and used to fetch the product
+            var product = _productService.GetProduct(productId); // Fetch the product details from the service
+
+            if (product == null)
+            {
+                // Handle the case where the product does not exist
+                return RedirectToPage("/Error"); // or another appropriate error handling approach
+            }
+
+            // Add to cart
+            _shoppingCartService.AddToCart(product, 1);
+
+            return RedirectToPage("/Shop/Shop"); // Redirect to the cart page or confirmation page
+        }
+    }
 }

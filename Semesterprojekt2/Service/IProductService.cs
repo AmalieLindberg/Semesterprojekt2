@@ -7,7 +7,7 @@ namespace Semesterprojekt2.Service
         List<Product> GetProducts();
         Task AddProductAsync(Product product);
         Task UpdateProductAsync(Product product);
-        Product GetProduct(int id);
+        Product GetProduct(int productId);
         Product DeleteProduct(int? productId);
         IEnumerable<Product> NameSearch(string str);
 		IEnumerable<Product> PriceFilter(int maxPrice, int minPrice = 0);
