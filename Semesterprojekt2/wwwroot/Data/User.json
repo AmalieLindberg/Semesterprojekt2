@@ -1,34 +1,10 @@
 [
   {
     "UserId": 0,
-    "Password": "123",
+    "Password": "AQAAAAIAAYagAAAAEIlyiOmGgdI1MVqeiXp201pXJCmt2kKnNVkSZmzSvmacZnZFFsLti0AaCJ4ArT8yTA==",
     "Name": "Admin",
     "Telefonnummer": "12345678",
     "Email": "Email@email.dk",
     "Role": "Admin"
-  },
-  {
-    "UserId": 1,
-    "Password": "123",
-    "Name": "Normal User",
-    "Telefonnummer": "12345678",
-    "Email": "Email2@email.dk",
-    "Role": "normaluser"
-  },
-  {
-    "UserId": 0,
-    "Password": "12345678h",
-    "Name": "Maria-Clara Neu",
-    "Telefonnummer": "91723325",
-    "Email": "anotheremail@email.dk",
-    "Role": "normaluser"
-  },
-  {
-    "UserId": 0,
-    "Password": "12345678h",
-    "Name": "Clara",
-    "Telefonnummer": "123456789",
-    "Email": "Mail@mail.dk",
-    "Role": "normaluser"
   }
 ]
