@@ -9,16 +9,18 @@ namespace Semesterprojekt2.EFDbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Data Source=mssql1.unoeuro.com;Initial Catalog=beckyblau_dk_db_shampoodle; User ID=beckyblau_dk; Password=BtahFDkEnwd5ey3RbH29;  Integrated Security=True; Connect Timeout=30; Encrypt=False");
+            options.UseSqlServer(@"Data Source=mssql1.unoeuro.com;Initial Catalog=beckyblau_dk_db_shampoodle; User ID=beckyblau_dk; Password=BtahFDkEnwd5ey3RbH29; TrustServerCertificate=true");
 
         }
-
+        /*; Integrated Security=True; Connect Timeout=30; Encrypt=False*/
         public DbSet<BookATime> BookATimes { get; set; }
         public DbSet<Users> Users { get; set; }
-        public DbSet<Orders> Orders { get; set; }
+       
         public DbSet<Ydelse> Ydelses { get; set; }
         public DbSet<Dog> Dogs { get; set; }
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Product { get; set; }
+        //public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<BookedDays> BookedDays { get; set; }
      
     }
 }

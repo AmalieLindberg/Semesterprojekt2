@@ -8,7 +8,7 @@ namespace Semesterprojekt2.Models
     {
         //Vi skal ikke brug dem, da vi oprette database manuelt hvis vi har oprette den via Entity Framework.
         //havde vi brugt denne til at fortælle database hvad.
-        //[Key]
+        [Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         public int UserId{ get; set; }
@@ -19,14 +19,14 @@ namespace Semesterprojekt2.Models
         [Required]
         public string Name { get; set; }
         [Required]
-        public string Telefonnummer { get; set; }
+        public int Telefonnummer { get; set; }
         [Required, EmailAddress]
         public string Email { get; set; }
         
         public string Role { get; set; }
 
 
-        public Users(string password, string name, string telefonnummer, string email, string role)
+        public Users(string password, string name, int telefonnummer, string email, string role)
         {
             Password = password;
             Name = name;
@@ -40,7 +40,7 @@ namespace Semesterprojekt2.Models
          
             Password = "";
             Name = "";
-            Telefonnummer = "";
+            Telefonnummer=0;
             Email = "";
             Role = "";
         }

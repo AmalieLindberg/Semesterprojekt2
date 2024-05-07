@@ -22,7 +22,7 @@ namespace Semesterprojekt2.Pages.Login
         public string Email { get; set; }
 
         [BindProperty]
-        public string Phone { get; set; }
+        public int Phone { get; set; }
 
         [BindProperty, DataType(DataType.Password), MinLength(6, ErrorMessage = "Passwordet skal være mindst 6 tegn.")]
         [RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$", ErrorMessage = "Passwordet skal indeholde mindst ét bogstav og ét tal.")]

@@ -6,9 +6,10 @@ namespace Semesterprojekt2.Service.BookATimeService
     {
         private BookATimeDbService _bookATimeDbService {  get; set; }
 
-        public BookATimeService()
+        public BookATimeService(BookATimeDbService bookATimeDbService)
         {
-            //BookATimeList = _bookATimeDbService.GetObjectsAsync().Result.ToList();
+            _bookATimeDbService = bookATimeDbService;
+            BookATimeList = _bookATimeDbService.GetObjectsAsync().Result.ToList();
         }
         public List<BookATime> BookATimeList { get; set; }
 

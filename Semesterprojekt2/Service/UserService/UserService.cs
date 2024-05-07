@@ -5,17 +5,22 @@ namespace Semesterprojekt2.Service.UserService.UserService
 {
     public class UserService : IUserService
     {
+        private UserDbService DbService { get; set; }
         public List<Users> _users { get; set; }
 
-        private JsonFileUserService _jsonFileUserService { get; set; }
+ 
 
-        public UserService(JsonFileUserService jsonFileUserService)
+        public UserService(UserDbService userDbService)
         {
             //_users = MockUsers.GetMockUser(); //Used to populate User.json once to create Admin Login
-            
-            _jsonFileUserService = jsonFileUserService;
-            _users = jsonFileUserService.GetJsonUsers().ToList();
-            _jsonFileUserService.SaveJsonUsers(_users);
+            DbService = userDbService;
+           
+            //_users = jsonFileUserService.GetJsonUsers().ToList();
+            //DbService.SaveObjects(_users);
+
+            _users = DbService.GetObjectsAsync().Result.ToList();
+
+            //_jsonFileUserService.SaveJsonUsers(_users);
 
         }
 
@@ -27,7 +32,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
                 user.UserId = _users.Max(u => u.UserId) + 1;
 
             _users.Add(user);
-            _jsonFileUserService.SaveJsonUsers(_users);
+            DbService.AddObjectAsync(user);
         }
 
 
@@ -59,7 +64,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
                         u.Role = user.Role;
                     }
                 }
-                _jsonFileUserService.SaveJsonUsers(_users);
+                DbService.UpdateObjectAsync(user);
             }
         }
 
@@ -78,7 +83,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
             if (userToBeDeleted != null)
             {
                 _users.Remove(userToBeDeleted);
-                _jsonFileUserService.SaveJsonUsers(_users);
+                DbService.DeleteObjectAsync(userToBeDeleted);
             }
 
             return userToBeDeleted;
@@ -86,7 +91,6 @@ namespace Semesterprojekt2.Service.UserService.UserService
 
         public List<Users> GetUsers() 
         {
-            _users = _jsonFileUserService.GetJsonUsers().ToList(); //reload data from JSON file when method is called.
             return _users; 
         }
 

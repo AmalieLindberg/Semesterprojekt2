@@ -1,30 +1,31 @@
 ﻿using Semesterprojekt2.MockData.Shop;
+using Semesterprojekt2.Models;
 using Semesterprojekt2.Models.Shop;
+using System.Runtime.CompilerServices;
 
 namespace Semesterprojekt2.Service
 {
     public class ProductService : IProductService
     {
-        private List<Product> _products;
+        private List<Product> _products {  get; set; }
+        private DbGenericService<Product> _dbGenericService {  get; set; }
 
         private JsonFileProductService JsonFileProductService { get; set; }
 
-        public ProductService(JsonFileProductService jsonFileProductService)
+        public ProductService(JsonFileProductService jsonFileProductService, DbGenericService<Product> dbGenericService)
         {
+            _dbGenericService = dbGenericService;
             JsonFileProductService = jsonFileProductService;
             //_products = MockProducts.GetMockProducts();
             _products = JsonFileProductService.GetJsonProducts().ToList();
-        }
-
-        public ProductService()
-        {
-            _products = MockProducts.GetMockProducts();
+            _dbGenericService.SaveObjects(_products);
+            //_products = _dbGenericService.GetObjectsAsync().Result.ToList();
         }
 
         public async Task AddProductAsync(Product product)
         {
             _products.Add(product);
-            JsonFileProductService.SaveJsonProducts(_products);
+          await  _dbGenericService.AddObjectAsync(product);
         }
 
         public Product GetProduct(int productId)

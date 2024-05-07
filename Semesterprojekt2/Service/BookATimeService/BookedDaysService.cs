@@ -4,14 +4,15 @@ namespace Semesterprojekt2.Service.BookATimeService
 {
     public class BookedDaysService
     {
-        //private DbGenericService<BookedDays> _BookedDaysDbService { get; set; }
+        private DbGenericService<BookedDays> _BookedDaysDbService { get; set; }
         private List<BookedDays> _bookedDays;
 
-        public BookedDaysService(/*DbGenericService<BookedDays> bookedDaysDbService*/)
-        {
+        public BookedDaysService(DbGenericService<BookedDays> bookedDaysDbService)
+        {            
+            _BookedDaysDbService = bookedDaysDbService;
+
             _bookedDays = new List<BookedDays>();
-            //_BookedDaysDbService = bookedDaysDbService;
-            //blokeredeDage = _BookedDaysDbService.GetObjectsAsync().Result.ToList();
+            _bookedDays = _BookedDaysDbService.GetObjectsAsync().Result.ToList();
         }
 
         public async Task AddBookedDays(DateTime start, DateTime slut)

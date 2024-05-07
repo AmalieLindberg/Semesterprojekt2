@@ -9,7 +9,7 @@ namespace Semesterprojekt2.MockData.Profil
 
         public static List<Users> users = new List<Users>
         {
-            new Users(passwordHasher.HashPassword(null, "123"), "Admin", "12345678", "Email@email.dk", "Admin"),
+            new Users(passwordHasher.HashPassword(null, "123"), "Admin", 12345678, "Email@email.dk", "Admin"),
 
         };
 

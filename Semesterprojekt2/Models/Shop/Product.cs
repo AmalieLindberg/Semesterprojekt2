@@ -14,7 +14,8 @@ namespace Semesterprojekt2.Models.Shop
     {
         // En statisk variabel til at holde styr på det næste unikke ID for et produkt.
         private static int nextId = 1;
-		// En property til at repræsentere produktets ID.
+        // En property til at repræsentere produktets ID.
+        [Key]
 		public int Id { get; set; }
 
 		// [Display(Name = "Name")] - Annoteringen bruges til at vise et label i brugergrænsefladen.
@@ -25,7 +26,7 @@ namespace Semesterprojekt2.Models.Shop
 
         [Display(Name = "Price")]
         [Required(ErrorMessage = "The product must be given a price")]
-        public double? Price { get; set; }
+        public decimal? Price { get; set; }
 
         [Display(Name = "Type")]
         [Required(ErrorMessage = "The product must be given a type")]
@@ -50,9 +51,9 @@ namespace Semesterprojekt2.Models.Shop
 		
 
 		// En konstruktør der initialiserer et nyt produkt med specifikke værdier for hver egenskab.
-		public Product(string name, double price, ProductType type, string brand, int amount, string description)
+		public Product(string name, decimal price, ProductType type, string brand, int amount, string description)
         {
-            Id = nextId++; // Tildeler et unikt ID til produktet og inkrementerer det næste ID.
+            /*Id = nextId++;*/ // Tildeler et unikt ID til produktet og inkrementerer det næste ID.
 			Name = name;
             Price = price;
             Type = type;

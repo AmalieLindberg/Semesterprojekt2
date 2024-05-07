@@ -1,16 +1,20 @@
 ﻿using Semesterprojekt2.Models;
 using Semesterprojekt2.Models.Shop;
+using Semesterprojekt2.Service.BookATimeService;
 using System.Text.Json;
 
 namespace Semesterprojekt2.Service
 {
     public class ShoppingCartService
     {
+       //private DbGenericService<CartItem> _dbGenericService {  get; set; }
         private List<CartItem> _cartItems;
 
-        public ShoppingCartService()
+        public ShoppingCartService(/*DbGenericService<CartItem> dbGenericService*/)
         { 
+            //_dbGenericService = dbGenericService;
             _cartItems = new List<CartItem>();
+            //_cartItems = _dbGenericService.GetObjectsAsync().Result.ToList();
         }
 
         public void AddToCart(Product product, int quantity)

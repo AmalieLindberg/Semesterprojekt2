@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Semesterprojekt2.EFDbContext;
+using Semesterprojekt2.Models;
 using Semesterprojekt2.Models.BookATime;
+using Semesterprojekt2.Models.Shop;
 using Semesterprojekt2.Service;
 using Semesterprojekt2.Service.BookATimeService;
 using Semesterprojekt2.Service.UserService;
@@ -21,6 +23,14 @@ builder.Services.AddSingleton<BookedDaysService, BookedDaysService>();
 builder.Services.AddTransient<JsonFileUserService>();
 builder.Services.AddDbContext<SemsterprojektDbContext>();
 builder.Services.AddSingleton<ShoppingCartService, ShoppingCartService>();
+
+builder.Services.AddTransient<UserDbService, UserDbService>();
+builder.Services.AddTransient<DbGenericService<Product>, DbGenericService<Product>>();
+builder.Services.AddTransient<DbGenericService<BookedDays>, DbGenericService<BookedDays>>();
+builder.Services.AddTransient<BookATimeDbService, BookATimeDbService>();
+builder.Services.AddTransient<DbGenericService<Dog>, DbGenericService<Dog>>();
+builder.Services.AddTransient<DbGenericService<Ydelse>, DbGenericService<Ydelse>>();
+//builder.Services.AddTransient<DbGenericService<CartItem>, DbGenericService<CartItem>>();
 
 builder.Services.Configure<CookiePolicyOptions>(options => {
     // This lambda determines whether user consent for non-essential cookies is needed for a given request. options.CheckConsentNeeded = context => true;

@@ -7,12 +7,12 @@ namespace Semesterprojekt2.Service
 
     public class YdelseService
     {
-
+        private DbGenericService<Ydelse> DbGenericService { get; set; }
         public List<Ydelse> Ydelses { get; set; }
-        public YdelseService()
+        public YdelseService(DbGenericService<Ydelse> dbGenericService)
         {
-
-
+            DbGenericService = dbGenericService;
+            Ydelses = DbGenericService.GetObjectsAsync().Result.ToList();
         }
 
         public void AddYdelseAsync(Ydelse ydelse)
