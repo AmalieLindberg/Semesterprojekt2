@@ -16,7 +16,7 @@ namespace Semesterprojekt2.Service.BookATimeService
         public async Task addTidsbestilling(BookATime bookATime)
         {
             BookATimeList.Add(bookATime);
-            //await _bookATimeDbService.AddObjectAsync(bookATime);
+            await _bookATimeDbService.AddObjectAsync(bookATime);
 
         }
         public List<BookATime> GetBookATimes()
@@ -50,57 +50,21 @@ namespace Semesterprojekt2.Service.BookATimeService
 
         //Metoder 
 
-        //GetUpdatedAvailableTimes matcher sammen med GetBookedTimesForDate og GetAvailableTimes
-        //Bruger databasene
-        //public async Task<List<string>> GetUpdatedAvailableTimes(DateTime date, List<string> additionalBookedTimes)
-        //{
-        //    List<string> bookedTimesFromDb = await _bookATimeDbService.GetBookedTimesForDate(date);
-
-        //    // Kombiner bookede tider fra databasen med den ekstra liste
-        //    var allBookedTimes = bookedTimesFromDb.Concat(additionalBookedTimes).Distinct().ToList();
-
-        //    // Få den opdaterede liste over tilgængelige tider ved at passere alle bookede tider
-        //    List<string> availableTimes = GetAvailableTimes(date, allBookedTimes);
-
-        //    return availableTimes;
-        //}
-        public List<string> GetUpdatedAvailableTimes(DateTime date, List<string> additionalBookedTimes)
+        public async Task<List<string>> GetUpdatedAvailableTimes(DateTime date, List<string> additionalBookedTimes)
         {
 
-            List<BookATime> bookedTimesFromDb = GetBookATimes();
+            List<string> bookedTimesFromDb = await BookATimeDbService.GetBookedTimesForDate(date);
 
-            // Konverter bookedTimesFromDb til en liste af strengrepræsentationer af tidspunkter
-            List<string> bookedTimes = bookedTimesFromDb
-                                        .Where(t => t.DateForBooking == date.Date)
-                                        .Select(t => t.DateForBooking.ToString("HH:mm")) // Formatet skal matche det i GetAvailableTimes
-                                        .Distinct() // Undgå duplikater
-                                        .ToList();
+            // Kombiner bookede tider fra databasen med den ekstra liste
+            var allBookedTimes = bookedTimesFromDb.Concat(additionalBookedTimes).Distinct().ToList();
 
-            // Kombiner de bookede tider med yderligere bookede tider
-            var allBookedTimes = bookedTimes.Concat(additionalBookedTimes).Distinct().ToList();
-
-            // Antag at GetAvailableTimes nu er en ikke-asynkron metode
+            // Få den opdaterede liste over tilgængelige tider ved at passere alle bookede tider
             List<string> availableTimes = GetAvailableTimes(date, allBookedTimes);
 
             return availableTimes;
         }
 
-        //GetBookedTimesForDate kun når man booker sætte ind i en list
-        //Bruger database til det
-        //public static async Task<List<string>> GetBookedTimesForDate(DateTime date)
-        //{
-        //    using (var context = new ItemDbContext())
-        //    {
-        //        return await context.Tidsbestillings
-        //                            .Where(t => t.Dato.Date == date.Date)
-        //                            .Select(t => t.Dato.ToString("HH:mm")) // Sørg for at formatet her matcher det i GetAvailableTimes
-        //                            .Distinct() // Tilføj Distinct for at undgå duplikater
-        //                            .ToListAsync();
-        //    }
-        //}
-        //GetAvailableTimes List af tider som er muligt og hvilket dag
-
-        public static List<string> GetAvailableTimes(DateTime date, List<string> bookedTimes)
+        public List<string> GetPotentialTimes(DateTime date)
         {
             List<string> potentialTimes = new List<string>();
 
@@ -111,38 +75,76 @@ namespace Semesterprojekt2.Service.BookATimeService
                 case DayOfWeek.Monday:
                 case DayOfWeek.Tuesday:
                     potentialTimes.AddRange(new List<string> { "10:00", "11:00", "12:00" });
-                    // Kontroller om nogen af tiderne er booket, og fjern alle hvis sandt.
-                    if (potentialTimes.Any(pt => bookedTimes.Contains(pt)))
-                    {
-                        return new List<string>(); // Returnerer en tom liste, hvis en tid er booket.
-                    }
                     break;
 
                 case DayOfWeek.Wednesday:
                 case DayOfWeek.Thursday:
                 case DayOfWeek.Friday:
-                    potentialTimes.AddRange(new List<string> { "09:00", "13:00" });
-                    // Fjern kun de tider der faktisk er bookede.
-                    potentialTimes = potentialTimes.Except(bookedTimes).ToList();
                     break;
 
                 default:
                     return new List<string>(); // Returnerer en tom liste, hvis ugyldig dag.
             }
-
-            return potentialTimes; // Returner opdaterede tilgængelige tider.
+            return potentialTimes;
         }
-        //GetDayClass matcher sammen med GetUpdatedAvailableTimes så hvis listen er =0 så røde ellers dagene oragne og gul
-        public string GetDayClass(DateTime date, List<string> additionalBookedTimes)
+        
+        public static List<string> GetServiceTimes(DayOfWeek day)
         {
-         
+            switch (day)
+            {
+                case DayOfWeek.Saturday:
+                case DayOfWeek.Sunday:
+                case DayOfWeek.Monday:
+                case DayOfWeek.Tuesday:
+                    return new List<string> { "10:00", "11:00", "12:00" }; // Mobile service times
+                case DayOfWeek.Wednesday:
+                case DayOfWeek.Thursday:
+                case DayOfWeek.Friday:
+                    return new List<string> { "09:00", "13:00" }; // Salon service times
+                default:
+                    return new List<string>(); // No services available
+            }
+        }
+   
+
+
+        public static List<string> GetAvailableTimes(DateTime date, List<string> bookedTimes)
+        {
+            bool isMobileServiceDay = date.DayOfWeek == DayOfWeek.Saturday ||
+                                      date.DayOfWeek == DayOfWeek.Sunday ||
+                                      date.DayOfWeek == DayOfWeek.Monday ||
+                                      date.DayOfWeek == DayOfWeek.Tuesday;
+
+            List<string> serviceTimes = GetServiceTimes(date.DayOfWeek);  // Retrieve potential service times based on the day
+            List<string> blockedTimes = BookedDaysService.GetBlockedTimesForDate(date); // Retrieve blocked times based on holidays
+
+            // If it's a mobile service day and there's any booking, block the whole day
+            if (isMobileServiceDay && bookedTimes.Any())
+            {
+                return new List<string>();  // Return an empty list to indicate no availability
+            }
+
+            // Otherwise, remove blocked and booked times from the available service times
+            return serviceTimes.Where(time => !blockedTimes.Contains(time) && !bookedTimes.Contains(time)).ToList();
+        }
+
+        //GetDayClass matcher sammen med GetUpdatedAvailableTimes så hvis listen er =0 så røde ellers dagene oragne og gul
+
+        public async Task<string> GetDayClass(DateTime date, List<string> additionalBookedTimes)
+        {
+            DateTime today = DateTime.Today;
             // Få opdateret liste af tilgængelige tider for den givne dato
-            var availableTimes = GetUpdatedAvailableTimes(date, additionalBookedTimes);
+            var availableTimes = await GetUpdatedAvailableTimes(date, additionalBookedTimes);
+
+            if (date < today)
+            {
+                return "past-day";
+            }
 
             // Tjek om der ikke er nogen tilgængelige tider
             if (availableTimes.Count == 0)
             {
-                return "red-day";
+                return "red";
             }
 
             // Definer hvilke dage der skal returnere hvilken farveklasse

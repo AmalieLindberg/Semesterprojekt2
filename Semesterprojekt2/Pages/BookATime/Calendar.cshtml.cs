@@ -29,25 +29,16 @@ namespace Semesterprojekt2.Pages.BookATime
         public string Tidspunkt { get; set; } // Dette vil blive en string repræsentation af TimeSpan
 
         public Dictionary<DateTime, List<string>> AvailableTimesDict { get; set; } = new Dictionary<DateTime, List<string>>();
-        public DateTime CurrentDate { get; set; }
+
         public Dictionary<DateTime, string> DayClasses { get; set; } = new Dictionary<DateTime, string>();
-
-        public void OnGet(int? year, int? month)
+        public Dictionary<DateTime, bool> IsPastDict { get; set; } = new Dictionary<DateTime, bool>();
+        public bool IsPast(DateTime date)
         {
-            Year = Year > 0 ? Year : DateTime.Now.Year;
-            Month = Month >= 1 && Month <= 12 ? Month : DateTime.Now.Month;
-            CurrentDate = new DateTime(year ?? DateTime.Today.Year, month ?? DateTime.Today.Month, 1);
+            return date.Date < DateTime.Today;
+        }
 
-            for (int day = 1; day <= DateTime.DaysInMonth(CurrentDate.Year, CurrentDate.Month); day++)
-            {
-                var date = new DateTime(CurrentDate.Year, CurrentDate.Month, day);
-                var additionalBookedTimes = new List<string>(); // Dette skal være dynamisk eller fra en kilde.
-                var availableTimes = _bookATimeService.GetUpdatedAvailableTimes(date, additionalBookedTimes);
-                AvailableTimesDict[date] = availableTimes;
-                DayClasses[date] = _bookATimeService.GetDayClass(date, additionalBookedTimes);
-            }
-
-
+        public async Task OnGetAsync()
+        {
             (Year, Month) = _bookATimeService.AdjustYearAndMonth(Year, Month);
 
             DaysInMonth = Enumerable.Range(1, DateTime.DaysInMonth(Year, Month)).ToList();
@@ -55,12 +46,28 @@ namespace Semesterprojekt2.Pages.BookATime
             //new DateTime(Year, Month, 1) skaber et nyt DateTime objekt for den første dag i den givne måned og år.
             //.ToString("MMMM") konverterer denne dato til en streng, der repræsenterer månedens fulde navn på det aktuelle sprog af systemets lokalindstillinger.
             MonthName = new DateTime(Year, Month, 1).ToString("MMMM");
-          
 
-
+            await InitializeCalendar(Year, Month);
 
         }
+        private async Task InitializeCalendar(int year, int month)
+        {
+            int daysInMonth = DateTime.DaysInMonth(year, month);
 
+            for (int day = 1; day <= daysInMonth; day++)
+            {
+                var date = new DateTime(year, month, day);
+                var additionalBookedTimes = new List<string>();  // Direkte brug af en tom liste
+
+                // Opdatering af tilgængelige tider og dagklasser
+                var availableTimes = await _bookATimeService.GetUpdatedAvailableTimes(date, additionalBookedTimes);
+                var dayClass = await _bookATimeService.GetDayClass(date, additionalBookedTimes);
+
+                AvailableTimesDict[date] = availableTimes;
+                DayClasses[date] = dayClass;
+                IsPastDict[date] = IsPast(date);
+            }
+        }
         public IActionResult OnPost(int year, int month, int day, string tidspunkt)
         {
             if (!ModelState.IsValid)

@@ -209,9 +209,7 @@
             @foreach (var day in Model.DaysInMonth)
             {
               
-            DateTime date = new DateTime(Model.Year, Model.Month, day);
-            string dayClass = date < today ? "past-day" : (Model.DayClasses.ContainsKey(date) ? Model.DayClasses[date] : "");           
-            var availableTimes = Model.AvailableTimesDict.ContainsKey(date) ? Model.AvailableTimesDict[date] : new List<string>();
+          var date = new DateTime(Model.Year, Model.Month, day);
 
                 if (dayCounter == 7)
                 {
@@ -233,8 +231,8 @@
                 bool isPast = date < today;
              
                
-                <td class="@dayClass">
-                    @if (!isPast)
+                <td class="@Model.DayClasses[date]">
+                      @if (!Model.IsPastDict[date]) // Hvis det ikke er en dato i fortiden
                     {
 
                         <form method="post">
@@ -246,7 +244,7 @@
                      
     
                              <select asp-for="Tidspunkt" required class="transparent-select">
-                                @foreach(var time in availableTimes)
+                                @foreach(var time in Model.AvailableTimesDict[date])
                                   {
                                     <option value="@time" >@time</option>
                                   }
