@@ -23,8 +23,9 @@
 		<span asp-validation-for="Product.Price" class="text-danger"></span>
 	</div>
 	<div class="form-group">
-		<label asp-for="@Model.Product.Type" class="control-label"></label>
-		<select asp-for="@Model.Product.Type" asp-items="Html.GetEnumSelectList<ProductType>()" class="form-control"></select>
+		<label asp-for="Product.Type" class="control-label"></label>
+		<input asp-for="Product.Type" class="form-control"></input>
+		<span asp-validation-for="Product.Type" class="text-danger"></span>
 	</div>
 	<div class="form-group">
 		<label asp-for="Product.Brand" class="control-label"></label>

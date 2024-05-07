@@ -3,13 +3,13 @@
 namespace Semesterprojekt2.Models.Shop
 {
 	// En enumeration der definerer de forskellige typer af produkter som kan eksistere.
-	public enum ProductType
-	{
-		Clothing,
-		Soap,
-		Treats,
-		Toy
-	}
+	//public enum ProductType
+	//{
+	//	Clothing,
+	//	Soap,
+	//	Treats,
+	//	Toy
+	//}
 	public class Product
     {
         // En statisk variabel til at holde styr på det næste unikke ID for et produkt.
@@ -30,7 +30,7 @@ namespace Semesterprojekt2.Models.Shop
 
         [Display(Name = "Type")]
         [Required(ErrorMessage = "The product must be given a type")]
-        public ProductType? Type { get; set; }
+        public string? Type { get; set; }
 
         [Display(Name = "Brand")]
         [Required(ErrorMessage = "The product must be given a brand")]
@@ -51,7 +51,7 @@ namespace Semesterprojekt2.Models.Shop
 		
 
 		// En konstruktør der initialiserer et nyt produkt med specifikke værdier for hver egenskab.
-		public Product(string name, decimal price, ProductType type, string brand, int amount, string description)
+		public Product(string name, decimal price, string type, string brand, int amount, string description)
         {
             /*Id = nextId++;*/ // Tildeler et unikt ID til produktet og inkrementerer det næste ID.
 			Name = name;

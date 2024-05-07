@@ -1,22 +1,22 @@
 [
   {
     "Id": 1,
-    "Name": "Squeaky Cat",
-    "Price": 370,
-    "Type": 3,
-    "Brand": "ToysRUs",
+    "Name": "Pineapple Shampoo",
+    "Price": 150.00,
+    "Type": "Soap",
+    "Brand": "Maui",
     "Amount": 1,
-    "Description": "This toy is supposed to be a cat, that makes a squeaky sound when the dog bites it.",
-    "ProductImage": "4a8467e8-1a4f-4bbf-a1d9-7326d72961c7_SqueakyCat.jpg"
+    "Description": "Shampoo with the smell of pineapple",
+    "ProductImage": "abd35597-81e9-47a3-903a-af640efe7d05_PineappleShampoo.jpg"
   },
   {
     "Id": 2,
-    "Name": "Shampoo",
-    "Price": 200,
-    "Type": 2,
-    "Brand": "Maui",
+    "Name": "Squeaky cat",
+    "Price": 300,
+    "Type": "Toy",
+    "Brand": "ToysRUs",
     "Amount": 1,
-    "Description": "This Shampoo has the smell of Pineapple",
-    "ProductImage": "7a322c5e-eaf1-4693-9faf-3f532de8ea88_PineappleShampoo.jpg"
+    "Description": "A toy cat that makes a squeaky sound when the dog bites it.",
+    "ProductImage": "99117073-514d-4c19-b8c0-0d78395a89fd_SqueakyCat.jpg"
   }
 ]

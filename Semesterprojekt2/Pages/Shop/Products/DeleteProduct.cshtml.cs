@@ -34,13 +34,13 @@ namespace Semesterprojekt2.Pages.Shop.Products
         }
 
 		// OnPost metoden kaldes ved POST-forespørgsler og håndterer sletning af produktet.
-		public IActionResult OnPost()
+		public async Task<IActionResult> OnPost()
 		{
 			// Kalder DeleteProduct på productService for at slette det givne produkt.
-			Models.Shop.Product deletedProduct = _productService.DeleteProduct(Product.Id);
+			Models.Shop.Product deletedProduct = await _productService.DeleteProductAsync(Product.Id);
 			// Hvis der ikke findes et produkt at slette, omdirigeres brugeren til 'Ikke fundet' siden.
 			if (deletedProduct == null)
-                return RedirectToPage("/NotFound");
+            return RedirectToPage("/NotFound");
 			// Efter succesfuld sletning omdirigeres brugeren til shop-siden.
 			return RedirectToPage("/Shop/Shop");
         }

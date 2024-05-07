@@ -25,7 +25,7 @@ namespace Semesterprojekt2.Service
         public async Task AddProductAsync(Product product)
         {
             _products.Add(product);
-          await  _dbGenericService.AddObjectAsync(product);
+          await _dbGenericService.AddObjectAsync(product);
         }
 
         public Product GetProduct(int productId)
@@ -55,11 +55,12 @@ namespace Semesterprojekt2.Service
                         p.ProductImage = product.ProductImage;
                     }
                 }
-                JsonFileProductService.SaveJsonProducts(_products);
-            }
+                //JsonFileProductService.SaveJsonProducts(_products);
+				await _dbGenericService.UpdateObjectAsync(product);
+			}
         }
 
-        public Product DeleteProduct(int? productId)
+        public async Task<Product> DeleteProductAsync(int? productId)
         {
             Product productToBeDeleted = null;
             foreach (Product product in _products)
@@ -74,7 +75,8 @@ namespace Semesterprojekt2.Service
             if (productToBeDeleted != null)
             {
                 _products.Remove(productToBeDeleted);
-                JsonFileProductService.SaveJsonProducts(_products);
+                //JsonFileProductService.SaveJsonProducts(_products);
+                await _dbGenericService.DeleteObjectAsync(productToBeDeleted);
             }
 
             return productToBeDeleted;
