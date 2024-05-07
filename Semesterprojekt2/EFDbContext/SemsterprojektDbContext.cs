@@ -12,7 +12,7 @@ namespace Semesterprojekt2.EFDbContext
             options.UseSqlServer(@"Data Source=mssql1.unoeuro.com;Initial Catalog=beckyblau_dk_db_shampoodle; User ID=beckyblau_dk; Password=BtahFDkEnwd5ey3RbH29; TrustServerCertificate=true");
 
         }
-        /*; Integrated Security=True; Connect Timeout=30; Encrypt=False*/
+    
         public DbSet<BookATime> BookATimes { get; set; }
         public DbSet<Users> Users { get; set; }
        
