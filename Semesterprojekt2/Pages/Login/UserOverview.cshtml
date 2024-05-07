@@ -22,7 +22,7 @@
                 Role
             </th>
             <th>
-                Action <!-- This is for the options: Password Reset, Delete and Edit User -->
+                Action 
             </th>
         </tr>
     </thead>
@@ -46,9 +46,10 @@
                     <td>
                         @obj.Role  
                     </td>
-                    <td> <!-- Har ikke nogen funktionalitet -->
-                        <button style="text-align: center, border:none, color:white">Reset Password</button>
-                   
+                    <td>
+                        <a class="btn btn-primary btn-sm" title="Reset">Reset Password</a> <!-- Har ikke nogen funktionalitet -->
+                        <a class="btn btn-danger btn-sm" title="Edit" asp-page="/Login/EditUserbyAdmin" asp-route-id="@obj.UserId">Edit <i class="fa fa-edit"></i></a>
+                        <a class="btn btn-danger btn-sm" title="Delete" asp-page="/Login/DeleteUserbyAdmin" asp-route-id="@obj.UserId">Delete <i class="fa fa-trash"></i></a>
                     </td>
                 </tr>
 

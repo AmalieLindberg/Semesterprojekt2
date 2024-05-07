@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Models;
@@ -12,8 +13,9 @@ namespace Semesterprojekt2.Pages.Login
     public class CreateAdminModel : PageModel
     {
         private UserService _userService;
+		private PasswordHasher<string> passwordHasher;
 
-        [BindProperty]
+		[BindProperty]
         public string Name { get; set; }
 
         [BindProperty]
@@ -38,6 +40,7 @@ namespace Semesterprojekt2.Pages.Login
         public CreateAdminModel(UserService userService)
         {
             _userService = userService;
+            passwordHasher = new PasswordHasher<string>();
         }
 
         public IActionResult OnGet()
@@ -59,10 +62,13 @@ namespace Semesterprojekt2.Pages.Login
                         Debug.WriteLine(error.ErrorMessage);
                     }
                 }
-                return Page();
+				return Page();
             }
-            _userService.AddUser(new Users(Password, Name, Phone, Email, Role));
-            return RedirectToPage("Login"); //Skift ud -> Naviger til Bruger-oversigten
+			string hashedPassword = passwordHasher.HashPassword(null, Password);
+
+
+			_userService.AddUser(new Users(hashedPassword, Name, Phone, Email, Role));
+			return RedirectToPage("Login"); //Skift ud -> Naviger til Bruger-oversigten
         }
 
 

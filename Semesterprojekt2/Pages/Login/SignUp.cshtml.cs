@@ -76,6 +76,7 @@ namespace Semesterprojekt2.Pages.Login
             }
 
             string hashedPassword = passwordHasher.HashPassword(null, Password);
+         
            
             _userService.AddUser(new Users(hashedPassword, Name, Phone, Email, Role));
             return RedirectToPage("Login");
