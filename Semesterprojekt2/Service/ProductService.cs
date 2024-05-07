@@ -17,9 +17,9 @@ namespace Semesterprojekt2.Service
             _dbGenericService = dbGenericService;
             JsonFileProductService = jsonFileProductService;
             //_products = MockProducts.GetMockProducts();
-            _products = JsonFileProductService.GetJsonProducts().ToList();
-            _dbGenericService.SaveObjects(_products);
-            //_products = _dbGenericService.GetObjectsAsync().Result.ToList();
+            //_products = JsonFileProductService.GetJsonProducts().ToList();
+            //_dbGenericService.SaveObjects(_products);
+            _products = _dbGenericService.GetObjectsAsync().Result.ToList();
         }
 
         public async Task AddProductAsync(Product product)
