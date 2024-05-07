@@ -26,9 +26,9 @@ namespace Semesterprojekt2.Pages.Profil
             return Page();
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPost()
         {
-            Models.Users deletedUser = _userService.DeleteUser(user.UserId);
+            Models.Users deletedUser = await _userService.DeleteUser(user.UserId);
             if (deletedUser == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 

@@ -24,22 +24,26 @@ namespace Semesterprojekt2.Service.UserService.UserService
 
         }
 
-        public async Task AddUser(Users user)
+        public async Task<Users> AddUser(Users user)
         {
+            /*
             if (!_users.Any())
                 user.UserId = 1;
             else
                 user.UserId = _users.Max(u => u.UserId) + 1;
+            */
 
             _users.Add(user);
-            DbService.AddObjectAsync(user);
+            await DbService.AddObjectAsync(user);
+            return user;
         }
 
 
 
         public Users GetUser(int id)
         {
-            foreach (Users user in _users)
+			
+			foreach (Users user in _users)
             {
                 if (user.UserId == id)
                     return user;
@@ -48,7 +52,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
             return null;
         }
 
-        public void UpdateUser(Users user)
+        public async Task<Users> UpdateUser(Users user)
         {
             if (user != null)
             {
@@ -64,11 +68,15 @@ namespace Semesterprojekt2.Service.UserService.UserService
                         u.Role = user.Role;
                     }
                 }
-                DbService.UpdateObjectAsync(user);
-            }
+                await DbService.UpdateObjectAsync(user);
+				return user;
+
+			}
+
+            return null;
         }
 
-        public Users DeleteUser(int? userId)
+        public async Task<Users> DeleteUser(int? userId)
         {
             Users userToBeDeleted = null;
             foreach (Users user in _users)
@@ -83,7 +91,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
             if (userToBeDeleted != null)
             {
                 _users.Remove(userToBeDeleted);
-                DbService.DeleteObjectAsync(userToBeDeleted);
+                await DbService.DeleteObjectAsync(userToBeDeleted);
             }
 
             return userToBeDeleted;
@@ -91,7 +99,8 @@ namespace Semesterprojekt2.Service.UserService.UserService
 
         public List<Users> GetUsers() 
         {
-            return _users; 
+			_users = DbService.GetObjectsAsync().Result.ToList();
+			return _users; 
         }
 
 		//public Users GetUserByUserName(string name)

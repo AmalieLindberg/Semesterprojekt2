@@ -26,7 +26,7 @@ namespace Semesterprojekt2.Pages.Login
             return Page();
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPost()
         {
             if (!ModelState.IsValid)
             {
@@ -43,7 +43,7 @@ namespace Semesterprojekt2.Pages.Login
 				return Page();
             }
 
-			_userService.UpdateUser(User);
+			await _userService.UpdateUser(User);
             return RedirectToPage("/Login/UserOverview");
         }
     }

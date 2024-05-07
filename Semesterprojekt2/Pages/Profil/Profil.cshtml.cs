@@ -4,6 +4,7 @@ using Semesterprojekt2.Models;
 using Semesterprojekt2.Models.Shop;
 using Semesterprojekt2.Service;
 using Semesterprojekt2.Service.UserService.UserService;
+using Semesterprojekt2.Pages.Login;
 
 namespace Semesterprojekt2.Pages.Profil
 {
@@ -20,11 +21,14 @@ namespace Semesterprojekt2.Pages.Profil
         }
         public List<Users> users { get; private set; }
 
-        public IActionResult OnGet(int id)
+
+        public IActionResult OnGet()
         {
+            int id = LoginModel.LoggedInUser.UserId;
+
             Users = _userService.GetUser(id);
             if (Users == null)
-                return RedirectToPage("/NotFound");
+                return RedirectToPage("/Error/Error");
             return Page();
 
         }

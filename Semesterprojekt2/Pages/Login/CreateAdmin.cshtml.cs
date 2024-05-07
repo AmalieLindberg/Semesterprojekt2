@@ -48,7 +48,7 @@ namespace Semesterprojekt2.Pages.Login
             return Page();
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPost()
         {
             if (!ModelState.IsValid)
             {
@@ -67,7 +67,7 @@ namespace Semesterprojekt2.Pages.Login
 			string hashedPassword = passwordHasher.HashPassword(null, Password);
 
 
-			_userService.AddUser(new Users(hashedPassword, Name, Phone, Email, Role));
+			await _userService.AddUser(new Users(hashedPassword, Name, Phone, Email, Role));
 			return RedirectToPage("Login"); //Skift ud -> Naviger til Bruger-oversigten
         }
 
