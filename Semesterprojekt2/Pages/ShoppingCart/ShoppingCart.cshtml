@@ -3,12 +3,22 @@
 @{
     ViewData["Title"] = "Your Shopping Cart";
 }
+<style>
+    .link-no-style {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Keeps the text color consistent with surrounding text */
+    }
+</style>
 
-<h1>@ViewData["Title"]</h1>
+<center><h1>@ViewData["Title"]</h1></center>
 
-<form method="post" asp-page-handler="RemoveAllCartItems">
+<hr />
+<center><p>Bemærk, at produkter kun kan afhentes eller tilføjes til en tidsbestilling</p></center>
+<hr />
+<form method="post" asp-page-handler="RemoveAllCartItems" style="text-align: right;">
     <button type="submit" class="btn btn-warning">Clear Cart</button>
 </form>
+<br />
 
 @if (Model.CartItems.Count > 0)
 {
@@ -42,5 +52,15 @@
 }
 else
 {
-    <p>Your cart is empty.</p>
+    <p>Your shopping cart is waiting to be filled.</p>
 }
+
+<div style="text-align: center;">
+    <h5><a asp-page="/Shop/Shop" class="link-no-style">Do you want to continue shopping?</a></h5>
+</div>
+
+<center><p>or</p></center>
+
+<div style="text-align: center;">
+    <button><h3><a asp-page="/OrderHistory/ProductOrderHistory" class="link-no-style">Finish and reserve</a></h3></button>
+</div>
