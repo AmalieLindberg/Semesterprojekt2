@@ -17,6 +17,7 @@ namespace Semesterprojekt2.Pages.ShoppingCart
 
         public List<CartItem> CartItems { get; set; } = new List<CartItem>();
 
+        public List<Models.Shop.Product>? Products { get; private set; }
 
         public void OnGet()
         {
@@ -35,5 +36,12 @@ namespace Semesterprojekt2.Pages.ShoppingCart
             return RedirectToPage();
         }
 
+        public decimal TotalPrice
+        {
+            get
+            {
+                return CartItems.Sum(item => (item.Product.Price ?? 0) * item.Quantity);
+            }
+        }
     }
 }

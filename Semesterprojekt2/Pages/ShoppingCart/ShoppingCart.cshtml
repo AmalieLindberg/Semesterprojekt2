@@ -48,6 +48,12 @@
                 </tr>
             }
         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" style="text-align: right;"><strong>Total Price:</strong></td>
+                <td colspan="2">@Model.TotalPrice.ToString("C")</td>
+            </tr>
+        </tfoot>
     </table>
 }
 else
@@ -64,3 +70,4 @@ else
 <div style="text-align: center;">
     <button><h3><a asp-page="/OrderHistory/ProductOrderHistory" class="link-no-style">Finish and reserve</a></h3></button>
 </div>
+

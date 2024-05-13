@@ -30,6 +30,7 @@ builder.Services.AddTransient<DbGenericService<BookedDays>, DbGenericService<Boo
 builder.Services.AddTransient<BookATimeDbService, BookATimeDbService>();
 builder.Services.AddTransient<DbGenericService<Dog>, DbGenericService<Dog>>();
 builder.Services.AddTransient<DbGenericService<Ydelse>, DbGenericService<Ydelse>>();
+builder.Services.AddTransient<DbGenericService<ProductOrder>, DbGenericService<ProductOrder>>();
 //builder.Services.AddTransient<DbGenericService<CartItem>, DbGenericService<CartItem>>();
 
 builder.Services.Configure<CookiePolicyOptions>(options => {
