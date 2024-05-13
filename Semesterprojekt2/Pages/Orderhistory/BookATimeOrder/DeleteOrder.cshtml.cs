@@ -19,7 +19,7 @@ namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
         {
             BookATime = _BookATimeService.GetBookATimeById(id);
             if (BookATime == null)
-                return RedirectToPage("/Error/Error"); 
+                return RedirectToPage("/Index"); 
 
             return Page();
         }
@@ -27,7 +27,7 @@ namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
         {
             Models.BookATime.BookATime deletedBookATime = await _BookATimeService.DeleteBookATime(BookATime.Id);
             if (deletedBookATime == null)
-                return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
+                return RedirectToPage("/Error/Error");
             return RedirectToPage("/Index");
         }
     }

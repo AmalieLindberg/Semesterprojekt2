@@ -3,13 +3,14 @@
 @{
 }
 
-<center><h1>Book a Time Order History</h1></center>
-<div style="text-align: center;">
-    <form method="post" asp-page="/Orderhistory/ProductOrderHistory">
-        <button type="submit">Go to your product orders</button>
-    </form>
+<center><h1>My Book a Time Order History</h1></center> 
+
+<div style="text-align: center">
+    <a class="btn btn-outline-light" asp-page="ProductOrderHistory">Product Order History</a>
 </div>
+
 <hr />
+
 <p>
     <b>
         If the status of your order is shown as "Pending," it means that your order has not yet been accepted.
@@ -54,15 +55,12 @@
                             <img src="~/ImagesForBookATime/Dog/@order.DogImage" alt="Dog Image" style="width:60%" />
                             <br />
 
-                            @if (@order.BathRoomImage == null)
-                            {
-
-                            }
-                            else
+                            @if (@order.BathRoomImage != null)
                             {
                                 <p>Bathroom:</p>
                                 <img src="~/ImagesForBookATime/Bath/@order.BathRoomImage" alt="Bathroom Image" style="width:60%" />
                             }
+                          
                         </td>
              
                         <td>
@@ -73,32 +71,21 @@
                             <p>  Dog Siza: @order.Ydelse.DogSize</p>
 
                             <p> ServiceType: @order.Ydelse.ServiceType</p>
-                            @if (order.Elevator == null)
+                            @if (order.Elevator != null)
                             {
-
+                                <p> Elevator: @order.ElevatorDisplay</p>
                             }
-                            else
+                           
+                            @if (@order.Floors != null)
                             {
-                                <p> Elevator: @order.ElevatorDisplay;</p>
+                                 <p> Floor:  @order.Floors </p>
                             }
-                            @if (@order.Floors == null)
+                           
+                            @if (@order.Address != null)
                             {
-
+                                <p> Address for dog service:  @order.Address </p>
                             }
-                            else
-                            {
-                                <p> Floor:  @order.Floors; </p>
-
-
-                            }
-                            @if (@order.Address == null)
-                            {
-
-                            }
-                            else
-                            {
-                                <p> Address for dog service:  @order.Address; </p>
-                            }
+                          
                             Info about your dog:
                             <p> Name: @order.Dog.Name</p>
                             <p>  Race: @order.Dog.Race</p>
@@ -132,6 +119,14 @@
                             {
                                 <p>Comment: @order.Comments</p>
                             }
+                            @if (order.StatusForBooking == "Pending")
+                            {
+                                <a class="btn btn-secondary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookATimeOrder/EditOrder" asp-route-id="@order.Id"><i class="fa fa-edit"></i></a>
+                                
+                                <a class="btn btn-danger btn-sm" type="button" data-toggle="tooltip" data-placement="top" title="Delete" asp-page="BookATimeOrder/DeleteOrder" asp-route-id="@order.Id"><i class="fa fa-trash"></i></a>
+                            }
+                            
+                  
                         </td>
                    
                     </tr>

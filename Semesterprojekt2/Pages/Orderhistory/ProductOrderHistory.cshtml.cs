@@ -20,7 +20,6 @@ namespace Semesterprojekt2.Pages.Orderhistory
 
         public Models.Shop.ProductOrder ProductOrder { get; set; } = new Models.Shop.ProductOrder();
 
-
         [BindProperty]
         public int Count { get; set; }
 

@@ -7,16 +7,18 @@ namespace Semesterprojekt2.Service.UserService.UserService
     {
         private UserDbService DbService { get; set; }
         public List<Users> _users { get; set; }
+        private JsonFileUserService jsonFileUserService { get; set; }
+    
 
- 
-
-        public UserService(UserDbService userDbService)
+        public UserService(UserDbService userDbService, JsonFileUserService userService)
         {
-            //_users = MockUsers.GetMockUser(); //Used to populate User.json once to create Admin Login
             DbService = userDbService;
-           
+            jsonFileUserService = userService;
+            //_users = MockUsers.GetMockUser(); //Used to populate User.json once to create Admin Login
+            
             //_users = jsonFileUserService.GetJsonUsers().ToList();
             //DbService.SaveObjects(_users);
+
 
             _users = DbService.GetObjectsAsync().Result.ToList();
 

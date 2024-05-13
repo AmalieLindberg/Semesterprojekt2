@@ -32,16 +32,22 @@ namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
       
         public IActionResult OnGet(int id)
         {
-            
+            if (!ModelState.IsValid)
+            {
+                RedirectToPage("/Error/Error");
+            }
+ 
 
             BookATime = _BookATimeService.GetBookATimeById(id);
-         
+            
+            if (BookATime == null)
+                return RedirectToPage("/Index");
+           
             Dog = _DogService.GetDogById(BookATime.DogId);
             
             Ydelse =  _YdelseService.GetYdelseById(BookATime.YdelseId);
-            if (BookATime == null)
-                return RedirectToPage("/Error/Error"); //NotFound er ikke defineret endnu
-
+           
+          
             return Page();
         }
 

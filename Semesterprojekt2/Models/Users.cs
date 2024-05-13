@@ -20,12 +20,14 @@ namespace Semesterprojekt2.Models
         [Required]
         public string Name { get; set; }
         [Required]
-        public int Telefonnummer { get; set; }
+        public int? Telefonnummer { get; set; }
         [Required, EmailAddress]
         public string Email { get; set; }
         
         public string Role { get; set; }
 
+        public string? ProfileImages { get; set; }
+        public string? Bio {  get; set; }
         public IEnumerable<Models.BookATime.BookATime>? BookATime { get; set; }
         public Users(string password, string name, int telefonnummer, string email, string role)
         {

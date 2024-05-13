@@ -3,7 +3,7 @@
     "UserId": 0,
     "Password": "AQAAAAIAAYagAAAAEIlyiOmGgdI1MVqeiXp201pXJCmt2kKnNVkSZmzSvmacZnZFFsLti0AaCJ4ArT8yTA==",
     "Name": "Admin",
-    "Telefonnummer": "12345678",
+    "Telefonnummer": 12345678,
     "Email": "Email@email.dk",
     "Role": "Admin"
   },
@@ -11,7 +11,7 @@
     "UserId": 1,
     "Password": "AQAAAAIAAYagAAAAELLyGmoWvrjvguDDSxKd3Nuv4fN6sY9xa4wSEq7TY/vKGba4YG9zqHZj\u002B5PufUCewQ==",
     "Name": "Amalie Lindberg",
-    "Telefonnummer": "30301638",
+    "Telefonnummer": 30301638,
     "Email": "Lindbergamalie@gmail.com",
     "Role": "normaluser"
   }
