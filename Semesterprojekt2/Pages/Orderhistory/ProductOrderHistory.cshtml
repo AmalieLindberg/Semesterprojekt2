@@ -22,3 +22,33 @@
 <div style="text-align: center">
     <a class="btn btn-outline-light" asp-page="BookATimeOrderHistory">Book a Time Order History</a>
 </div>
+
+
+<div style="text-align: center;">
+    <form method="post" asp-page="/Orderhistory/BookATimeOrderHistory">
+        <button type="submit">Go to your service orders</button>
+    </form>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            User: @Model.Users.Name
+        </div>
+        <div>
+            Item: @Model.Product.Name
+        </div>
+
+
+        <form method="post">
+            Count:
+            <input asp-for="@Model.Count" class="form-control" />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-page="../Shop/Shop">Back to List</a>
+</div>
