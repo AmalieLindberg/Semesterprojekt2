@@ -1,4 +1,5 @@
 ﻿@page
+@using Semesterprojekt2.Pages.Login
 @using Semesterprojekt2.Service;
 @using Semesterprojekt2.Service.BookATimeService;
 @model Semesterprojekt2.Pages.BookATime.CalendarModel
@@ -21,7 +22,7 @@
                     padding: 8px;
                 }
                
-
+             
 
            .button-like-text 
                 {
@@ -54,9 +55,16 @@
                 {
                     background-color:#EAA193;
                     color: black;
-                    
+                   
                 }
-
+.red-day .transparent-select {
+        background-color:#EAA193;
+                    color: black;
+                    border: none;
+    -webkit-appearance: none; /* Removes default browser styling for WebKit browsers */
+    -moz-appearance: none;    /* Removes default browser styling for Mozilla Firefox */
+    appearance: none;         /* Removes default browser styling */
+}
                     /* Røde: */ /* #EAA193 */
            .skrift-mellem-månederne 
                 {
@@ -115,6 +123,8 @@
                 .Red
                 {
                     background-color:#EAA193;
+                  
+
                     
                 }
                 .Skriftmellemmånderne
@@ -191,18 +201,6 @@
            
             DateTime today = DateTime.Today; 
 
-           
-        
-    //         var bookedTimesDict = new Dictionary<DateTime, List<string>>();
-           
-    //          for (int day = 1; day <= DateTime.DaysInMonth(Model.Year, Model.Month); day++)
-    // {
-    //     var date = new DateTime(Model.Year, Model.Month, day);
-    //     var bookedTimes = await TidsbestillingService.GetBookedTimesForDate(date);
-    //     bookedTimesDict[date] = bookedTimes;
-    // }
-
-    
         }
        
         <tr>
@@ -217,46 +215,36 @@
                     @: </tr><tr>
                     dayCounter = 0; // Reset the counter for the new row
                 }
-         
-                @*    string dayClass = TidsbestillingService.GetDayClass(date); *@
-
-
-                // Denne linje bestemmer CSS-klassen for en given dag. 
-                // Hvis 'currentDate' repræsenterer en dato, der allerede er forbi (dvs. før 'today'), 
-                // bliver 'dayClass' sat til "past-day".
-                // Hvis 'currentDate' er i dag eller i fremtiden, hentes klassen ved at kalde 'GetDayClass' metoden.
-             // Denne boolean ('isPast') er sand (true), hvis 'currentDate' er før 'today', hvilket indikerer 
-                // at det er en dato i fortiden. Denne værdi bruges til at afgøre, om den tilsvarende dag 
-                // skal kunne klikkes på eller ej i brugergrænsefladen.
+           
                 bool isPast = date < today;
              
-               
+           
                 <td class="@Model.DayClasses[date]">
                       @if (!Model.IsPastDict[date]) // Hvis det ikke er en dato i fortiden
-                    {
+                        {
 
-                        <form method="post">
+                            <form method="post">
 
-                            <input type="hidden" name="Year" value="@Model.Year" />
-                            <input type="hidden" name="Month" value="@Model.Month" />
-                            <input type="hidden" name="Day" value="@day" />
-                            
-                     
-    
-                             <select asp-for="Tidspunkt" required class="transparent-select">
-                                @foreach(var time in Model.AvailableTimesDict[date])
-                                  {
-                                    <option value="@time" >@time</option>
-                                  }
-                             </select>
- 
-    
-                        <br />
-                        <button type="submit" class="button-like-text">@day</button>
-                        </form>
+                                <input type="hidden" name="Year" value="@Model.Year" />
+                                <input type="hidden" name="Month" value="@Model.Month" />
+                                <input type="hidden" name="Day" value="@day" />
 
-                         
-                       
+
+
+                                <select asp-for="Tidspunkt" required class="transparent-select">
+                                    @foreach (var time in Model.AvailableTimesDict[date])
+                                    {
+                                        <option value="@time" >@time</option>
+                                    }
+                                </select>
+
+
+                                <br />
+                                <button type="submit" class="button-like-text">@day</button>
+                            </form>
+
+
+                        
 
 
                     }
@@ -277,71 +265,12 @@
        
     </table>
     </div>          
+
+  @if (LoginModel.LoggedInUser != null && LoginModel.LoggedInUser.Role == "Admin")
+    {
      <a class="btn btn-primary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookedDays/CreateBookedDays"> <i class="fa fa-edit"></i></a>
                 
      <a class="btn btn-danger btn-sm " type="button" data-toggle="tooltip" title="Info" asp-page="BookedDays/BookedDays"><i class="fa fa-info"></i></a>
- @* Første forsøg!! gem hvis noget går forkert
-     <table>
-        @{
-            int dayCounter = 0; // Initialize the counter for days in the week. hvorfor vi starter på 0?
-            // Når man arbejder med tællere i programmering, starter man ofte fra 0 afhængigt af konteksten. Dette skyldes, at mange programmeringssprog og datamodeller bruger 0-baserede indeksering.
-            DateTime today = DateTime.Today; 
-
-           
-        }
-       
-        <tr>
-            @foreach (var day in Model.DaysInMonth)
-            {
-                if (dayCounter == 7)
-                {
-                    // When there are 7 days, close the current row and start a new one
-                    @: </tr><tr>
-                    dayCounter = 0; // Reset the counter for the new row
-                }
-                
-                DateTime currentDate = new DateTime(Model.Year, Model.Month, day);
-
-                // Denne linje bestemmer CSS-klassen for en given dag. 
-                // Hvis 'currentDate' repræsenterer en dato, der allerede er forbi (dvs. før 'today'), 
-                // bliver 'dayClass' sat til "past-day". 
-                // Hvis 'currentDate' er i dag eller i fremtiden, hentes klassen ved at kalde 'GetDayClass' metoden.
-
-                 string dayClass = currentDate < today ? "past-day" : BookATimeService.GetDayClass(currentDate);
-
-                // Denne boolean ('isPast') er sand (true), hvis 'currentDate' er før 'today', hvilket indikerer 
-                // at det er en dato i fortiden. Denne værdi bruges til at afgøre, om den tilsvarende dag 
-                // skal kunne klikkes på eller ej i brugergrænsefladen.
-
-                bool isPast = currentDate < today;
-                <td class="@dayClass">
-                    @if (!isPast)
-                    {
-                        <form method="get" asp-page="/BookATime/BookATime">
-
-                            <input type="hidden" name="Year" value="@Model.Year" />
-                            <input type="hidden" name="Month" value="@Model.Month" />
-                            <input type="hidden" name="Day" value="@day" />
-                            <button type="submit" class="button-like-text">@day</button>
-                        </form>
-                    }
-                    else
-                    {
-                        @day
-                    }
-                </td>
-
-                dayCounter++; // Increment the counter
-            }
-    
-            @if (dayCounter > 0)
-            {
-                // Close the last row if it's not empty
-        <tr> </tr>
-            }
-      
-    </table> *@
-       
-
-  </body>
+    }
+    </body>
 </html>

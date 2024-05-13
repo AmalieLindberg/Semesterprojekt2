@@ -102,11 +102,16 @@ namespace Semesterprojekt2.Service.UserService.UserService
 			_users = DbService.GetObjectsAsync().Result.ToList();
 			return _users; 
         }
+       
+        public Users GetUserTidsbestillingOrders(Users user)
+        {
+            return DbService.GetTidsbestillingOrdersByUserIdAsync(user.UserId).Result;
+        }
 
-		//public Users GetUserByUserName(string name)
-		//{
-		//	//return DbService.GetObjectByIdAsync(name).Result;
-		//	return Users.Find(user => users.Name == name);
-		//}
-	}
+        //public Users GetUserByUserName(string name)
+        //{
+        //	//return DbService.GetObjectByIdAsync(name).Result;
+        //	return Users.Find(user => users.Name == name);
+        //}
+    }
 }

@@ -7,13 +7,15 @@ namespace Semesterprojekt2.Pages.BookATime
     public class CalendarModel : PageModel
     {
       
-     public CalendarModel(IBookATimeService tidsbestillingService)
-      {
+     public CalendarModel(IBookATimeService tidsbestillingService, BookedDaysService bookedDays)
+        {
             _bookATimeService = tidsbestillingService;
-      }
+            this.bookedDays = bookedDays;
+        }
         private IBookATimeService _bookATimeService { get; set; }
+        private BookedDaysService bookedDays { get; set; }
+
         public List<int> DaysInMonth { get; set; }
-        ////public List<(int Day, BookingStatus Status)> DaysInTheMonth { get; set; }
         public string MonthName { get; set; }
         //Når du sætter SupportsGet = true, fortæller man ASP.NET Core,
         //at det er sikkert at binde værdier fra forespørgselsstrengen til egenskaben under GET forespørgsler.
@@ -50,24 +52,29 @@ namespace Semesterprojekt2.Pages.BookATime
             await InitializeCalendar(Year, Month);
 
         }
+        
         private async Task InitializeCalendar(int year, int month)
         {
             int daysInMonth = DateTime.DaysInMonth(year, month);
+            // Fetch the list of booked periods from the service
+            
 
             for (int day = 1; day <= daysInMonth; day++)
             {
                 var date = new DateTime(year, month, day);
-                var additionalBookedTimes = new List<string>();  // Direkte brug af en tom liste
+                var additionalBookedTimes = new List<string>();  // Using an empty list for simplicity
 
-                // Opdatering af tilgængelige tider og dagklasser
+                // First, determine if the current date is in the past
+                bool isPast = IsPast(date);
+                IsPastDict[date] = isPast;  // Store past status in dictionary
+
                 var availableTimes = await _bookATimeService.GetUpdatedAvailableTimes(date, additionalBookedTimes);
-                var dayClass = await _bookATimeService.GetDayClass(date, additionalBookedTimes);
-
+                var dayClass = await _bookATimeService.GetColurDay(date, additionalBookedTimes);
                 AvailableTimesDict[date] = availableTimes;
                 DayClasses[date] = dayClass;
-                IsPastDict[date] = IsPast(date);
             }
-        }
+         }
+
         public IActionResult OnPost(int year, int month, int day, string tidspunkt)
         {
             if (!ModelState.IsValid)

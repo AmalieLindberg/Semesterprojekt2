@@ -1,11 +1,13 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Service.BookATimeService;
 
 namespace Semesterprojekt2.Pages.BookATime.BookedDays
-{
+{   [Authorize(Roles = "Admin")]
     public class BookedDaysModel : PageModel
     {
+     
         public BookedDaysModel(BookedDaysService bookedDaysService)
         {
             BookedDaysService = bookedDaysService;

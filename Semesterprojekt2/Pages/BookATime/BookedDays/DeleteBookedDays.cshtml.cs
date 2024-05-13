@@ -1,9 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Service.BookATimeService;
+using System.Data;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace Semesterprojekt2.Pages.BookATime.BookedDays
 {
+   [Authorize(Roles = "Admin")]
     public class DeleteBookedDaysModel : PageModel
     {
         private BookedDaysService BookedDaysService;

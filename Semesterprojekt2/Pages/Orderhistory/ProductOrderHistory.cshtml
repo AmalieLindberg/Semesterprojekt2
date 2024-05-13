@@ -2,9 +2,23 @@
 @model Semesterprojekt2.Pages.Orderhistory.ProductOrderHistoryModel
 @{
 }
+<head>
+    <style>
+        .btn-outline-light {
+            border: 1px solid black;
+            background-color: transparent;
+            color: black;
+            padding: 8px 16px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 2px 2px 2px gray;
+        }
+
+    </style>
+</head>
 <center><h1>Product Order history</h1></center>
-<div style="text-align: center;">
-    <form method="post" asp-page="/Orderhistory/BookATimeOrderHistory">
-        <button type="submit">Go to your service orders</button>
-    </form>
+<div style="text-align: center">
+    <a class="btn btn-outline-light" asp-page="BookATimeOrderHistory">Book a Time Order History</a>
 </div>

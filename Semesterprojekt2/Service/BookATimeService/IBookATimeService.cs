@@ -10,9 +10,13 @@ namespace Semesterprojekt2.Service.BookATimeService
 
         Task<List<string>> GetUpdatedAvailableTimes(DateTime date, List<string> additionalBookedTimes);
 
-       Task<string> GetDayClass(DateTime date, List<string> additionalBookedTimes);
+       Task<string> GetColurDay(DateTime date, List<string> additionalBookedTimes);
+        IEnumerable<BookATime>? GetAllBookATimeList();
+        BookATime GetBookATimeById(int id);
+        Task<BookATime> DeleteBookATime(int id);
+        Task<BookATime> UpdateStatuesToAccept(BookATime bookATime);
+        Task<BookATime> UpdateBookATime(BookATime bookATime);
        
-
     }
 }
 

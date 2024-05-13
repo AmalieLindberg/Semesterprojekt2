@@ -1,0 +1,246 @@
+﻿@page
+@model Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel
+@{
+}
+<head>
+    <style>
+        .text-box {
+            width: 390px; /*    Bestemmer bredde på element (i dette tilfælde 390px) */
+            resize: none; /* Gør at bruger ikke kan ændre på størrelse af textarea'en */
+            overflow: auto; /* Gør at hvis bruger skriver mere end det synlige området så styre hvordan den skal håndtere  */
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            justify-content: center; /* Centers horizontally in the flex container */
+            /* /*    align-items: center;  */ */
+        }
+
+        .Højre, .Venstre {
+            flex: 1;
+            margin: 10px; /* Adjust spacing around the content as needed */
+            padding: 20px; /* Provides internal space around the content */
+        }
+
+        .form-group {
+            margin-bottom: 20px; /* Space between form groups */
+        }
+    </style>
+</head>
+<body>
+<center><h1><b>Edit Order</b></h1></center>
+    <form method="post" enctype="multipart/form-data">
+           @if (@Model.BookATime.DateForBooking.DayOfWeek == DayOfWeek.Saturday || @Model.BookATime.DateForBooking.DayOfWeek == DayOfWeek.Sunday || @Model.BookATime.DateForBooking.DayOfWeek == DayOfWeek.Monday || @Model.BookATime.DateForBooking.DayOfWeek == DayOfWeek.Tuesday)
+        {
+            <div class="container">
+                <div class="Højre">
+                    <div class="form-group">
+                        <label asp-for="BookATime.DateForBooking"> Date for booking: </label> <br />
+                        <input asp-for="BookATime.DateForBooking" readonly class="text-box" />
+
+                    </div>
+
+                   
+                    <div class="form-group">
+                        <label asp-for="BookATime.Elevator" class="control-lable">Do you have an elevator?</label> <br />
+                        <select asp-for="BookATime.Elevator" class="text-box">
+                            <option value="True">Yes</option>
+                            <option value="False">No</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label asp-for="BookATime.Floors" class="control-lable">Which floor do you live on?</label> <br />
+                        <input asp-for="BookATime.Floors" class="text-box" required />
+                        <span asp-validation-for="BookATime.Floors" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="BookATime.Address" class="control-lable">Address for where you want the dogs cared for:</label> <br />
+                        <input asp-for="BookATime.Address" class="text-box" />
+                        <span asp-validation-for="BookATime.Address" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Dog.FirstTime" class="control-lable">Is this the dog's first visit to a groomer??</label> <br />
+                        <select asp-for="Dog.FirstTime" class="text-box">
+                            <option value="True">Yes</option>
+                            <option value="False">No</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label asp-for="BookATime.Comments" class="control-lable">
+                            If you have any comments regarding your booking, <br /> please write them here:</label>
+                        <br />
+                        <textarea asp-for="BookATime.Comments" rows="6" cols="43"> </textarea>
+                    </div>
+                </div>
+                <div class="Venstre">
+                    <div class="form-group">
+                        <label asp-for="BookATime.Id" class="control-lable">OrderId</label> <br />
+                        <input asp-for="BookATime.Id" class="text-box" readonly />
+                        <span asp-validation-for="Dog.Race" class="text-danger"></span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Ydelse.DogSize">Which dog size? </label> <br />
+                        <select asp-for="Ydelse.DogSize" class="text-box">
+                            <option value="Small dog">Small dog</option>
+                            <option value="Medium size dog">Medium size dog</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ydelse.ServiceType" class="control-lable">Which Service Type: </label> <br />
+                        <select asp-for="Ydelse.ServiceType" class="text-box">
+                            <option value="Short-haired">Short-haired</option>
+                            <option value="Short-haired cut to a style or breed standard style">Short-haired cut to a style or breed standard style</option>
+                            <option value="Long-haired cut to a style or breed standard style">Long-haired cut to a style or breed standard style</option>
+                        </select>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label asp-for="Dog.Name" class="control-lable">Your dogs name:</label> <br />
+                        <input asp-for="Dog.Name" class="text-box" />
+                        <span asp-validation-for="Dog.Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Dog.Age" class="control-lable">When is your dog born?</label> <br />
+                        <input asp-for="Dog.Age" class="text-box" />
+                        <span asp-validation-for="Dog.Age" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Dog.Race" class="control-lable">Which race is your dog?</label> <br />
+                        <input asp-for="Dog.Race" class="text-box" />
+                        <span asp-validation-for="Dog.Race" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="@Model.BathPhoto" class="control-label">Please upload a image of your bathroom:</label>
+                        <div class="custom-file">
+                            <input asp-for="@Model.BathPhoto" class="custom-file-input text-box" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label asp-for="@Model.DogPhoto" class="control-label">Please upload a image of your dog:</label>
+                            <div class="custom-file">
+                                <input asp-for="@Model.DogPhoto" class="custom-file-input text-box" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                
+             
+              
+            </div>
+        </div>
+        }
+        else 
+        {
+           <div class="container">
+                <div class="Højre">
+                    <div class="form-group">
+                        <label asp-for="BookATime.DateForBooking"> Date for booking: </label> <br />
+                        <input asp-for="BookATime.DateForBooking" readonly class="text-box" />
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ydelse.DogSize">Which dog size? </label> <br />
+                        <select asp-for="Ydelse.DogSize" class="text-box">
+                            <option value="Small dog">Small dog</option>
+                            <option value="Medium size dog">Medium size dog</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Ydelse.ServiceType" class="control-lable">Which Service Type: </label> <br />
+                        <select asp-for="Ydelse.ServiceType" class="text-box">
+                            <option value="Short-haired">Short-haired</option>
+                            <option value="Short-haired cut to a style or breed standard style">Short-haired cut to a style or breed standard style</option>
+                            <option value="Long-haired cut to a style or breed standard style">Long-haired cut to a style or breed standard style</option>
+                        </select>
+                    </div>
+           
+
+
+                    <div class="form-group">
+                        <label asp-for="BookATime.Comments" class="control-lable">
+                            If you have any comments regarding your booking, <br /> please write them here:</label>
+                        <br />
+                        <textarea asp-for="BookATime.Comments" rows="6" cols="43"> </textarea>
+                    </div>
+                </div>
+                <div class="Venstre">
+                    <div class="form-group">
+                        <label asp-for="BookATime.Id" class="control-lable">OrderId</label> <br />
+                        <input asp-for="BookATime.Id" class="text-box" readonly />
+                        <span asp-validation-for="Dog.Race" class="text-danger"></span>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Dog.FirstTime" class="control-lable">Is this the dog's first visit to a groomer??</label> <br />
+                        <select asp-for="Dog.FirstTime" class="text-box">
+                            <option value="True">Yes</option>
+                            <option value="False">No</option>
+                        </select>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label asp-for="Dog.Name" class="control-lable">Your dogs name:</label> <br />
+                        <input asp-for="Dog.Name" class="text-box" />
+                        <span asp-validation-for="Dog.Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Dog.Age" class="control-lable">When is your dog born?</label> <br />
+                        <input asp-for="Dog.Age" class="text-box" />
+                        <span asp-validation-for="Dog.Age" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Dog.Race" class="control-lable">Which race is your dog?</label> <br />
+                        <input asp-for="Dog.Race" class="text-box" />
+                        <span asp-validation-for="Dog.Race" class="text-danger"></span>
+
+                    </div>
+               
+
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label asp-for="@Model.DogPhoto" class="control-label">Please upload a image of your dog:</label>
+                            <div class="custom-file">
+                                <input asp-for="@Model.DogPhoto" class="custom-file-input text-box" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                
+             
+              
+            </div>
+        </div>
+        }
+        <div class="form-group">
+        <input type="submit" value="Update" style="margin-top: 20px; display: block; width: 100%;" />
+      
+        </div>
+           
+</form>
+</body>

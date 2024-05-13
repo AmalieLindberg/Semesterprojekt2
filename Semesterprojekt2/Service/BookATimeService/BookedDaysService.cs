@@ -5,20 +5,25 @@ namespace Semesterprojekt2.Service.BookATimeService
     public class BookedDaysService
     {
         private DbGenericService<BookedDays> _BookedDaysDbService { get; set; }
-        private static List<BookedDays>? _bookedDays {  get; set; }
+        public static List<BookedDays> _bookedDays { get; set; }
 
         public BookedDaysService(DbGenericService<BookedDays> bookedDaysDbService)
-        {            
+        {
             _BookedDaysDbService = bookedDaysDbService;
             
-           
             _bookedDays = _BookedDaysDbService.GetObjectsAsync().Result.ToList();
         }
 
-        public async Task AddBookedDays(DateTime start, DateTime slut)
+        public async Task AddBookedDays(BookedDays dBookedDays)
         {
-            _bookedDays.Add(new BookedDays { StartDate = start, EndDate = slut });
-            await _BookedDaysDbService.AddObjectAsync(new BookedDays { StartDate = start, EndDate = slut });
+            _bookedDays.Add(dBookedDays);
+            await _BookedDaysDbService.AddObjectAsync(dBookedDays);
+        }
+        public async Task<List<BookedDays>> GetBookedDays(int year, int month)
+        {
+            // Using Task.FromResult to simulate asynchronous operation with static data
+            return await Task.FromResult(_bookedDays.Where(p =>
+                (p.StartDate.Year == year && p.StartDate.Month == month) || (p.EndDate.Year == year && p.EndDate.Month == month)).ToList());
         }
         public async Task<BookedDays> RemoveBookedDaysById(int id)
         {
@@ -36,7 +41,8 @@ namespace Semesterprojekt2.Service.BookATimeService
 
         public static List<BookedDays> GetBookedDaysList()
         {
-            return _bookedDays ?? new List<BookedDays>();
+           
+            return _bookedDays;
         }
   
         
@@ -50,11 +56,10 @@ namespace Semesterprojekt2.Service.BookATimeService
             }
             return null;
         }
-        public static List<string> GetBlockedTimesForDate(DateTime date)
+        public static  List<string> GetBlockedTimesForDate(DateTime date)
         {
             List<string> blockedTimes = new List<string>();
-
-            foreach (var booked in GetBookedDaysList())
+            foreach (var booked in _bookedDays)
             {
                 if (date.Date > booked.StartDate.Date && date.Date < booked.EndDate.Date)
                 {
@@ -76,20 +81,64 @@ namespace Semesterprojekt2.Service.BookATimeService
 
             return blockedTimes.Distinct().ToList();
         }
+        //private static List<string> BlockWholeDay(DateTime date)
+        //{
+        //    List<string> times = new List<string>();
+        //    for (int hour = 0; hour < 24; hour++)
+        //    {
+        //        times.Add(date.Date.AddHours(hour).ToString("HH:mm"));
+        //    }
+        //    return times;
+        //}
+
+        //private static List<string> BlockSingleDay(BookedDays bookedDays)
+        //{
+        //    List<string> times = new List<string>();
+        //    DateTime time = new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day, bookedDays.StartDate.Hour, 0, 0);
+        //    while (time <= bookedDays.EndDate)
+        //    {
+        //        times.Add(time.ToString("HH:mm"));
+        //        time = time.AddHours(1);
+        //    }
+        //    return times;
+        //}
+
+        //private static List<string> BlockStartingDay(BookedDays bookedDays, DateTime date)
+        //{
+        //    List<string> times = new List<string>();
+        //    DateTime time = new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day, bookedDays.StartDate.Hour, 0, 0);
+        //    while (time < date.Date.AddDays(1))  // Block until the end of the day
+        //    {
+        //        times.Add(time.ToString("HH:mm"));
+        //        time = time.AddHours(1);
+        //    }
+        //    return times;
+        //}
+
+        //private static List<string> BlockEndingDay(BookedDays bookedDays, DateTime date)
+        //{
+        //    List<string> times = new List<string>();
+        //    DateTime time = date.Date;  // Start of the day
+        //    while (time <= bookedDays.EndDate)
+        //    {
+        //        times.Add(time.ToString("HH:mm"));
+        //        time = time.AddHours(1);
+        //    }
+        //    return times;
+        //}
+
+        // Block the entire day by adding each hour to the list.
         private static List<string> BlockWholeDay(DateTime date)
         {
-            List<string> times = new List<string>();
-            for (int hour = 0; hour < 24; hour++)
-            {
-                times.Add(date.Date.AddHours(hour).ToString("HH:mm"));
-            }
-            return times;
+            return Enumerable.Range(0, 24).Select(hour => date.Date.AddHours(hour).ToString("HH:mm")).ToList();
         }
 
+        // Block specific hours during a single day.
         private static List<string> BlockSingleDay(BookedDays bookedDays)
         {
             List<string> times = new List<string>();
-            DateTime time = new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day, bookedDays.StartDate.Hour, 0, 0);
+            DateTime time = new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day,
+                                         bookedDays.StartDate.Hour, 0, 0);
             while (time <= bookedDays.EndDate)
             {
                 times.Add(time.ToString("HH:mm"));
@@ -98,11 +147,13 @@ namespace Semesterprojekt2.Service.BookATimeService
             return times;
         }
 
+        // Block from the start of a booking to the end of the day.
         private static List<string> BlockStartingDay(BookedDays bookedDays, DateTime date)
         {
             List<string> times = new List<string>();
-            DateTime time = new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day, bookedDays.StartDate.Hour, 0, 0);
-            while (time < date.Date.AddDays(1))  // Block until the end of the day
+            DateTime time = new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day,
+                                         bookedDays.StartDate.Hour, 0, 0);
+            while (time < date.Date.AddDays(1))
             {
                 times.Add(time.ToString("HH:mm"));
                 time = time.AddHours(1);
@@ -110,10 +161,11 @@ namespace Semesterprojekt2.Service.BookATimeService
             return times;
         }
 
+        // Block from the start of the day to the end time of a booking.
         private static List<string> BlockEndingDay(BookedDays bookedDays, DateTime date)
         {
             List<string> times = new List<string>();
-            DateTime time = date.Date;  // Start of the day
+            DateTime time = date.Date;
             while (time <= bookedDays.EndDate)
             {
                 times.Add(time.ToString("HH:mm"));
@@ -121,7 +173,6 @@ namespace Semesterprojekt2.Service.BookATimeService
             }
             return times;
         }
-
 
 
         public IEnumerable<BookedDays> SortById()

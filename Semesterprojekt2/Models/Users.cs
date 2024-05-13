@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
+using Semesterprojekt2.Models.BookATime;
 
 namespace Semesterprojekt2.Models
 {
@@ -25,7 +26,7 @@ namespace Semesterprojekt2.Models
         
         public string Role { get; set; }
 
-
+        public IEnumerable<Models.BookATime.BookATime>? BookATime { get; set; }
         public Users(string password, string name, int telefonnummer, string email, string role)
         {
             Password = password;

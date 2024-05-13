@@ -1,0 +1,136 @@
+﻿@page
+@model Semesterprojekt2.Pages.Orderhistory.BookATimeOverviewModel
+@{
+}
+<head>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <center><h1 style="color:black;">Book A Time Overview</h1></center>
+    <br />
+    <div class="test">
+        <table class="table table-bordered table-hover table-striped" width="100%">
+            <colgroup>
+                <col style="width : 5%">
+                <col style="width : 33%">
+                <col style="width : 18%">
+                <col style="width : 23%">
+                <col style="width : 20%">
+              
+            </colgroup>
+            <thead>
+                <tr class="btn-secondary active">
+                    <th>Id</th>
+                    <th>Billede</th>
+                    <th>Customer and Dog</th>
+                    <th>Beskrive</th>
+                    <th> Comment <br /> Status</th>
+                    
+
+                </tr>
+            </thead>
+            <tbody>
+                @if (@Model.BookATimes != null)
+                {
+                    foreach (var order in Model.BookATimes
+                    .OrderByDescending(o => o.StatusForBooking == "Pending")
+                    .ThenBy(o => o.DateForBooking))
+                    {
+                        <tr class="btn-secondary">
+                            <td>
+                                OrderId: @order.Id <br />
+                                CustomerId: @order.UserId <br />
+                                YdelseId: @order.YdelseId <br />
+                                DogId: @order.DogId
+                            </td>
+
+                            <td>
+                                <p> Dog image:</p>
+
+                                <img src="~/ImagesForBookATime/Dog/@order.DogImage" alt="Dog Image" style="width:100%" />
+                                <br />
+
+                                @if (@order.BathRoomImage == null)
+                                {
+
+                                }
+                                else
+                                {
+                                    <p>Bathroom:</p>
+                                    <img src="~/ImagesForBookATime/Bath/@order.BathRoomImage" alt="Bathroom Image" style="width:100%" />
+                                }
+
+                            </td>
+                            <td>
+                                <p>Customer info:</p>
+                                <p>Name: @order.User.Name </p>
+                                <p>Email: @order.User.Email </p>
+                                <p>Phone: @order.User.Telefonnummer</p>
+                             <br />
+                               <p> Dog Info</p>
+                                <p>Name: @order.Dog.Name</p>
+                                <p>Race: @order.Dog.Race</p>
+                                <p>Born: @order.Dog.Age</p>
+                                <p>First time at a dogsalon: @order.Dog.FirstTimeDisplay</p>
+                            </td>
+
+                            <td>
+                                <p> Dato for booking: @order.DateForBooking</p>
+
+                                <p> ServiceType: @order.Ydelse.ServiceType</p>
+                                <p> Dog size: @order.Ydelse.DogSize</p>
+
+                                <p>Dato for order: @order.DateForOrder</p>
+
+
+                                @if (order.Elevator == null)
+                                {
+
+                                }
+                                else
+                                {
+                                    <p> Elevator: @order.ElevatorDisplay</p>
+                                }
+                                @if (@order.Floors == null)
+                                {
+
+                                }
+                                else
+                                {
+                                    <p> Floor:  @order.Floors </p>
+
+                                }
+
+                            </td>
+                            <td>
+                                <p>  Comment:  @order.Comments</p>
+                                <p> Status For Booking: @order.StatusForBooking</p>
+                                @if (order.StatusForBooking == "Pending")
+                                {
+                                    <a class="btn btn-secondary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookATimeOrder/EditOrder" asp-route-id="@order.Id"><i class="fa fa-edit"></i></a>
+                                    <a class="btn btn-success btn-sm" type="button" data-toggle="tooltip" title="Accept" asp-page="BookATimeOrder/AcceptOrder" asp-route-id="@order.Id"><i class="bi bi-check-square"></i></a>
+                                    <a class="btn btn-danger btn-sm" type="button" data-toggle="tooltip" data-placement="top" title="Delete" asp-page="BookATimeOrder/DeleteOrder" asp-route-id="@order.Id"><i class="fa fa-trash"></i></a>
+                                }
+                                else
+                                {
+                                    <a class="btn btn-secondary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookATimeOrder/EditOrder" asp-route-id="@order.Id"><i class="fa fa-edit"></i></a>
+
+                                    <a class="btn btn-danger btn-sm" type="button" data-toggle="tooltip" data-placement="top" title="Delete" asp-page="BookATimeOrder/DeleteOrder" asp-route-id="@order.Id"><i class="fa fa-trash"></i></a>
+
+                                }
+                            </td>
+                           
+
+                           
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+</body>

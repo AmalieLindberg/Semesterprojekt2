@@ -23,6 +23,7 @@ namespace Semesterprojekt2.Models.BookATime
         public string? BathRoomImage { get; set; }
 
         public bool? Elevator { get; set; }
+        public string ElevatorDisplay => Elevator.HasValue ? (Elevator.Value ? "Yes" : "No") : "";
         public string? Floors { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
@@ -30,16 +31,16 @@ namespace Semesterprojekt2.Models.BookATime
         public DateTime DateForOrder { get; set; }
         [Required]
         public int YdelseId { get; set; }
-        public Ydelse Ydelse { get; set; }
+        public Ydelse? Ydelse { get; set; }
 
         [Required]
         public int UserId { get; set; }
-        public Users User { get; set; }
+        public Users? User { get; set; }
 
         [Required]
         public int DogId { get; set; }
-        public Dog Dog { get; set; }
-        public string StatusForBooking { get; set; }
+        public Dog? Dog { get; set; }
+        public string? StatusForBooking { get; set; }
         public BookATime(string comments, DateTime Date, Ydelse ydelse, Users user, Dog dog)
         {
 

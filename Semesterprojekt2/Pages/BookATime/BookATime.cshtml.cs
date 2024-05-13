@@ -5,6 +5,9 @@ using Semesterprojekt2.Service.BookATimeService;
 using System.Diagnostics;
 using Semesterprojekt2.Models.BookATime;
 using Semesterprojekt2.Service.UserService.UserService;
+using Semesterprojekt2.Models;
+using Semesterprojekt2.Pages.Login;
+using System.Globalization;
 
 namespace Semesterprojekt2.Pages.BookATime
 {
@@ -57,11 +60,18 @@ namespace Semesterprojekt2.Pages.BookATime
             _webHostEnvironment = webHostEnvironment;
             _dogService = dogService;
         }
-
-        public void OnGet()
+   
+        public IActionResult OnGet()
         {
 
-            //User = _userService.GetUserByUserName(HttpContext.User.Identity.Name);
+            if (LoginModel.LoggedInUser == null || LoginModel.LoggedInUser.UserId == 0 || LoginModel.LoggedInUser.UserId == null)
+            {
+                return RedirectToPage("/Login/Login");
+            }
+
+            int id = LoginModel.LoggedInUser.UserId;
+
+            User = _userService.GetUser(id);
 
 
             //Denne linje tjekker, om TempData indeholder en værdi med nøglen "FullDateTime"
@@ -90,17 +100,25 @@ namespace Semesterprojekt2.Pages.BookATime
                 //Dette skaber et komplet DateTime objekt med både dato og tid.
                 // Brug 'time' til at oprette en ny DateTime værdi
                 fuldDatoOgTid = new DateTime(Year, Month, Day).Add(time); // Combining the date and time components
+
+               
                 //Til sidst fjernes "FullDateTime" fra TempData, hvilket er nyttigt for at undgå at den gamle dato genbruges ved en senere forespørgsel,
                 //især i web applikationer, hvor TempData bruges til at bevare data mellem requests.
                 // Slet TempData værdien, hvis den ikke skal bruges igen
-                TempData.Remove("FullDateTime");
+                
+                TempData.Remove("FullDateTime"); 
+              
             }
-
-
+            if (fuldDatoOgTid == new DateTime(0001, 01, 01, 00, 00, 00))
+            {
+                // Omdiriger til 'BookATime' siden
+                return RedirectToPage("/BookATime/Calendar");
+            }
+            return Page();
 
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPost(int id)
         {
             if (!ModelState.IsValid)
             {
@@ -140,15 +158,19 @@ namespace Semesterprojekt2.Pages.BookATime
 
                 BookATime.DogImage = ProcessUploadedDogFile();
             }
-            //User = _userService.GetUserByUserName(HttpContext.User.Identity.Name);
-            BookATime.DateForOrder = DateTime.Now;
-             _ydelseService.AddYdelseAsync(Ydelse);
-           
-            //Order.UserId = User.UserId;
-            BookATime.YdelseId = Ydelse.Id;
-          _bookATimeService.addTidsbestilling(BookATime);
+            int UserId = LoginModel.LoggedInUser.UserId;
 
-            return RedirectToPage("/Index");
+            User = _userService.GetUser(UserId);
+            BookATime.DateForOrder = DateTime.Now;
+            BookATime.StatusForBooking = "Pending";
+            await _ydelseService.AddYdelseAsync(Ydelse);
+          await _dogService.AddDogAsync(Dog);
+            BookATime.DogId = Dog.Id;
+            BookATime.UserId = User.UserId;
+            BookATime.YdelseId = Ydelse.Id;
+         await _bookATimeService.addTidsbestilling(BookATime);
+
+            return RedirectToPage("ThankYouForYourBooking", new { id = BookATime.Id });
         }
 
         private string ProcessUploadedDogFile()

@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Service.BookATimeService;
 
 namespace Semesterprojekt2.Pages.BookATime.BookedDays
 {
+    [Authorize(Roles = "Admin")]
     public class CreateBookedDaysModel : PageModel
     {
         [BindProperty]
@@ -24,7 +26,7 @@ namespace Semesterprojekt2.Pages.BookATime.BookedDays
                 return Page();
             }
 
-            await BookedDaysService.AddBookedDays(BookedDays.StartDate, BookedDays.EndDate);
+            await BookedDaysService.AddBookedDays(BookedDays);
             return RedirectToPage("/BookATime/Calendar");
         }
     }

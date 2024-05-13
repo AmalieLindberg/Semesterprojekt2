@@ -3,62 +3,140 @@
 @{
 }
 
-<center><h1>Orderhistory</h1></center>
+<center><h1>Book a Time Order History</h1></center>
 <div style="text-align: center;">
     <form method="post" asp-page="/Orderhistory/ProductOrderHistory">
         <button type="submit">Go to your product orders</button>
     </form>
 </div>
 <hr />
+<p>
+    <b>
+        If the status of your order is shown as "Pending," it means that your order has not yet been accepted.
+        When the status changes to "Accepted," your order is confirmed and accepted.
+        If your order is deleted from the list, it means that it has been rejected.
+    </b>
+</p>
 
 <div class="test">
     <table class="table table-bordered table-hover table-striped" width="60%">
         <colgroup>
-            <col style="width : 5%">
-            <col style="width : 25%">
-            <col style="width : 50%">
-            <col style="width : 20%">
+            <col style="width : 7%">
+            <col style="width : 34%">
+            <col style="width : 35%">
+            <col style="width : 24%">
+            
         </colgroup>
         <thead >
             <tr class="btn-secondary active" >
                 <th>ID</th>
-                <th>Fotos</th>
+                <th>Pictures</th>
                 <th>Info</th>
-                <th>Comments</th>
+                <th>Statues for booking <br /> Comment about your book time</th>
+              
             </tr>
         </thead>
-        @* <tbody>
-            @if (@Model.Orderhistory != null)
+         <tbody>
+            @if (@Model.MyBookATimeOrder != null)
             {
-                foreach (var order in Model.Orderhistory)
+                foreach (var order in Model.MyBookATimeOrder
+                .OrderByDescending(o => o.StatusForBooking == "Pending")
+                .ThenBy(o => o.DateForBooking))
                 {
+
                     <tr class="btn-secondary">
                         <td>
-                            @order.OrderId
+                           BookingId: @order.Id
                         </td>
-                        <td>                                Mangler data
-                            @order.Date
-                        </td>
+                        <td>
+                            <p> Dog image:</p>
 
+                            <img src="~/ImagesForBookATime/Dog/@order.DogImage" alt="Dog Image" style="width:60%" />
+                            <br />
+
+                            @if (@order.BathRoomImage == null)
+                            {
+
+                            }
+                            else
+                            {
+                                <p>Bathroom:</p>
+                                <img src="~/ImagesForBookATime/Bath/@order.BathRoomImage" alt="Bathroom Image" style="width:60%" />
+                            }
+                        </td>
+             
                         <td>
-                            @order.ItemId
+                            <p> Date for booking: @order.DateForBooking</p>
+
+                            <p>Date for when order is made: @order.DateForOrder</p>
+
+                            <p>  Dog Siza: @order.Ydelse.DogSize</p>
+
+                            <p> ServiceType: @order.Ydelse.ServiceType</p>
+                            @if (order.Elevator == null)
+                            {
+
+                            }
+                            else
+                            {
+                                <p> Elevator: @order.ElevatorDisplay;</p>
+                            }
+                            @if (@order.Floors == null)
+                            {
+
+                            }
+                            else
+                            {
+                                <p> Floor:  @order.Floors; </p>
+
+
+                            }
+                            @if (@order.Address == null)
+                            {
+
+                            }
+                            else
+                            {
+                                <p> Address for dog service:  @order.Address; </p>
+                            }
+                            Info about your dog:
+                            <p> Name: @order.Dog.Name</p>
+                            <p>  Race: @order.Dog.Race</p>
+                            <p>Born: @order.Dog.Age</p>
+                            <p> First time at a dogsalon: @order.Dog.FirstTimeDisplay;</p>
+
                         </td>
                         <td>
-                            @order.ItemName
+                            @if (order.StatusForBooking == "Pending")
+                            {
+                                <p>
+                                    <span style="color: black;">Status for booking:</span>
+                                    <span style="color: #D96F11;">@order.StatusForBooking</span>
+                                </p>
+                            }
+                            else
+                            {
+                                <p>
+                                    <span style="color: black;">Status for booking:</span>
+                                    <span style="color: #26890B;">@order.StatusForBooking</span>
+                                </p>
+                            }
+
+
+
+                            @if (order.Comments == null)
+                            {
+
+                            }
+                            else
+                            {
+                                <p>Comment: @order.Comments</p>
+                            }
+                        </td>
+                   
                     </tr>
                 }
             }
-        </tbody> *@
+        </tbody> 
     </table>
 </div>
-
-
-<center><h1>History</h1></center>
-<hr />
-<form action="/action_page.php" id="usrform">
-    <div>
-        <textarea rows="4" cols="50" name="comment" form="usrform">
-Comment her!</textarea>
-    </div>
-    <input type="submit">
-</form>

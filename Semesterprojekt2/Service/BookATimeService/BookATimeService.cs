@@ -1,4 +1,5 @@
-﻿using Semesterprojekt2.Models.BookATime;
+﻿using Microsoft.AspNetCore.Mvc;
+using Semesterprojekt2.Models.BookATime;
 
 namespace Semesterprojekt2.Service.BookATimeService
 {
@@ -19,9 +20,6 @@ namespace Semesterprojekt2.Service.BookATimeService
             await _bookATimeDbService.AddObjectAsync(bookATime);
 
         }
-        public List<BookATime> GetBookATimes()
-        { return BookATimeList ?? new List<BookATime>(); ; }
-
 
       
 
@@ -52,7 +50,6 @@ namespace Semesterprojekt2.Service.BookATimeService
 
         public async Task<List<string>> GetUpdatedAvailableTimes(DateTime date, List<string> additionalBookedTimes)
         {
-
             List<string> bookedTimesFromDb = await BookATimeDbService.GetBookedTimesForDate(date);
 
             // Kombiner bookede tider fra databasen med den ekstra liste
@@ -63,31 +60,26 @@ namespace Semesterprojekt2.Service.BookATimeService
 
             return availableTimes;
         }
+        //public async Task<List<string>> GetUpdatedAvailableTimes(DateTime date, List<string> additionalBookedTimes)
+        //{
+        //    // Retrieve booked times from the database
+        //    List<string> bookedTimesFromDb = await BookATimeDbService.GetBookedTimesForDate(date);
 
-        public List<string> GetPotentialTimes(DateTime date)
-        {
-            List<string> potentialTimes = new List<string>();
+        //    // Retrieve blocked times (e.g., due to holidays or special events)
+        //    List<string> blockedTimes = BookedDaysService.GetBlockedTimesForDate(date);
 
-            switch (date.DayOfWeek)
-            {
-                case DayOfWeek.Saturday:
-                case DayOfWeek.Sunday:
-                case DayOfWeek.Monday:
-                case DayOfWeek.Tuesday:
-                    potentialTimes.AddRange(new List<string> { "10:00", "11:00", "12:00" });
-                    break;
+        //    // Combine booked times from database, blocked times, and additional booked times
+        //    var allBookedTimes = bookedTimesFromDb.Concat(blockedTimes).Concat(additionalBookedTimes).Distinct().ToList();
 
-                case DayOfWeek.Wednesday:
-                case DayOfWeek.Thursday:
-                case DayOfWeek.Friday:
-                    break;
+        //    // Get the updated list of available times by filtering out all booked times
+        //    List<string> availableTimes = GetAvailableTimes(date, allBookedTimes);
 
-                default:
-                    return new List<string>(); // Returnerer en tom liste, hvis ugyldig dag.
-            }
-            return potentialTimes;
-        }
-        
+        //    return availableTimes;
+        //}
+
+
+
+
         public static List<string> GetServiceTimes(DayOfWeek day)
         {
             switch (day)
@@ -105,32 +97,33 @@ namespace Semesterprojekt2.Service.BookATimeService
                     return new List<string>(); // No services available
             }
         }
-   
-
 
         public static List<string> GetAvailableTimes(DateTime date, List<string> bookedTimes)
         {
+
+            // Proceed with calculating available times
             bool isMobileServiceDay = date.DayOfWeek == DayOfWeek.Saturday ||
                                       date.DayOfWeek == DayOfWeek.Sunday ||
                                       date.DayOfWeek == DayOfWeek.Monday ||
                                       date.DayOfWeek == DayOfWeek.Tuesday;
 
-            List<string> serviceTimes = GetServiceTimes(date.DayOfWeek);  // Retrieve potential service times based on the day
-            List<string> blockedTimes = BookedDaysService.GetBlockedTimesForDate(date); // Retrieve blocked times based on holidays
-
-            // If it's a mobile service day and there's any booking, block the whole day
-            if (isMobileServiceDay && bookedTimes.Any())
-            {
-                return new List<string>();  // Return an empty list to indicate no availability
-            }
-
-            // Otherwise, remove blocked and booked times from the available service times
+            List<string> serviceTimes = GetServiceTimes(date.DayOfWeek);
+            List<string> blockedTimes = BookedDaysService.GetBlockedTimesForDate(date);
+          
+                if (isMobileServiceDay && bookedTimes.Any())
+                {
+                    return new List<string>();  // Return an empty list indicating no availability
+                }
+            
             return serviceTimes.Where(time => !blockedTimes.Contains(time) && !bookedTimes.Contains(time)).ToList();
         }
 
+
+
+       
         //GetDayClass matcher sammen med GetUpdatedAvailableTimes så hvis listen er =0 så røde ellers dagene oragne og gul
 
-        public async Task<string> GetDayClass(DateTime date, List<string> additionalBookedTimes)
+        public async Task<string> GetColurDay(DateTime date, List<string> additionalBookedTimes)
         {
             DateTime today = DateTime.Today;
             // Få opdateret liste af tilgængelige tider for den givne dato
@@ -144,7 +137,7 @@ namespace Semesterprojekt2.Service.BookATimeService
             // Tjek om der ikke er nogen tilgængelige tider
             if (availableTimes.Count == 0)
             {
-                return "red";
+                return "red-day";
             }
 
             // Definer hvilke dage der skal returnere hvilken farveklasse
@@ -162,6 +155,96 @@ namespace Semesterprojekt2.Service.BookATimeService
                 default:
                     throw new InvalidOperationException("Ugyldig dag i ugen");
             }
+        }
+
+        public IEnumerable<BookATime>? GetAllBookATimeList()
+        {
+            return BookATimeList;
+        }
+
+        public BookATime GetBookATimeById(int id)
+        {
+            foreach (var bookATime in BookATimeList)
+            {
+                if (id == bookATime.Id)
+                    return bookATime;
+            }
+            return null;
+        }
+
+        public async Task<BookATime> DeleteBookATime(int id)
+        {
+            BookATime itemToBeDeleted = null;
+            foreach (BookATime bookATime in BookATimeList)
+            {
+                if (bookATime.Id == id)
+                {
+                    itemToBeDeleted = bookATime;
+                    break;
+                }
+            }
+            if (itemToBeDeleted != null)
+            {
+                BookATimeList.Remove(itemToBeDeleted);
+                
+                await _bookATimeDbService.DeleteObjectAsync(itemToBeDeleted);
+                return itemToBeDeleted;
+            }
+            return null;
+        }
+
+        public async Task<BookATime> UpdateStatuesToAccept(BookATime bookATime)
+        {
+            if (bookATime != null)
+            {
+                foreach (BookATime book in BookATimeList)
+                {
+                    if (book.Id == bookATime.Id)
+                    {
+                        book.StatusForBooking = "Accepted"; 
+                        await _bookATimeDbService.UpdateObjectAsync(book);
+                       return book;
+                    }
+                }
+                
+             
+            }
+            return null;
+        }
+        public async Task<BookATime> UpdateBookATime(BookATime bookATime)
+        {
+            if (bookATime != null)
+            {
+                foreach (BookATime book in BookATimeList)
+                {
+                    if (book.Id == bookATime.Id)
+                    {
+                        book.Address = bookATime.Address;
+                        book.Comments = bookATime.Comments;
+
+                        book.Floors = bookATime.Floors;
+                        book.Elevator = bookATime.Elevator;
+                        if (bookATime.BathRoomImage==null)
+                        {
+                            bookATime.BathRoomImage = book.BathRoomImage;
+
+                        }
+                        else 
+                            book.BathRoomImage = bookATime.BathRoomImage;
+                        if (bookATime.DogImage==null)
+                        {
+                            bookATime.DogImage = book.DogImage;
+                        }
+                        else
+                        book.DogImage = bookATime.DogImage;
+                        await _bookATimeDbService.UpdateObjectAsync(book);
+                        return book;
+                    }
+                }
+
+
+            }
+            return null;
         }
     }
 }
