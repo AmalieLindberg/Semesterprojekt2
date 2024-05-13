@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Models;
 using Semesterprojekt2.Service.UserService.UserService;
 using Semesterprojekt2.Service;
+using Semesterprojekt2.Pages.Login;
 
 namespace Semesterprojekt2.Pages.Orderhistory
 {
@@ -35,7 +36,8 @@ namespace Semesterprojekt2.Pages.Orderhistory
         public void OnGet(int id)
         {
             Product = _productService.GetProduct(id);
-            Users = _userService.GetUserByUserName(HttpContext.User.Identity.Name);
+            id = LoginModel.LoggedInUser.UserId;
+            Users CurrentUser = _userService.GetUserById(id);
         }
 
         public IActionResult OnPost(int id)
@@ -45,7 +47,7 @@ namespace Semesterprojekt2.Pages.Orderhistory
                 return Page();
             }
             Product = _productService.GetProduct(id);
-            Users = _userService.GetUserByUserName(HttpContext.User.Identity.Name);
+            Users = _userService.GetUserById(id);
             ProductOrder.UserId = Users.UserId;
             ProductOrder.ProductId = Product.Id;
             ProductOrder.Date = DateTime.Now;

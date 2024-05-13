@@ -108,10 +108,9 @@ namespace Semesterprojekt2.Service.UserService.UserService
             return DbService.GetTidsbestillingOrdersByUserIdAsync(user.UserId).Result;
         }
 
-        //public Users GetUserByUserName(string name)
-        //{
-        //	//return DbService.GetObjectByIdAsync(name).Result;
-        //	return Users.Find(user => users.Name == name);
-        //}
+        public Users GetUserById(int id)
+        {
+            return DbService.GetObjectByIdAsync(id).Result;
+        }
     }
 }
