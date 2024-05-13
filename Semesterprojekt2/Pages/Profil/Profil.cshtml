@@ -3,9 +3,26 @@
 @{
 }
 
+<head>
+	<style>
 
+        .container {
+            display: flex;
+            justify-content: space-between;
+            justify-content: center; /* Centers horizontally in the flex container */
+            /* /*    align-items: center;  */ */
+        }
+
+        .Højre, .Venstre {
+            flex: 1;
+            margin: 10px; /* Adjust spacing around the content as needed */
+            padding: 20px; /* Provides internal space around the content */
+        }
+
+	</style>
+</head>
 <body>
-    <center><h1>Profil</h1></center>
+    <center><h1>Welecome @Model.Users.Name</h1></center>
     <hr />
 
     <div class="row">
@@ -16,8 +33,39 @@
 
         </div>
     </div>
+    <div class="container">
+      <div class="Højre">
+	<div class="form-group">
+    @if (Model.Users.ProfileImages != null)
+    {
+                    <img src="~/Images/Profil/@Model.Users.ProfileImages" alt="ProfilImage" style="width:100%" />
+    }
+    else
+    {
+                    <img src="~/Images/ProfilStandard/Profile.png" alt="ProfilImage" style="width:100%" />
+    }
+            </div>
+    </div>
+        <div class="Venstre">
+	<div class="form-group">
+		<label asp-for="Users.Email" class="control-label"></label>
+		<input asp-for="Users.Email" readonly class="form-control" />
+	
+	</div>
+	<div class="form-group">
+		<label asp-for="Users.Telefonnummer" class="control-label"></label>
+                <input asp-for="Users.Telefonnummer" readonly class="form-control" />
+	
+	</div>
+	<div class="form-group">
+		<label asp-for="Users.Bio" class="control-label"></label> <br />
+        <textarea asp-for="Users.Bio" readonly rows="5" cols="64"></textarea>
 
-                <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@Model.Users.UserId">Edit</a>
+           
+            </div>
+        </div>
+    </div>
+    <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@Model.Users.UserId">Edit</a>
     <a class="btn btn-danger btn-sm" title="Delete" asp-page="/Profil/DeleteUser" asp-route-id="@Model.Users.UserId">Delete</a>
     
 </body>

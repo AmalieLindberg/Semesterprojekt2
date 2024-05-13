@@ -68,6 +68,12 @@ namespace Semesterprojekt2.Service.UserService.UserService
                         u.Password = user.Password;
                         u.Telefonnummer = user.Telefonnummer;
                         u.Role = user.Role;
+                        if (user.ProfileImages== null)
+                        {
+                            user.ProfileImages = u.ProfileImages;
+                        }
+                        u.ProfileImages = user.ProfileImages;
+                        u.Bio = user.Bio;
                     }
                 }
                 await DbService.UpdateObjectAsync(user);
