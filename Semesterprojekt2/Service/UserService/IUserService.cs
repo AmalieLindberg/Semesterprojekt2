@@ -10,8 +10,9 @@ namespace Semesterprojekt2.Service.UserService.UserService
         Task<Users> UpdateUser(Users user);
         Users GetUser(int id);
         Task<Users> DeleteUser(int? userId);
-      
-        Users GetUserTidsbestillingOrders(Users currentUser);
+		Task<Users> ResetPassword(Users user);
+
+		Users GetUserTidsbestillingOrders(Users currentUser);
         Users GetUserDogs(Users id);
         //Users GetUserByUserName(string name);
 
