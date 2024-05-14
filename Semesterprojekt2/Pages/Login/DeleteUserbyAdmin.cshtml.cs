@@ -14,30 +14,30 @@ namespace Semesterprojekt2.Pages.Login
 		}
 
 		[BindProperty]
-		public Models.Users user { get; set; }
+		public Models.Users? user { get; set; }
 
 		public IActionResult OnGet(int id)
 		{
 			user = _userService.GetUser(id);
 			if (user == null)
-				return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
+				return RedirectToPage("/NotFound"); 
 
 			return Page();
 		}
 
-		/*
-		 * Det her virker ikke rigtig. Jeg sletter altid useren jeg er logged ind med 
-		 * (eller user med ID 0 - ved det ikke helt)
-		 * 
-		public IActionResult OnPost()
+		public async Task<IActionResult> OnPost(int id)
 		{
-			Models.Users deletedUser = _userService.DeleteUser(user.UserId);
+			Models.Users deletedUser = await _userService.DeleteUser(id);
 			if (deletedUser == null)
-				return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
+				return RedirectToPage("/NotFound"); 
 
-			return RedirectToPage("/Login/UserOverview");
+			TempData["Message"] = $"User {deletedUser.Name} successfully deleted.";
+			user = null; // Setting user to null so that "Are you sure you want to delete user" box disappears
+			
+			return Page();
+			
 		}
-		*/
+
 
 
 

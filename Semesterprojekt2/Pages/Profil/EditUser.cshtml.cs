@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Service.UserService.UserService;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 
 namespace Semesterprojekt2.Pages.Profil
@@ -20,7 +21,11 @@ namespace Semesterprojekt2.Pages.Profil
         [BindProperty]
         public Models.Users User{ get; set; }
 
-        public IActionResult OnGet(int id)
+		[BindProperty]
+		[DataType(DataType.Password)]
+		public string ConfirmPassword { get; set; }
+
+		public IActionResult OnGet(int id)
         {
             User = _userService.GetUser(id);
             if (User == null)
@@ -36,6 +41,20 @@ namespace Semesterprojekt2.Pages.Profil
 				
 				return Page();
             }
+
+			// Check if passwords match
+			if (!string.IsNullOrEmpty(User.Password))
+			{
+				if (User.Password != ConfirmPassword)
+				{
+					ModelState.AddModelError("ConfirmPassword", "Passwords do not match");
+					return Page();
+				}
+				// Proceed to update the password
+			}
+
+
+
 			if (ProfileImages != null)
 			{
 				if (User.ProfileImages != null) 

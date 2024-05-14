@@ -9,6 +9,8 @@ using System.Security.Claims;
 using System.Data;
 using System.Runtime.ConstrainedExecution;
 using Microsoft.AspNetCore.Identity;
+using System.Diagnostics;
+
 
 namespace Semesterprojekt2.Pages.Login
 {
@@ -50,7 +52,10 @@ namespace Semesterprojekt2.Pages.Login
 
                     var passwordHasher = new PasswordHasher<string>();
 
-                    if (passwordHasher.VerifyHashedPassword(null, user.Password, Password) == PasswordVerificationResult.Success)
+					// Debug: Check the format of the hash we are verifying
+					Console.WriteLine($"Hash from DB: {user.Password}");
+
+					if (passwordHasher.VerifyHashedPassword(null, user.Password, Password) == PasswordVerificationResult.Success)
                     {
                         //Gem den logget ind bruger
                         LoggedInUser = user;

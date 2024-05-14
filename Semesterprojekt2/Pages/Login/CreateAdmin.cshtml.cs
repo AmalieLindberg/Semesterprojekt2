@@ -68,7 +68,7 @@ namespace Semesterprojekt2.Pages.Login
 
 
 			await _userService.AddUser(new Users(hashedPassword, Name, Phone, Email, Role));
-			return RedirectToPage("Login"); //Skift ud -> Naviger til Bruger-oversigten
+			return RedirectToPage("UserOverview"); 
         }
 
 

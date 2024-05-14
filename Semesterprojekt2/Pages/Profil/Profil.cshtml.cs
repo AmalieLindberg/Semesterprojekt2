@@ -31,6 +31,7 @@ namespace Semesterprojekt2.Pages.Profil
             User = _userService.GetUser(id);    
             Users CurrentUser = _userService.GetUser(id);
             MyDogs = _userService.GetUserDogs(CurrentUser).Dog;
+
             if (User == null)
                 return RedirectToPage("/Error/Error");
             return Page();

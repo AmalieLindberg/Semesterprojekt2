@@ -1,5 +1,8 @@
-﻿using Semesterprojekt2.MockData.Profil;
+﻿using Microsoft.AspNetCore.Identity;
+using Semesterprojekt2.MockData.Profil;
 using Semesterprojekt2.Models;
+using Semesterprojekt2.DAO;
+using Semesterprojekt2.MockData.Profil;
 
 namespace Semesterprojekt2.Service.UserService.UserService
 {
@@ -8,9 +11,13 @@ namespace Semesterprojekt2.Service.UserService.UserService
         private UserDbService DbService { get; set; }
         public List<Users> _users { get; set; }
         private JsonFileUserService jsonFileUserService { get; set; }
-    
 
-        public UserService(UserDbService userDbService, JsonFileUserService userService)
+		private string genericPW = "ResetPW1234";
+
+		private PasswordHasher<string> passwordHasher;
+
+
+		public UserService(UserDbService userDbService, JsonFileUserService userService)
         {
             DbService = userDbService;
             jsonFileUserService = userService;
@@ -22,9 +29,11 @@ namespace Semesterprojekt2.Service.UserService.UserService
 
             _users = DbService.GetObjectsAsync().Result.ToList();
 
-            //_jsonFileUserService.SaveJsonUsers(_users);
+			//_jsonFileUserService.SaveJsonUsers(_users);
 
-        }
+			passwordHasher = new PasswordHasher<string>();
+
+		}
 
         public async Task<Users> AddUser(Users user)
         {
@@ -65,19 +74,30 @@ namespace Semesterprojekt2.Service.UserService.UserService
                         u.UserId = user.UserId;
                         u.Name = user.Name;
                         u.Email = user.Email;
-                        u.Password = user.Password;
+   
                         u.Telefonnummer = user.Telefonnummer;
-                        u.Role = user.Role;
+						// Hash the password only if it's changed, and ensure it's being hashed
+						if (!string.IsNullOrEmpty(user.Password))
+						{
+							u.Password = passwordHasher.HashPassword(null, user.Password);
+							// Debug: Log or check the hash
+							// Console.WriteLine($"Hashed Password: {u.Password}");
+						}
+
+						u.Role = user.Role;
                         if (user.ProfileImages== null)
                         {
                             user.ProfileImages = u.ProfileImages;
                         }
                         u.ProfileImages = user.ProfileImages;
                         u.Bio = user.Bio;
-                    }
+
+						await DbService.UpdateObjectAsync(u);
+						return u;
+					}
                 }
-                await DbService.UpdateObjectAsync(user);
-				return user;
+
+				
 
 			}
 
@@ -124,5 +144,36 @@ namespace Semesterprojekt2.Service.UserService.UserService
         {
             return DbService.GetDogByUserIdAsync(user.UserId).Result;
         }
+
+		//Reset Password Method
+
+		public async Task<Users> ResetPassword(Users user)
+		{
+			if (user != null)
+			{
+				foreach (Users u in _users)
+				{
+					if (u.UserId == user.UserId)
+					{
+						u.Password = passwordHasher.HashPassword(null, genericPW);
+						Console.WriteLine($"Hashed Password: {user.Password}");
+
+						await DbService.UpdateObjectAsync(u);
+						return u;
+
+					}
+				}
+
+			}
+
+			return null;
+
+		}
+        public IEnumerable<ProductOrderDAO> GetUserProductOrders(Users users)
+        {
+            return DbService.GetOrdersByUserIdAsync(users.UserId).Result;
+        }
+
+
     }
 }
