@@ -96,18 +96,18 @@
         <tbody>
             @if (@Model.MyDogs != null)
             {
-                foreach (var order in Model.MyDogs)
+                foreach (var dog in Model.MyDogs)
              
                 {
 
                     <tr class="btn-secondary">
                         <td>
-                            DogId: @order.Id
+                            DogId: @dog.Id
                         </td>
                         <td>
                             <p> Dog image:</p>
 
-                            <img src="~/ImagesForBookATime/Dog/@order.DogImage" alt="Dog Image" style="width:100%" />
+                            <img src="~/ImagesForBookATime/Dog/@dog.DogImage" alt="Dog Image" style="width:100%" />
                           
 
                           
@@ -117,17 +117,17 @@
                         <td>
                            
 
-                            <p> Name: @order.Name</p>
-                            <p>  Race: @order.Race</p>
-                            <p>Born: @order.Age</p>
+                            <p> Name: @dog.Name</p>
+                            <p>  Race: @dog.Race</p>
+                            <p>Born: @dog.Age</p>
                             
 
                         </td>
                         <td>
-                            <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/Dog/EditDog" style="background-color: #FCC681; color: #ffffff" asp-route-id="@Model.User.UserId"> <i class="fa fa-edit"> </i> Dog</a>
+                            <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/Dog/EditDog" style="background-color: #FCC681; color: #ffffff" asp-route-id="@dog.Id"> <i class="fa fa-edit"> </i> Dog</a>
 
 
-                            <a class="btn btn-primary btn-sm" title="Delete" asp-page="/Profil/Dog/DeleteDog" style="background-color:#EAA193; color: #ffffff" asp-route-id="@Model.User.UserId"><i class="fa fa-trash"></i> Dog</a>
+                            <a class="btn btn-primary btn-sm" title="Delete" asp-page="/Profil/Dog/DeleteDog" style="background-color:#EAA193; color: #ffffff" asp-route-id="@dog.Id"><i class="fa fa-trash"></i> Dog</a>
                         </td>
                   
                         

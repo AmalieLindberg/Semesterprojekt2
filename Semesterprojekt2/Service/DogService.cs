@@ -59,7 +59,27 @@ namespace Semesterprojekt2.Service
             }
             return null;
         }
+        public async Task<Dog> DeleteDog(int? dogId)
+        {
+            Dog dogToBeDeleted = null;
+            foreach (Dog d in DogList)
+            {
+                if (d.Id == dogId)
+                {
+                    dogToBeDeleted = d;
+                    break;
+                }
+            }
 
-  
+            if (dogToBeDeleted != null)
+            {
+                DogList.Remove(dogToBeDeleted);
+                await _dbGenericService.DeleteObjectAsync(dogToBeDeleted);
+            }
+
+            return dogToBeDeleted;
+        }
+
+
     }
 }

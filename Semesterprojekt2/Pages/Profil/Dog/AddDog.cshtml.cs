@@ -68,7 +68,7 @@ namespace Semesterprojekt2.Pages.Profil.Dog
             await _dogService.AddDogAsync(Dog);
 			
 
-			return RedirectToPage("/Index");
+			return RedirectToPage("/Profil/Profil");
         }
 		private string ProcessUploadedFile()
 		{
