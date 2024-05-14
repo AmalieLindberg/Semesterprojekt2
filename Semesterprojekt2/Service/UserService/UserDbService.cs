@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Semesterprojekt2.EFDbContext;
 using Semesterprojekt2.Models;
+using Semesterprojekt2.DAO;
 
 namespace Semesterprojekt2.Service.UserService
 {
@@ -37,6 +38,37 @@ namespace Semesterprojekt2.Service.UserService
             }
 
             return user;
+        }
+
+        public async Task<List<ProductOrderDAO>> GetOrdersByUserIdAsync(int id)
+        {
+            List<ProductOrderDAO> productOrderList = new List<ProductOrderDAO>();
+
+            using (var context = new SemsterprojektDbContext())
+            {
+
+                var orders = from productOrder in context.ProductOrder
+                             join product in context.Product on productOrder.ProductId equals product.Id
+                             join users in context.Users on productOrder.UserId equals users.UserId
+                             where users.UserId == id
+                             select new ProductOrderDAO()
+                             {
+                                 OrderId = productOrder.OrderId,
+                                 UserId = users.UserId,
+                                 UserName = users.Name,
+                                 ProductId = product.Id,
+                                 ProductName = product.Name,
+                                 Price = (decimal)product.Price,
+                                 Count = productOrder.Count
+                             };
+
+                foreach (var order in orders)
+                {
+                    productOrderList.Add(order);
+                }
+            }
+
+            return productOrderList;
         }
     }
 }

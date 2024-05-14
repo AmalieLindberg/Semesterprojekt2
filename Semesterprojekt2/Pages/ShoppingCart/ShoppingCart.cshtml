@@ -1,4 +1,5 @@
 ﻿@page
+@using Semesterprojekt2.Models.Shop
 @model Semesterprojekt2.Pages.ShoppingCart.ShoppingCartModel
 @{
     ViewData["Title"] = "Your Shopping Cart";
@@ -19,8 +20,9 @@
     <button type="submit" class="btn btn-warning">Clear Cart</button>
 </form>
 <br />
+<body>
 
-@if (Model.CartItems.Count > 0)
+@if (Model.CartItem.Count > 0)
 {
     <table class="table">
         <thead>
@@ -33,7 +35,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model.CartItems)
+            @foreach (var item in Model.CartItem)
             {
                 <tr>
                     <td>@item.Product.Name</td>
@@ -68,6 +70,16 @@ else
 <center><p>or</p></center>
 
 <div style="text-align: center;">
-    <button><h3><a asp-page="/OrderHistory/ProductOrderHistory" class="link-no-style">Finish and reserve</a></h3></button>
+                <form method="post">
+                    <div class="form-group">
+                        <input type="submit" style="background-color: transparent; color: black; font-size: 30px;"value="Finish and reserve" class="btn btn-primary" />
+                    </div>
+                </form>
 </div>
-
+<div>
+    <form method="post" asp-page-handler="AddToOrder">
+        <input type="hidden" name="productId" value="@Model.Product.Id" />
+        <button type="submit">Add to cart</button>
+    </form>
+</div>
+</body>

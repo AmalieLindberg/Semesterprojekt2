@@ -1,4 +1,5 @@
-﻿using Semesterprojekt2.Models.Shop;
+﻿using Microsoft.EntityFrameworkCore;
+using Semesterprojekt2.Models.Shop;
 namespace Semesterprojekt2.Service
 {
     public class ProductOrderService
@@ -13,10 +14,17 @@ namespace Semesterprojekt2.Service
             OrderList = DbService.GetObjectsAsync().Result.ToList();
         }
 
-        public async void AddOrder(ProductOrder productOrder)
+        public async Task AddOrderAsync(ProductOrder productOrder)
         {
             OrderList.Add(productOrder);
             await DbService.AddObjectAsync(productOrder);
         }
+
+        public async Task SaveOrderAsync(ProductOrder productOrder)
+        {
+            // Add the order to the list and save it in the database
+            await AddOrderAsync(productOrder);
+        }
+
     }
 }

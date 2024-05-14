@@ -1,4 +1,5 @@
 ﻿@page
+@using Semesterprojekt2.Pages.Login
 @model Semesterprojekt2.Pages.Shop.ShopModel
 @{
 }
@@ -12,38 +13,11 @@
             background-color: rgba(198, 81, 39, 0.08); /* Baggrundsfarve med transparens */
         }
 
-        /* Styling for sidelinks, fast i venstre side */
-        .sidenav {
-            width: 130px; /* Bredden af side navigationsbaren */
-            height: 800px; /* Højden af side navigationsbaren */
-            position: absolute; /* Positionering uden for normal flow */
-            z-index: 1; /* Sørger for at navigationsbaren ligger over andre elementer */
-            top: 85px; /* Topposition fra viewportens top */
-            left: 0px; /* Venstre positionering fra viewportens venstre kant */
-            background-color: rgb(239,231,225); /* Baggrundsfarve */
-            overflow-x: hidden; /* Skjuler horisontal scrollbar */
-            overflow-y: auto; /* Tillader vertikal scrollbar */
-            padding: 8px 0; /* Vertikal padding */
-        }
-
-            /* Styling af links inden i side navigationen */
-            .sidenav a {
-                padding: 6px 8px 6px 16px; /* Padding omkring link tekst */
-                text-decoration: none; /* Fjerner understregning */
-                font-size: 20px; /* Størrelse af tekst */
-                color: black; /* Tekstfarve */
-                display: block; /* Viser links som block elementer */
-            }
-
-                /* Hover-effekt for links */
-                .sidenav a:hover {
-                    color: #064579; /* Farveskift ved hover */
-                }
-
         /* Styling for produktkort */
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            width: 300px; /* Fixed width for all cards */
+            width: 100%; /* Change to 100% for responsiveness */
+            max-width: 300px; /* Maximum width of the card */
             margin: 10px;
             text-align: center;
             font-family: arial;
@@ -55,9 +29,9 @@
         }
 
             .card img {
-                width: 100%; /* Ensure image takes full width of card */
-                height: 270px; /* Fixed height for images */
-                object-fit: cover; /* Ensures image covers the area without distorting aspect ratio */
+                width: 100%;
+                height: 270px;
+                object-fit: cover;
             }
 
             .card h3, .card p {
@@ -73,16 +47,16 @@
 
         /* Styling for knapper på kort */
         .card button {
-            border: none; /* Ingen ramme */
-            outline: 0; /* Ingen outline */
-            padding: 6px; /* Padding */
-            color: white; /* Tekstfarve */
-            background-color: #000; /* Baggrundsfarve */
-            text-align: center; /* Centrering af tekst */
-            cursor: pointer; /* Cursor ændres til pointer */
-            width: 100%; /* Bredde fylder hele kortet */
-            font-size: 18px; /* Størrelse på tekst */
-            margin-top: auto; /* Pushes the button to the bottom of the card */
+            border: none;
+            outline: 0;
+            padding: 6px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            margin-top: auto;
         }
 
             /* Hover-effekt for knapper */
@@ -94,82 +68,73 @@
         .card-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: flex-start;
-            margin-left: 135px;
+            justify-content: center; /* Center the cards */
+            margin: 0 auto; /* Center the container */
+            max-width: 100%; /* Set a max-width for the container */
         }
 
         /* Stil for links inden i kort, så de nedarver farve og ingen dekoration */
         .card a {
-            display: block; /* Gør links til block-elementer */
-            color: inherit; /* Arver farve fra forældrelement */
-            text-decoration: none; /* Ingen tekstdekoration */
+            display: block;
+            color: inherit;
+            text-decoration: none;
         }
 
         /* Beskrivelsesfelt med ellipsis for at begrænse tekstvisning */
         .description {
-            white-space: nowrap; /* Ingen ombrydning af tekst */
-            overflow: hidden; /* Skjuler tekst der går ud over elementets grænse */
-            text-overflow: ellipsis; /* Tilføjer ellipsis (...) når tekst skæres */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         /* Styling for inputgruppen */
         .input-group {
-            margin-left: 85px; /* Venstre margin for inputgruppen */
+            margin: 0; /* Remove auto margin */
+            max-width: 100%; /* Allow full width usage */
+            display: flex;
+            justify-content: flex-start; /* Align items to the left */
+            align-items: center;
+            gap: 0px; /* Smaller gap between fields */
         }
 
     </style>
 </head>
 <body>
 
-    <!-- Side navigationsbar for hurtig adgang til forskellige kategorier -->
-    <div class="sidenav">
-        <a asp-page="/Shop/Soaps">Soap</a>
-        <a asp-page="/Shop/Toys">Toys</a>
-        <a asp-page="/Shop/Brushes">Brushes</a>
-        <a asp-page="/Shop/Treats">Treats</a>
-    </div>
-
-    <!-- Formular til søgning og prisfiltrering -->
     <form method="post">
         <div class="input-group mb-3">
-            <!-- Input for søgestreng -->
             <input asp-for="SearchString" class="form-control mr-1" style="max-width: 200px;" placeholder="Indtast søgeterm" />
-            <!-- Søgeknap -->
-            <input type="submit" asp-page-handler="NameSearch" value="Søg" style="background-color: #C65127; color: #ffffff; top: 0px; border-radius: .25rem;" class="btn btn-primary me-2" />
-            <!-- Minimumspris input -->
+            <input type="submit" asp-page-handler="NameSearch" value="Søg" style="background-color: #C65127; color: #ffffff;" class="btn btn-primary me-2" />
             <div class="input-group-prepend">
                 <span class="input-group-text">Min</span>
             </div>
             <input asp-for="MinPrice" class="form-control mr-1" style="max-width: 100px;" />
-            <!-- Maksimumspris input -->
             <div class="input-group-prepend">
                 <span class="input-group-text">Max</span>
             </div>
             <input asp-for="MaxPrice" class="form-control mr-1" style="max-width: 100px;" />
-            <!-- Filtreringsknap for pris -->
-            <input type="submit" asp-page-handler="PriceFilter" value="Filtrer" style="background-color: #C65127; color: #ffffff; top: 0px;" class="btn btn-primary" />
+            <input type="submit" asp-page-handler="PriceFilter" value="Filtrer" style="background-color: #C65127; color: #ffffff;" class="btn btn-primary" />
         </div>
     </form>
 
-    <!-- Link til oprettelse af nyt produkt -->
-    <p>
-        <a class="btn btn-primary" style="float: right; position:absolute; right: 10px; top: 103px; background-color: #C65127; color: #ffffff;" asp-page="Products/AddProduct">Opret et nyt produkt</a>
-    </p>
+    @if (LoginModel.LoggedInUser != null && LoginModel.LoggedInUser.Role == "Admin")
+    {
+        <p>
+            <a class="btn btn-primary" style="float: right; position:absolute; right: 10px; top: 103px; background-color: #C65127; color: #ffffff;" asp-page="Products/AddProduct">Opret et nyt produkt</a>
+        </p>
+    }
 
-    <!-- Container til produktkort, som viser de enkelte produkter -->
     <div class="card-container">
         @if (@Model.Products != null)
         {
             foreach (var product in Model.Products)
             {
                 <div class="card">
-                    <!-- Link til produktdetaljer med produktbillede, navn og pris -->
-                    <a href="@Url.Page("/Shop/Products/DetailProduct", new { id = product.Id })" style="text-decoration:none; color:inherit; display:block; position:relative;">
-                        <img src="~/images/Shop/@product.ProductImage" alt="Product Image" style="width:100%">
+                    <a href="@Url.Page("/Shop/Products/DetailProduct", new { id = product.Id })" style="text-decoration:none; color:inherit;">
+                        <img src="~/images/Shop/@product.ProductImage" alt="Product Image">
                         <h3 style="color: #C65127;">@product.Name</h3>
-                        <p style=" margin-bottom: 10px;" class="price">@product.Price,-</p>
+                        <p class="price">@product.Price,-</p>
                     </a>
-                    <!-- Knappen 'Tilføj til kurv' -->
                     <form method="post" asp-page-handler="AddToCart">
                         <input type="hidden" name="productId" value="@product.Id" />
                         <button type="submit">Add to cart</button>
