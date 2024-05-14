@@ -11,8 +11,9 @@ namespace Semesterprojekt2.Models
         [Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+		public string? DogImage { get; set; }
 
-        public string Name { get; set; }
+		public string Name { get; set; }
         public DateTime Age { get; set; }
         public string Race { get; set; }
         public bool FirstTime { get; set; } // Fortsætter som en ikke-nullable bool

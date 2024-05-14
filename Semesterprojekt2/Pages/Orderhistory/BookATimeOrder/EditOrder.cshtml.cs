@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Models.BookATime;
+using Semesterprojekt2.Pages.Login;
 using Semesterprojekt2.Service;
 using Semesterprojekt2.Service.BookATimeService;
+using Semesterprojekt2.Service.UserService.UserService;
 
 namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
 {
@@ -12,21 +14,25 @@ namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
         private DogService _DogService;
         private YdelseService _YdelseService;
         private IWebHostEnvironment _webHostEnvironment;
+        private IUserService _UserService;
         [BindProperty]
         public Models.BookATime.BookATime BookATime { get; set; }
+        public Models.Users Users { get; set; }
         [BindProperty]
         public Models.BookATime.Ydelse Ydelse { get; set; }
         [BindProperty]
         public Models.Dog Dog { get; set; }
-        public IFormFile? DogPhoto { get; set; }
+
+		public IFormFile? DogPhoto { get; set; }
         [BindProperty]
         public IFormFile? BathPhoto { get; set; }
-        public EditOrderModel(IBookATimeService bookATimeService, YdelseService ydelseService, DogService dogService, IWebHostEnvironment webHostEnvironment)
+        public EditOrderModel(IBookATimeService bookATimeService, YdelseService ydelseService, DogService dogService, IWebHostEnvironment webHostEnvironment, IUserService userService)
         {
             _BookATimeService = bookATimeService;
             _YdelseService = ydelseService;
             _DogService = dogService;
             _webHostEnvironment = webHostEnvironment;
+            _UserService = userService;
         }
         
       
@@ -57,6 +63,8 @@ namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
             {
                 return Page();
             }
+            int id = LoginModel.LoggedInUser.UserId;
+            Users = _UserService.GetUser(id);
 
             if (BookATime == null || BookATime.Id == 0)
             {
@@ -76,23 +84,28 @@ namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
 
             if (DogPhoto != null)
             {
-                if (BookATime.DogImage != null)
-                {
-                    string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/ImagesForBookATime", "Bath", BookATime.DogImage);
+                if (Dog.DogImage != null)
+                { 
+                    string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/ImagesForBookATime", "Bath", Dog.DogImage);
                     System.IO.File.Delete(filePath);
                 }
 
-                BookATime.DogImage = ProcessUploadedDogFile();
+                Dog.DogImage = ProcessUploadedDogFile();
             }
            
             await _BookATimeService.UpdateBookATime(BookATime);
-           
-           await _DogService.UpdateDog(Dog);
-           
-           await _YdelseService.UpdateYdelse(Ydelse);
-            
-            return RedirectToPage("/Index");
-        }
+			
+			await _DogService.UpdateDog(Dog);
+			
+			await _YdelseService.UpdateYdelse(Ydelse);
+            if (Users.Role== "Admin")
+            {
+                return RedirectToPage("/Orderhistory/BookATimeOverview");
+            }
+
+            return RedirectToPage("/Orderhistory/BookATimeOrderHistory");
+
+		}
         private string ProcessUploadedDogFile()
         {
             string uniqueFileName = null;

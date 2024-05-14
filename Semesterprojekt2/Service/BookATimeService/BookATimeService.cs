@@ -231,12 +231,7 @@ namespace Semesterprojekt2.Service.BookATimeService
                         }
                         else 
                             book.BathRoomImage = bookATime.BathRoomImage;
-                        if (bookATime.DogImage==null)
-                        {
-                            bookATime.DogImage = book.DogImage;
-                        }
-                        else
-                        book.DogImage = bookATime.DogImage;
+                       
                         await _bookATimeDbService.UpdateObjectAsync(book);
                         return book;
                     }

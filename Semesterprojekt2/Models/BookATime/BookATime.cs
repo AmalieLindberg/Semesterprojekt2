@@ -18,8 +18,7 @@ namespace Semesterprojekt2.Models.BookATime
         
         public DateTime DateForBooking { get; set; }
         public string? Address {  get; set; }
-        public string? DogImage { get; set; }
-
+    
         public string? BathRoomImage { get; set; }
 
         public bool? Elevator { get; set; }

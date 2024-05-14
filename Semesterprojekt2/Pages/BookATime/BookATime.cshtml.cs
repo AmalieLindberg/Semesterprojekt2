@@ -150,13 +150,13 @@ namespace Semesterprojekt2.Pages.BookATime
 
             if (DogPhoto != null)
             {
-                if (BookATime.DogImage != null)
+                if (Dog.DogImage != null)
                 {
-                    string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/ImagesForBookATime", "Bath", BookATime.DogImage);
+                    string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/ImagesForBookATime", "Bath", Dog.DogImage);
                     System.IO.File.Delete(filePath);
                 }
 
-                BookATime.DogImage = ProcessUploadedDogFile();
+                Dog.DogImage = ProcessUploadedDogFile();
             }
             int UserId = LoginModel.LoggedInUser.UserId;
 
