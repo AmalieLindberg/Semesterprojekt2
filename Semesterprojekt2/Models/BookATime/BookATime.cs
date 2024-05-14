@@ -20,7 +20,6 @@ namespace Semesterprojekt2.Models.BookATime
         public string? Address {  get; set; }
     
         public string? BathRoomImage { get; set; }
-
         public bool? Elevator { get; set; }
         public string ElevatorDisplay => Elevator.HasValue ? (Elevator.Value ? "Yes" : "No") : "";
         public string? Floors { get; set; }
@@ -28,6 +27,7 @@ namespace Semesterprojekt2.Models.BookATime
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
 
         public DateTime DateForOrder { get; set; }
+
         [Required]
         public int YdelseId { get; set; }
         public Ydelse? Ydelse { get; set; }
@@ -40,6 +40,9 @@ namespace Semesterprojekt2.Models.BookATime
         public int DogId { get; set; }
         public Dog? Dog { get; set; }
         public string? StatusForBooking { get; set; }
+        public bool FirstTime { get; set; } // Fortsætter som en ikke-nullable bool
+
+        public string FirstTimeDisplay => FirstTime ? "Yes" : "No";
         public BookATime(string comments, DateTime Date, Ydelse ydelse, Users user, Dog dog)
         {
 

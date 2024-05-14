@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Semesterprojekt2.Models;
 using Semesterprojekt2.Models.BookATime;
 
 namespace Semesterprojekt2.Service.BookATimeService
@@ -221,7 +222,7 @@ namespace Semesterprojekt2.Service.BookATimeService
                     {
                         book.Address = bookATime.Address;
                         book.Comments = bookATime.Comments;
-
+                        book.FirstTime = bookATime.FirstTime;
                         book.Floors = bookATime.Floors;
                         book.Elevator = bookATime.Elevator;
                         if (bookATime.BathRoomImage==null)

@@ -23,5 +23,20 @@ namespace Semesterprojekt2.Service.UserService
 
             return user;
         }
+
+        public async Task<Users> GetDogByUserIdAsync(int userId)
+        {
+            Users user;
+
+            using (var context = new SemsterprojektDbContext())
+            {
+                user = context.Users
+                .Include(u => u.Dog)
+                .AsNoTracking()
+                .FirstOrDefault(u => u.UserId == userId);
+            }
+
+            return user;
+        }
     }
 }

@@ -4,6 +4,7 @@
 }
 
 <head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	<style>
 
         .container {
@@ -18,12 +19,16 @@
             padding: 20px; /* Provides internal space around the content */
         }
 
+   
+
 	</style>
 </head>
 <body>
-    <center><h1>Welecome @Model.Users.Name</h1></center>
+    <center><h1>Welecome @Model.User.Name</h1></center>
     <hr />
-
+   
+     
+ 
     <div class="row">
         <div class="col">
 
@@ -35,9 +40,9 @@
     <div class="container" style="display: flex;">
       <div class="Højre">
 	<div class="form-group">
-    @if (Model.Users.ProfileImages != null)
+    @if (Model.User.ProfileImages != null)
     {
-                    <img src="~/Images/Profil/@Model.Users.ProfileImages" alt="ProfilImage" style="width:100%" />
+                    <img src="~/Images/Profil/@Model.User.ProfileImages" alt="ProfilImage" style="width:100%" />
     }
     else
     {
@@ -47,24 +52,89 @@
     </div>
         <div class="Venstre">
 	<div class="form-group">
-		<label asp-for="Users.Email" class="control-label"></label>
-		<input asp-for="Users.Email" readonly class="form-control" />
+		<label asp-for="User.Email" class="control-label"></label>
+		<input asp-for="User.Email" readonly class="form-control" />
 	
 	</div>
 	<div class="form-group">
-		<label asp-for="Users.Telefonnummer" class="control-label"></label>
-                <input asp-for="Users.Telefonnummer" readonly class="form-control" />
+		<label asp-for="User.Telefonnummer" class="control-label"></label>
+                <input asp-for="User.Telefonnummer" readonly class="form-control" />
 	
 	</div>
 	<div class="form-group">
-		<label asp-for="Users.Bio" class="control-label"></label> <br />
-        <textarea asp-for="Users.Bio" readonly rows="5" cols="64"></textarea>
-
-           
-            </div>
+		<label asp-for="User.Bio" class="control-label"></label> <br />
+        <textarea asp-for="User.Bio" readonly rows="6" cols="64"></textarea>
+        <br />
+           <br />
+           <br />
+            </div>   
+            <a class="btn btn-primary" style="float: right; background-color: #FCC681; color: #ffffff" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@Model.User.UserId"><i class="fa fa-edit"> Profil</i></a>
+            <a class="btn btn-primary" style="float: right; margin-right: 2%;background-color: #FCC681; color: #ffffff" title="Add" asp-page="/Profil/Dog/AddDog" asp-route-id="@Model.User.UserId">  <i class='bx bxs-dog'> </i> <i class="bi bi-plus"> </i></a>
+      
         </div>
+     
     </div>
-    <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@Model.Users.UserId">Edit</a>
-    <a class="btn btn-danger btn-sm" title="Delete" asp-page="/Profil/DeleteUser" asp-route-id="@Model.Users.UserId">Delete</a>
-    
+
+    <table class="table table-bordered table-hover table-striped" width="60%">
+        <colgroup>
+            <col style="width : 7%">
+            <col style="width : 38%">
+            <col style="width : 35%">
+            <col style="width : 20%">
+
+        </colgroup>
+        <thead>
+            <tr class="btn-secondary active">
+                <th>ID</th>
+                <th>Pictures</th>
+                <th>Info</th>
+                <th>Update/Delete</th>
+               
+
+            </tr>
+        </thead>
+        <tbody>
+            @if (@Model.MyDogs != null)
+            {
+                foreach (var order in Model.MyDogs)
+             
+                {
+
+                    <tr class="btn-secondary">
+                        <td>
+                            DogId: @order.Id
+                        </td>
+                        <td>
+                            <p> Dog image:</p>
+
+                            <img src="~/ImagesForBookATime/Dog/@order.DogImage" alt="Dog Image" style="width:100%" />
+                          
+
+                          
+
+                        </td>
+
+                        <td>
+                           
+
+                            <p> Name: @order.Name</p>
+                            <p>  Race: @order.Race</p>
+                            <p>Born: @order.Age</p>
+                            
+
+                        </td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/Dog/EditDog" style="background-color: #FCC681; color: #ffffff" asp-route-id="@Model.User.UserId"> <i class="fa fa-edit"> </i> Dog</a>
+
+
+                            <a class="btn btn-primary btn-sm" title="Delete" asp-page="/Profil/Dog/DeleteDog" style="background-color:#EAA193; color: #ffffff" asp-route-id="@Model.User.UserId"><i class="fa fa-trash"></i> Dog</a>
+                        </td>
+                  
+                        
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-danger btn-sm" title="Delete" style="background-color:#EAA193; color: #ffffff" asp-page="/Profil/DeleteUser" asp-route-id="@Model.User.UserId"><i class="fa fa-trash"></i> Profil</a>
 </body>

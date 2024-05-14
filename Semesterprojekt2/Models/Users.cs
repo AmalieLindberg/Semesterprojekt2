@@ -29,6 +29,8 @@ namespace Semesterprojekt2.Models
         public string? ProfileImages { get; set; }
         public string? Bio {  get; set; }
         public IEnumerable<Models.BookATime.BookATime>? BookATime { get; set; }
+
+        public IEnumerable<Models.Dog>? Dog { get; set; }
         public Users(string password, string name, int telefonnummer, string email, string role)
         {
             Password = password;

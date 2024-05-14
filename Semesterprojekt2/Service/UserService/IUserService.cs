@@ -12,6 +12,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
         Task<Users> DeleteUser(int? userId);
       
         Users GetUserTidsbestillingOrders(Users currentUser);
+        Users GetUserDogs(Users id);
         //Users GetUserByUserName(string name);
 
     }

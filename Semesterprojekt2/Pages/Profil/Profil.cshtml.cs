@@ -11,23 +11,27 @@ namespace Semesterprojekt2.Pages.Profil
     public class ProfilModel : PageModel
     {
 		[BindProperty]
-		public Models.Users Users { get; set; }
-
+		public Models.Users User { get; set; }
+        public Models.Dog Dog { get; set; }
 		private IUserService _userService;
+        private DogService _dogService { get; set; }
 
-        public ProfilModel(IUserService userService)
+        public ProfilModel(IUserService userService, DogService dogService)
         {
             _userService = userService;
+            _dogService = dogService;
         }
         public List<Users> users { get; private set; }
 
-
+        public IEnumerable<Models.Dog> MyDogs { get; set; }
+        
         public IActionResult OnGet()
-        {
+        { 
             int id = LoginModel.LoggedInUser.UserId;
-
-            Users = _userService.GetUser(id);
-            if (Users == null)
+            User = _userService.GetUser(id);    
+            Users CurrentUser = _userService.GetUser(id);
+            MyDogs = _userService.GetUserDogs(CurrentUser).Dog;
+            if (User == null)
                 return RedirectToPage("/Error/Error");
             return Page();
 

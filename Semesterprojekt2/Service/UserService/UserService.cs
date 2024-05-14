@@ -120,5 +120,9 @@ namespace Semesterprojekt2.Service.UserService.UserService
         {
             return DbService.GetObjectByIdAsync(id).Result;
         }
+       public Users GetUserDogs(Users user)
+        {
+            return DbService.GetDogByUserIdAsync(user.UserId).Result;
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace Semesterprojekt2.Pages.Orderhistory
         private IUserService UserService { get; set; }
         private IBookATimeService _bookATimeService { get; set; }
         public IEnumerable<Models.BookATime.BookATime> MyBookATimeOrder { get; set; }
-
+     
         public OrderhistoryModel(IBookATimeService bookATimeService, IUserService userService)
         {
             _bookATimeService = bookATimeService;

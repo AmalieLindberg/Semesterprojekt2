@@ -45,7 +45,6 @@ namespace Semesterprojekt2.Service
                         d.Name = dog.Name;
                         d.Age = dog.Age;
                         d.Race = dog.Race;
-                        d.FirstTime = dog.FirstTime;
                        if (dog.DogImage==null)
                         {
                             dog.DogImage = d.DogImage;
@@ -60,5 +59,7 @@ namespace Semesterprojekt2.Service
             }
             return null;
         }
+
+  
     }
 }
