@@ -2,6 +2,8 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
 using Semesterprojekt2.Models.BookATime;
+using Semesterprojekt2.Models.Shop;
+using Semesterprojekt2.Models;
 
 namespace Semesterprojekt2.Models
 {
@@ -29,6 +31,7 @@ namespace Semesterprojekt2.Models
         public string? ProfileImages { get; set; }
         public string? Bio {  get; set; }
         public IEnumerable<Models.BookATime.BookATime>? BookATime { get; set; }
+        public virtual ICollection<ProductOrder> ProductOrders { get; set; }
 
         public IEnumerable<Models.Dog>? Dog { get; set; }
         public Users(string password, string name, int telefonnummer, string email, string role)

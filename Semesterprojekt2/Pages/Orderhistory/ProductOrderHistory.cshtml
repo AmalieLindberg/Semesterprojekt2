@@ -23,32 +23,49 @@
     <a class="btn btn-outline-light" asp-page="BookATimeOrderHistory">Book a Time Order History</a>
 </div>
 
+<hr />
 
-<div style="text-align: center;">
-    <form method="post" asp-page="/Orderhistory/BookATimeOrderHistory">
-        <button type="submit">Go to your service orders</button>
-    </form>
-</div>
+<div class="test">
+    <table class="table table-bordered table-hover table-striped" width="60%">
+        <thead>
+            <tr class="btn-secondary active">
+                <th>Order ID</th>
+                <th>Order Date</th>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Count</th>
+                <th>Total Order Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (@Model.MyProductOrders != null)
+            {
+                foreach (var order in Model.MyProductOrders)
+                {
+                    <tr class="btn-secondary">
+                        <td>
+                            @order.OrderId
+                        </td>
 
-<div class="row">
-    <div class="col-md-4">
-        <div>
-            User: @Model.Users.Name
-        </div>
-        <div>
-            Item: @Model.Product.Name
-        </div>
-
-
-        <form method="post">
-            Count:
-            <input asp-for="@Model.Count" class="form-control" />
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-<div>
-    <a asp-page="../Shop/Shop">Back to List</a>
+                        <td>
+                            @order.ProductId
+                        </td>
+                        <td>
+                            @order.ProductName
+                        </td>
+                        <td>
+                            @order.Price
+                        </td>
+                        <td>
+                            @order.Count
+                        </td>
+                        <td>
+                            @(order.Count * order.Price)
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
 </div>

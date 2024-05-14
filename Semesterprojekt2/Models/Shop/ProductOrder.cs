@@ -26,16 +26,19 @@ namespace Semesterprojekt2.Models.Shop
 
         public Product Product { get; set; }
 
+        public CartItem CartItem { get; set; }
+
         public ProductOrder()
         {
 
         }
 
-        public ProductOrder(Users users, Product product)
+        public ProductOrder(Users users, Product product, CartItem cartItem)
         {
             Date = DateTime.Now;
             Users = users;
             Product = product;
+            CartItem = cartItem;
         }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Semesterprojekt2.MockData.Profil;
 using Semesterprojekt2.Models;
+using Semesterprojekt2.DAO;
+using Semesterprojekt2.MockData.Profil;
 
 namespace Semesterprojekt2.Service.UserService.UserService
 {
@@ -167,6 +169,11 @@ namespace Semesterprojekt2.Service.UserService.UserService
 			return null;
 
 		}
+        public IEnumerable<ProductOrderDAO> GetUserProductOrders(Users users)
+        {
+            return DbService.GetOrdersByUserIdAsync(users.UserId).Result;
+        }
 
-	}
+
+    }
 }

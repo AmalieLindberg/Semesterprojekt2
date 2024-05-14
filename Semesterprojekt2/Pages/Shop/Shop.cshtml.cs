@@ -22,8 +22,6 @@ namespace Semesterprojekt2.Pages.Shop
             _shoppingCartService = shoppingCartService;
         }
 
-        private List<CartItem>? CartItems { get; set; }
-
         // Liste af produkter der skal vises på siden.
         public List<Product>? Products { get; private set; }
 
