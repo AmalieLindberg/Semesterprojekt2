@@ -36,8 +36,6 @@ namespace Semesterprojekt2.Pages.Login
             var resetResult = await _userService.ResetPassword(User);
 
 			TempData["Message"] = $"Password for {User.Name} has been reset.";
-			User = null; // Setting user to null so that "Are you sure you want to delete user" box disappears
-
 			return Page();
 
 			/*

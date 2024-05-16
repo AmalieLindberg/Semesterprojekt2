@@ -5,6 +5,16 @@
 
 <form method="post" enctype="multipart/form-data">
 
+	<!-- Confirmation Message for when password gets updated -->
+	@if (TempData["Message"] != null)
+	{
+		<div class="alert alert-success">
+			@TempData["Message"]
+		</div>
+
+	}
+
+
 	<div class="form-group">
 		<label asp-for="User.Name" class="control-label"></label>
 		<input asp-for="User.Name" class="form-control" />
@@ -53,12 +63,18 @@
 		<label hidden asp-for="User.Role" class="control-label"></label>
 		<input hidden asp-for="User.Role" class="form-control" />
 	</div>
+	<div class="form-group" hidden>
+		<label hidden asp-for="User.ProductOrders" class="control-label"></label>
+		<input hidden asp-for="User.ProductOrders" class="form-control" />
+	</div>
 
 	<p>
 		<div class="form-group">
 			<input type="submit" value="Update" class="btn btn-primary" />
 		</div>
 	</p>
+
+
 </form>
 
 <p>

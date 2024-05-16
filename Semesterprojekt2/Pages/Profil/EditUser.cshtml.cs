@@ -21,9 +21,10 @@ namespace Semesterprojekt2.Pages.Profil
         [BindProperty]
         public Models.Users User{ get; set; }
 
-		[BindProperty]
-		[DataType(DataType.Password)]
+		[BindProperty, DataType(DataType.Password), MinLength(6, ErrorMessage = "Passwordet skal være mindst 6 tegn.")]
+		[RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$", ErrorMessage = "Passwordet skal indeholde mindst ét bogstav og ét tal.")]
 		public string ConfirmPassword { get; set; }
+
 
 		public IActionResult OnGet(int id)
         {
@@ -64,9 +65,13 @@ namespace Semesterprojekt2.Pages.Profil
 				}
 				User.ProfileImages = ProcessUploadedFile();
 			}
+
           await  _userService.UpdateUser(User);
-            return RedirectToPage("/Profil/Profil");
-        }
+
+			//Confirmation Message that user has been edited
+			TempData["Message"] = $"Details for {User.Name} have been updated.";
+			return Page();
+		}
 		private string ProcessUploadedFile()
 		{
 			string uniqueFileName = null;
