@@ -72,10 +72,10 @@
         <br />
            <br />
            <br />
-            </div>   
-            <a class="btn btn-primary" style="float: right; background-color: #FCC681; color: #ffffff" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@Model.User.UserId"><i class="fa fa-edit"> Profil</i></a>
-            <a class="btn btn-primary" style="float: right; margin-right: 2%;background-color: #FCC681; color: #ffffff" title="Add" asp-page="/Profil/Dog/AddDog" asp-route-id="@Model.User.UserId">  <i class='bx bxs-dog'> </i> <i class="bi bi-plus"> </i></a>
-      
+            </div>
+            <a class="btn btn-primary" title="Delete" style="float: right; background-color:#EAA193; color: #ffffff" asp-page="/Profil/DeleteUser" asp-route-id="@Model.User.UserId"><i class="fa fa-trash"></i> Profil</a>
+            <a class="btn btn-primary" style="float: right; margin-right: 2%; background-color: #FCC681; color: #ffffff" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@Model.User.UserId"><i class="fa fa-edit"> Profil</i></a>
+            <a class="btn btn-primary" style="float: right; margin-right: 2%; background-color: #FCC681; color: #ffffff" title="Add" asp-page="/Profil/Dog/AddDog" asp-route-id="@Model.User.UserId">  <i class='bx bxs-dog'> </i> <i class="bi bi-plus"> </i></a>      
         </div>
      
     </div>
@@ -145,7 +145,6 @@
             }
         </tbody>
     </table>
-    <a class="btn btn-danger btn-sm" title="Delete" style="background-color:#EAA193; color: #ffffff" asp-page="/Profil/DeleteUser" asp-route-id="@Model.User.UserId"><i class="fa fa-trash"></i> Profil</a>
 </body>
 
 <!-- Confirmation Message for when password gets updated -->
