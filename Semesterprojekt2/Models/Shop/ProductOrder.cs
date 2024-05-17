@@ -30,13 +30,6 @@ namespace Semesterprojekt2.Models.Shop
             Date = DateTime.Now;
             User = user;
             Product = product;
-         
-
-        }
-
-        public override string ToString()
-        {
-            return $"{{{nameof(OrderId)}={OrderId.ToString()}, {nameof(Counts)}={Counts.ToString()}, {nameof(Date)}={Date.ToString()}, {nameof(UserId)}={UserId.ToString()}, {nameof(ProductId)}={ProductId.ToString()}}}";
         }
     }
 }

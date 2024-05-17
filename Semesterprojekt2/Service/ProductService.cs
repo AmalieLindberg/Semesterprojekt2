@@ -1,5 +1,6 @@
 ﻿using Semesterprojekt2.MockData.Shop;
 using Semesterprojekt2.Models;
+using Semesterprojekt2.Models.BookATime;
 using Semesterprojekt2.Models.Shop;
 using System.Runtime.CompilerServices;
 

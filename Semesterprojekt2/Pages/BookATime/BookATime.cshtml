@@ -37,24 +37,6 @@
     .form-group {
         margin-bottom: 20px; /* Space between form groups */
     }
-
-    input:invalid {
-        border: 2px solid #EAA193; /* Red border for invalid fields */
-    }
-
-
-   
-
-   
-   /*  .checkbox-container {
-        display: flex; /* Enables flexbox layout 
-        align-items: center;  Aligns items vertically in the center 
-        margin-top: 20px;
-    }
-
-    .checkbox-label {
-        margin-left: 10px; /* Space between the checkbox and the label text 
-    } */
         .checkbox-container {
             display: flex;          /* Enables flexbox layout */
             align-items: flex-start;/* Aligns items at the start of the container vertically */
@@ -353,11 +335,7 @@
                             <input hidden asp-for="User.Role" class="text-box" />
                             <span hidden asp-validation-for="User.Password" class="text-danger"></span>
                         </div>
-                        @*  <div class="form-group">
-                <label hidden asp-for="BookATime.StatusForBooking" class="control-lable">Status:</label> <br />
-                <input hidden asp-for="BookATime.StatusForBooking" class="text-box" value="Pending" />
-                <span hidden asp-validation-for="User.Password" class="text-danger"></span>
-                </div> *@
+                    
                     
                 }
             </form>

@@ -1,4 +1,5 @@
-﻿using Semesterprojekt2.Models.Shop;
+﻿using Semesterprojekt2.Models.BookATime;
+using Semesterprojekt2.Models.Shop;
 
 namespace Semesterprojekt2.Service
 {
@@ -11,5 +12,5 @@ namespace Semesterprojekt2.Service
         Task<Product> DeleteProductAsync(int? productId);
         IEnumerable<Product> NameSearch(string str);
 		IEnumerable<Product> PriceFilter(int maxPrice, int minPrice = 0);
-	}
+    }
 }

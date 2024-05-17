@@ -1,4 +1,5 @@
 ﻿@page
+@using Semesterprojekt2.Models.Shop;
 @model Semesterprojekt2.Pages.Orderhistory.ProductOrderHistoryModel
 @{
 }
@@ -30,7 +31,6 @@
         <thead>
             <tr class="btn-secondary active">
                 <th>Order ID</th>
-                <th>Order Date</th>
                 <th>Product Id</th>
                 <th>Product Name</th>
                 <th>Product Price</th>
@@ -52,16 +52,16 @@
                             @order.ProductId
                         </td>
                         <td>
-                           @*  @order.ProductName *@
+                            @order.Product.Name
                         </td>
                         <td>
-                          @*   @order.Price *@
+                            @order.Product.Price
                         </td>
                         <td>
-                            @* @order.Count *@
+                            @order.Counts
                         </td>
                         <td>
-                            @*  @(order.Count * order.Price) *@
+                             @(order.Counts * order.Product.Price)
                         </td>
                     </tr>
                 }
