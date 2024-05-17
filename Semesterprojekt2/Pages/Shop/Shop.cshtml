@@ -104,7 +104,7 @@
     <form method="post">
         <div class="input-group mb-3">
             <input asp-for="SearchString" class="form-control mr-1" style="max-width: 200px;" placeholder="Indtast søgeterm" />
-            <input type="submit" asp-page-handler="NameSearch" value="Søg" style="background-color: #C65127; color: #ffffff;" class="btn btn-primary me-2" />
+            <input type="submit" asp-page-handler="NameSearch" value="Search" style="background-color: #C65127; color: #ffffff;" class="btn btn-primary me-2" />
             <div class="input-group-prepend">
                 <span class="input-group-text">Min</span>
             </div>
@@ -113,14 +113,14 @@
                 <span class="input-group-text">Max</span>
             </div>
             <input asp-for="MaxPrice" class="form-control mr-1" style="max-width: 100px;" />
-            <input type="submit" asp-page-handler="PriceFilter" value="Filtrer" style="background-color: #C65127; color: #ffffff;" class="btn btn-primary" />
+            <input type="submit" asp-page-handler="PriceFilter" value="Sort" style="background-color: #C65127; color: #ffffff;" class="btn btn-primary" />
         </div>
     </form>
 
     @if (LoginModel.LoggedInUser != null && LoginModel.LoggedInUser.Role == "Admin")
     {
         <p>
-            <a class="btn btn-primary" style="float: right; position:absolute; right: 10px; top: 103px; background-color: #C65127; color: #ffffff;" asp-page="Products/AddProduct">Opret et nyt produkt</a>
+            <a class="btn btn-primary" style="float: right; position:absolute; right: 10px; top: 103px; background-color: #C65127; color: #ffffff;" asp-page="Products/AddProduct">Create a new product</a>
         </p>
     }
 
