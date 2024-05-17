@@ -13,12 +13,14 @@ namespace Semesterprojekt2.Pages.Profil
         private IUserService _userService;
         private IBookATimeService _bookATimeService;
         private DogService _dogService;
+        private ProductOrderService _productOrderService;
 
-        public DeleteUserModel(IUserService userService, IBookATimeService bookATimeService, DogService dogService)
+        public DeleteUserModel(IUserService userService, IBookATimeService bookATimeService, DogService dogService, ProductOrderService productOrderService)
         {
             _userService = userService;
             _bookATimeService = bookATimeService;
             _dogService = dogService;
+            _productOrderService = productOrderService;
         }
 
         [BindProperty]
@@ -46,7 +48,7 @@ namespace Semesterprojekt2.Pages.Profil
                 List<Models.BookATime.BookATime> deletedDogInBookATime = await _bookATimeService.DeleteDogInBookATime(dog.Id);
 				Models.Dog deletedDog = await _dogService.DeleteDog(dog.Id);
 			}
-          
+            _productOrderService.DeleteUserInProductOrder(id);
             Models.Users deletedUser = await _userService.DeleteUser(id);
             if (deletedUser == null)
                 return RedirectToPage("/Error/Error"); //NotFound er ikke defineret endnu
