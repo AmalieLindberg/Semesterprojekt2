@@ -5,12 +5,10 @@
 
 <head>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<style>
-
+    <style>
         .container {
             justify-content: space-between;
             justify-content: center; /* Centers horizontally in the flex container */
-            /* /*    align-items: center;  */ */
         }
 
         .Højre, .Venstre {
@@ -19,65 +17,59 @@
             padding: 20px; /* Provides internal space around the content */
         }
 
-   
-
-	</style>
+        .profile-image {
+            display: inline-block;
+            object-fit: cover;
+            text-align: center;
+            width: 400px; /* Fixed width */
+            height: 400px; /* Fixed height */
+            margin-left: 135px;
+            margin-top: 10px;
+            padding: 5px;
+            border: 2px solid black;
+            background-color: lightgray;
+        }
+    </style>
 </head>
 <body>
     <center><h1>Welcome @Model.User.Name</h1></center>
     <hr />
-   
-     
- 
     <div class="row">
         <div class="col">
-
         </div>
         <div class="col">
-
         </div>
     </div>
     <div class="container" style="display: flex;">
-      <div class="Højre">
-	<div class="form-group">
-    @if (Model.User.ProfileImages != null)
-    {
-                    <img src="~/Images/Profil/@Model.User.ProfileImages"
-                         style="display: inline-block; object-fit: cover; text-align: center; width: 400px; margin-left: 135px; margin-top: 10px; padding: 5px; border: 2px solid black; background-color: lightgray;"
-                    alt="ProfilImage" style="width:100%" />
-    }
-    else
-    {
-
-                    <img src="~/Images/ProfilStandard/Profile.png"
-                         style="display: inline-block; object-fit: cover; text-align: center; width: 400px; margin-left: 135px; margin-top: 10px; padding: 5px; border: 2px solid black; background-color: lightgray;" 
-                         alt="ProfilImage" style="width:100%" />
-    }
+        <div class="Højre">
+            <div class="form-group">
+                @if (Model.User.ProfileImages != null)
+                {
+                    <img src="~/Images/Profil/@Model.User.ProfileImages" class="profile-image" alt="ProfilImage" />
+                }
+                else
+                {
+                    <img src="~/Images/ProfilStandard/Profile.png" class="profile-image" alt="ProfilImage" />
+                }
             </div>
-    </div>
-        <div class="Venstre">
-	<div class="form-group">
-		<label asp-for="User.Email" class="control-label"></label>
-		<input asp-for="User.Email" readonly class="form-control" />
-	
-	</div>
-	<div class="form-group">
-		<label asp-for="User.Telefonnummer" class="control-label"></label>
-                <input asp-for="User.Telefonnummer" readonly class="form-control" />
-	
-	</div>
-	<div class="form-group">
-		<label asp-for="User.Bio" class="control-label"></label> <br />
-        <textarea asp-for="User.Bio" readonly rows="6" cols="64"></textarea>
-        <br />
-           <br />
-           <br />
-            </div>   
-            <a class="btn btn-primary" style="float: right; background-color: #FCC681; color: #ffffff" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@Model.User.UserId"><i class="fa fa-edit"> Profil</i></a>
-            <a class="btn btn-primary" style="float: right; margin-right: 2%;background-color: #FCC681; color: #ffffff" title="Add" asp-page="/Profil/Dog/AddDog" asp-route-id="@Model.User.UserId">  <i class='bx bxs-dog'> </i> <i class="bi bi-plus"> </i></a>
-      
         </div>
-     
+        <div class="Venstre">
+            <div class="form-group">
+                <label asp-for="User.Email" class="control-label"></label>
+                <input asp-for="User.Email" readonly class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="User.Telefonnummer" class="control-label"></label>
+                <input asp-for="User.Telefonnummer" readonly class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="User.Bio" class="control-label"></label><br />
+                <textarea asp-for="User.Bio" readonly rows="6" cols="64"></textarea>
+                <br /><br /><br />
+            </div>
+            <a class="btn btn-primary" style="float: right; background-color: #FCC681; color: #ffffff" title="Edit" asp-page="/Profil/EditUser" asp-route-id="@Model.User.UserId"><i class="fa fa-edit"> Profil</i></a>
+            <a class="btn btn-primary" style="float: right; margin-right: 2%; background-color: #FCC681; color: #ffffff" title="Add" asp-page="/Profil/Dog/AddDog" asp-route-id="@Model.User.UserId"><i class='bx bxs-dog'></i> <i class="bi bi-plus"></i></a>
+        </div>
     </div>
 
     <table class="table table-bordered table-hover table-striped" width="60%">
@@ -86,7 +78,6 @@
             <col style="width : 38%">
             <col style="width : 35%">
             <col style="width : 20%">
-
         </colgroup>
         <thead>
             <tr class="btn-secondary active">
@@ -94,52 +85,31 @@
                 <th>Pictures</th>
                 <th>Info</th>
                 <th>Update/Delete</th>
-               
-
             </tr>
         </thead>
         <tbody>
             @if (@Model.MyDogs != null)
             {
                 foreach (var dog in Model.MyDogs)
-             
                 {
-
                     <tr class="btn-secondary">
+                        <td>DogId: @dog.Id</td>
                         <td>
-                            DogId: @dog.Id
-                        </td>
-                        <td>
-                     
-
                             <img src="~/ImagesForBookATime/Dog/@dog.DogImage" alt="Dog Image" style="width:100%" />
-                          
-
-                          
-
                         </td>
-
                         <td>
-                           
-
-                            <p> Name: @dog.Name</p>
-                            <p>  Race: @dog.Race</p>
+                            <p>Name: @dog.Name</p>
+                            <p>Race: @dog.Race</p>
                             <p>Born: @dog.Age</p>
                             @if (dog.Comments != null)
                             {
-                                <p> Comment about your dog: @dog.Comments</p>
+                                <p>Comment about your dog: @dog.Comments</p>
                             }
-                            
-
                         </td>
                         <td>
-                            <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/Dog/EditDog" style="background-color: #FCC681; color: #ffffff" asp-route-id="@dog.Id"> <i class="fa fa-edit"> </i> Dog</a>
-
-
+                            <a class="btn btn-primary btn-sm" title="Edit" asp-page="/Profil/Dog/EditDog" style="background-color: #FCC681; color: #ffffff" asp-route-id="@dog.Id"><i class="fa fa-edit"></i> Dog</a>
                             <a class="btn btn-primary btn-sm" title="Delete" asp-page="/Profil/Dog/DeleteDog" style="background-color:#EAA193; color: #ffffff" asp-route-id="@dog.Id"><i class="fa fa-trash"></i> Dog</a>
                         </td>
-                  
-                        
                     </tr>
                 }
             }
@@ -147,12 +117,3 @@
     </table>
     <a class="btn btn-danger btn-sm" title="Delete" style="background-color:#EAA193; color: #ffffff" asp-page="/Profil/DeleteUser" asp-route-id="@Model.User.UserId"><i class="fa fa-trash"></i> Profil</a>
 </body>
-
-<!-- Confirmation Message for when password gets updated -->
-@if (TempData["Message"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["Message"]
-    </div>
-
-}
