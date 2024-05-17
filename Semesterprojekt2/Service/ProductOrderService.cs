@@ -21,7 +21,10 @@ namespace Semesterprojekt2.Service
             await DbService.AddObjectAsync(productOrder);
         }
 
-       
+        public IEnumerable<ProductOrder>? GetAllProductOrders()
+        { 
+            return OrderList; 
+        }
 
     }
 }
