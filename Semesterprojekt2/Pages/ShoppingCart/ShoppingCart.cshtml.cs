@@ -86,7 +86,7 @@ namespace Semesterprojekt2.Pages.ShoppingCart
             //Slet alt i indkøbskurv efter
             _shoppingCartService.GetAllCartItems().Clear();
        
-            return RedirectToPage("../Shop/Shop");
+            return RedirectToPage("../Shop/Products/ThankYouforProductOrder", new {id=Order.OrderId});
         }
     }
 }

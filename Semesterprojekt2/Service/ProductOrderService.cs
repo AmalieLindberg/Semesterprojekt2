@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Semesterprojekt2.Models.BookATime;
 using Semesterprojekt2.Models.Shop;
 namespace Semesterprojekt2.Service
 {
@@ -24,6 +25,16 @@ namespace Semesterprojekt2.Service
         public IEnumerable<ProductOrder>? GetAllProductOrders()
         { 
             return OrderList; 
+        }
+
+        public ProductOrder GetProductOrderById(int id)
+        {
+            foreach (var order in OrderList)
+            {
+                if (id == order.OrderId)
+                    return order;
+            }
+            return null;
         }
 
     }
