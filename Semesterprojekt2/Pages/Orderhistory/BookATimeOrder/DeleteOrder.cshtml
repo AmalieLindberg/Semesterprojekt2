@@ -18,10 +18,13 @@
             <a class="btn btn-primary" asp-page="/Orderhistory/BookATimeOverview">No</a>
                 </form>
             }
+            else
+            {
             <form method="post">
                 <button type="submit" class="btn btn-danger">Yes</button>
                 <a class="btn btn-primary" asp-page="/Orderhistory/BookATimeOrderHistory">No</a>
-            </form>
+                </form>
+            }
         </div>
     </div>
 </body>
