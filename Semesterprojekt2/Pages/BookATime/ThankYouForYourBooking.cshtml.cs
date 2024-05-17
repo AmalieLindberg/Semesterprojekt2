@@ -15,8 +15,8 @@ namespace Semesterprojekt2.Pages.BookATime
         private IBookATimeService _bookATimeService { get; set; }
         private IUserService _userService { get; set; }
 
-    [BindProperty]
-    public Models.BookATime.BookATime BookATime { get; set; }
+        [BindProperty]
+        public Models.BookATime.BookATime BookATime { get; set; }
         [BindProperty]
         public Models.Users Users { get; set; }
 
