@@ -2,11 +2,43 @@
 @model Semesterprojekt2.Pages.Profil.DeleteUserModel
 @{
 }
-<h1>Delete Confirmation></h1>
+<head>
+
+    <style>
+        .C {
+            box-shadow: 4px 4px 10px #C65127;
+            position: relative;
+            align-items: center;
+            left: 15%;
+            Margin: 3%;
+            width: 65%;
+            color: black;
+            padding: 2%;
+            text-align: center;
+            background-color: rgb(239,231,225);
+        }
+    </style>
+</head>
+<h1 style="text-align: center; color: black;">Delete Confirmation</h1>
 <div class="alert alert-danger">
-	<h5>Are you sure you want to delete User - @Model.user.Name</h5>
-	<form method="post">
-		<button type="submit" class="btn btn-danger">Yes</button>
-		<a class="btn btn-primary" asp-page="/Profil/Profil">No</a>
-	</form>
+    <h4 style="text-align: center;">
+        <b>
+            Important to Know Before Deleting Your account from Our System
+        </b>
+    </h4>
+</div>
+
+<div class="C">
+    <p>
+        I want to make sure you understand the consequences of deleting your account from our booking system. It's a significant decision, and here's what it means for you: <br /> <br />
+
+        <b>Future appointments will be canceled: </b> Any appointments you have scheduled for your dog in the future will automatically be canceled. This includes all types of visits. <br />
+
+        <b>No access to previous bookings: </b>  Once your account is deleted, you will no longer be able to view or retrieve information about the times you had previously booked. We remove these data to keep our system clean and to ensure that we comply with data protection regulations.
+    </p>
+
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Yes</button>
+        <a class="btn btn-primary" asp-page="/Profil/Profil">No</a>
+    </form>
 </div>

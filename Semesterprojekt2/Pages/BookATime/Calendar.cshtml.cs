@@ -1,19 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Semesterprojekt2.Models;
+using Semesterprojekt2.Pages.Login;
 using Semesterprojekt2.Service.BookATimeService;
+using Semesterprojekt2.Service.UserService.UserService;
 
 namespace Semesterprojekt2.Pages.BookATime
 {
     public class CalendarModel : PageModel
     {
       
-     public CalendarModel(IBookATimeService tidsbestillingService, BookedDaysService bookedDays)
+     public CalendarModel(IBookATimeService tidsbestillingService, BookedDaysService bookedDays, UserService userService)
         {
             _bookATimeService = tidsbestillingService;
             this.bookedDays = bookedDays;
+            _userService = userService;
         }
-        private IBookATimeService _bookATimeService { get; set; }
-        private BookedDaysService bookedDays { get; set; }
+        private IBookATimeService _bookATimeService;
+        private BookedDaysService bookedDays;
+        private UserService _userService;
 
         public List<int> DaysInMonth { get; set; }
         public string MonthName { get; set; }
@@ -39,8 +44,11 @@ namespace Semesterprojekt2.Pages.BookATime
             return date.Date < DateTime.Today;
         }
 
+        public IEnumerable<Models.Dog> MyDogs { get; set; }
         public async Task OnGetAsync()
         {
+           
+          
             (Year, Month) = _bookATimeService.AdjustYearAndMonth(Year, Month);
 
             DaysInMonth = Enumerable.Range(1, DateTime.DaysInMonth(Year, Month)).ToList();
@@ -81,6 +89,13 @@ namespace Semesterprojekt2.Pages.BookATime
             {
                 return Page();
             }
+            if (LoginModel.LoggedInUser == null || LoginModel.LoggedInUser.UserId == 0 || LoginModel.LoggedInUser.UserId == null)
+            {
+                return RedirectToPage("/Login/Login");
+            }
+            int id = LoginModel.LoggedInUser.UserId;
+            Users CurrentUser = _userService.GetUser(id);
+            MyDogs = _userService.GetUserDogs(CurrentUser).Dog;
             // Opretter DateTime objektet fra de indsendte formularværdier
             //Denne linje parser en streng repræsentation af et tidspunkt (tidspunkt) til en TimeSpan objekt. Det antages her,
             //at tidspunkt er en gyldig streng, der repræsenterer en tidsperiode (f.eks. "14:30"). Parsing fejler med en exception,
@@ -96,7 +111,10 @@ namespace Semesterprojekt2.Pages.BookATime
             //hvor du skal bevare værdier mellem forskellige sider eller handlinger i en applikation, indtil de senere skal anvendes.
             // Gem værdierne midlertidigt
             TempData["FullDateTime"] = fullDateTime;
-
+            if (MyDogs == null || !MyDogs.Any())
+            {
+                return RedirectToPage("/BookATime/BookATimeWithoutDog");
+            }
             // Redirect til en ny side uden at eksponere værdierne i URL'en
             return RedirectToPage("/BookATime/BookATime");
 

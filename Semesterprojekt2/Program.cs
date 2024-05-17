@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Semesterprojekt2.EFDbContext;
 using Semesterprojekt2.Models;
 using Semesterprojekt2.Models.BookATime;
@@ -12,6 +13,7 @@ using Semesterprojekt2.Service.UserService.UserService;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
+builder.Services.AddSingleton<ProductOrderService, ProductOrderService>();
 builder.Services.AddSingleton<IBookATimeService, BookATimeService>();
 builder.Services.AddSingleton<IProductService, ProductService>();
 builder.Services.AddTransient<JsonFileProductService>();
@@ -22,6 +24,7 @@ builder.Services.AddSingleton<DogService, DogService>();
 builder.Services.AddSingleton<BookedDaysService, BookedDaysService>();
 builder.Services.AddTransient<JsonFileUserService>();
 builder.Services.AddDbContext<SemsterprojektDbContext>();
+
 builder.Services.AddSingleton<ShoppingCartService, ShoppingCartService>();
 
 builder.Services.AddTransient<UserDbService, UserDbService>();

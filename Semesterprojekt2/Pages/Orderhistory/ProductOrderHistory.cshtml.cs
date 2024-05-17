@@ -5,6 +5,8 @@ using Semesterprojekt2.DAO;
 using Semesterprojekt2.Models;
 using Semesterprojekt2.Pages.Login;
 using Semesterprojekt2.Service;
+using System.Collections;
+using Semesterprojekt2.Models.Shop;
 
 
 namespace Semesterprojekt2.Pages.Orderhistory
@@ -13,18 +15,21 @@ namespace Semesterprojekt2.Pages.Orderhistory
     {
         public UserService _userService { get; set; }
 
-        public IEnumerable<ProductOrderDAO> MyProductOrders { get; set; }
+        //public IEnumerable<ProductOrderDAO> MyProductOrders { get; set; }
+
+        public IEnumerable<ProductOrder> MyProductOrders { get; set; }
 
 
         public ProductOrderHistoryModel(UserService userService)
         {
             _userService = userService;
         }
+        
         public IActionResult OnGet()
         {
             int id = LoginModel.LoggedInUser.UserId;
             Users CurrentUser = _userService.GetUser(id);
-            MyProductOrders = _userService.GetUserProductOrders(CurrentUser);
+            MyProductOrders = _userService.GetUserProductOrders(CurrentUser).ProductOrders;
             return Page();
         }
     }

@@ -33,6 +33,7 @@ namespace Semesterprojekt2.Models.BookATime
         public Ydelse? Ydelse { get; set; }
 
         [Required]
+        
         public int UserId { get; set; }
         public Users? User { get; set; }
 
@@ -40,9 +41,10 @@ namespace Semesterprojekt2.Models.BookATime
         public int DogId { get; set; }
         public Dog? Dog { get; set; }
         public string? StatusForBooking { get; set; }
-        public bool FirstTime { get; set; } // Fortsætter som en ikke-nullable bool
+        public bool? FirstTime { get; set; }
 
-        public string FirstTimeDisplay => FirstTime ? "Yes" : "No";
+        public string FirstTimeDisplay => FirstTime.HasValue ? (FirstTime.Value ? "Yes" : "No") : "";
+        
         public BookATime(string comments, DateTime Date, Ydelse ydelse, Users user, Dog dog)
         {
 

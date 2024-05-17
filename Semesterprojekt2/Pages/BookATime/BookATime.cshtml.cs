@@ -60,16 +60,21 @@ namespace Semesterprojekt2.Pages.BookATime
             _webHostEnvironment = webHostEnvironment;
             _dogService = dogService;
         }
-   
+
+        public IEnumerable<Models.Dog> MyDogs { get; set; }
+
         public IActionResult OnGet()
         {
-
             if (LoginModel.LoggedInUser == null || LoginModel.LoggedInUser.UserId == 0 || LoginModel.LoggedInUser.UserId == null)
             {
                 return RedirectToPage("/Login/Login");
             }
 
             int id = LoginModel.LoggedInUser.UserId;
+            Users CurrentUser = _userService.GetUser(id);
+            MyDogs = _userService.GetUserDogs(CurrentUser).Dog;
+
+     
 
             User = _userService.GetUser(id);
 
@@ -164,7 +169,7 @@ namespace Semesterprojekt2.Pages.BookATime
             BookATime.DateForOrder = DateTime.Now;
             BookATime.StatusForBooking = "Pending";
             await _ydelseService.AddYdelseAsync(Ydelse);
-          await _dogService.AddDogAsync(Dog);
+
             BookATime.DogId = Dog.Id;
             BookATime.UserId = User.UserId;
             BookATime.YdelseId = Ydelse.Id;

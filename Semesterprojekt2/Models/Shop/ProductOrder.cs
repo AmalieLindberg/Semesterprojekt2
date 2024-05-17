@@ -1,44 +1,42 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Semesterprojekt2.Models.Shop
 {
     public class ProductOrder
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderId { get; set; }
-
-        [Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
-        public int Count { get; set; }
-
+        public int Counts { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime Date { get; set; }
-
         [Required]
-        public int UserId { get; set; }
 
-        public Users Users { get; set; }
+        public int UserId { get; set; }
+        public Users? User { get; set; }
 
         [Required]
         public int ProductId { get; set; }
-
-        public Product Product { get; set; }
-
-        public CartItem CartItem { get; set; }
+       public Product? Product { get; set; }
 
         public ProductOrder()
         {
+           
+        }
+
+        public ProductOrder(int Counts, Product product, Users user)
+        {
+            this.Counts = Counts;
+            Date = DateTime.Now;
+            User = user;
+            Product = product;
+         
 
         }
 
-        public ProductOrder(Users users, Product product, CartItem cartItem)
+        public override string ToString()
         {
-            Date = DateTime.Now;
-            Users = users;
-            Product = product;
-            CartItem = cartItem;
+            return $"{{{nameof(OrderId)}={OrderId.ToString()}, {nameof(Counts)}={Counts.ToString()}, {nameof(Date)}={Date.ToString()}, {nameof(UserId)}={UserId.ToString()}, {nameof(ProductId)}={ProductId.ToString()}}}";
         }
     }
 }

@@ -11,10 +11,11 @@
     <hr />
 
     <table class="table table-bordered table-hover table-striped table-opacity" width="60%">
+        <col style="width: 10%" />
         <col style="width: 25%" />
         <col style="width: 25%" />
         <col style="width: 25%" />
-        <col style="width: 25%" />
+        <col style="width: 10%" />
 
         <a class="btn btn-primary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="CreateBookedDays"> <i class="fa fa-edit"></i></a>
       <br />
@@ -41,6 +42,9 @@
                     <a data-toggle="tooltip" title="Sort By EndDate Descending" asp-page-handler="SortByEndDateDescending"><i class="fa fa-angle-down"></i></a>
                 </div>
             </th>
+            <th>
+                Made by:
+            </th>
             <th><h5>Delete</h5></th>
             </tr>
         </thead>
@@ -58,7 +62,10 @@
                             @bookedDays.StartDate.ToString("dd-MM-yyyy HH:mm")
                         </td>
                         <td>
-                            @bookedDays.EndDate.ToString("dd-MM-yyyy HH:mm") 
+                                @bookedDays.EndDate.ToString("dd-MM-yyyy HH:mm")
+                        </td>
+                        <td>
+                             @bookedDays.User.Name (@bookedDays.User.Email (@bookedDays.UserId))
                         </td>
                         <td>
                             <a class="btn btn-danger btn-sm " type="button" data-toggle="tooltip" title="Delete" asp-page="DeleteBookedDays" asp-route-id="@bookedDays.Id"><i class="fa fa-trash"></i></a>

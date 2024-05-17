@@ -1,11 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Semesterprojekt2.EFDbContext;
+using Semesterprojekt2.Models;
 using Semesterprojekt2.Models.BookATime;
 
 namespace Semesterprojekt2.Service.BookATimeService
 {
     public class BookATimeDbService : DbGenericService<BookATime>
     {
+        
+
         public static async Task<List<string>> GetBookedTimesForDate(DateTime date)
         {
             using (var context = new SemsterprojektDbContext())
@@ -17,5 +20,7 @@ namespace Semesterprojekt2.Service.BookATimeService
                                     .ToListAsync();
             }
         }
+
+       
     }
 }

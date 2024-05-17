@@ -19,12 +19,12 @@ namespace Semesterprojekt2.Service.BookATimeService
             _bookedDays.Add(dBookedDays);
             await _BookedDaysDbService.AddObjectAsync(dBookedDays);
         }
-        public async Task<List<BookedDays>> GetBookedDays(int year, int month)
-        {
-            // Using Task.FromResult to simulate asynchronous operation with static data
-            return await Task.FromResult(_bookedDays.Where(p =>
-                (p.StartDate.Year == year && p.StartDate.Month == month) || (p.EndDate.Year == year && p.EndDate.Month == month)).ToList());
-        }
+        //public async Task<List<BookedDays>> GetBookedDays(int year, int month)
+        //{
+        //    // Using Task.FromResult to simulate asynchronous operation with static data
+        //    return await Task.FromResult(_bookedDays.Where(p =>
+        //        (p.StartDate.Year == year && p.StartDate.Month == month) || (p.EndDate.Year == year && p.EndDate.Month == month)).ToList());
+        //}
         public async Task<BookedDays> RemoveBookedDaysById(int id)
         {
             foreach (var bookedDays in _bookedDays)
@@ -56,7 +56,7 @@ namespace Semesterprojekt2.Service.BookATimeService
             }
             return null;
         }
-        public static  List<string> GetBlockedTimesForDate(DateTime date)
+        public static List<string> GetBlockedTimesForDate(DateTime date)
         {
             List<string> blockedTimes = new List<string>();
             foreach (var booked in _bookedDays)

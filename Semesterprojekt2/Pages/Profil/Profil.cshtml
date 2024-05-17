@@ -105,7 +105,7 @@
                             DogId: @dog.Id
                         </td>
                         <td>
-                            <p> Dog image:</p>
+                     
 
                             <img src="~/ImagesForBookATime/Dog/@dog.DogImage" alt="Dog Image" style="width:100%" />
                           
@@ -120,6 +120,10 @@
                             <p> Name: @dog.Name</p>
                             <p>  Race: @dog.Race</p>
                             <p>Born: @dog.Age</p>
+                            @if (dog.Comments != null)
+                            {
+                                <p> Comment about your dog: @dog.Comments</p>
+                            }
                             
 
                         </td>

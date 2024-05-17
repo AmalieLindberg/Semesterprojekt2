@@ -144,10 +144,14 @@ namespace Semesterprojekt2.Service.UserService.UserService
         {
             return DbService.GetDogByUserIdAsync(user.UserId).Result;
         }
+        public Users GetUserProductOrders(Users user)
+        {
+            return DbService.GetOrdersByUserIdAsync(user.UserId).Result;
+        }
 
-		//Reset Password Method
+        //Reset Password Method
 
-		public async Task<Users> ResetPassword(Users user)
+        public async Task<Users> ResetPassword(Users user)
 		{
 			if (user != null)
 			{
@@ -169,10 +173,10 @@ namespace Semesterprojekt2.Service.UserService.UserService
 			return null;
 
 		}
-        public IEnumerable<ProductOrderDAO> GetUserProductOrders(Users users)
-        {
-            return DbService.GetOrdersByUserIdAsync(users.UserId).Result;
-        }
+        //public IEnumerable<ProductOrderDAO> GetUserProductOrders(Users users)
+        //{
+        //    return DbService.GetOrdersByUserIdAsync(users.UserId).Result;
+        //}
 
 
     }

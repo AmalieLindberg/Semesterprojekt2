@@ -12,20 +12,24 @@ namespace Semesterprojekt2.Models
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 		public string? DogImage { get; set; }
-		public string Name { get; set; }
-        public DateTime Age { get; set; }
-        public string Race { get; set; }
+		public string? Name { get; set; }
+        public DateTime? Age { get; set; }
+        public string? Race { get; set; }
         [Required]
+       
         public int UserId { get; set; }
         public Users? User { get; set; }
+        public string? Comments { get; set; }
 
 
 
-        public Dog(string name, DateTime age, string race)
+        public Dog(string name, DateTime age, string race, string comments, Users users)
         {
             Name = name;
             Age = age;
             Race = race;
+            Comments = comments;
+            User = users;
           
         }
 

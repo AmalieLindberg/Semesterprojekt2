@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Semesterprojekt2.Models;
+using Semesterprojekt2.Pages.Login;
 using Semesterprojekt2.Service.BookATimeService;
+using Semesterprojekt2.Service.UserService.UserService;
 
 namespace Semesterprojekt2.Pages.BookATime.BookedDays
 {
@@ -10,10 +13,13 @@ namespace Semesterprojekt2.Pages.BookATime.BookedDays
     {
         [BindProperty]
         public Models.BookATime.BookedDays BookedDays { get; set; }
-        public BookedDaysService BookedDaysService { get; set; }
-        public CreateBookedDaysModel(BookedDaysService bookedDaysService)
+        private BookedDaysService BookedDaysService;
+        private IUserService userService;
+        public Models.Users User { get; set; }
+        public CreateBookedDaysModel(BookedDaysService bookedDaysService, IUserService service)
         {
             BookedDaysService = bookedDaysService;
+            userService = service;
         }
         public void OnGet()
         {
@@ -25,7 +31,9 @@ namespace Semesterprojekt2.Pages.BookATime.BookedDays
                 
                 return Page();
             }
-
+            int id = LoginModel.LoggedInUser.UserId;
+            User = userService.GetUser(id);
+            BookedDays.UserId = id;
             await BookedDaysService.AddBookedDays(BookedDays);
             return RedirectToPage("/BookATime/Calendar");
         }

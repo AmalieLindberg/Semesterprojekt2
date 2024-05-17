@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Semesterprojekt2.Models;
 using Semesterprojekt2.Models.BookATime;
 
@@ -7,6 +8,7 @@ namespace Semesterprojekt2.Service.BookATimeService
     public class BookATimeService : IBookATimeService
     {
         private BookATimeDbService _bookATimeDbService {  get; set; }
+        
 
         public BookATimeService(BookATimeDbService bookATimeDbService)
         {
@@ -241,6 +243,52 @@ namespace Semesterprojekt2.Service.BookATimeService
 
             }
             return null;
+        }
+        public async Task<List<BookATime>> DeleteDogInBookATime(int dogId)
+        {
+            List<BookATime> itemsToBeDeleted = new List<BookATime>();
+
+            // Collect all items matching the dogId
+            foreach (BookATime bookATime in BookATimeList)
+            {
+                if (bookATime.DogId == dogId)
+                {
+                    itemsToBeDeleted.Add(bookATime);
+                }
+            }
+
+            // Delete all collected items
+            foreach (BookATime itemToBeDeleted in itemsToBeDeleted)
+            {
+                BookATimeList.Remove(itemToBeDeleted);
+                await _bookATimeDbService.DeleteObjectAsync(itemToBeDeleted);
+            }
+
+            return itemsToBeDeleted;
+        }
+
+
+        public async Task<List<BookATime>> DeleteUserInBookATime(int userid)
+        {
+            List<BookATime> itemsToBeDeleted = new List<BookATime>();
+
+            // Collect all items matching the dogId
+            foreach (BookATime bookATime in BookATimeList)
+            {
+                if (bookATime.UserId == userid)
+                {
+                    itemsToBeDeleted.Add(bookATime);
+                }
+            }
+
+            // Delete all collected items
+            foreach (BookATime itemToBeDeleted in itemsToBeDeleted)
+            {
+                BookATimeList.Remove(itemToBeDeleted);
+                await _bookATimeDbService.DeleteObjectAsync(itemToBeDeleted);
+            }
+
+            return itemsToBeDeleted;
         }
     }
 }

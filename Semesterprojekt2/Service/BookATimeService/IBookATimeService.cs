@@ -16,7 +16,10 @@ namespace Semesterprojekt2.Service.BookATimeService
         Task<BookATime> DeleteBookATime(int id);
         Task<BookATime> UpdateStatuesToAccept(BookATime bookATime);
         Task<BookATime> UpdateBookATime(BookATime bookATime);
-       
+        Task<List<BookATime>> DeleteDogInBookATime(int dogid);
+        Task<List<BookATime>> DeleteUserInBookATime(int userid);
+
+
     }
 }
 

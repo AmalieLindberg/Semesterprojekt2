@@ -13,8 +13,8 @@ namespace Semesterprojekt2.Models
         //havde vi brugt denne til at fortælle database hvad.
         [Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
-        public int UserId{ get; set; }
+        
+        public int UserId { get; set; }
 
         [Required]
         public string Password { get; set; }
@@ -31,7 +31,7 @@ namespace Semesterprojekt2.Models
         public string? ProfileImages { get; set; }
         public string? Bio {  get; set; }
         public IEnumerable<Models.BookATime.BookATime>? BookATime { get; set; }
-        public virtual ICollection<ProductOrder> ProductOrders { get; set; }
+        public IEnumerable<Models.Shop.ProductOrder>? ProductOrders { get; set; }
 
         public IEnumerable<Models.Dog>? Dog { get; set; }
         public Users(string password, string name, int telefonnummer, string email, string role)

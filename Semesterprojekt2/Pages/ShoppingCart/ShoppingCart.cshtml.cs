@@ -12,31 +12,35 @@ namespace Semesterprojekt2.Pages.ShoppingCart
     public class ShoppingCartModel : PageModel
     {
         private ShoppingCartService _shoppingCartService;
-        private IProductService _productService;
+        //private IProductService _productService;
         private IUserService _userService;
+        private ProductOrderService _orderService;
 
-        public ShoppingCartModel(ShoppingCartService shoppingCartService, IProductService productService, IUserService userService)
+        public ShoppingCartModel(ShoppingCartService shoppingCartService/*, IProductService productService*/, IUserService userService, ProductOrderService productOrderService)
         {
             _shoppingCartService = shoppingCartService;
-            _productService = productService;
+            //_productService = productService;
             _userService = userService;
+            _orderService = productOrderService;
+            
         }
 
         public List<Models.CartItem> CartItem { get; set; } = new List<CartItem>();
-        public Models.Shop.Product Product { get; set; }
-        public Models.CartItem CartItems { get; set; }
+        //public Models.Shop.Product Product { get; set; }
+        //public Models.CartItem CartItems { get; set; }
+     
         public Users User { get; set; }
-        public Models.Shop.ProductOrder Order { get; set; } = new Models.Shop.ProductOrder();
+       
+        public Models.Shop.ProductOrder Order { get; set; }
 
-        [BindProperty]
-        public int Count { get; set; }
+        //public int Count { get; set; }
 
-        public void OnGet(int id)
+        public void OnGet()
         {
-            id = LoginModel.LoggedInUser.UserId;
-            Users CurrentUser = _userService.GetUser(id);
+            //int id = LoginModel.LoggedInUser.UserId;
+            //Users CurrentUser = _userService.GetUser(id);
             CartItem = _shoppingCartService.GetAllCartItems();
-            Product = _productService.GetProduct(id);
+            //Product = _productService.GetProduct(id);
         }
 
         public IActionResult OnPostRemoveSingleCartItem(int productId)
@@ -58,20 +62,30 @@ namespace Semesterprojekt2.Pages.ShoppingCart
                 return CartItem.Sum(item => (item.Product.Price ?? 0) * item.Quantity);
             }
         }
-
-        public IActionResult OnPost()
+        
+        public async Task<IActionResult> OnPost()
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
             int id = LoginModel.LoggedInUser.UserId;
-            Product = _productService.GetProduct(id);
             User = _userService.GetUser(id);
-            Order.UserId = User.UserId;
-            Order.ProductId = Product.Id;
-            Order.Count = Count;
-            _shoppingCartService.AddToCart(Product,Count);
+           
+            foreach (var item in _shoppingCartService.GetAllCartItems())
+            {
+                Order = new Models.Shop.ProductOrder();
+                Order.ProductId = item.Product.Id; 
+                Order.UserId = User.UserId;
+                Order.Counts = item.Quantity;
+                Order.Date = DateTime.Now;
+
+                
+                await _orderService.AddOrderAsync(Order);
+            }
+            //Slet alt i indkøbskurv efter
+            _shoppingCartService.GetAllCartItems().Clear();
+       
             return RedirectToPage("../Shop/Shop");
         }
     }

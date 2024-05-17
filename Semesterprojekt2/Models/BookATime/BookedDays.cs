@@ -19,15 +19,22 @@ namespace Semesterprojekt2.Models.BookATime
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime EndDate { get; set; }
 
+        [Required]
+
+        public int UserId { get; set; }
+        public Users? User { get; set; }
 
         public BookedDays() 
         { 
         }
 
-        public BookedDays(DateTime startDate, DateTime endDate)
+        public BookedDays(DateTime startDate, DateTime endDate, Users user)
         {
             StartDate = startDate;
+        
             EndDate = endDate;
+            User = user;
+           
         }
 
      
