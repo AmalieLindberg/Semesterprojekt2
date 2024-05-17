@@ -54,9 +54,7 @@ namespace Semesterprojekt2.Service
                         return d;
                     }
                 }
-
-
-            }
+			}
             return null;
         }
         public async Task<Dog> DeleteDog(int? dogId)
