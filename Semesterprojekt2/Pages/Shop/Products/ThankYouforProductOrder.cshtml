@@ -1,0 +1,55 @@
+﻿@page
+@model Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel
+@{
+}
+
+<html>
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        p {
+            font-size: 110%;
+            color: black;
+        }
+
+        .C {
+            box-shadow: 4px 4px 10px #C65127;
+            position: relative;
+            align-items: center;
+            left: 11%;
+            Margin: 6%;
+            width: 65%;
+            color: black;
+            padding: 2%;
+            text-align: center;
+            background-color: rgb(239,231,225);
+        }
+    </style>
+</head>
+<body>
+    <div class="Alt">
+        <br />
+        <h1><b>Thank you for ordering products at Shampoodle</b></h1>
+        <div class="C">
+
+            <p>
+                Dear @Model.Users.Name, <br /> <br />
+
+                Thank you for your order with Shampoodle! <br /> <br />
+
+                Your order ID is  @Model.ProductOrder.OrderId <br /> <br />
+
+                Kind regards, <br /> <br />
+
+                Krisztina <br />
+                Phone: +45 29 25 25 38 & Email: shampoodledk@gmail.com <br />
+                Shampoodle
+            </p>
+        </div>
+    </div>
+</body>
+</html>
