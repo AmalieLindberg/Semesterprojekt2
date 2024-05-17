@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Service.UserService.UserService;
 using Semesterprojekt2.Service;
 using Semesterprojekt2.Models.Shop;
+using Semesterprojekt2.Pages.Login;
+using Semesterprojekt2.Models;
 
 
 namespace Semesterprojekt2.Pages.Orderhistory
@@ -25,7 +27,9 @@ namespace Semesterprojekt2.Pages.Orderhistory
 
         public void OnGet()
         {
-            MyProductOrders = _productOrderService.GetAllProductOrders();
+            int id = LoginModel.LoggedInUser.UserId;
+            Users CurrentUser = _userService.GetUser(id);
+            MyProductOrders = _userService.GetUserProductOrders(CurrentUser).ProductOrders;
             foreach (var order in MyProductOrders)
             {
                 order.User = _userService.GetUser(order.UserId);

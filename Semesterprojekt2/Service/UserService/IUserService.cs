@@ -15,6 +15,7 @@ namespace Semesterprojekt2.Service.UserService.UserService
 
 		Users GetUserTidsbestillingOrders(Users currentUser);
         Users GetUserDogs(Users id);
+        Users GetUserProductOrders(Users currentUser);
         //IEnumerable<ProductOrderDAO> GetUserProductOrders(Users users);
         //Users GetUserByUserName(string name);
 
