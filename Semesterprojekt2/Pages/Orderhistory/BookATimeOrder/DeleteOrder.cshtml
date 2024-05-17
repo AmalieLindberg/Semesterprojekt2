@@ -9,10 +9,19 @@
     <center><h1><b>Delete Order</b></h1></center>
     <center><h1>Please confirmation</h1></center>
     <div class="alert alert-danger">
+        <div class="z" style="text-align: center;">
         <h5>Are you sure you want to delete Order - @Model.BookATime.DateForBooking</h5>
+        @if (Model.Users.Role== "Admin")
+        {
         <form method="post">
             <button type="submit" class="btn btn-danger">Yes</button>
             <a class="btn btn-primary" asp-page="/Orderhistory/BookATimeOverview">No</a>
-        </form>
+                </form>
+            }
+            <form method="post">
+                <button type="submit" class="btn btn-danger">Yes</button>
+                <a class="btn btn-primary" asp-page="/Orderhistory/BookATimeOrderHistory">No</a>
+            </form>
+        </div>
     </div>
 </body>
