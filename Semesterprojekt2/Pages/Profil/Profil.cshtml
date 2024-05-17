@@ -142,3 +142,12 @@
     </table>
     <a class="btn btn-danger btn-sm" title="Delete" style="background-color:#EAA193; color: #ffffff" asp-page="/Profil/DeleteUser" asp-route-id="@Model.User.UserId"><i class="fa fa-trash"></i> Profil</a>
 </body>
+
+<!-- Confirmation Message for when password gets updated -->
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+
+}

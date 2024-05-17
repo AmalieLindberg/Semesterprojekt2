@@ -13,7 +13,7 @@ namespace Semesterprojekt2.Pages.Login
             LoginModel.LoggedInUser = null;
 
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToPage("/index");
+            return RedirectToPage("/Login/Login");
         }
     }
 }

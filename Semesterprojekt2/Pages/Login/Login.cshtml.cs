@@ -82,7 +82,8 @@ namespace Semesterprojekt2.Pages.Login
 
             }
             //Hvis ingen brugere blev fundet med de oplysninger, så for man en fejlbesked istedet
-            Message = "Invalid attempt";
+             
+            TempData["Message"] = "Failed attempt. Please try again.";
             return Page();
         }
     }

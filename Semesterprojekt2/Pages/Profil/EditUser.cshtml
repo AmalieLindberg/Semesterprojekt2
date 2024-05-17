@@ -26,17 +26,6 @@
 		<span asp-validation-for="User.Email" class="text-danger"></span>
 	</div>
 	<div class="form-group">
-		<label asp-for="User.Password" class="control-label">New Password (leave blank if you do not want to change it)</label>
-		<input asp-for="User.Password" class="form-control" type="password" />
-		<span asp-validation-for="User.Password" class="text-danger"></span>
-	</div>
-	<div class="form-group">
-		<label asp-for="ConfirmPassword" class="control-label">Confirm New Password</label>
-		<input asp-for="ConfirmPassword" class="form-control" type="password" />
-		<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-	</div>
-
-	<div class="form-group">
 		<label asp-for="User.Telefonnummer" class="control-label"></label>
 		<input asp-for="User.Telefonnummer" class="form-control" />
 		<span asp-validation-for="User.Telefonnummer" class="text-danger"></span>
@@ -67,13 +56,30 @@
 		<label hidden asp-for="User.ProductOrders" class="control-label"></label>
 		<input hidden asp-for="User.ProductOrders" class="form-control" />
 	</div>
+	
+	<br />
 
+	<p>
+		If you wish to update your details, please enter your password below.
+		You can also choose to update your password by entering a new one.
+	</p>
+
+	<div class="form-group">
+		<label asp-for="User.Password" class="control-label">Password</label>
+		<input asp-for="User.Password" class="form-control" type="password" />
+		<span asp-validation-for="User.Password" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="ConfirmPassword" class="control-label">Confirm New Password</label>
+		<input asp-for="ConfirmPassword" class="form-control" type="password" />
+		<span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+	</div>
+	
 	<p>
 		<div class="form-group">
 			<input type="submit" value="Update" class="btn btn-primary" />
 		</div>
 	</p>
-
 
 </form>
 

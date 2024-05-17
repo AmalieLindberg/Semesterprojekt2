@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Semesterprojekt2.Service.UserService.UserService;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace Semesterprojekt2.Pages.Profil
 {
@@ -19,12 +21,10 @@ namespace Semesterprojekt2.Pages.Profil
 		}
 
         [BindProperty]
-        public Models.Users User{ get; set; }
+        public Models.Users? User{ get; set; }
 
-		[BindProperty, DataType(DataType.Password), MinLength(6, ErrorMessage = "Passwordet skal være mindst 6 tegn.")]
-		[RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$", ErrorMessage = "Passwordet skal indeholde mindst ét bogstav og ét tal.")]
-		public string ConfirmPassword { get; set; }
-
+		[BindProperty]
+		public string? ConfirmPassword { get; set; }
 
 		public IActionResult OnGet(int id)
         {
@@ -35,30 +35,36 @@ namespace Semesterprojekt2.Pages.Profil
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync()
-        {
-            if (!ModelState.IsValid)
-            {
-				
-				return Page();
-            }
 
-			// Check if passwords match
-			if (!string.IsNullOrEmpty(User.Password))
+		public async Task<IActionResult> OnPostAsync()
+		{
+			if (!ModelState.IsValid)
+			{
+				return Page();
+			}
+
+
+			// Check if passwords match and validate password fields
+			if (!string.IsNullOrEmpty(User.Password) || !string.IsNullOrEmpty(ConfirmPassword))
 			{
 				if (User.Password != ConfirmPassword)
 				{
 					ModelState.AddModelError("ConfirmPassword", "Passwords do not match");
 					return Page();
 				}
-				// Proceed to update the password
+
+				if (string.IsNullOrEmpty(User.Password) || User.Password.Length < 6 ||
+					!Regex.IsMatch(User.Password, @"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"))
+				{
+					ModelState.AddModelError("User.Password", "Password must be at least 6 characters long, and contain at least one letter and one number.");
+					return Page();
+				}
 			}
 
-
-
+			// Handle profile image upload
 			if (ProfileImages != null)
 			{
-				if (User.ProfileImages != null) 
+				if (User.ProfileImages != null)
 				{
 					string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "Images", User.ProfileImages);
 					System.IO.File.Delete(filePath);
@@ -66,12 +72,15 @@ namespace Semesterprojekt2.Pages.Profil
 				User.ProfileImages = ProcessUploadedFile();
 			}
 
-          await  _userService.UpdateUser(User);
+			await _userService.UpdateUser(User);
 
-			//Confirmation Message that user has been edited
+			// Confirmation message
 			TempData["Message"] = $"Details for {User.Name} have been updated.";
 			return Page();
 		}
+
+
+
 		private string ProcessUploadedFile()
 		{
 			string uniqueFileName = null;
