@@ -61,5 +61,27 @@ namespace Semesterprojekt2.Service
             return itemsToBeDeleted;
         }
 
-    }
+		public async Task<ProductOrder> DeleteProductOrderAsync(int? orderId)
+		{
+			ProductOrder productOrdersToBeDeleted = null;
+			foreach (ProductOrder productOrder in OrderList)
+			{
+				if (productOrder.OrderId == orderId)
+				{
+					productOrdersToBeDeleted = productOrder;
+					break;
+				}
+			}
+
+			if (productOrdersToBeDeleted != null)
+			{
+				OrderList.Remove(productOrdersToBeDeleted);
+				//JsonFileProductService.SaveJsonProducts(_products);
+				await DbService.DeleteObjectAsync(productOrdersToBeDeleted);
+			}
+
+			return productOrdersToBeDeleted;
+		}
+
+	}
 }

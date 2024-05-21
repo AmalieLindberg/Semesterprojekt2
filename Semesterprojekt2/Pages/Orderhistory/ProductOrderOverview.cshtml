@@ -1,4 +1,5 @@
 ﻿@page
+@using Semesterprojekt2.Pages.Login
 @model Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel
 @{
 }
@@ -25,5 +26,59 @@
     <div style="text-align: center">
         <a class="btn btn-outline-light" asp-page="BookATimeOverview">Book A Time Overview</a>
     </div>
-    <br />
+    <hr />
+
+    <div class="test">
+        <table class="table table-bordered table-hover table-striped" width="60%">
+            <thead>
+                <tr class="btn-secondary active">
+                    <th>User ID</th>
+                    <th>User Name</th>
+                    <th>Order ID</th>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Count</th>
+                    <th>Total Order Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (@Model.MyProductOrders != null)
+                {
+                    foreach (var order in Model.MyProductOrders)
+                    {
+                        <tr class="btn-secondary">
+                            <td>
+                                @order.UserId
+                            </td>
+                            <td>
+                                @order.User.Name
+                            </td>
+                            <td>
+                                @order.OrderId
+                            </td>
+                            <td>
+                                @order.ProductId
+                            </td>
+                            <td>
+                                @order.Product.Name
+                            </td>
+                            <td>
+                                @order.Counts
+                            </td>
+                            <td>
+                                @(order.Counts * order.Product.Price)
+                            </td>
+                            <td>
+                                <form method="post">
+                                    <input type="hidden" asp-for="ProductOrder.OrderId" value="@order.OrderId" />
+                                    <button type="submit" style="background-color:#EAA193; color: #ffffff" asp-page="/Orderhistory/ProductOrder/DeleteProductOrder" title=>Delete <i class="fa fa-trash"></i></button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
 </body>
