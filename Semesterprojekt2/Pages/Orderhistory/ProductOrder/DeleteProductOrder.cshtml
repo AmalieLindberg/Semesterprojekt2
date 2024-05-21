@@ -1,0 +1,18 @@
+﻿@page
+@model Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel
+@{
+}
+<!-- Overskrift for siden, bekræft sletning af et produkt -->
+<h1>Delete Confirmation></h1>
+<!-- Advarselsboks der indikerer alvoren af handlingen, at brugeren er ved at slette et produkt -->
+<div class="alert alert-danger">
+	<!-- Underoverskrift der specificerer navnet på det produkt, som brugeren ønsker at slette -->
+	<h5>Are you sure you want to delete the Order with the Id - @Model.ProductOrder.OrderId</h5>
+	<!-- Formular til at håndtere sletningsanmodningen via en POST-metode -->
+	<form method="post">
+		<!-- Bekræftelsesknappen til at fortsætte med sletningen, designet med en farlig rød farve for at signalere handlingens alvor -->
+		<button type="submit" class="btn btn-danger">Yes</button>
+		<!-- Link der tillader brugeren at afbryde sletningsprocessen, hvis de vælger ikke at fortsætte -->
+		<a class="btn btn-primary" asp-page="/Shop/Shop">No</a>
+	</form>
+</div>

@@ -15,7 +15,7 @@ namespace Semesterprojekt2.Pages.Orderhistory
         public ProductOrderService _productOrderService { get; set; }
         public IProductService _productService { get; set; }
 
-        public IEnumerable<ProductOrder> MyProductOrders { get; set; }
+        public IEnumerable<Models.Shop.ProductOrder> MyProductOrders { get; set; }
 
 
         public ProductOrderHistoryModel(IUserService userService, ProductOrderService productOrderService, IProductService productService)
