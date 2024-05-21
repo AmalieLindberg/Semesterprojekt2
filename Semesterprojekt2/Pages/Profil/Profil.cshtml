@@ -6,7 +6,8 @@
 <head>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        .container {
+        .container{
+            display: flex;
             justify-content: space-between;
             justify-content: center; /* Centers horizontally in the flex container */
         }
@@ -40,7 +41,7 @@
         <div class="col">
         </div>
     </div>
-    <div class="container" style="display: flex;">
+    <div class="container" style="margin-left: -5%;">
         <div class="Højre">
             <div class="form-group">
                 @if (Model.User.ProfileImages != null)
