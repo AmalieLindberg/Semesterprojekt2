@@ -11,14 +11,32 @@
 
 	@if (@Model.user != null)
 	{
+
+		//if user is the one who's logged in add extra warning
+		@if (LoginModel.LoggedInUser.Name == @Model.user.Name)
+		{
+			<div style="background-color: #FFCCCC; padding: 20px; text-align: center; border-radius: 15px;">
+				<h5> Hej, @Model.user.Name. <br /> It seems like you're about to delete yourself. If this was your intention, head to your profile instead. </h5>
+				<br />
+
+				<a class="btn btn-primary" asp-page="/Login/UserOverview">Cancel</a>
+				
+			</div>
+		}
+
+		else
+		{
 		<div style="background-color: #FFCCCC; padding: 20px; text-align: center; border-radius: 15px;">
 			<h5>Are you sure you want to delete User: <br />  <br /> @Model.user.Name <br /> Id: @Model.user.UserId </h5>
 			<br />
+		
 			<form method="post">
 				<button type="submit" class="btn btn-danger">Yes</button>
 				<a class="btn btn-primary" asp-page="/Login/UserOverview">Cancel</a>
 			</form>
 		</div>
+		}
+
 	}
 
 	<br />
