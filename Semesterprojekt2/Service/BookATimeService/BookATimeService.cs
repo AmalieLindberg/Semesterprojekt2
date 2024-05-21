@@ -233,7 +233,9 @@ namespace Semesterprojekt2.Service.BookATimeService
 
                         }
                         else 
+                        { 
                             book.BathRoomImage = bookATime.BathRoomImage;
+                        }
                        
                         await _bookATimeDbService.UpdateObjectAsync(book);
                         return book;

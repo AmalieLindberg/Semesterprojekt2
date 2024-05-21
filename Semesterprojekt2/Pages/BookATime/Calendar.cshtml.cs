@@ -101,21 +101,30 @@ namespace Semesterprojekt2.Pages.BookATime
             //at tidspunkt er en gyldig streng, der repræsenterer en tidsperiode (f.eks. "14:30"). Parsing fejler med en exception,
             //hvis strengen ikke er gyldig.
             //TimeSpan indeholder kun tidsdelen, dvs. timer og minutter i dette tilfælde.
+
             TimeSpan time = TimeSpan.Parse(tidspunkt); // Antagelse: 'tidspunkt' er en gyldig TimeSpan string
             //Her oprettes et DateTime objekt ved at specificere år (year), måned (month), dag (day),
             //og tidsdelen fra TimeSpan objektet (time.Hours og time.Minutes).
             //Sekunderne er sat til 0. Denne metode bruges til præcist at oprette et DateTime objekt med både dato og præcis tid.
+
+
             DateTime fullDateTime = new DateTime(year, month, day, time.Hours, time.Minutes, 0);
+
+
+
             //fullDateTime objektet gemmes i TempData under nøglen "FullDateTime". TempData er en funktion i ASP.NET Core,
             //der anvendes til at gemme data mellem HTTP-anmodninger i et kort tidsinterval. Dette er især nyttigt i scenarier,
             //hvor du skal bevare værdier mellem forskellige sider eller handlinger i en applikation, indtil de senere skal anvendes.
             // Gem værdierne midlertidigt
+
             TempData["FullDateTime"] = fullDateTime;
+
+
             if (MyDogs == null || !MyDogs.Any())
             {
                 return RedirectToPage("/BookATime/BookATimeWithoutDog");
             }
-            // Redirect til en ny side uden at eksponere værdierne i URL'en
+         
             return RedirectToPage("/BookATime/BookATime");
 
 

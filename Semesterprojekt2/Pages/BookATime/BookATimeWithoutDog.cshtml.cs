@@ -102,7 +102,7 @@ namespace Semesterprojekt2.Pages.BookATime
             }
             if (fuldDatoOgTid == new DateTime(0001, 01, 01, 00, 00, 00))
             {
-                // Omdiriger til 'BookATime' siden
+              
                 return RedirectToPage("/BookATime/Calendar");
             }
             return Page();
@@ -143,7 +143,7 @@ namespace Semesterprojekt2.Pages.BookATime
             {
                 if (Dog.DogImage != null)
                 {
-                    string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/ImagesForBookATime", "Bath", Dog.DogImage);
+                    string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/ImagesForBookATime", "Dog", Dog.DogImage);
                     System.IO.File.Delete(filePath);
                 }
 
