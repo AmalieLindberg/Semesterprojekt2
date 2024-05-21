@@ -53,11 +53,14 @@ namespace Semesterprojekt2.Service
                         p.Brand = product.Brand;
                         p.Amount = product.Amount;
                         p.Description = product.Description;
-                        if(product.ProductImage == null)
+                        if (product.ProductImage == null)
                         {
                             product.ProductImage = p.ProductImage;
                         }
-                        p.ProductImage = product.ProductImage;
+                        else
+                        {
+                            p.ProductImage = product.ProductImage;
+                        }
                     }
                 }
                 //JsonFileProductService.SaveJsonProducts(_products);

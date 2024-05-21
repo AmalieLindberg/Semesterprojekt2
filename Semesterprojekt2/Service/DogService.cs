@@ -45,11 +45,14 @@ namespace Semesterprojekt2.Service
                         d.Name = dog.Name;
                         d.Age = dog.Age;
                         d.Race = dog.Race;
-                       if (dog.DogImage==null)
+                        if (dog.DogImage == null)
                         {
                             dog.DogImage = d.DogImage;
                         }
-                        d.DogImage = dog.DogImage;
+                        else
+                        {
+                            d.DogImage = dog.DogImage;
+                        }
                         await _dbGenericService.UpdateObjectAsync(d);
                         return d;
                     }

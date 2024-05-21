@@ -39,7 +39,7 @@ namespace Semesterprojekt2.Pages.Profil.Dog
 			{
 				if (Dog.DogImage != null)
 				{
-					string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "Images", Dog.DogImage);
+					string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "ImagesForBookATime", "Dog", Dog.DogImage);
 					System.IO.File.Delete(filePath);
 				}
 				Dog.DogImage = ProcessUploadedFile();
@@ -53,7 +53,7 @@ namespace Semesterprojekt2.Pages.Profil.Dog
 			string uniqueFileName = null;
 			if (DogImages != null)
 			{
-				string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images", "Profil");
+				string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "ImagesForBookATime", "Dog");
 				uniqueFileName = Guid.NewGuid().ToString() + "_" + DogImages.FileName;
 
 				string filePath = Path.Combine(uploadsFolder, uniqueFileName);
@@ -63,5 +63,5 @@ namespace Semesterprojekt2.Pages.Profil.Dog
 			}
 			return uniqueFileName;
 		}
-	}
+    }
 }
