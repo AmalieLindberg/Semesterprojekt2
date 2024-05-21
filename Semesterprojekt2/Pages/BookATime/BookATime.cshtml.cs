@@ -126,18 +126,7 @@ namespace Semesterprojekt2.Pages.BookATime
         public async Task<IActionResult> OnPost(int id)
         {
             if (!ModelState.IsValid)
-            {
-
-                // Udskriver fejl til output-vinduet eller logger dem.
-                foreach (var modelStateKey in ModelState.Keys)
-                {
-                    var modelStateVal = ModelState[modelStateKey];
-                    foreach (var error in modelStateVal.Errors)
-                    {
-                        // Her kan du logge fejlen eller se den i debug-vinduet
-                        Debug.WriteLine(error.ErrorMessage);
-                    }
-                }
+            { 
                 return RedirectToPage("/Error/Error");
             }
 
@@ -153,16 +142,7 @@ namespace Semesterprojekt2.Pages.BookATime
 
             }
 
-            if (DogPhoto != null)
-            {
-                if (Dog.DogImage != null)
-                {
-                    string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/ImagesForBookATime", "Bath", Dog.DogImage);
-                    System.IO.File.Delete(filePath);
-                }
-
-                Dog.DogImage = ProcessUploadedDogFile();
-            }
+      
             int UserId = LoginModel.LoggedInUser.UserId;
 
             User = _userService.GetUser(UserId);
@@ -178,21 +158,7 @@ namespace Semesterprojekt2.Pages.BookATime
             return RedirectToPage("ThankYouForYourBooking", new { id = BookATime.Id });
         }
 
-        private string ProcessUploadedDogFile()
-        {
-            string uniqueFileName = null;
-            if (DogPhoto != null)
-            {
-                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "ImagesForBookATime", "Dog");
-                uniqueFileName = Guid.NewGuid().ToString() + "_" + DogPhoto.FileName;
-                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    DogPhoto.CopyTo(fileStream);
-                }
-            }
-            return uniqueFileName;
-        }
+      
         private string ProcessUploadedBathFile()
         {
             string uniqueFileName = null;

@@ -89,7 +89,8 @@ namespace Semesterprojekt2.Service.UserService.UserService
                         {
                             user.ProfileImages = u.ProfileImages;
                         }
-                        u.ProfileImages = user.ProfileImages;
+                        else {
+                        u.ProfileImages = user.ProfileImages; }
                         u.Bio = user.Bio;
 
 						await DbService.UpdateObjectAsync(u);

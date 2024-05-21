@@ -269,9 +269,9 @@
 
   @if (LoginModel.LoggedInUser != null && LoginModel.LoggedInUser.Role == "Admin")
     {
-     <a class="btn btn-primary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookedDays/CreateBookedDays"> <i class="fa fa-edit"></i></a>
+     <a class="btn btn-primary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookedDays/CreateBookedDays">Edit booked days <i class="fa fa-edit"></i></a>
                 
-     <a class="btn btn-danger btn-sm " type="button" data-toggle="tooltip" title="Info" asp-page="BookedDays/BookedDays"><i class="fa fa-info"></i></a>
+     <a class="btn btn-danger btn-sm " type="button" data-toggle="tooltip" title="Info" asp-page="BookedDays/BookedDays">Info about booked days <i class="fa fa-info"></i></a>
     }
     </body>
 </html>
