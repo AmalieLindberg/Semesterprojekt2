@@ -12,8 +12,6 @@ namespace Semesterprojekt2.Models.Shop
 	//}
 	public class Product
     {
-        // En statisk variabel til at holde styr på det næste unikke ID for et produkt.
-        private static int nextId = 1;
         // En property til at repræsentere produktets ID.
         [Key]
 		public int Id { get; set; }

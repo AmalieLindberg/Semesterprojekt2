@@ -23,17 +23,21 @@
         /* Styling specifikt for produktbilledet */
         .product-image {
             flex: 0 1 auto; /* Flex item der ikke vokser, men kan krympe */
-            width: 50%; /* Halvdelen af containerens bredde */
+            width: 200%; /* Halvdelen af containerens bredde */
+            height: auto;
         }
 
             .product-image img {
-                max-width: 80%; /* Billedets maksimale bredde relativt til dets container */
-                height: auto; /* Automatisk højde for at bevare billedets proportioner */
+                width: 400px; /* Set a specific width */
+                height: 400px; /* Set a specific height */
+                object-fit: cover; /* Ensure the image covers the specified dimensions */
             }
 
         /* Container for tekstlige produktinformationer */
         .product-details {
             flex-grow: 1; /* Tager den resterende plads i containeren */
+            padding-left: 20px; /* Add some padding to the left for spacing */
+            padding-top: 20px; /* Add some padding to the top for spacing */
         }
 
             .product-details h1 {
@@ -53,16 +57,17 @@
 
         /* Generel knap styling */
         .btn {
-            display: block; /* Knapper vises som blokelementer */
-            width: max-content; /* Bredden af knappen bestemmes af indholdet */
-            padding: 10px 20px; /* Padding omkring knappens tekst */
-            margin-top: 10px; /* Afstand fra elementer over knappen */
-            text-align: center; /* Centrerer teksten i knappen */
-            text-decoration: none; /* Fjerner understregning fra links */
-            color: #fff; /* Hvid tekstfarve */
-            background-color: #000; /* Sort baggrundsfarve */
-            border: none; /* Ingen ramme omkring knappen */
-            cursor: pointer; /* Cursor ændres til pegefinger ved hover */
+            display: inline-block; /* Buttons displayed as inline-block elements */
+            width: max-content; /* Button width determined by content */
+            padding: 10px 20px; /* Padding around button text */
+            margin-top: 10px; /* Distance from elements above the button */
+            text-align: center; /* Center the text in the button */
+            text-decoration: none; /* Remove underline from links */
+            color: #fff; /* White text color */
+            background-color: #000; /* Black background color */
+            border: none; /* No border around the button */
+            cursor: pointer; /* Cursor changes to pointer on hover */
+            border-radius: 5px; /* Rounded corners */
         }
 
 
@@ -73,21 +78,39 @@
 
         /* Container der holder Rediger/Slet knapper ved siden af hinanden */
         .edit-delete-container {
-            display: flex; /* Bruger flexbox til at arrangere knapperne */
-            justify-content: space-between; /* Fordeler knapperne jævnt */
-            width: 50%; /* Bredde som 'Add to Cart' knappen */
-            box-sizing: border-box; /* Gør så padding er inkluderet i bredde */
-            background-color: #C65127; /* Orange baggrundsfarve */
+            display: flex; /* Use flexbox to arrange the buttons */
+            justify-content: space-between; /* Distribute buttons evenly */
+            width: 50%; /* Width same as 'Add to Cart' button */
+            box-sizing: border-box; /* Include padding in width */
         }
 
         /* Ens stil for både rediger og slet knapperne */
         .edit-button, .delete-button {
-            flex: 1; /* Begge knapper fylder lige meget */
-            margin: 0 5px; /* Afstand mellem knapperne */
-            width: 50%; /*Bredde af delete og edit knapperne.*/
-            background-color: #C65127; /*Baggrundfarve*/
+            flex: 1; /* Both buttons take up equal space */
+            margin: 0 1px; /* Space between buttons */
+            padding: 10px; /* Padding inside the buttons */
+            background-color: #FCC681; /* Background color for edit button */
+            color: #ffffff; /* White text color */
+            text-align: center; /* Center text in the button */
+            border-radius: 5px; /* Rounded corners */
         }
 
+        .delete-button {
+            background-color: #EAA193; /* Background color for delete button */
+        }
+
+            .edit-button i, .delete-button i {
+                margin-right: 5px; /* Space between icon and text */
+            }
+
+        /* Hover styles for edit and delete buttons */
+        .edit-button:hover {
+            background-color: #e6b057; /* Slightly darker shade for hover */
+        }
+
+        .delete-button:hover {
+            background-color: #d29283; /* Slightly darker shade for hover */
+        }
 
     </style>
 </head>
@@ -115,8 +138,8 @@
                     <div class="edit-delete-container">
                                             @if (LoginModel.LoggedInUser != null && LoginModel.LoggedInUser.Role == "Admin")
                     {
-                        <a class="btn btn-primary edit-button" title="Edit" asp-page="/Shop/Products/EditProduct" asp-route-id="@Model.Product.Id">Edit</a>
-                        <a class="btn btn-danger delete-button" title="Delete" asp-page="/Shop/Products/DeleteProduct" asp-route-id="@Model.Product.Id">Delete</a>
+                            <a class="btn btn-primary btn-sm edit-button" title="Edit" asp-page="/Shop/Products/EditProduct" asp-route-id="@Model.Product.Id"><i class="fa fa-edit"></i> Product</a>
+                            <a class="btn btn-primary btn-sm delete-button" title="Delete" asp-page="/Shop/Products/DeleteProduct" asp-route-id="@Model.Product.Id"><i class="fa fa-trash"></i> Product</a>
                     }
                 </div>
                 </div>

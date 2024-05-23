@@ -41,30 +41,23 @@ namespace Semesterprojekt2.Pages.Shop.Products
 
 		public async Task<IActionResult> OnPostAsync()
 		{
-			// Tjekker at ModelState er gyldig (alle form-krav er opfyldt).
 			if (!ModelState.IsValid)
 			{
 				return Page();
 			}
-			// Hvis der er uploadet et foto, behandles og gemmes dette.
 			if (Photo != null && Product != null)
 			{
-				// Hvis der allerede er et billede tilknyttet produktet, slettes det gamle først.
 				if (Product.ProductImage != null)
 				{
 					string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/Images", "Shop", Product.ProductImage);
 					System.IO.File.Delete(filePath);
 				}
-				// ProcessUploadedFile håndterer oprettelse af filnavn og gemning af filen.
 				Product.ProductImage = ProcessUploadedFile();
 			}
-			// Tilføj det nye produkt til databasen via ProductService.
 			if (Product != null) { await _productService.UpdateProductAsync(Product); }
-			// Redirect til butikssiden efter succesfuld tilføjelse.
 			return RedirectToPage("/Shop/Shop");
 		}
 
-		// Hjælpemetode til at gemme det uploadede billede og returnere filnavnet.
 		private string ProcessUploadedFile()
 		{
 			string uniqueFileName = null;
