@@ -7,8 +7,8 @@
 <form method="post" enctype="multipart/form-data">
 	<!-- Produktets ID-felt (skrivebeskyttet), der unikt identificerer produktet under opdateringsoperationer -->
 	<div class="form-group">
-		<label asp-for="Product.Id" class="control-label"></label>
-		<input asp-for="Product.Id" class="form-control" readonly="@(true)" />
+		<label hidden asp-for="Product.Id" class="control-label"></label>
+		<input hidden asp-for="Product.Id" class="form-control" readonly="@(true)" />
 	</div>
 	<!-- Produktets navn felt med valideringsfeedback -->
 	<div class="form-group">
