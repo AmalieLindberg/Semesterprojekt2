@@ -22,15 +22,15 @@
 <center><h1>My Book a Time Order History</h1></center> 
 
 <div style="text-align: center">
-    <a class="btn btn-outline-light" asp-page="ProductOrderHistory">Product Order History</a>
+    <a class="btn btn-outline-light" asp-page="ProductOrderHistory">Go to: Product Order History</a>
 </div>
 
 <hr />
 
 <p>
     <b>
-        If the status of your order is shown as "Pending," it means that your order has not yet been accepted.
-        When the status changes to "Accepted," your order is confirmed and accepted.
+        If the status of your order is shown as "Pending," it means that your order has not yet been accepted. <br />
+        When the status changes to "Accepted," your order is confirmed and accepted. <br />
         If your order is deleted from the list, it means that it has been rejected.
     </b>
 </p>
@@ -49,10 +49,11 @@
                 <th>ID</th>
                 <th>Pictures</th>
                 <th>Info</th>
-                <th>Statues for booking <br /> Comment about your book time</th>
+                <th>Booking Status <br /> Comment about your booking time</th>
               
             </tr>
         </thead>
+         <tbody>
          <tbody>
             @if (@Model.MyBookATimeOrder != null)
             {
@@ -114,14 +115,14 @@
                             @if (order.StatusForBooking == "Pending")
                             {
                                 <p>
-                                    <span style="color: black;">Status for booking:</span>
+                                    <span style="color: black;">Booking Status:</span>
                                     <span style="color: #D96F11;">@order.StatusForBooking</span>
                                 </p>
                             }
                             else
                             {
                                 <p>
-                                    <span style="color: black;">Status for booking:</span>
+                                    <span style="color: black;">Booking Status:</span>
                                     <span style="color: #26890B;">@order.StatusForBooking</span>
                                 </p>
                             }

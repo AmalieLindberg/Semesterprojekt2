@@ -23,7 +23,7 @@
     <center><h1 style="color:black;">Book A Time Overview</h1></center>
     <hr />
     <div style="text-align: center">
-        <a class="btn btn-outline-light" asp-page="ProductOrderOverview">Product Order Overview</a>
+        <a class="btn btn-outline-light" asp-page="ProductOrderOverview">Go to: Product Order Overview</a>
     </div>
     <br />
     <div class="test">
@@ -121,7 +121,7 @@
                             </td>
                             <td>
                                 <p>  Comment:  @order.Comments</p>
-                                <p> Status For Booking: @order.StatusForBooking</p>
+                                <p> Booking Status: @order.StatusForBooking</p>
                                 @if (order.StatusForBooking == "Pending")
                                 {
                                     <a class="btn btn-secondary btn-sm" type="button" data-toggle="tooltip" title="Edit" asp-page="BookATimeOrder/EditOrder" asp-route-id="@order.Id"><i class="fa fa-edit"></i></a>
