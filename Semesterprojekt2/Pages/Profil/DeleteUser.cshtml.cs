@@ -48,7 +48,11 @@ namespace Semesterprojekt2.Pages.Profil
                 List<Models.BookATime.BookATime> deletedDogInBookATime = await _bookATimeService.DeleteDogInBookATime(dog.Id);
 				Models.Dog deletedDog = await _dogService.DeleteDog(dog.Id);
 			}
+
+            _bookATimeService.DeleteUserInBookATime(id);
+
             _productOrderService.DeleteUserInProductOrder(id);
+            
             Models.Users deletedUser = await _userService.DeleteUser(id);
             if (deletedUser == null)
                 return RedirectToPage("/Error/Error"); //NotFound er ikke defineret endnu

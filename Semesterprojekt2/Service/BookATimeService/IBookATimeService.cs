@@ -9,8 +9,9 @@ namespace Semesterprojekt2.Service.BookATimeService
         (int Year, int Month) AdjustYearAndMonth(int year, int month);
 
         Task<List<string>> GetUpdatedAvailableTimes(DateTime date, List<string> additionalBookedTimes);
-
+        List<string> GetAvailableTimes(DateTime date, List<string> bookedTimes);
        Task<string> GetColurDay(DateTime date, List<string> additionalBookedTimes);
+        List<string> GetServiceTimes(DayOfWeek day);
         IEnumerable<BookATime>? GetAllBookATimeList();
         BookATime GetBookATimeById(int id);
         Task<BookATime> DeleteBookATime(int id);

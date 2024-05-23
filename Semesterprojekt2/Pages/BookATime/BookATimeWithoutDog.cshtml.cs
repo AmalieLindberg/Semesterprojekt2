@@ -113,17 +113,6 @@ namespace Semesterprojekt2.Pages.BookATime
         {
             if (!ModelState.IsValid)
             {
-
-                // Udskriver fejl til output-vinduet eller logger dem.
-                foreach (var modelStateKey in ModelState.Keys)
-                {
-                    var modelStateVal = ModelState[modelStateKey];
-                    foreach (var error in modelStateVal.Errors)
-                    {
-                        // Her kan du logge fejlen eller se den i debug-vinduet
-                        Debug.WriteLine(error.ErrorMessage);
-                    }
-                }
                 return RedirectToPage("/Error/Error");
             }
 

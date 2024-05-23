@@ -24,7 +24,7 @@ namespace Semesterprojekt2.Pages.BookATime.BookedDays
         private IUserService _userService;
         public void OnGet()
         {
-            BookedDays = BookedDaysService.GetBookedDaysList();
+            BookedDays = _bookedDaysService.GetBookedDaysList();
 
             foreach (var booked in BookedDays)
             {
