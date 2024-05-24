@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::BookATime::CalendarModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a23ea1f9dd1d7b83815e419ce2b50f78b" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+        <definition>IBookATimeService Semesterprojekt2.Pages.BookATime.CalendarModel._bookATimeService</definition>
+        <argsstring></argsstring>
+        <name>_bookATimeService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel._bookATimeService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="19" column="35" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a5b00a24a9a285a1bc2909b1d2c652be0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service" kindref="compound">BookedDaysService</ref></type>
+        <definition>BookedDaysService Semesterprojekt2.Pages.BookATime.CalendarModel.bookedDays</definition>
+        <argsstring></argsstring>
+        <name>bookedDays</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.bookedDays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="20" column="35" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1af0193367f63e8424db328826d798e3ab" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service" kindref="compound">UserService</ref></type>
+        <definition>UserService Semesterprojekt2.Pages.BookATime.CalendarModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="21" column="29" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1af200f8255603ed85c61848284a7b959e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; int &gt;</type>
+        <definition>List&lt;int&gt; Semesterprojekt2.Pages.BookATime.CalendarModel.DaysInMonth</definition>
+        <argsstring></argsstring>
+        <name>DaysInMonth</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.DaysInMonth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="23" column="21" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a8bafd5462f4e2e136e25b54b363fe44f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.BookATime.CalendarModel.MonthName</definition>
+        <argsstring></argsstring>
+        <name>MonthName</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.MonthName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="24" column="23" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a3b1c7bdf81d825f3ab688a6507e84880" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.BookATime.CalendarModel.Year</definition>
+        <argsstring></argsstring>
+        <name>Year</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.Year</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="30" column="20" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a27b97ace2efe7a84f96f522737a3b5bb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.BookATime.CalendarModel.Month</definition>
+        <argsstring></argsstring>
+        <name>Month</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.Month</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="32" column="20" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a79671d546b58ea88142de55f84ae44da" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.BookATime.CalendarModel.Day</definition>
+        <argsstring></argsstring>
+        <name>Day</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.Day</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="34" column="20" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a9eed7e93841be75177f90596b27f6e9f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.BookATime.CalendarModel.Tidspunkt</definition>
+        <argsstring></argsstring>
+        <name>Tidspunkt</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.Tidspunkt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="36" column="23" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a64c61a65b167de3ae136f03bc16b181c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Dictionary&lt; DateTime, List&lt; string &gt; &gt;</type>
+        <definition>Dictionary&lt;DateTime, List&lt;string&gt; &gt; Semesterprojekt2.Pages.BookATime.CalendarModel.AvailableTimesDict</definition>
+        <argsstring></argsstring>
+        <name>AvailableTimesDict</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.AvailableTimesDict</qualifiedname>
+        <initializer>= new Dictionary&lt;DateTime, List&lt;string&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="38" column="27" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a01e58f6588a68d42acf1dc6767ea327d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Dictionary&lt; DateTime, string &gt;</type>
+        <definition>Dictionary&lt;DateTime, string&gt; Semesterprojekt2.Pages.BookATime.CalendarModel.DayClasses</definition>
+        <argsstring></argsstring>
+        <name>DayClasses</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.DayClasses</qualifiedname>
+        <initializer>= new Dictionary&lt;DateTime, string&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="40" column="27" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a1ff79e4cde99f393aa7ae382de608602" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Dictionary&lt; DateTime, bool &gt;</type>
+        <definition>Dictionary&lt;DateTime, bool&gt; Semesterprojekt2.Pages.BookATime.CalendarModel.IsPastDict</definition>
+        <argsstring></argsstring>
+        <name>IsPastDict</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.IsPastDict</qualifiedname>
+        <initializer>= new Dictionary&lt;DateTime, bool&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="41" column="27" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1adad6ac3f1bfaf9086a14907ece5bf1f9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref> &gt;</type>
+        <definition>IEnumerable&lt;Models.Dog&gt; Semesterprojekt2.Pages.BookATime.CalendarModel.MyDogs</definition>
+        <argsstring></argsstring>
+        <name>MyDogs</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.MyDogs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="50" column="28" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="50" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a45b9f7ada8ad3e5a0c9ca14fd99c8439" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.BookATime.CalendarModel.CalendarModel</definition>
+        <argsstring>(IBookATimeService tidsbestillingService, BookedDaysService bookedDays, UserService userService)</argsstring>
+        <name>CalendarModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.CalendarModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+          <declname>tidsbestillingService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service" kindref="compound">BookedDaysService</ref></type>
+          <declname>bookedDays</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service" kindref="compound">UserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="13" column="13" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a7c61d92be39e35b1febcc9accc2d60fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Semesterprojekt2.Pages.BookATime.CalendarModel.IsPast</definition>
+        <argsstring>(DateTime date)</argsstring>
+        <name>IsPast</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.IsPast</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="45" column="21" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a5a3a7107a48f9426f3ce15ab2d13b56d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Semesterprojekt2.Pages.BookATime.CalendarModel.OnGetAsync</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetAsync</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.OnGetAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="51" column="27" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="51" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a72cbc09f12626725170ba07621ca4f02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.CalendarModel.OnPost</definition>
+        <argsstring>(int year, int month, int day, string tidspunkt)</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.OnPost</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>tidspunkt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="103" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="103" bodyend="148"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a86d66cc728dd83107d3f822253d22f86" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Semesterprojekt2.Pages.BookATime.CalendarModel.InitializeCalendar</definition>
+        <argsstring>(int year, int month)</argsstring>
+        <name>InitializeCalendar</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.CalendarModel.InitializeCalendar</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="71" column="28" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="71" bodyend="101"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.CalendarModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.CalendarModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" line="10" column="11" bodyfile="Semesterprojekt2/Pages/BookATime/Calendar.cshtml.cs" bodystart="11" bodyend="149"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a23ea1f9dd1d7b83815e419ce2b50f78b" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>_bookATimeService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1af0193367f63e8424db328826d798e3ab" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a64c61a65b167de3ae136f03bc16b181c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>AvailableTimesDict</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a5b00a24a9a285a1bc2909b1d2c652be0" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>bookedDays</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a45b9f7ada8ad3e5a0c9ca14fd99c8439" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>CalendarModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a79671d546b58ea88142de55f84ae44da" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>Day</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a01e58f6588a68d42acf1dc6767ea327d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>DayClasses</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1af200f8255603ed85c61848284a7b959e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>DaysInMonth</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a86d66cc728dd83107d3f822253d22f86" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>InitializeCalendar</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a7c61d92be39e35b1febcc9accc2d60fb" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>IsPast</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a1ff79e4cde99f393aa7ae382de608602" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>IsPastDict</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a27b97ace2efe7a84f96f522737a3b5bb" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>Month</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a8bafd5462f4e2e136e25b54b363fe44f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>MonthName</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1adad6ac3f1bfaf9086a14907ece5bf1f9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>MyDogs</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a5a3a7107a48f9426f3ce15ab2d13b56d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>OnGetAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a72cbc09f12626725170ba07621ca4f02" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a9eed7e93841be75177f90596b27f6e9f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>Tidspunkt</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a3b1c7bdf81d825f3ab688a6507e84880" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::CalendarModel</scope><name>Year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

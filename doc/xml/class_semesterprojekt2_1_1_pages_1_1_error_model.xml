@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_error_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::ErrorModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_error_model_1acad3d6e0aa3e87effc60d8e79715cd77" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Pages.ErrorModel.RequestId</definition>
+        <argsstring></argsstring>
+        <name>RequestId</name>
+        <qualifiedname>Semesterprojekt2.Pages.ErrorModel.RequestId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Error.cshtml.cs" line="11" column="23" bodyfile="Semesterprojekt2/Pages/Error.cshtml.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_error_model_1af8b099efb89ed6fe04f028c323a67fa9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Semesterprojekt2.Pages.ErrorModel.ShowRequestId</definition>
+        <argsstring></argsstring>
+        <name>ShowRequestId</name>
+        <qualifiedname>Semesterprojekt2.Pages.ErrorModel.ShowRequestId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Error.cshtml.cs" line="13" column="21" bodyfile="Semesterprojekt2/Pages/Error.cshtml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_error_model_1a3ec9b89a72edbb0b27e4186c51fc9969" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_semesterprojekt2_1_1_pages_1_1_error_model" kindref="compound">ErrorModel</ref> &gt;</type>
+        <definition>readonly ILogger&lt;ErrorModel&gt; Semesterprojekt2.Pages.ErrorModel._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>Semesterprojekt2.Pages.ErrorModel._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Error.cshtml.cs" line="15" column="34" bodyfile="Semesterprojekt2/Pages/Error.cshtml.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_error_model_1a6dd534f9038c087e1630956185ebeb2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.ErrorModel.ErrorModel</definition>
+        <argsstring>(ILogger&lt; ErrorModel &gt; logger)</argsstring>
+        <name>ErrorModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.ErrorModel.ErrorModel</qualifiedname>
+        <param>
+          <type>ILogger&lt; <ref refid="class_semesterprojekt2_1_1_pages_1_1_error_model" kindref="compound">ErrorModel</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Error.cshtml.cs" line="17" column="16" bodyfile="Semesterprojekt2/Pages/Error.cshtml.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_error_model_1ae2a7a8f0918f8446efd003fe39f0ffca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Pages.ErrorModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.ErrorModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Error.cshtml.cs" line="22" column="21" bodyfile="Semesterprojekt2/Pages/Error.cshtml.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.ErrorModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_error_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.ErrorModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_error_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Error.cshtml.cs" line="9" column="11" bodyfile="Semesterprojekt2/Pages/Error.cshtml.cs" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1a3ec9b89a72edbb0b27e4186c51fc9969" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::ErrorModel</scope><name>_logger</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1a6dd534f9038c087e1630956185ebeb2b" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::ErrorModel</scope><name>ErrorModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1ae2a7a8f0918f8446efd003fe39f0ffca" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::ErrorModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1acad3d6e0aa3e87effc60d8e79715cd77" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::ErrorModel</scope><name>RequestId</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1af8b099efb89ed6fe04f028c323a67fa9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::ErrorModel</scope><name>ShowRequestId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

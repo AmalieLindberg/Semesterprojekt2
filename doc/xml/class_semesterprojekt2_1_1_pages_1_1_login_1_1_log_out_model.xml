@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_log_out_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Login::LogOutModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_log_out_model_1a0cf9203cee921d42633cac5c665c5935" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Login.LogOutModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.LogOutModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/LogOut.cshtml.cs" line="11" column="27" bodyfile="Semesterprojekt2/Pages/Login/LogOut.cshtml.cs" bodystart="11" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.LogOutModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_log_out_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.LogOutModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_log_out_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Login/LogOut.cshtml.cs" line="8" column="11" bodyfile="Semesterprojekt2/Pages/Login/LogOut.cshtml.cs" bodystart="9" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_log_out_model_1a0cf9203cee921d42633cac5c665c5935" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::LogOutModel</scope><name>OnGet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Profil::ProfilModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1aeabd346079bab8543615365de1488b95" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Models.Users</ref></type>
+        <definition>Models.Users Semesterprojekt2.Pages.Profil.ProfilModel.User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.ProfilModel.User</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" line="14" column="20" bodyfile="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a2117ccd1bb86b78c05c78d0f9e121f2c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref></type>
+        <definition>Models.Dog Semesterprojekt2.Pages.Profil.ProfilModel.Dog</definition>
+        <argsstring></argsstring>
+        <name>Dog</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.ProfilModel.Dog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" line="15" column="26" bodyfile="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a26497b59da48ea07387233b1743adf13" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+        <definition>DogService Semesterprojekt2.Pages.Profil.ProfilModel._dogService</definition>
+        <argsstring></argsstring>
+        <name>_dogService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.ProfilModel._dogService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" line="17" column="28" bodyfile="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1aeae3d9f062c11b37c2e52ed1d4f58cb5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>List&lt;Users&gt; Semesterprojekt2.Pages.Profil.ProfilModel.users</definition>
+        <argsstring></argsstring>
+        <name>users</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.ProfilModel.users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" line="24" column="21" bodyfile="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1abf30e5b3246ccf00eb1c13a84d1f991f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref> &gt;</type>
+        <definition>IEnumerable&lt;Models.Dog&gt; Semesterprojekt2.Pages.Profil.ProfilModel.MyDogs</definition>
+        <argsstring></argsstring>
+        <name>MyDogs</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.ProfilModel.MyDogs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" line="26" column="28" bodyfile="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a9a60dbe398e01dcd8fe06b83f961fd17" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Profil.ProfilModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.ProfilModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" line="16" column="22" bodyfile="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1adcc75939d8bbe63103cd10eeea7bddd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Profil.ProfilModel.ProfilModel</definition>
+        <argsstring>(IUserService userService, DogService dogService)</argsstring>
+        <name>ProfilModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.ProfilModel.ProfilModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+          <declname>dogService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" line="19" column="16" bodyfile="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a45713538b2d6764bc0154ca33da9b9f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Profil.ProfilModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.ProfilModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" line="28" column="30" bodyfile="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" bodystart="28" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Profil.ProfilModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Profil.ProfilModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" line="11" column="11" bodyfile="Semesterprojekt2/Pages/Profil/Profil.cshtml.cs" bodystart="12" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a26497b59da48ea07387233b1743adf13" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::ProfilModel</scope><name>_dogService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a9a60dbe398e01dcd8fe06b83f961fd17" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::ProfilModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a2117ccd1bb86b78c05c78d0f9e121f2c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::ProfilModel</scope><name>Dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1abf30e5b3246ccf00eb1c13a84d1f991f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::ProfilModel</scope><name>MyDogs</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a45713538b2d6764bc0154ca33da9b9f8" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::ProfilModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1adcc75939d8bbe63103cd10eeea7bddd8" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::ProfilModel</scope><name>ProfilModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1aeabd346079bab8543615365de1488b95" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::ProfilModel</scope><name>User</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1aeae3d9f062c11b37c2e52ed1d4f58cb5" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::ProfilModel</scope><name>users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

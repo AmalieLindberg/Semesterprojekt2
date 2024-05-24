@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Orderhistory::ProductOrder::DeleteProductOrderModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1a0a640a5ba9f8fc9a1fa5a58aeaf2157a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_product_order_service" kindref="compound">ProductOrderService</ref></type>
+        <definition>ProductOrderService Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel._productOrderService</definition>
+        <argsstring></argsstring>
+        <name>_productOrderService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel._productOrderService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" line="9" column="29" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1af7f376188066be46b96504eb848b95bc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order" kindref="compound">Models.Shop.ProductOrder</ref></type>
+        <definition>Models.Shop.ProductOrder Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel.ProductOrder</definition>
+        <argsstring></argsstring>
+        <name>ProductOrder</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel.ProductOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" line="19" column="31" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1af4cfa794bc994c17ab777209883e4983" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel.DeleteProductOrderModel</definition>
+        <argsstring>(ProductOrderService productOrderService)</argsstring>
+        <name>DeleteProductOrderModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel.DeleteProductOrderModel</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_product_order_service" kindref="compound">ProductOrderService</ref></type>
+          <declname>productOrderService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" line="12" column="8" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1a94e47c2d79b3adfac03d98362457bad7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" line="22" column="22" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1a55eaf60a14ed4ad416bd245b4bc6e93f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" line="34" column="19" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" bodystart="34" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.ProductOrder.DeleteProductOrderModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" line="7" column="11" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" bodystart="8" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1a0a640a5ba9f8fc9a1fa5a58aeaf2157a" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrder::DeleteProductOrderModel</scope><name>_productOrderService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1af4cfa794bc994c17ab777209883e4983" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrder::DeleteProductOrderModel</scope><name>DeleteProductOrderModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1a94e47c2d79b3adfac03d98362457bad7" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrder::DeleteProductOrderModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1a55eaf60a14ed4ad416bd245b4bc6e93f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrder::DeleteProductOrderModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1af7f376188066be46b96504eb848b95bc" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrder::DeleteProductOrderModel</scope><name>ProductOrder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

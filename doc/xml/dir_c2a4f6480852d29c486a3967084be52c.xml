@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_c2a4f6480852d29c486a3967084be52c" kind="dir">
+    <compoundname>Semesterprojekt2/Pages/Orderhistory</compoundname>
+    <innerdir refid="dir_3e4f94b7eaa9ab53e18631b256639dd1">Semesterprojekt2/Pages/Orderhistory/BookATimeOrder</innerdir>
+    <innerdir refid="dir_39e7bf511422f392a32c26f77b1d8e33">Semesterprojekt2/Pages/Orderhistory/ProductOrder</innerdir>
+    <innerfile refid="_book_a_time_order_history_8cshtml_8cs">BookATimeOrderHistory.cshtml.cs</innerfile>
+    <innerfile refid="_book_a_time_overview_8cshtml_8cs">BookATimeOverview.cshtml.cs</innerfile>
+    <innerfile refid="_product_order_history_8cshtml_8cs">ProductOrderHistory.cshtml.cs</innerfile>
+    <innerfile refid="_product_order_overview_8cshtml_8cs">ProductOrderOverview.cshtml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Orderhistory/"/>
+  </compounddef>
+</doxygen>

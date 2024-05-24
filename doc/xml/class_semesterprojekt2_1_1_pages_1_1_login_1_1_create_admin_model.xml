@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Login::CreateAdminModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a320bc1581d58c859be83135649fdd63e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service" kindref="compound">UserService</ref></type>
+        <definition>UserService Semesterprojekt2.Pages.Login.CreateAdminModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="15" column="29" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a1e31e7dcf9f829961c8c062dce70d9f8" prot="private" static="no" mutable="no">
+        <type>PasswordHasher&lt; string &gt;</type>
+        <definition>PasswordHasher&lt;string&gt; Semesterprojekt2.Pages.Login.CreateAdminModel.passwordHasher</definition>
+        <argsstring></argsstring>
+        <name>passwordHasher</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.passwordHasher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="16" column="24" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a55ea622c328bcbb51a0574a1b7b2c6e8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.CreateAdminModel.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="19" column="23" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a5727175cfeae45b37219d8e41edc8c54" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.CreateAdminModel.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="22" column="23" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1aeea55c135091791420900baac76b7916" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.Login.CreateAdminModel.Phone</definition>
+        <argsstring></argsstring>
+        <name>Phone</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.Phone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="25" column="20" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a0c9a665d8489daff8310f7d28ba0cd55" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.CreateAdminModel.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="29" column="23" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a813c2932914b8ad1c3b960b2e2514241" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.CreateAdminModel.ConfirmPassword</definition>
+        <argsstring></argsstring>
+        <name>ConfirmPassword</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.ConfirmPassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="34" column="23" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a4ee12938cba152186d417c2686d42451" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.CreateAdminModel.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.Role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="37" column="23" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1ab725f90ce82db2004780a9de1ab1ab73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Login.CreateAdminModel.CreateAdminModel</definition>
+        <argsstring>(UserService userService)</argsstring>
+        <name>CreateAdminModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.CreateAdminModel</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service" kindref="compound">UserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="40" column="16" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a44930b706f773db78bfb1244484b9748" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Login.CreateAdminModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="46" column="30" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a1652dccc04ea7df08989f23a4fb33535" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Login.CreateAdminModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.CreateAdminModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="51" column="27" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="51" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.CreateAdminModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.CreateAdminModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" line="13" column="11" bodyfile="Semesterprojekt2/Pages/Login/CreateAdmin.cshtml.cs" bodystart="14" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a320bc1581d58c859be83135649fdd63e" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a813c2932914b8ad1c3b960b2e2514241" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>ConfirmPassword</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1ab725f90ce82db2004780a9de1ab1ab73" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>CreateAdminModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a5727175cfeae45b37219d8e41edc8c54" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>Email</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a55ea622c328bcbb51a0574a1b7b2c6e8" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>Name</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a44930b706f773db78bfb1244484b9748" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a1652dccc04ea7df08989f23a4fb33535" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a0c9a665d8489daff8310f7d28ba0cd55" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>Password</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a1e31e7dcf9f829961c8c062dce70d9f8" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>passwordHasher</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1aeea55c135091791420900baac76b7916" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>Phone</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a4ee12938cba152186d417c2686d42451" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::CreateAdminModel</scope><name>Role</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

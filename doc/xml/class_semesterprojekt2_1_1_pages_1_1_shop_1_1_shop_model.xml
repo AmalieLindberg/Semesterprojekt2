@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Shop::ShopModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aa31a299c6b2387c0153dd6532600a321" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+        <definition>IProductService Semesterprojekt2.Pages.Shop.ShopModel._productService</definition>
+        <argsstring></argsstring>
+        <name>_productService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel._productService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="14" column="33" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a7b4ce6b2acfc4f253421d5bfdaa49e84" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service" kindref="compound">ShoppingCartService</ref></type>
+        <definition>readonly ShoppingCartService Semesterprojekt2.Pages.Shop.ShopModel._shoppingCartService</definition>
+        <argsstring></argsstring>
+        <name>_shoppingCartService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel._shoppingCartService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="16" column="46" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a79637542f2f2b9d60c747b91faa4294d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;?</type>
+        <definition>List&lt;Product&gt;? Semesterprojekt2.Pages.Shop.ShopModel.Products</definition>
+        <argsstring></argsstring>
+        <name>Products</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel.Products</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="26" column="21" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aa1cb6b65f04e9f79dbdc8031690aa6f0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Shop.ShopModel.SearchString</definition>
+        <argsstring></argsstring>
+        <name>SearchString</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel.SearchString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="30" column="15" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a198b23eb232241cc56b855fe3c9c6af1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.Shop.ShopModel.MinPrice</definition>
+        <argsstring></argsstring>
+        <name>MinPrice</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel.MinPrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="33" column="12" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a4a6f8035de9ffab121e9c3cbc442033d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.Shop.ShopModel.MaxPrice</definition>
+        <argsstring></argsstring>
+        <name>MaxPrice</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel.MaxPrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="36" column="12" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aaee8b0931c6781cbfa102554d6f9157b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Shop.ShopModel.ShopModel</definition>
+        <argsstring>(IProductService productService, ShoppingCartService shoppingCartService)</argsstring>
+        <name>ShopModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel.ShopModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+          <declname>productService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service" kindref="compound">ShoppingCartService</ref></type>
+          <declname>shoppingCartService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="19" column="16" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a8444d84ad42bd63e3edf7b2d40f3c6b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Pages.Shop.ShopModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="39" column="21" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1ad7cab74c41e2c1ba125e52b535a707dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Shop.ShopModel.OnPostNameSearch</definition>
+        <argsstring>()</argsstring>
+        <name>OnPostNameSearch</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel.OnPostNameSearch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="46" column="30" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="46" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1adc215684f5799b22d50732462b68b8c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Shop.ShopModel.OnPostPriceFilter</definition>
+        <argsstring>()</argsstring>
+        <name>OnPostPriceFilter</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel.OnPostPriceFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="55" column="30" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aa310c8eccf7388809876e60acf9c3ac0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Shop.ShopModel.OnPostAddToCart</definition>
+        <argsstring>(int productId, int quantity)</argsstring>
+        <name>OnPostAddToCart</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.ShopModel.OnPostAddToCart</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>productId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="63" column="30" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="63" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.ShopModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.ShopModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" line="11" column="11" bodyfile="Semesterprojekt2/Pages/Shop/Shop.cshtml.cs" bodystart="12" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aa31a299c6b2387c0153dd6532600a321" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>_productService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a7b4ce6b2acfc4f253421d5bfdaa49e84" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>_shoppingCartService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a4a6f8035de9ffab121e9c3cbc442033d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>MaxPrice</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a198b23eb232241cc56b855fe3c9c6af1" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>MinPrice</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a8444d84ad42bd63e3edf7b2d40f3c6b9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aa310c8eccf7388809876e60acf9c3ac0" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>OnPostAddToCart</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1ad7cab74c41e2c1ba125e52b535a707dd" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>OnPostNameSearch</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1adc215684f5799b22d50732462b68b8c0" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>OnPostPriceFilter</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a79637542f2f2b9d60c747b91faa4294d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>Products</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aa1cb6b65f04e9f79dbdc8031690aa6f0" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>SearchString</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aaee8b0931c6781cbfa102554d6f9157b" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::ShopModel</scope><name>ShopModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

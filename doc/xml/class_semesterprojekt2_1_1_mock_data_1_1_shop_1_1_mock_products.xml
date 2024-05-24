@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::MockData::Shop::MockProducts</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products_1a7137994d1c60be910a65583946d35162" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>List&lt;Product&gt; Semesterprojekt2.MockData.Shop.MockProducts.products</definition>
+        <argsstring></argsstring>
+        <name>products</name>
+        <qualifiedname>Semesterprojekt2.MockData.Shop.MockProducts.products</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref>&gt;() 
+        {
+            new <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref>(&quot;Lavender Shampoo&quot;, 59, &quot;Soap&quot;, &quot;Nivea&quot;, 1,&quot;Shampoo with smell of lavender&quot;),
+            new <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref>(&quot;Lever Treats&quot;, 150, &quot;Treats&quot;, &quot;Dog Treats&quot;, 200,&quot;Treats with a taste of lever&quot;),
+            new <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref>(&quot;Squeaky Cat&quot;, 120, &quot;Toy&quot;, &quot;ToysRUs&quot;, 1,&quot;A toy cat, that makes a squeaky sound when the dog bites it.&quot;)
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/MockData/Shop/MockProducts.cs" line="6" column="29" bodyfile="Semesterprojekt2/MockData/Shop/MockProducts.cs" bodystart="6" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products_1a1e9875d316542f8b79d69cfc45bf0c16" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>static List&lt; Product &gt; Semesterprojekt2.MockData.Shop.MockProducts.GetMockProducts</definition>
+        <argsstring>()</argsstring>
+        <name>GetMockProducts</name>
+        <qualifiedname>Semesterprojekt2.MockData.Shop.MockProducts.GetMockProducts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/MockData/Shop/MockProducts.cs" line="13" column="28" bodyfile="Semesterprojekt2/MockData/Shop/MockProducts.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/MockData/Shop/MockProducts.cs" line="4" column="11" bodyfile="Semesterprojekt2/MockData/Shop/MockProducts.cs" bodystart="5" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products_1a1e9875d316542f8b79d69cfc45bf0c16" prot="public" virt="non-virtual"><scope>Semesterprojekt2::MockData::Shop::MockProducts</scope><name>GetMockProducts</name></member>
+      <member refid="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products_1a7137994d1c60be910a65583946d35162" prot="private" virt="non-virtual"><scope>Semesterprojekt2::MockData::Shop::MockProducts</scope><name>products</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

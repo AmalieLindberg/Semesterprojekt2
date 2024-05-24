@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Orderhistory::OrderhistoryModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a6994335e23d0b8bb7cf397662a2963d1" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel.UserService</definition>
+        <argsstring></argsstring>
+        <name>UserService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel.UserService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" line="13" column="30" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a15cff0a596c679cefbeb2c62b92f5bf0" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+        <definition>IBookATimeService Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel._bookATimeService</definition>
+        <argsstring></argsstring>
+        <name>_bookATimeService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel._bookATimeService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" line="14" column="35" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1acb0542c36caa24046d8a47217511debe" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">Models.BookATime.BookATime</ref> &gt;</type>
+        <definition>IEnumerable&lt;Models.BookATime.BookATime&gt; Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel.MyBookATimeOrder</definition>
+        <argsstring></argsstring>
+        <name>MyBookATimeOrder</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel.MyBookATimeOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" line="15" column="28" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a3470efe28ce1e9e4b0d777c3a7e6f10e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel.OrderhistoryModel</definition>
+        <argsstring>(IBookATimeService bookATimeService, IUserService userService)</argsstring>
+        <name>OrderhistoryModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel.OrderhistoryModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+          <declname>bookATimeService</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" line="17" column="16" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a535f6ee4a6b78288ac1e1e53c90d91d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" line="22" column="30" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" bodystart="22" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.OrderhistoryModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" line="11" column="11" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrderHistory.cshtml.cs" bodystart="12" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a15cff0a596c679cefbeb2c62b92f5bf0" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::OrderhistoryModel</scope><name>_bookATimeService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1acb0542c36caa24046d8a47217511debe" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::OrderhistoryModel</scope><name>MyBookATimeOrder</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a535f6ee4a6b78288ac1e1e53c90d91d2" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::OrderhistoryModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a3470efe28ce1e9e4b0d777c3a7e6f10e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::OrderhistoryModel</scope><name>OrderhistoryModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a6994335e23d0b8bb7cf397662a2963d1" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::OrderhistoryModel</scope><name>UserService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

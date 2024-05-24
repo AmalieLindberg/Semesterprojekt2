@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_6d9d1e2b82f27194e60adfb6330b8354" kind="dir">
+    <compoundname>Semesterprojekt2/Pages/Shop/Products</compoundname>
+    <innerfile refid="_add_product_8cshtml_8cs">AddProduct.cshtml.cs</innerfile>
+    <innerfile refid="_delete_product_8cshtml_8cs">DeleteProduct.cshtml.cs</innerfile>
+    <innerfile refid="_detail_product_8cshtml_8cs">DetailProduct.cshtml.cs</innerfile>
+    <innerfile refid="_edit_product_8cshtml_8cs">EditProduct.cshtml.cs</innerfile>
+    <innerfile refid="_thank_youfor_product_order_8cshtml_8cs">ThankYouforProductOrder.cshtml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Shop/Products/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_8865e6f0489a950b76cc71b128157bd5" kind="dir">
+    <compoundname>Semesterprojekt2/Pages</compoundname>
+    <innerdir refid="dir_00618baae266e4263cdec1ed73aef0ed">Semesterprojekt2/Pages/BookATime</innerdir>
+    <innerdir refid="dir_0dac4ebef94ec0b4a4ee84f67bcc1a2f">Semesterprojekt2/Pages/Error</innerdir>
+    <innerdir refid="dir_209427c62b100d925482d3995209e249">Semesterprojekt2/Pages/FooterPages</innerdir>
+    <innerdir refid="dir_38bbfbecae8d2e0fc67c53812721b10f">Semesterprojekt2/Pages/Info</innerdir>
+    <innerdir refid="dir_cf8188ea529df69be276545085f1b2bd">Semesterprojekt2/Pages/Login</innerdir>
+    <innerdir refid="dir_c2a4f6480852d29c486a3967084be52c">Semesterprojekt2/Pages/Orderhistory</innerdir>
+    <innerdir refid="dir_be60eba24bf6d7300bd8a2e519be4f6f">Semesterprojekt2/Pages/Prices</innerdir>
+    <innerdir refid="dir_56b962d8a72bf91c7e96dea5f82c23ee">Semesterprojekt2/Pages/Profil</innerdir>
+    <innerdir refid="dir_750c0549d8618d5475a48032d8f34822">Semesterprojekt2/Pages/Shop</innerdir>
+    <innerdir refid="dir_38f9a313112fa115a383c0858c0a73e6">Semesterprojekt2/Pages/ShoppingCart</innerdir>
+    <innerfile refid="_error_8cshtml_8cs">Error.cshtml.cs</innerfile>
+    <innerfile refid="_index_8cshtml_8cs">Index.cshtml.cs</innerfile>
+    <innerfile refid="_privacy_8cshtml_8cs">Privacy.cshtml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/"/>
+  </compounddef>
+</doxygen>

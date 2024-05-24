@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kind="interface" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::UserService::UserService::IUserService</compoundname>
+    <derivedcompoundref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service" prot="public" virt="non-virtual">Semesterprojekt2.Service.UserService.UserService.UserService</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a83ba5786a4ac6442c44a1ddca9fa9c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>List&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.IUserService.GetUsers</definition>
+        <argsstring>()</argsstring>
+        <name>GetUsers</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.IUserService.GetUsers</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a3605b5200d2d927d0b368b62b76113c8">GetUsers</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="9" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1ae629b83c31017d8dbb0a1fcf9ac977f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>Task&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.IUserService.AddUser</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>AddUser</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.IUserService.AddUser</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a741bb5fcad26868964f6298199246cf9">AddUser</reimplementedby>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="10" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a9d2362b6f48d147f91c1b97cdf3d15e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>Task&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.IUserService.UpdateUser</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>UpdateUser</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.IUserService.UpdateUser</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1aa1f905cebf22443780b2042724c519b1">UpdateUser</reimplementedby>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="11" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1ac64ac9bfb78ec593162729c78e847baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Service.UserService.UserService.IUserService.GetUser</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetUser</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.IUserService.GetUser</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a1234158540f4281d863af91ecac91bb3">GetUser</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="12" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a456511b798cb05ac654df2f407c49692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>Task&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.IUserService.DeleteUser</definition>
+        <argsstring>(int? userId)</argsstring>
+        <name>DeleteUser</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.IUserService.DeleteUser</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a955e962c44b265548870a14722a55312">DeleteUser</reimplementedby>
+        <param>
+          <type>int?</type>
+          <declname>userId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="13" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a57ff5743905a1aac4f21b3be23c13596" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>Task&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.IUserService.ResetPassword</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>ResetPassword</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.IUserService.ResetPassword</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1afcd7073e70496bfd461c7dcb34def0ef">ResetPassword</reimplementedby>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="14" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1aea78164d7b5b34da3c7f06f3e766bba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Service.UserService.UserService.IUserService.GetUserTidsbestillingOrders</definition>
+        <argsstring>(Users currentUser)</argsstring>
+        <name>GetUserTidsbestillingOrders</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.IUserService.GetUserTidsbestillingOrders</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ae3aa3e0f52d8961964b6458b8eab2637">GetUserTidsbestillingOrders</reimplementedby>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>currentUser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="16" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1acdba4fea44236536b3f144c7ec5a724f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Service.UserService.UserService.IUserService.GetUserDogs</definition>
+        <argsstring>(Users id)</argsstring>
+        <name>GetUserDogs</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.IUserService.GetUserDogs</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ad86811dc1448733380404fcbe4ecc7e9">GetUserDogs</reimplementedby>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="17" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1afabe697b78e2c72941d2d7c8c538280e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Service.UserService.UserService.IUserService.GetUserProductOrders</definition>
+        <argsstring>(Users currentUser)</argsstring>
+        <name>GetUserProductOrders</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.IUserService.GetUserProductOrders</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ad3d66aaa16cd7c0e0dd2f4b344b47472">GetUserProductOrders</reimplementedby>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>currentUser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="18" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Semesterprojekt2.Service.UserService.UserService.IUserService</label>
+        <link refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service"/>
+      </node>
+      <node id="2">
+        <label>Semesterprojekt2.Service.UserService.UserService.UserService</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Semesterprojekt2/Service/UserService/IUserService.cs" line="7" column="22" bodyfile="Semesterprojekt2/Service/UserService/IUserService.cs" bodystart="8" bodyend="22"/>
+    <listofallmembers>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1ae629b83c31017d8dbb0a1fcf9ac977f4" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::IUserService</scope><name>AddUser</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a456511b798cb05ac654df2f407c49692" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::IUserService</scope><name>DeleteUser</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1ac64ac9bfb78ec593162729c78e847baa" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::IUserService</scope><name>GetUser</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1acdba4fea44236536b3f144c7ec5a724f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::IUserService</scope><name>GetUserDogs</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1afabe697b78e2c72941d2d7c8c538280e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::IUserService</scope><name>GetUserProductOrders</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a83ba5786a4ac6442c44a1ddca9fa9c73" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::IUserService</scope><name>GetUsers</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1aea78164d7b5b34da3c7f06f3e766bba9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::IUserService</scope><name>GetUserTidsbestillingOrders</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a57ff5743905a1aac4f21b3be23c13596" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::IUserService</scope><name>ResetPassword</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a9d2362b6f48d147f91c1b97cdf3d15e9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::IUserService</scope><name>UpdateUser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

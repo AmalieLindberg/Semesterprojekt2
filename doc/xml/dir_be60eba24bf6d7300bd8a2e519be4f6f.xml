@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_be60eba24bf6d7300bd8a2e519be4f6f" kind="dir">
+    <compoundname>Semesterprojekt2/Pages/Prices</compoundname>
+    <innerfile refid="_prices_8cshtml_8cs">Prices.cshtml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Prices/"/>
+  </compounddef>
+</doxygen>

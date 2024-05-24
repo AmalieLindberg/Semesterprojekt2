@@ -1,0 +1,73 @@
+\doxysection{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service Interface Reference}
+\hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}\index{Semesterprojekt2.Service.BookATimeService.IBookATimeService@{Semesterprojekt2.Service.BookATimeService.IBookATimeService}}
+Inheritance diagram for Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a0ae58cd54ace319512a93d4b09bcb47e}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a0ae58cd54ace319512a93d4b09bcb47e} 
+Task {\bfseries add\+Tidsbestilling} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} book\+ATime)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a7f03444935ec9ed709b677d03a882f07}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a7f03444935ec9ed709b677d03a882f07} 
+int int Month {\bfseries Adjust\+Year\+And\+Month} (int year, int month)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a2c19bfa942d0ce39bf83df901d3fef87}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a2c19bfa942d0ce39bf83df901d3fef87} 
+Task$<$ List$<$ string $>$ $>$ {\bfseries Get\+Updated\+Available\+Times} (Date\+Time date, List$<$ string $>$ additional\+Booked\+Times)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_ab24ba5227fbd2081b64bb90317108d5d}{Get\+Available\+Times}} (Date\+Time date, List$<$ string $>$ booked\+Times)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a4390966585d995e730df6afe44a8f182}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a4390966585d995e730df6afe44a8f182} 
+Task$<$ string $>$ {\bfseries Get\+Colur\+Day} (Date\+Time date, List$<$ string $>$ additional\+Booked\+Times)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a8f9c105757b69969d30330bb5342f668}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a8f9c105757b69969d30330bb5342f668} 
+List$<$ string $>$ {\bfseries Get\+Service\+Times} (Day\+Of\+Week day)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_aaa4743cf9c0f639e25b940cf13d14e34}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_aaa4743cf9c0f639e25b940cf13d14e34} 
+IEnumerable$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$? {\bfseries Get\+All\+Book\+ATime\+List} ()
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_aa01b19ecf18d5efd89982045ebb15907}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_aa01b19ecf18d5efd89982045ebb15907} 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} {\bfseries Get\+Book\+ATime\+By\+Id} (int id)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_acb507110d40b880290496c000dd4e833}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_acb507110d40b880290496c000dd4e833} 
+Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ {\bfseries Delete\+Book\+ATime} (int id)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_accf253dd36d168de47169fedf00b81f2}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_accf253dd36d168de47169fedf00b81f2} 
+Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ {\bfseries Update\+Statues\+To\+Accept} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} book\+ATime)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a167a42b65aa5c6cb385d3438dab83d84}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a167a42b65aa5c6cb385d3438dab83d84} 
+Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ {\bfseries Update\+Book\+ATime} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} book\+ATime)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a236b18fbeedf17662f5ad63b252cca53}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a236b18fbeedf17662f5ad63b252cca53} 
+Task$<$ List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ $>$ {\bfseries Delete\+Dog\+In\+Book\+ATime} (int dogid)
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a82af89c1e9e75c5d1569a04adfe69238}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a82af89c1e9e75c5d1569a04adfe69238} 
+Task$<$ List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ $>$ {\bfseries Delete\+User\+In\+Book\+ATime} (int userid)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a13ef1146ce831e304dd313f296486ced}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_a13ef1146ce831e304dd313f296486ced} 
+int {\bfseries Year}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_ab24ba5227fbd2081b64bb90317108d5d}\label{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_ab24ba5227fbd2081b64bb90317108d5d} 
+\index{Semesterprojekt2.Service.BookATimeService.IBookATimeService@{Semesterprojekt2.Service.BookATimeService.IBookATimeService}!GetAvailableTimes@{GetAvailableTimes}}
+\index{GetAvailableTimes@{GetAvailableTimes}!Semesterprojekt2.Service.BookATimeService.IBookATimeService@{Semesterprojekt2.Service.BookATimeService.IBookATimeService}}
+\doxysubsubsection{\texorpdfstring{GetAvailableTimes()}{GetAvailableTimes()}}
+{\footnotesize\ttfamily List$<$ string $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service.\+Get\+Available\+Times (\begin{DoxyParamCaption}\item[{Date\+Time}]{date,  }\item[{List$<$ string $>$}]{booked\+Times }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a2dd41afb55ee26420bd82a316f019715}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Semesterprojekt2/\+Service/\+Book\+ATime\+Service/IBook\+ATime\+Service.\+cs\end{DoxyCompactItemize}

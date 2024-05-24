@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_5c8b6ce17d4a2e6a5c8a95e9613fabf7" kind="dir">
+    <compoundname>Semesterprojekt2/obj/Debug/net8.0</compoundname>
+    <innerfile refid="_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_semesterprojekt2_8_assembly_info_8cs">Semesterprojekt2.AssemblyInfo.cs</innerfile>
+    <innerfile refid="_semesterprojekt2_8_global_usings_8g_8cs">Semesterprojekt2.GlobalUsings.g.cs</innerfile>
+    <innerfile refid="_semesterprojekt2_8_razor_assembly_info_8cs">Semesterprojekt2.RazorAssemblyInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/obj/Debug/net8.0/"/>
+  </compounddef>
+</doxygen>

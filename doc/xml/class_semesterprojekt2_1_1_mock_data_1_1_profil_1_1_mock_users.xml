@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::MockData::Profil::MockUsers</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users_1ae85f770d4b9702bf3637c9becb515f54" prot="private" static="yes" mutable="no">
+        <type>PasswordHasher&lt; string &gt;</type>
+        <definition>PasswordHasher&lt;string&gt; Semesterprojekt2.MockData.Profil.MockUsers.passwordHasher</definition>
+        <argsstring></argsstring>
+        <name>passwordHasher</name>
+        <qualifiedname>Semesterprojekt2.MockData.Profil.MockUsers.passwordHasher</qualifiedname>
+        <initializer>= new PasswordHasher&lt;string&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/MockData/Profil/MockUsers.cs" line="8" column="39" bodyfile="Semesterprojekt2/MockData/Profil/MockUsers.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users_1a3a562e77f26268f6bfe4390b7d745586" prot="public" static="yes" mutable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>List&lt;Users&gt; Semesterprojekt2.MockData.Profil.MockUsers.users</definition>
+        <argsstring></argsstring>
+        <name>users</name>
+        <qualifiedname>Semesterprojekt2.MockData.Profil.MockUsers.users</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref>&gt;
+        {
+            new <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref>(passwordHasher.HashPassword(null, &quot;123&quot;), &quot;Admin&quot;, 12345678, &quot;Email@email.dk&quot;, &quot;Admin&quot;),
+
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/MockData/Profil/MockUsers.cs" line="10" column="28" bodyfile="Semesterprojekt2/MockData/Profil/MockUsers.cs" bodystart="10" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users_1a344f7babea84ef35f7849d64ea3bf4e5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>static List&lt; Users &gt; Semesterprojekt2.MockData.Profil.MockUsers.GetMockUser</definition>
+        <argsstring>()</argsstring>
+        <name>GetMockUser</name>
+        <qualifiedname>Semesterprojekt2.MockData.Profil.MockUsers.GetMockUser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/MockData/Profil/MockUsers.cs" line="17" column="28" bodyfile="Semesterprojekt2/MockData/Profil/MockUsers.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Semesterprojekt2.MockData.Profil.MockUsers</label>
+        <link refid="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>users</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>static</label>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/MockData/Profil/MockUsers.cs" line="6" column="11" bodyfile="Semesterprojekt2/MockData/Profil/MockUsers.cs" bodystart="7" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users_1a344f7babea84ef35f7849d64ea3bf4e5" prot="public" virt="non-virtual"><scope>Semesterprojekt2::MockData::Profil::MockUsers</scope><name>GetMockUser</name></member>
+      <member refid="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users_1ae85f770d4b9702bf3637c9becb515f54" prot="private" virt="non-virtual"><scope>Semesterprojekt2::MockData::Profil::MockUsers</scope><name>passwordHasher</name></member>
+      <member refid="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users_1a3a562e77f26268f6bfe4390b7d745586" prot="public" virt="non-virtual"><scope>Semesterprojekt2::MockData::Profil::MockUsers</scope><name>users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

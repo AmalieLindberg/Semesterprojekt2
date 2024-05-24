@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Pages::BookATime::BookedDays</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model" prot="public">Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_create_booked_days_model" prot="public">Semesterprojekt2::Pages::BookATime::BookedDays::CreateBookedDaysModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model" prot="public">Semesterprojekt2::Pages::BookATime::BookedDays::DeleteBookedDaysModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="11" column="1"/>
+  </compounddef>
+</doxygen>

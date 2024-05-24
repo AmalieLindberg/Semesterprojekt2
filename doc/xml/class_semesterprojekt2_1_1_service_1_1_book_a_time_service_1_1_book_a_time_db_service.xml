@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_db_service" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::BookATimeService::BookATimeDbService</compoundname>
+    <basecompoundref refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service" prot="public" virt="non-virtual">Semesterprojekt2.Service.DbGenericService&lt; BookATime &gt;</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_db_service_1aea215225e2d9ff405a9f75af1ef36a6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; List&lt; string &gt; &gt;</type>
+        <definition>async Task&lt; List&lt; string &gt; &gt; Semesterprojekt2.Service.BookATimeService.BookATimeDbService.GetBookedTimesForDate</definition>
+        <argsstring>(DateTime date)</argsstring>
+        <name>GetBookedTimesForDate</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookATimeDbService.GetBookedTimesForDate</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookATimeDbService.cs" line="13" column="27" bodyfile="Semesterprojekt2/Service/BookATimeService/BookATimeDbService.cs" bodystart="13" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DbGenericService&lt; BookATime &gt;</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service"/>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Service.BookATimeService.BookATimeDbService</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_db_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DbGenericService&lt; BookATime &gt;</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service"/>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Service.BookATimeService.BookATimeDbService</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_db_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Service/BookATimeService/BookATimeDbService.cs" line="9" column="11" bodyfile="Semesterprojekt2/Service/BookATimeService/BookATimeDbService.cs" bodystart="10" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a90eeb4f97ccf6e5a56d157fb8f583a29" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookATimeDbService</scope><name>AddObjectAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a391acd751c902debc6f9c3654ce9e4ca" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookATimeDbService</scope><name>DeleteObjectAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_db_service_1aea215225e2d9ff405a9f75af1ef36a6f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookATimeDbService</scope><name>GetBookedTimesForDate</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a0c0738c35a8d1c5230fd49e63b25ae23" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookATimeDbService</scope><name>GetObjectByIdAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a5175ad686099ee468514ec6b1266f59d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookATimeDbService</scope><name>GetObjectsAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1afbadce183cbf025c5b2bedd759f49121" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookATimeDbService</scope><name>SaveObjects</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a0f61aef92c0565602d844841d9385700" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookATimeDbService</scope><name>UpdateObjectAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

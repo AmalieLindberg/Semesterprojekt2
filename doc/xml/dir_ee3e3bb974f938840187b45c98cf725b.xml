@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_ee3e3bb974f938840187b45c98cf725b" kind="dir">
+    <compoundname>Semesterprojekt2/Service/BookATimeService</compoundname>
+    <innerfile refid="_book_a_time_db_service_8cs">BookATimeDbService.cs</innerfile>
+    <innerfile refid="_book_a_time_service_8cs">BookATimeService.cs</innerfile>
+    <innerfile refid="_booked_days_service_8cs">BookedDaysService.cs</innerfile>
+    <innerfile refid="_i_book_a_time_service_8cs">IBookATimeService.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Service/BookATimeService/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_delete_product_8cshtml_8cs" kind="file" language="C#">
+    <compoundname>DeleteProduct.cshtml.cs</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model" prot="public">Semesterprojekt2::Pages::Shop::Products::DeleteProductModel</innerclass>
+    <innernamespace refid="namespace_semesterprojekt2">Semesterprojekt2</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages">Semesterprojekt2::Pages</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_shop">Semesterprojekt2::Pages::Shop</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_shop_1_1_products">Semesterprojekt2::Pages::Shop::Products</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Mvc;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Mvc.RazorPages;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_semesterprojekt2_1_1_service" kindref="compound">Semesterprojekt2.Service</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_semesterprojekt2_1_1_models_1_1_shop" kindref="compound">Semesterprojekt2.Models.Shop</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_semesterprojekt2_1_1_pages_1_1_shop_1_1_products" kindref="compound">Semesterprojekt2.Pages.Shop.Products</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Denne<sp/>klasse<sp/>håndterer<sp/>logikken<sp/>bag<sp/>at<sp/>slette<sp/>et<sp/>produkt<sp/>fra<sp/>databasen.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model" kindref="compound">DeleteProductModel</ref><sp/>:<sp/>PageModel</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>En<sp/>reference<sp/>til<sp/>ProductService,<sp/>som<sp/>håndterer<sp/>databaselaget<sp/>for<sp/>produktoperationer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref><sp/>_productService;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Konstruktør der<sp/>initialiserer<sp/>productService<sp/>gennem<sp/>dependency<sp/>injection.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model" kindref="compound">DeleteProductModel</ref>(<ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref><sp/>productService)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_productService<sp/>=<sp/>productService;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>BindProperty<sp/>markerer<sp/>denne<sp/>property,<sp/>så den<sp/>automatisk<sp/>binder<sp/>ved<sp/>POST-forespørgsler.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[BindProperty]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Models.Shop.Product</ref><sp/><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>OnGet<sp/>metoden<sp/>kaldes<sp/>ved<sp/>GET-forespørgsler<sp/>og<sp/>bruges<sp/>til<sp/>at<sp/>indlæse<sp/>produktet<sp/>fra<sp/>databasen.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IActionResult<sp/>OnGet(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Henter<sp/>produktet<sp/>baseret<sp/>på den<sp/>angivne<sp/>id.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref><sp/>=<sp/>_productService.GetProduct(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Hvis<sp/>produktet<sp/>ikke<sp/>findes,<sp/>omdirigeres<sp/>brugeren<sp/>til<sp/>en<sp/>&apos;Ikke<sp/>fundet&apos;<sp/>side.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref><sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RedirectToPage(</highlight><highlight class="stringliteral">&quot;/NotFound&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returnerer<sp/>siden,<sp/>hvis<sp/>produktet<sp/>findes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Page();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>OnPost<sp/>metoden<sp/>kaldes<sp/>ved<sp/>POST-forespørgsler<sp/>og<sp/>håndterer<sp/>sletning<sp/>af<sp/>produktet.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>async<sp/>Task&lt;IActionResult&gt;<sp/>OnPost()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Kalder<sp/>DeleteProduct<sp/>på productService<sp/>for<sp/>at<sp/>slette<sp/>det<sp/>givne<sp/>produkt.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Models.Shop.Product</ref><sp/>deletedProduct<sp/>=<sp/>await<sp/>_productService.DeleteProductAsync(<ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref>.Id);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Hvis<sp/>der<sp/>ikke<sp/>findes<sp/>et<sp/>produkt<sp/>at<sp/>slette,<sp/>omdirigeres<sp/>brugeren<sp/>til<sp/>&apos;Ikke<sp/>fundet&apos;<sp/>siden.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(deletedProduct<sp/>==<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RedirectToPage(</highlight><highlight class="stringliteral">&quot;/NotFound&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Efter<sp/>succesfuld<sp/>sletning<sp/>omdirigeres<sp/>brugeren<sp/>til<sp/>shop-siden.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RedirectToPage(</highlight><highlight class="stringliteral">&quot;/Shop/Shop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs"/>
+  </compounddef>
+</doxygen>

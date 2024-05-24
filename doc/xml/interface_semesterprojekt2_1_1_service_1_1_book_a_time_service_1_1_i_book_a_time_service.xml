@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kind="interface" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::BookATimeService::IBookATimeService</compoundname>
+    <derivedcompoundref refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service" prot="public" virt="non-virtual">Semesterprojekt2.Service.BookATimeService.BookATimeService</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a13ef1146ce831e304dd313f296486ced" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Service.BookATimeService.IBookATimeService.Year</definition>
+        <argsstring></argsstring>
+        <name>Year</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.Year</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="9" column="13" bodyfile="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a0ae58cd54ace319512a93d4b09bcb47e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Semesterprojekt2.Service.BookATimeService.IBookATimeService.addTidsbestilling</definition>
+        <argsstring>(BookATime bookATime)</argsstring>
+        <name>addTidsbestilling</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.addTidsbestilling</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a3a0ed0f2c7a2ff8a0078ac3f0aa68c24">addTidsbestilling</reimplementedby>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref></type>
+          <declname>bookATime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="7" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a7f03444935ec9ed709b677d03a882f07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int int Month</type>
+        <definition>int int Month Semesterprojekt2.Service.BookATimeService.IBookATimeService.AdjustYearAndMonth</definition>
+        <argsstring>(int year, int month)</argsstring>
+        <name>AdjustYearAndMonth</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.AdjustYearAndMonth</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ad890fbd09f37fe6de6b2d1f757c51c26">AdjustYearAndMonth</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="9" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a2c19bfa942d0ce39bf83df901d3fef87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; List&lt; string &gt; &gt;</type>
+        <definition>Task&lt; List&lt; string &gt; &gt; Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetUpdatedAvailableTimes</definition>
+        <argsstring>(DateTime date, List&lt; string &gt; additionalBookedTimes)</argsstring>
+        <name>GetUpdatedAvailableTimes</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetUpdatedAvailableTimes</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ae92307e989226d252bb565a01449004e">GetUpdatedAvailableTimes</reimplementedby>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>List&lt; string &gt;</type>
+          <declname>additionalBookedTimes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="11" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1ab24ba5227fbd2081b64bb90317108d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt; string &gt; Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetAvailableTimes</definition>
+        <argsstring>(DateTime date, List&lt; string &gt; bookedTimes)</argsstring>
+        <name>GetAvailableTimes</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetAvailableTimes</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a2dd41afb55ee26420bd82a316f019715">GetAvailableTimes</reimplementedby>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>List&lt; string &gt;</type>
+          <declname>bookedTimes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="12" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a4390966585d995e730df6afe44a8f182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; string &gt;</type>
+        <definition>Task&lt; string &gt; Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetColurDay</definition>
+        <argsstring>(DateTime date, List&lt; string &gt; additionalBookedTimes)</argsstring>
+        <name>GetColurDay</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetColurDay</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a5212b6e4f23703d006e8133554b0f1f2">GetColurDay</reimplementedby>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>List&lt; string &gt;</type>
+          <declname>additionalBookedTimes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="13" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a8f9c105757b69969d30330bb5342f668" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt; string &gt; Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetServiceTimes</definition>
+        <argsstring>(DayOfWeek day)</argsstring>
+        <name>GetServiceTimes</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetServiceTimes</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a6cdf0f2bfb7f6ad31b37a12bb08fe327">GetServiceTimes</reimplementedby>
+        <param>
+          <type>DayOfWeek</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="14" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1aaa4743cf9c0f639e25b940cf13d14e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref> &gt;?</type>
+        <definition>IEnumerable&lt; BookATime &gt;? Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetAllBookATimeList</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllBookATimeList</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetAllBookATimeList</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a41db96f5a9b27e117d52d82259b24c5e">GetAllBookATimeList</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="15" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1aa01b19ecf18d5efd89982045ebb15907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref></type>
+        <definition>BookATime Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetBookATimeById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetBookATimeById</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.GetBookATimeById</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ac9cab74578b33fbf2167cd6b6a40d7f9">GetBookATimeById</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="16" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1acb507110d40b880290496c000dd4e833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref> &gt;</type>
+        <definition>Task&lt; BookATime &gt; Semesterprojekt2.Service.BookATimeService.IBookATimeService.DeleteBookATime</definition>
+        <argsstring>(int id)</argsstring>
+        <name>DeleteBookATime</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.DeleteBookATime</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ae89a0bd4f21f5cc7e591b3d5773b0e02">DeleteBookATime</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="17" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1accf253dd36d168de47169fedf00b81f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref> &gt;</type>
+        <definition>Task&lt; BookATime &gt; Semesterprojekt2.Service.BookATimeService.IBookATimeService.UpdateStatuesToAccept</definition>
+        <argsstring>(BookATime bookATime)</argsstring>
+        <name>UpdateStatuesToAccept</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.UpdateStatuesToAccept</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a20dc83ae61525c8342d0bafd27243f1b">UpdateStatuesToAccept</reimplementedby>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref></type>
+          <declname>bookATime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="18" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a167a42b65aa5c6cb385d3438dab83d84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref> &gt;</type>
+        <definition>Task&lt; BookATime &gt; Semesterprojekt2.Service.BookATimeService.IBookATimeService.UpdateBookATime</definition>
+        <argsstring>(BookATime bookATime)</argsstring>
+        <name>UpdateBookATime</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.UpdateBookATime</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ab40db7ab3d3f9a5b9765b3a7d521c9c6">UpdateBookATime</reimplementedby>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref></type>
+          <declname>bookATime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="19" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a236b18fbeedf17662f5ad63b252cca53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref> &gt; &gt;</type>
+        <definition>Task&lt; List&lt; BookATime &gt; &gt; Semesterprojekt2.Service.BookATimeService.IBookATimeService.DeleteDogInBookATime</definition>
+        <argsstring>(int dogid)</argsstring>
+        <name>DeleteDogInBookATime</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.DeleteDogInBookATime</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a6e0bf0adadcf2daec222c9a9764496db">DeleteDogInBookATime</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>dogid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="20" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a82af89c1e9e75c5d1569a04adfe69238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref> &gt; &gt;</type>
+        <definition>Task&lt; List&lt; BookATime &gt; &gt; Semesterprojekt2.Service.BookATimeService.IBookATimeService.DeleteUserInBookATime</definition>
+        <argsstring>(int userid)</argsstring>
+        <name>DeleteUserInBookATime</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.IBookATimeService.DeleteUserInBookATime</qualifiedname>
+        <reimplementedby refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a0ef5a330fc5979fd5fb07763e785e3be">DeleteUserInBookATime</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>userid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="21" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Semesterprojekt2.Service.BookATimeService.IBookATimeService</label>
+        <link refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service"/>
+      </node>
+      <node id="2">
+        <label>Semesterprojekt2.Service.BookATimeService.BookATimeService</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" line="5" column="22" bodyfile="Semesterprojekt2/Service/BookATimeService/IBookATimeService.cs" bodystart="6" bodyend="24"/>
+    <listofallmembers>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a0ae58cd54ace319512a93d4b09bcb47e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>addTidsbestilling</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a7f03444935ec9ed709b677d03a882f07" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>AdjustYearAndMonth</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1acb507110d40b880290496c000dd4e833" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>DeleteBookATime</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a236b18fbeedf17662f5ad63b252cca53" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>DeleteDogInBookATime</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a82af89c1e9e75c5d1569a04adfe69238" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>DeleteUserInBookATime</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1aaa4743cf9c0f639e25b940cf13d14e34" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>GetAllBookATimeList</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1ab24ba5227fbd2081b64bb90317108d5d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>GetAvailableTimes</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1aa01b19ecf18d5efd89982045ebb15907" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>GetBookATimeById</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a4390966585d995e730df6afe44a8f182" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>GetColurDay</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a8f9c105757b69969d30330bb5342f668" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>GetServiceTimes</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a2c19bfa942d0ce39bf83df901d3fef87" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>GetUpdatedAvailableTimes</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a167a42b65aa5c6cb385d3438dab83d84" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>UpdateBookATime</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1accf253dd36d168de47169fedf00b81f2" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>UpdateStatuesToAccept</name></member>
+      <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a13ef1146ce831e304dd313f296486ced" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::IBookATimeService</scope><name>Year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

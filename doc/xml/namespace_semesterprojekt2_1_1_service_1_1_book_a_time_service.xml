@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_service_1_1_book_a_time_service" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Service::BookATimeService</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_db_service" prot="public">Semesterprojekt2::Service::BookATimeService::BookATimeDbService</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service" prot="public">Semesterprojekt2::Service::BookATimeService::BookATimeService</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service" prot="public">Semesterprojekt2::Service::BookATimeService::BookedDaysService</innerclass>
+    <innerclass refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" prot="public">Semesterprojekt2::Service::BookATimeService::IBookATimeService</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Service/BookATimeService/BookATimeDbService.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

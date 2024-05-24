@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_pages_1_1_profil" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Pages::Profil</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model" prot="public">Semesterprojekt2::Pages::Profil::DeleteUserModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model" prot="public">Semesterprojekt2::Pages::Profil::EditUserModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model" prot="public">Semesterprojekt2::Pages::Profil::ProfilModel</innerclass>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog">Semesterprojekt2::Pages::Profil::Dog</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="9" column="1"/>
+  </compounddef>
+</doxygen>

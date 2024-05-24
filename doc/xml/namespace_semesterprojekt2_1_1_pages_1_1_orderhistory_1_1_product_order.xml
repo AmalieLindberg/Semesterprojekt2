@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Pages::Orderhistory::ProductOrder</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model" prot="public">Semesterprojekt2::Pages::Orderhistory::ProductOrder::DeleteProductOrderModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrder/DeleteProductOrder.cshtml.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

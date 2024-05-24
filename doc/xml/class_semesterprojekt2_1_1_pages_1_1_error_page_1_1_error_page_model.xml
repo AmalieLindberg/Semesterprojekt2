@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_error_page_1_1_error_page_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::ErrorPage::ErrorPageModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_error_page_1_1_error_page_model_1a0723a9d1aa8e2202bd29f30e8d86721b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Pages.ErrorPage.ErrorPageModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.ErrorPage.ErrorPageModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Error/Error.cshtml.cs" line="8" column="21" bodyfile="Semesterprojekt2/Pages/Error/Error.cshtml.cs" bodystart="8" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.ErrorPage.ErrorPageModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_error_page_1_1_error_page_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.ErrorPage.ErrorPageModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_error_page_1_1_error_page_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Error/Error.cshtml.cs" line="6" column="11" bodyfile="Semesterprojekt2/Pages/Error/Error.cshtml.cs" bodystart="7" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_error_page_1_1_error_page_model_1a0723a9d1aa8e2202bd29f30e8d86721b" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::ErrorPage::ErrorPageModel</scope><name>OnGet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

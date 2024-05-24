@@ -1,0 +1,233 @@
+\doxysection{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service Class Reference}
+\hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service}{}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service}\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+
+
+Indeholder forskellige CRUD metoder til management af user, samt tilknyttede hunde, produkt-\/ og tidsbestillinger.  
+
+
+Inheritance diagram for Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a1c8519827667e7bb6a1c14f9cfda526a}{User\+Service}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_db_service}{User\+Db\+Service}} user\+Db\+Service, \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service}{Json\+File\+User\+Service}} user\+Service)
+\begin{DoxyCompactList}\small\item\em Initialiserer en ny instans af User\+Service-\/klassen. \end{DoxyCompactList}\item 
+async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a741bb5fcad26868964f6298199246cf9}{Add\+User}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} user)
+\begin{DoxyCompactList}\small\item\em Tilføjer en ny user asyknront. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a1234158540f4281d863af91ecac91bb3}{Get\+User}} (int id)
+\begin{DoxyCompactList}\small\item\em Henter en user fra DB ved brug af User ID. \end{DoxyCompactList}\item 
+async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_aa1f905cebf22443780b2042724c519b1}{Update\+User}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} user)
+\begin{DoxyCompactList}\small\item\em Opdater en user asynkront. \end{DoxyCompactList}\item 
+async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a955e962c44b265548870a14722a55312}{Delete\+User}} (int? user\+Id)
+\begin{DoxyCompactList}\small\item\em Sletter en user fra Databasen asynkront, ved at bruger User ID. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a3605b5200d2d927d0b368b62b76113c8}{Get\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Henter alle user fra Databasen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_ae3aa3e0f52d8961964b6458b8eab2637}{Get\+User\+Tidsbestilling\+Orders}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} user)
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_affac406825d33cc7c2bb9753abfcfc9e}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_affac406825d33cc7c2bb9753abfcfc9e} 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} {\bfseries Get\+User\+By\+Id} (int id)
+\item 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_ad86811dc1448733380404fcbe4ecc7e9}{Get\+User\+Dogs}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} user)
+\item 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_ad3d66aaa16cd7c0e0dd2f4b344b47472}{Get\+User\+Product\+Orders}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} user)
+\item 
+async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_afcd7073e70496bfd461c7dcb34def0ef}{Reset\+Password}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} user)
+\begin{DoxyCompactList}\small\item\em "{}\+Nullstiller"{} kodeord af en user. Kodeord ændres til generic\+PW. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a75ded4c13f4e7905bab1c8319fc44047}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a75ded4c13f4e7905bab1c8319fc44047} 
+List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ {\bfseries \+\_\+users}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Indeholder forskellige CRUD metoder til management af user, samt tilknyttede hunde, produkt-\/ og tidsbestillinger. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a1c8519827667e7bb6a1c14f9cfda526a}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a1c8519827667e7bb6a1c14f9cfda526a} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!UserService@{UserService}}
+\index{UserService@{UserService}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{UserService()}{UserService()}}
+{\footnotesize\ttfamily Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+User\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_db_service}{User\+Db\+Service}}}]{user\+Db\+Service,  }\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service}{Json\+File\+User\+Service}}}]{user\+Service }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialiserer en ny instans af User\+Service-\/klassen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Db\+Service} & Database service til user operations.\\
+\hline
+{\em user\+Service} & Service for håndtering af user data gennem JSON filer. Bruges kun hvis vi har ingen Database. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a741bb5fcad26868964f6298199246cf9}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a741bb5fcad26868964f6298199246cf9} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!AddUser@{AddUser}}
+\index{AddUser@{AddUser}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{AddUser()}{AddUser()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+Add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tilføjer en ny user asyknront. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User som skal oprettes i systemet.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User som blev oprettet i systemet. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+IUser\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a955e962c44b265548870a14722a55312}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a955e962c44b265548870a14722a55312} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!DeleteUser@{DeleteUser}}
+\index{DeleteUser@{DeleteUser}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{DeleteUser()}{DeleteUser()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+Delete\+User (\begin{DoxyParamCaption}\item[{int?}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sletter en user fra Databasen asynkront, ved at bruger User ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & ID af user som skal slettes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Den slettede user.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+IUser\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a1234158540f4281d863af91ecac91bb3}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a1234158540f4281d863af91ecac91bb3} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+Get\+User (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Henter en user fra DB ved brug af User ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID af user some skal hentes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+User, hvis den findes. Ellers null.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+IUser\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_ad86811dc1448733380404fcbe4ecc7e9}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_ad86811dc1448733380404fcbe4ecc7e9} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!GetUserDogs@{GetUserDogs}}
+\index{GetUserDogs@{GetUserDogs}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{GetUserDogs()}{GetUserDogs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+Get\+User\+Dogs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+IUser\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_ad3d66aaa16cd7c0e0dd2f4b344b47472}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_ad3d66aaa16cd7c0e0dd2f4b344b47472} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!GetUserProductOrders@{GetUserProductOrders}}
+\index{GetUserProductOrders@{GetUserProductOrders}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{GetUserProductOrders()}{GetUserProductOrders()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+Get\+User\+Product\+Orders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+IUser\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a3605b5200d2d927d0b368b62b76113c8}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_a3605b5200d2d927d0b368b62b76113c8} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!GetUsers@{GetUsers}}
+\index{GetUsers@{GetUsers}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{GetUsers()}{GetUsers()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+Get\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Henter alle user fra Databasen. 
+
+\begin{DoxyReturn}{Returns}
+Liste med alle user
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+IUser\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_ae3aa3e0f52d8961964b6458b8eab2637}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_ae3aa3e0f52d8961964b6458b8eab2637} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!GetUserTidsbestillingOrders@{GetUserTidsbestillingOrders}}
+\index{GetUserTidsbestillingOrders@{GetUserTidsbestillingOrders}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{GetUserTidsbestillingOrders()}{GetUserTidsbestillingOrders()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+Get\+User\+Tidsbestilling\+Orders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+IUser\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_afcd7073e70496bfd461c7dcb34def0ef}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_afcd7073e70496bfd461c7dcb34def0ef} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!ResetPassword@{ResetPassword}}
+\index{ResetPassword@{ResetPassword}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{ResetPassword()}{ResetPassword()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+Reset\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+"{}\+Nullstiller"{} kodeord af en user. Kodeord ændres til generic\+PW. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & Den user hvis adgangskode bliver ændret.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Den user med den nulstillede adgangskode.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+IUser\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_aa1f905cebf22443780b2042724c519b1}\label{class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_aa1f905cebf22443780b2042724c519b1} 
+\index{Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}!UpdateUser@{UpdateUser}}
+\index{UpdateUser@{UpdateUser}!Semesterprojekt2.Service.UserService.UserService.UserService@{Semesterprojekt2.Service.UserService.UserService.UserService}}
+\doxysubsubsection{\texorpdfstring{UpdateUser()}{UpdateUser()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} $>$ Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+User\+Service.\+Update\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}}}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Opdater en user asynkront. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User med detaljer som skal opdateres.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Opdateret user.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{Semesterprojekt2.\+Service.\+User\+Service.\+User\+Service.\+IUser\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Semesterprojekt2/\+Service/\+User\+Service/User\+Service.\+cs\end{DoxyCompactItemize}

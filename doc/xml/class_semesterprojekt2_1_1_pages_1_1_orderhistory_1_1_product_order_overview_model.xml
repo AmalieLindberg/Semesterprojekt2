@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1aab1eaa4dd90cc0fe436e9c0d724b8784" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" line="15" column="29" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1ad837afe872369775f96a4b6cd0af353c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_product_order_service" kindref="compound">ProductOrderService</ref></type>
+        <definition>ProductOrderService Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel._productOrderService</definition>
+        <argsstring></argsstring>
+        <name>_productOrderService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel._productOrderService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" line="16" column="36" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1a2fae492207943561b854eb228c0199e4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+        <definition>IProductService Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel._productService</definition>
+        <argsstring></argsstring>
+        <name>_productService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel._productService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" line="17" column="32" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1aad2e4ef482c2a26962bcbebf6d205982" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order" kindref="compound">Models.Shop.ProductOrder</ref> &gt;</type>
+        <definition>IEnumerable&lt;Models.Shop.ProductOrder&gt; Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel.MyProductOrders</definition>
+        <argsstring></argsstring>
+        <name>MyProductOrders</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel.MyProductOrders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" line="19" column="28" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1a116f8c7345dfbc6aa19864f7f0bc667e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order" kindref="compound">Models.Shop.ProductOrder</ref></type>
+        <definition>Models.Shop.ProductOrder Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel.ProductOrder</definition>
+        <argsstring></argsstring>
+        <name>ProductOrder</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel.ProductOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" line="22" column="39" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1ad5f1d98664ed3a10ccb017c3902810cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel.ProductOrderOverviewModel</definition>
+        <argsstring>(IUserService userService, ProductOrderService productOrderService, IProductService productService)</argsstring>
+        <name>ProductOrderOverviewModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel.ProductOrderOverviewModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_product_order_service" kindref="compound">ProductOrderService</ref></type>
+          <declname>productOrderService</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+          <declname>productService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" line="24" column="16" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1aaf095686dbdecedc32f13db0f4c67749" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" line="31" column="21" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" bodystart="31" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.ProductOrderOverviewModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" line="13" column="11" bodyfile="Semesterprojekt2/Pages/Orderhistory/ProductOrderOverview.cshtml.cs" bodystart="14" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1ad837afe872369775f96a4b6cd0af353c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</scope><name>_productOrderService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1a2fae492207943561b854eb228c0199e4" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</scope><name>_productService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1aab1eaa4dd90cc0fe436e9c0d724b8784" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1aad2e4ef482c2a26962bcbebf6d205982" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</scope><name>MyProductOrders</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1aaf095686dbdecedc32f13db0f4c67749" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1a116f8c7345dfbc6aa19864f7f0bc667e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</scope><name>ProductOrder</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1ad5f1d98664ed3a10ccb017c3902810cb" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</scope><name>ProductOrderOverviewModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

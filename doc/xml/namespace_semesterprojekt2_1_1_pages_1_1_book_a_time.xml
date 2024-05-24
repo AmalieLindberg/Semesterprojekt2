@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_pages_1_1_book_a_time" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Pages::BookATime</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model" prot="public">Semesterprojekt2::Pages::BookATime::BookATimeModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model" prot="public">Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model" prot="public">Semesterprojekt2::Pages::BookATime::CalendarModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model" prot="public">Semesterprojekt2::Pages::BookATime::ThankYouForYourBookingModel</innerclass>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days">Semesterprojekt2::Pages::BookATime::BookedDays</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/BookATime/BookATime.cshtml.cs" line="12" column="1"/>
+  </compounddef>
+</doxygen>

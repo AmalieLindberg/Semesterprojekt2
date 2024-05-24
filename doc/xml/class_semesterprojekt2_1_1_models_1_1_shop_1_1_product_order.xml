@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Models::Shop::ProductOrder</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a38ffebf491a4b1ad735bd6d9a63b28e9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.Shop.ProductOrder.OrderId</definition>
+        <argsstring></argsstring>
+        <name>OrderId</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.ProductOrder.OrderId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="8" column="20" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a0e733912930f2e1588f272f74265fed7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.Shop.ProductOrder.Counts</definition>
+        <argsstring></argsstring>
+        <name>Counts</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.ProductOrder.Counts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="9" column="20" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a97d1b2aa2070e15c70bd94b6261dad28" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Semesterprojekt2.Models.Shop.ProductOrder.Date</definition>
+        <argsstring></argsstring>
+        <name>Date</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.ProductOrder.Date</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="12" column="25" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1add4459eba420485773c9c7e4e7c9c816" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.Shop.ProductOrder.UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.ProductOrder.UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="15" column="20" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1aa142ef75cf0c2376398e1a29fb54563f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref>?</type>
+        <definition>Users? Semesterprojekt2.Models.Shop.ProductOrder.User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.ProductOrder.User</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="16" column="22" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a875a403446dd84bd02fcaf79860b5dd5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.Shop.ProductOrder.ProductId</definition>
+        <argsstring></argsstring>
+        <name>ProductId</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.ProductOrder.ProductId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="19" column="20" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a89f18a5e12f76a598e7c62c6931e3ef6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref>?</type>
+        <definition>Product? Semesterprojekt2.Models.Shop.ProductOrder.Product</definition>
+        <argsstring></argsstring>
+        <name>Product</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.ProductOrder.Product</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="20" column="23" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a8ef42810bd7388f4dc6359b3cc63ae0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.Shop.ProductOrder.ProductOrder</definition>
+        <argsstring>()</argsstring>
+        <name>ProductOrder</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.ProductOrder.ProductOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="22" column="16" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a9196588d4763e47f71909786f519daab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.Shop.ProductOrder.ProductOrder</definition>
+        <argsstring>(int Counts, Product product, Users user)</argsstring>
+        <name>ProductOrder</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.ProductOrder.ProductOrder</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>Counts</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="27" column="16" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="27" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Models/Shop/ProductOrder.cs" line="5" column="11" bodyfile="Semesterprojekt2/Models/Shop/ProductOrder.cs" bodystart="6" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a0e733912930f2e1588f272f74265fed7" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::ProductOrder</scope><name>Counts</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a97d1b2aa2070e15c70bd94b6261dad28" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::ProductOrder</scope><name>Date</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a38ffebf491a4b1ad735bd6d9a63b28e9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::ProductOrder</scope><name>OrderId</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a89f18a5e12f76a598e7c62c6931e3ef6" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::ProductOrder</scope><name>Product</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a875a403446dd84bd02fcaf79860b5dd5" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::ProductOrder</scope><name>ProductId</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a8ef42810bd7388f4dc6359b3cc63ae0a" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::ProductOrder</scope><name>ProductOrder</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a9196588d4763e47f71909786f519daab" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::ProductOrder</scope><name>ProductOrder</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1aa142ef75cf0c2376398e1a29fb54563f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::ProductOrder</scope><name>User</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1add4459eba420485773c9c7e4e7c9c816" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::ProductOrder</scope><name>UserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

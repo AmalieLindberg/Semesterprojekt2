@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Shop::Products::AddProductModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a5410fb265f4399fbbc2384fa386a2cfd" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+        <definition>IProductService Semesterprojekt2.Pages.Shop.Products.AddProductModel._productService</definition>
+        <argsstring></argsstring>
+        <name>_productService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.AddProductModel._productService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="12" column="25" bodyfile="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a28b37c12f7aaaa0df3add9345579bc55" prot="private" static="no" mutable="no">
+        <type>IWebHostEnvironment</type>
+        <definition>IWebHostEnvironment Semesterprojekt2.Pages.Shop.Products.AddProductModel._webHostEnvironment</definition>
+        <argsstring></argsstring>
+        <name>_webHostEnvironment</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.AddProductModel._webHostEnvironment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="14" column="29" bodyfile="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1ab496ff24ec494bdc6d0f03407d7b79c1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Models.Shop.Product</ref></type>
+        <definition>Models.Shop.Product Semesterprojekt2.Pages.Shop.Products.AddProductModel.Product</definition>
+        <argsstring></argsstring>
+        <name>Product</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.AddProductModel.Product</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="25" column="34" bodyfile="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a9dd9488f90d3411039614195efc0961f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IFormFile?</type>
+        <definition>IFormFile? Semesterprojekt2.Pages.Shop.Products.AddProductModel.Photo</definition>
+        <argsstring></argsstring>
+        <name>Photo</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.AddProductModel.Photo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="29" column="18" bodyfile="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a8a41ec16e2052b0c503d179522fd7e88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Shop.Products.AddProductModel.AddProductModel</definition>
+        <argsstring>(IProductService productService, IWebHostEnvironment webHost)</argsstring>
+        <name>AddProductModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.AddProductModel.AddProductModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+          <declname>productService</declname>
+        </param>
+        <param>
+          <type>IWebHostEnvironment</type>
+          <declname>webHost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="17" column="8" bodyfile="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1af605d5bc585e518dfa78c99bdf151cd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Shop.Products.AddProductModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.AddProductModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="32" column="22" bodyfile="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a62372474f1df530fe2dcb01ef6a97641" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Shop.Products.AddProductModel.OnPostAsync</definition>
+        <argsstring>()</argsstring>
+        <name>OnPostAsync</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.AddProductModel.OnPostAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="38" column="19" bodyfile="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" bodystart="38" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a7ac9ec60e2b42fa3b467de25403ac6dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Shop.Products.AddProductModel.ProcessUploadedFile</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessUploadedFile</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.AddProductModel.ProcessUploadedFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="64" column="16" bodyfile="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" bodystart="64" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.Products.AddProductModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.Products.AddProductModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="9" column="7" bodyfile="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" bodystart="10" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a5410fb265f4399fbbc2384fa386a2cfd" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::AddProductModel</scope><name>_productService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a28b37c12f7aaaa0df3add9345579bc55" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::AddProductModel</scope><name>_webHostEnvironment</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a8a41ec16e2052b0c503d179522fd7e88" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::AddProductModel</scope><name>AddProductModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1af605d5bc585e518dfa78c99bdf151cd3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::AddProductModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a62372474f1df530fe2dcb01ef6a97641" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::AddProductModel</scope><name>OnPostAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a9dd9488f90d3411039614195efc0961f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::AddProductModel</scope><name>Photo</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a7ac9ec60e2b42fa3b467de25403ac6dd" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::AddProductModel</scope><name>ProcessUploadedFile</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1ab496ff24ec494bdc6d0f03407d7b79c1" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::AddProductModel</scope><name>Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

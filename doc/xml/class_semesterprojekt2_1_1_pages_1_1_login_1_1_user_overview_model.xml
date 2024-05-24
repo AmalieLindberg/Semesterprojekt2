@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Login::UserOverviewModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1a3a709db594badcefa85503fa0d9c049f" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Login.UserOverviewModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.UserOverviewModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" line="15" column="30" bodyfile="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1a9132f677e0dd637512e1116a96c2f260" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Models.Users</ref> &gt;?</type>
+        <definition>List&lt;Models.Users&gt;? Semesterprojekt2.Pages.Login.UserOverviewModel.Users</definition>
+        <argsstring></argsstring>
+        <name>Users</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.UserOverviewModel.Users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" line="17" column="21" bodyfile="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1a4485a1c29bc7169e0afca991bec03c5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Login.UserOverviewModel.UserOverviewModel</definition>
+        <argsstring>(IUserService userService)</argsstring>
+        <name>UserOverviewModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.UserOverviewModel.UserOverviewModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" line="20" column="16" bodyfile="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1abec9bb619722f2977e62fefef5578214" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Pages.Login.UserOverviewModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.UserOverviewModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" line="28" column="21" bodyfile="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" bodystart="28" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.UserOverviewModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.UserOverviewModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" line="12" column="11" bodyfile="Semesterprojekt2/Pages/Login/UserOverview.cshtml.cs" bodystart="13" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1a3a709db594badcefa85503fa0d9c049f" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::UserOverviewModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1abec9bb619722f2977e62fefef5578214" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::UserOverviewModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1a4485a1c29bc7169e0afca991bec03c5d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::UserOverviewModel</scope><name>UserOverviewModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1a9132f677e0dd637512e1116a96c2f260" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::UserOverviewModel</scope><name>Users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

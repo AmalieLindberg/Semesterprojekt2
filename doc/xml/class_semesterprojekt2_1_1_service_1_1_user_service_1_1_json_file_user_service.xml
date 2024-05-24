@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::UserService::JsonFileUserService</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1ad4bc579b2dc83c23983e76cfbb7457d3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IWebHostEnvironment</type>
+        <definition>IWebHostEnvironment Semesterprojekt2.Service.UserService.JsonFileUserService.WebHostEnvironment</definition>
+        <argsstring></argsstring>
+        <name>WebHostEnvironment</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.JsonFileUserService.WebHostEnvironment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" line="8" column="28" bodyfile="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1abf57ef78144e714e1a2025efc42cbd3c" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Service.UserService.JsonFileUserService.JsonFileName</definition>
+        <argsstring></argsstring>
+        <name>JsonFileName</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.JsonFileUserService.JsonFileName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" line="15" column="16" bodyfile="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" bodystart="16" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1af1b986247b64baefc0896926a3af3180" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Service.UserService.JsonFileUserService.JsonFileUserService</definition>
+        <argsstring>(IWebHostEnvironment webHostEnvironment)</argsstring>
+        <name>JsonFileUserService</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.JsonFileUserService.JsonFileUserService</qualifiedname>
+        <param>
+          <type>IWebHostEnvironment</type>
+          <declname>webHostEnvironment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" line="10" column="8" bodyfile="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1a68d3ba626a73160a1a5d1c0844d6ea1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Service.UserService.JsonFileUserService.SaveJsonUsers</definition>
+        <argsstring>(List&lt; Users &gt; users)</argsstring>
+        <name>SaveJsonUsers</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.JsonFileUserService.SaveJsonUsers</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+          <declname>users</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" line="20" column="13" bodyfile="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1a006a7e590ddcbcc624dc28ee9ca3b704" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>IEnumerable&lt; Users &gt; Semesterprojekt2.Service.UserService.JsonFileUserService.GetJsonUsers</definition>
+        <argsstring>()</argsstring>
+        <name>GetJsonUsers</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.JsonFileUserService.GetJsonUsers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" line="33" column="20" bodyfile="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" bodystart="33" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" line="6" column="7" bodyfile="Semesterprojekt2/Service/UserService/JsonFileUserService.cs" bodystart="7" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1a006a7e590ddcbcc624dc28ee9ca3b704" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::JsonFileUserService</scope><name>GetJsonUsers</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1abf57ef78144e714e1a2025efc42cbd3c" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::JsonFileUserService</scope><name>JsonFileName</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1af1b986247b64baefc0896926a3af3180" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::JsonFileUserService</scope><name>JsonFileUserService</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1a68d3ba626a73160a1a5d1c0844d6ea1c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::JsonFileUserService</scope><name>SaveJsonUsers</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1ad4bc579b2dc83c23983e76cfbb7457d3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::JsonFileUserService</scope><name>WebHostEnvironment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

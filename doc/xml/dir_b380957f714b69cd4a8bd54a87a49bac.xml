@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_b380957f714b69cd4a8bd54a87a49bac" kind="dir">
+    <compoundname>Semesterprojekt2/wwwroot/lib</compoundname>
+    <innerdir refid="dir_a70c66acbd5cb0904c17c994a5dde695">Semesterprojekt2/wwwroot/lib/jquery-validation</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/wwwroot/lib/"/>
+  </compounddef>
+</doxygen>

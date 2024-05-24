@@ -1,0 +1,46 @@
+\doxysection{Semesterprojekt2.\+Pages.\+Shopping\+Cart.\+Shopping\+Cart\+Model Class Reference}
+\hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model}{}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model}\index{Semesterprojekt2.Pages.ShoppingCart.ShoppingCartModel@{Semesterprojekt2.Pages.ShoppingCart.ShoppingCartModel}}
+Inheritance diagram for Semesterprojekt2.\+Pages.\+Shopping\+Cart.\+Shopping\+Cart\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a350fc35ef10777a68d9be5cff996b5c0}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a350fc35ef10777a68d9be5cff996b5c0} 
+{\bfseries Shopping\+Cart\+Model} (\mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_shopping_cart_service}{Shopping\+Cart\+Service}} shopping\+Cart\+Service, \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service}{IUser\+Service}} user\+Service, \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_product_order_service}{Product\+Order\+Service}} product\+Order\+Service)
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a173f0e7417faeba56214cfa8948ca0d2}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a173f0e7417faeba56214cfa8948ca0d2} 
+void {\bfseries On\+Get} ()
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a1973090ed1e846b8418a3eb231511e7d}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a1973090ed1e846b8418a3eb231511e7d} 
+IAction\+Result {\bfseries On\+Post\+Remove\+Single\+Cart\+Item} (int product\+Id)
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_abd9c826b641ee30625ad4d7fb87951d0}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_abd9c826b641ee30625ad4d7fb87951d0} 
+IAction\+Result {\bfseries On\+Post\+Remove\+All\+Cart\+Items} ()
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_af5b210612879c6784c2cf397839466a2}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_af5b210612879c6784c2cf397839466a2} 
+async Task$<$ IAction\+Result $>$ {\bfseries On\+Post} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a103737d9214781a9e57eab05b0265efe}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a103737d9214781a9e57eab05b0265efe} 
+List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_cart_item}{Models.\+Cart\+Item}} $>$ {\bfseries Cart\+Item} = new List$<$\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_cart_item}{Cart\+Item}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a4379b7f40afd490726388f31359b0ca2}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a4379b7f40afd490726388f31359b0ca2} 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_users}{Users}} {\bfseries User}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_aabc6a9631a044373a99a4144e861be3d}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_aabc6a9631a044373a99a4144e861be3d} 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order}{Models.\+Shop.\+Product\+Order}} {\bfseries Order}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a8b44aec2fb3c7aa93e98ccf6429dc52e}\label{class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_a8b44aec2fb3c7aa93e98ccf6429dc52e} 
+decimal {\bfseries Total\+Price}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Semesterprojekt2/\+Pages/\+Shopping\+Cart/Shopping\+Cart.\+cshtml.\+cs\end{DoxyCompactItemize}

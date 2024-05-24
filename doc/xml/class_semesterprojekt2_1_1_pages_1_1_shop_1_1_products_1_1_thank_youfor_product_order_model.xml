@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Shop::Products::ThankYouforProductOrderModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1aa172b6397e71664131b81d651a3a18b0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" line="13" column="29" bodyfile="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1ab979fa3327675be531ca9a7645c73165" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_product_order_service" kindref="compound">ProductOrderService</ref></type>
+        <definition>ProductOrderService Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel._productOrderService</definition>
+        <argsstring></argsstring>
+        <name>_productOrderService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel._productOrderService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" line="14" column="36" bodyfile="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1a47c63f43e11c868ae6639f14ea5ef987" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Models.Users</ref></type>
+        <definition>Models.Users Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel.Users</definition>
+        <argsstring></argsstring>
+        <name>Users</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel.Users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" line="23" column="28" bodyfile="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1ae7bce5231f012a921938d1e63b6d3b4b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order" kindref="compound">Models.Shop.ProductOrder</ref></type>
+        <definition>Models.Shop.ProductOrder Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel.Order</definition>
+        <argsstring></argsstring>
+        <name>Order</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel.Order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" line="26" column="39" bodyfile="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1af2ebd34d1590ee217910a4a61c9d1365" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel.ThankYouforProductOrderModel</definition>
+        <argsstring>(IUserService userService, ProductOrderService productOrderService)</argsstring>
+        <name>ThankYouforProductOrderModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel.ThankYouforProductOrderModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_product_order_service" kindref="compound">ProductOrderService</ref></type>
+          <declname>productOrderService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" line="16" column="16" bodyfile="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1aa60b95663f0414ce041708789ab605e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" line="28" column="30" bodyfile="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" bodystart="28" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.Products.ThankYouforProductOrderModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" line="10" column="11" bodyfile="Semesterprojekt2/Pages/Shop/Products/ThankYouforProductOrder.cshtml.cs" bodystart="11" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1ab979fa3327675be531ca9a7645c73165" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::ThankYouforProductOrderModel</scope><name>_productOrderService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1aa172b6397e71664131b81d651a3a18b0" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::ThankYouforProductOrderModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1aa60b95663f0414ce041708789ab605e2" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::ThankYouforProductOrderModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1ae7bce5231f012a921938d1e63b6d3b4b" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::ThankYouforProductOrderModel</scope><name>Order</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1af2ebd34d1590ee217910a4a61c9d1365" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::ThankYouforProductOrderModel</scope><name>ThankYouforProductOrderModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1a47c63f43e11c868ae6639f14ea5ef987" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::ThankYouforProductOrderModel</scope><name>Users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

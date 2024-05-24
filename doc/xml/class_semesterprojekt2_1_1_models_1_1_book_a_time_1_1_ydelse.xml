@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Models::BookATime::Ydelse</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1aacf3ac39224811065f98f99f3f72b90e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.BookATime.Ydelse.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.Ydelse.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/Ydelse.cs" line="31" column="20" bodyfile="Semesterprojekt2/Models/BookATime/Ydelse.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1a13c7dd607c09c1ed55e4cae239341ed9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Models.BookATime.Ydelse.DogSize</definition>
+        <argsstring></argsstring>
+        <name>DogSize</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.Ydelse.DogSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/Ydelse.cs" line="33" column="23" bodyfile="Semesterprojekt2/Models/BookATime/Ydelse.cs" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1af7f61cad3c2c96e94fe93c97eadd121d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Models.BookATime.Ydelse.ServiceType</definition>
+        <argsstring></argsstring>
+        <name>ServiceType</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.Ydelse.ServiceType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/Ydelse.cs" line="35" column="23" bodyfile="Semesterprojekt2/Models/BookATime/Ydelse.cs" bodystart="35" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1ad3065d223eea0fd60043c3a531b1c73f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.BookATime.Ydelse.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.Ydelse.id</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/Ydelse.cs" line="37" column="27" bodyfile="Semesterprojekt2/Models/BookATime/Ydelse.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1a212e304a4f63522643878ef7228a3d40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.BookATime.Ydelse.Ydelse</definition>
+        <argsstring>(string Dogsize, string serviceType)</argsstring>
+        <name>Ydelse</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.Ydelse.Ydelse</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>Dogsize</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>serviceType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/Ydelse.cs" line="40" column="16" bodyfile="Semesterprojekt2/Models/BookATime/Ydelse.cs" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1ab6d3cc23b6235ef6716a3c91fa8fc399" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.BookATime.Ydelse.Ydelse</definition>
+        <argsstring>()</argsstring>
+        <name>Ydelse</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.Ydelse.Ydelse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/Ydelse.cs" line="48" column="16" bodyfile="Semesterprojekt2/Models/BookATime/Ydelse.cs" bodystart="48" bodyend="53"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Semesterprojekt2.Models.BookATime.Ydelse</label>
+        <link refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>id</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>static</label>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Models/BookATime/Ydelse.cs" line="24" column="11" bodyfile="Semesterprojekt2/Models/BookATime/Ydelse.cs" bodystart="25" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1a13c7dd607c09c1ed55e4cae239341ed9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::Ydelse</scope><name>DogSize</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1aacf3ac39224811065f98f99f3f72b90e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::Ydelse</scope><name>Id</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1ad3065d223eea0fd60043c3a531b1c73f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::Ydelse</scope><name>id</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1af7f61cad3c2c96e94fe93c97eadd121d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::Ydelse</scope><name>ServiceType</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1a212e304a4f63522643878ef7228a3d40" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::Ydelse</scope><name>Ydelse</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1ab6d3cc23b6235ef6716a3c91fa8fc399" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::Ydelse</scope><name>Ydelse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_pages_1_1_shop_1_1_products" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Pages::Shop::Products</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model" prot="public">Semesterprojekt2::Pages::Shop::Products::AddProductModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model" prot="public">Semesterprojekt2::Pages::Shop::Products::DeleteProductModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_detail_product_model" prot="public">Semesterprojekt2::Pages::Shop::Products::DetailProductModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model" prot="public">Semesterprojekt2::Pages::Shop::Products::EditProductModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model" prot="public">Semesterprojekt2::Pages::Shop::Products::ThankYouforProductOrderModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Shop/Products/AddProduct.cshtml.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

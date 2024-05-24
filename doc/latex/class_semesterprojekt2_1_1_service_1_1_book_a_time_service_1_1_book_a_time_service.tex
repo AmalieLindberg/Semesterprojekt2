@@ -1,0 +1,197 @@
+\doxysection{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service Class Reference}
+\hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service}{}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service}\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+Inheritance diagram for Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a3f0269172056ddd0281a1fa281d35cac}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a3f0269172056ddd0281a1fa281d35cac} 
+{\bfseries Book\+ATime\+Service} (\mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_db_service}{Book\+ATime\+Db\+Service}} book\+ATime\+Db\+Service, \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service}{Booked\+Days\+Service}} booked\+Days\+Service)
+\item 
+async Task \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a3a0ed0f2c7a2ff8a0078ac3f0aa68c24}{add\+Tidsbestilling}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} book\+ATime)
+\item 
+int int Month \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ad890fbd09f37fe6de6b2d1f757c51c26}{Adjust\+Year\+And\+Month}} (int year, int month)
+\item 
+async Task$<$ List$<$ string $>$ $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ae92307e989226d252bb565a01449004e}{Get\+Updated\+Available\+Times}} (Date\+Time date, List$<$ string $>$ additional\+Booked\+Times)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a6cdf0f2bfb7f6ad31b37a12bb08fe327}{Get\+Service\+Times}} (Day\+Of\+Week day)
+\item 
+List$<$ string $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a2dd41afb55ee26420bd82a316f019715}{Get\+Available\+Times}} (Date\+Time date, List$<$ string $>$ booked\+Times)
+\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a5212b6e4f23703d006e8133554b0f1f2}{Get\+Colur\+Day}} (Date\+Time date, List$<$ string $>$ additional\+Booked\+Times)
+\item 
+IEnumerable$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$? \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a41db96f5a9b27e117d52d82259b24c5e}{Get\+All\+Book\+ATime\+List}} ()
+\item 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ac9cab74578b33fbf2167cd6b6a40d7f9}{Get\+Book\+ATime\+By\+Id}} (int id)
+\item 
+async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ae89a0bd4f21f5cc7e591b3d5773b0e02}{Delete\+Book\+ATime}} (int id)
+\item 
+async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a20dc83ae61525c8342d0bafd27243f1b}{Update\+Statues\+To\+Accept}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} book\+ATime)
+\item 
+async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ab40db7ab3d3f9a5b9765b3a7d521c9c6}{Update\+Book\+ATime}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} book\+ATime)
+\item 
+async Task$<$ List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a6e0bf0adadcf2daec222c9a9764496db}{Delete\+Dog\+In\+Book\+ATime}} (int dog\+Id)
+\item 
+async Task$<$ List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a0ef5a330fc5979fd5fb07763e785e3be}{Delete\+User\+In\+Book\+ATime}} (int userid)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_abcb361b6c3a4e2ad71eb3e54678381f4}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_abcb361b6c3a4e2ad71eb3e54678381f4} 
+int {\bfseries Year}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Year}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a0b904098d84ef65300476f24e32bb674}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a0b904098d84ef65300476f24e32bb674} 
+List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ {\bfseries Book\+ATime\+List}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a3a0ed0f2c7a2ff8a0078ac3f0aa68c24}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a3a0ed0f2c7a2ff8a0078ac3f0aa68c24} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!addTidsbestilling@{addTidsbestilling}}
+\index{addTidsbestilling@{addTidsbestilling}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{addTidsbestilling()}{addTidsbestilling()}}
+{\footnotesize\ttfamily async Task Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+add\+Tidsbestilling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}}}]{book\+ATime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ad890fbd09f37fe6de6b2d1f757c51c26}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ad890fbd09f37fe6de6b2d1f757c51c26} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!AdjustYearAndMonth@{AdjustYearAndMonth}}
+\index{AdjustYearAndMonth@{AdjustYearAndMonth}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{AdjustYearAndMonth()}{AdjustYearAndMonth()}}
+{\footnotesize\ttfamily int int Month Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Adjust\+Year\+And\+Month (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ae89a0bd4f21f5cc7e591b3d5773b0e02}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ae89a0bd4f21f5cc7e591b3d5773b0e02} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!DeleteBookATime@{DeleteBookATime}}
+\index{DeleteBookATime@{DeleteBookATime}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{DeleteBookATime()}{DeleteBookATime()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Delete\+Book\+ATime (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a6e0bf0adadcf2daec222c9a9764496db}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a6e0bf0adadcf2daec222c9a9764496db} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!DeleteDogInBookATime@{DeleteDogInBookATime}}
+\index{DeleteDogInBookATime@{DeleteDogInBookATime}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{DeleteDogInBookATime()}{DeleteDogInBookATime()}}
+{\footnotesize\ttfamily async Task$<$ List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Delete\+Dog\+In\+Book\+ATime (\begin{DoxyParamCaption}\item[{int}]{dog\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a0ef5a330fc5979fd5fb07763e785e3be}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a0ef5a330fc5979fd5fb07763e785e3be} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!DeleteUserInBookATime@{DeleteUserInBookATime}}
+\index{DeleteUserInBookATime@{DeleteUserInBookATime}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{DeleteUserInBookATime()}{DeleteUserInBookATime()}}
+{\footnotesize\ttfamily async Task$<$ List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Delete\+User\+In\+Book\+ATime (\begin{DoxyParamCaption}\item[{int}]{userid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a41db96f5a9b27e117d52d82259b24c5e}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a41db96f5a9b27e117d52d82259b24c5e} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!GetAllBookATimeList@{GetAllBookATimeList}}
+\index{GetAllBookATimeList@{GetAllBookATimeList}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{GetAllBookATimeList()}{GetAllBookATimeList()}}
+{\footnotesize\ttfamily IEnumerable$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$? Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Get\+All\+Book\+ATime\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a2dd41afb55ee26420bd82a316f019715}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a2dd41afb55ee26420bd82a316f019715} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!GetAvailableTimes@{GetAvailableTimes}}
+\index{GetAvailableTimes@{GetAvailableTimes}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{GetAvailableTimes()}{GetAvailableTimes()}}
+{\footnotesize\ttfamily List$<$ string $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Get\+Available\+Times (\begin{DoxyParamCaption}\item[{Date\+Time}]{date,  }\item[{List$<$ string $>$}]{booked\+Times }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+blocked\+Times.\+Contains(time)\+: Tjekker, om blocked\+Times IKKE indeholder time.
+
+booked\+Times.\+Contains(time)\+: Tjekker, om booked\+Times IKKE indeholder time.
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ac9cab74578b33fbf2167cd6b6a40d7f9}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ac9cab74578b33fbf2167cd6b6a40d7f9} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!GetBookATimeById@{GetBookATimeById}}
+\index{GetBookATimeById@{GetBookATimeById}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{GetBookATimeById()}{GetBookATimeById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Get\+Book\+ATime\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a5212b6e4f23703d006e8133554b0f1f2}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a5212b6e4f23703d006e8133554b0f1f2} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!GetColurDay@{GetColurDay}}
+\index{GetColurDay@{GetColurDay}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{GetColurDay()}{GetColurDay()}}
+{\footnotesize\ttfamily async Task$<$ string $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Get\+Colur\+Day (\begin{DoxyParamCaption}\item[{Date\+Time}]{date,  }\item[{List$<$ string $>$}]{additional\+Booked\+Times }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a6cdf0f2bfb7f6ad31b37a12bb08fe327}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a6cdf0f2bfb7f6ad31b37a12bb08fe327} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!GetServiceTimes@{GetServiceTimes}}
+\index{GetServiceTimes@{GetServiceTimes}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{GetServiceTimes()}{GetServiceTimes()}}
+{\footnotesize\ttfamily List$<$ string $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Get\+Service\+Times (\begin{DoxyParamCaption}\item[{Day\+Of\+Week}]{day }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ae92307e989226d252bb565a01449004e}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ae92307e989226d252bb565a01449004e} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!GetUpdatedAvailableTimes@{GetUpdatedAvailableTimes}}
+\index{GetUpdatedAvailableTimes@{GetUpdatedAvailableTimes}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{GetUpdatedAvailableTimes()}{GetUpdatedAvailableTimes()}}
+{\footnotesize\ttfamily async Task$<$ List$<$ string $>$ $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Get\+Updated\+Available\+Times (\begin{DoxyParamCaption}\item[{Date\+Time}]{date,  }\item[{List$<$ string $>$}]{additional\+Booked\+Times }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ab40db7ab3d3f9a5b9765b3a7d521c9c6}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_ab40db7ab3d3f9a5b9765b3a7d521c9c6} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!UpdateBookATime@{UpdateBookATime}}
+\index{UpdateBookATime@{UpdateBookATime}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{UpdateBookATime()}{UpdateBookATime()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Update\+Book\+ATime (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}}}]{book\+ATime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a20dc83ae61525c8342d0bafd27243f1b}\label{class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_a20dc83ae61525c8342d0bafd27243f1b} 
+\index{Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}!UpdateStatuesToAccept@{UpdateStatuesToAccept}}
+\index{UpdateStatuesToAccept@{UpdateStatuesToAccept}!Semesterprojekt2.Service.BookATimeService.BookATimeService@{Semesterprojekt2.Service.BookATimeService.BookATimeService}}
+\doxysubsubsection{\texorpdfstring{UpdateStatuesToAccept()}{UpdateStatuesToAccept()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}} $>$ Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+Book\+ATime\+Service.\+Update\+Statues\+To\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time}{Book\+ATime}}}]{book\+ATime }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service}{Semesterprojekt2.\+Service.\+Book\+ATime\+Service.\+IBook\+ATime\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Semesterprojekt2/\+Service/\+Book\+ATime\+Service/Book\+ATime\+Service.\+cs\end{DoxyCompactItemize}

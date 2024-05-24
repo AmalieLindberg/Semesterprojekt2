@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DbContext</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a9497a839cb8d9f90f64106c2c10b0cfb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">BookATime</ref> &gt;</type>
+        <definition>DbSet&lt;BookATime&gt; Semesterprojekt2.EFDbContext.SemsterprojektDbContext.BookATime</definition>
+        <argsstring></argsstring>
+        <name>BookATime</name>
+        <qualifiedname>Semesterprojekt2.EFDbContext.SemsterprojektDbContext.BookATime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" line="16" column="22" bodyfile="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a4c8468450f71ce664ba9619143ae57f3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>DbSet&lt;Users&gt; Semesterprojekt2.EFDbContext.SemsterprojektDbContext.Users</definition>
+        <argsstring></argsstring>
+        <name>Users</name>
+        <qualifiedname>Semesterprojekt2.EFDbContext.SemsterprojektDbContext.Users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" line="17" column="22" bodyfile="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a7ee9ef142b48ed3d028d4fc6dfd757b0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse" kindref="compound">Ydelse</ref> &gt;</type>
+        <definition>DbSet&lt;Ydelse&gt; Semesterprojekt2.EFDbContext.SemsterprojektDbContext.Ydelse</definition>
+        <argsstring></argsstring>
+        <name>Ydelse</name>
+        <qualifiedname>Semesterprojekt2.EFDbContext.SemsterprojektDbContext.Ydelse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" line="18" column="22" bodyfile="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a120dca7c85c7fcf4ce190e43631a7870" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Dog</ref> &gt;</type>
+        <definition>DbSet&lt;Dog&gt; Semesterprojekt2.EFDbContext.SemsterprojektDbContext.Dog</definition>
+        <argsstring></argsstring>
+        <name>Dog</name>
+        <qualifiedname>Semesterprojekt2.EFDbContext.SemsterprojektDbContext.Dog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" line="19" column="22" bodyfile="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a346ef6302d7261196092814ac00e754f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>DbSet&lt;Product&gt; Semesterprojekt2.EFDbContext.SemsterprojektDbContext.Product</definition>
+        <argsstring></argsstring>
+        <name>Product</name>
+        <qualifiedname>Semesterprojekt2.EFDbContext.SemsterprojektDbContext.Product</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" line="20" column="22" bodyfile="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a220197b1127b2a43d3c9d83f4f3cef78" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>DbSet&lt;BookedDays&gt; Semesterprojekt2.EFDbContext.SemsterprojektDbContext.BookedDays</definition>
+        <argsstring></argsstring>
+        <name>BookedDays</name>
+        <qualifiedname>Semesterprojekt2.EFDbContext.SemsterprojektDbContext.BookedDays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" line="21" column="22" bodyfile="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1ae952657ca509eb3b29d50a2d2474c02f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order" kindref="compound">ProductOrder</ref> &gt;</type>
+        <definition>DbSet&lt;ProductOrder&gt; Semesterprojekt2.EFDbContext.SemsterprojektDbContext.ProductOrder</definition>
+        <argsstring></argsstring>
+        <name>ProductOrder</name>
+        <qualifiedname>Semesterprojekt2.EFDbContext.SemsterprojektDbContext.ProductOrder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" line="22" column="22" bodyfile="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1add69ee0a42f043882c877a48ff96418c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Semesterprojekt2.EFDbContext.SemsterprojektDbContext.OnConfiguring</definition>
+        <argsstring>(DbContextOptionsBuilder options)</argsstring>
+        <name>OnConfiguring</name>
+        <qualifiedname>Semesterprojekt2.EFDbContext.SemsterprojektDbContext.OnConfiguring</qualifiedname>
+        <param>
+          <type>DbContextOptionsBuilder</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" line="10" column="33" bodyfile="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" bodystart="10" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.EFDbContext.SemsterprojektDbContext</label>
+        <link refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.EFDbContext.SemsterprojektDbContext</label>
+        <link refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" line="8" column="11" bodyfile="Semesterprojekt2/EFDbContext/SemsterprojektDbContext.cs" bodystart="9" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a9497a839cb8d9f90f64106c2c10b0cfb" prot="public" virt="non-virtual"><scope>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</scope><name>BookATime</name></member>
+      <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a220197b1127b2a43d3c9d83f4f3cef78" prot="public" virt="non-virtual"><scope>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</scope><name>BookedDays</name></member>
+      <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a120dca7c85c7fcf4ce190e43631a7870" prot="public" virt="non-virtual"><scope>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</scope><name>Dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1add69ee0a42f043882c877a48ff96418c" prot="protected" virt="non-virtual"><scope>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</scope><name>OnConfiguring</name></member>
+      <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a346ef6302d7261196092814ac00e754f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</scope><name>Product</name></member>
+      <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1ae952657ca509eb3b29d50a2d2474c02f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</scope><name>ProductOrder</name></member>
+      <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a4c8468450f71ce664ba9619143ae57f3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</scope><name>Users</name></member>
+      <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a7ee9ef142b48ed3d028d4fc6dfd757b0" prot="public" virt="non-virtual"><scope>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</scope><name>Ydelse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

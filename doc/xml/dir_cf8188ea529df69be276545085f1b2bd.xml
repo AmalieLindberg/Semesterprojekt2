@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_cf8188ea529df69be276545085f1b2bd" kind="dir">
+    <compoundname>Semesterprojekt2/Pages/Login</compoundname>
+    <innerfile refid="_acess_denied_8cshtml_8cs">AcessDenied.cshtml.cs</innerfile>
+    <innerfile refid="_create_admin_8cshtml_8cs">CreateAdmin.cshtml.cs</innerfile>
+    <innerfile refid="_delete_userby_admin_8cshtml_8cs">DeleteUserbyAdmin.cshtml.cs</innerfile>
+    <innerfile refid="_edit_userby_admin_8cshtml_8cs">EditUserbyAdmin.cshtml.cs</innerfile>
+    <innerfile refid="_forgot_password_8cshtml_8cs">ForgotPassword.cshtml.cs</innerfile>
+    <innerfile refid="_login_8cshtml_8cs">Login.cshtml.cs</innerfile>
+    <innerfile refid="_log_out_8cshtml_8cs">LogOut.cshtml.cs</innerfile>
+    <innerfile refid="_reset_password_8cshtml_8cs">ResetPassword.cshtml.cs</innerfile>
+    <innerfile refid="_sign_up_8cshtml_8cs">SignUp.cshtml.cs</innerfile>
+    <innerfile refid="_user_overview_8cshtml_8cs">UserOverview.cshtml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Login/"/>
+  </compounddef>
+</doxygen>

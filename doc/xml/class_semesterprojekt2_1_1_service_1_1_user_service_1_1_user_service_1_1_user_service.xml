@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::UserService::UserService::UserService</compoundname>
+    <basecompoundref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" prot="public" virt="non-virtual">Semesterprojekt2.Service.UserService.UserService.IUserService</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a2723ed79c4a9d01528af34910793846d" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_db_service" kindref="compound">UserDbService</ref></type>
+        <definition>UserDbService Semesterprojekt2.Service.UserService.UserService.UserService.DbService</definition>
+        <argsstring></argsstring>
+        <name>DbService</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.DbService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="14" column="31" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a75ded4c13f4e7905bab1c8319fc44047" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>List&lt;Users&gt; Semesterprojekt2.Service.UserService.UserService.UserService._users</definition>
+        <argsstring></argsstring>
+        <name>_users</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService._users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="15" column="21" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ae09b5f74e8d58eb053c5f6a176ddb197" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service" kindref="compound">JsonFileUserService</ref></type>
+        <definition>JsonFileUserService Semesterprojekt2.Service.UserService.UserService.UserService.jsonFileUserService</definition>
+        <argsstring></argsstring>
+        <name>jsonFileUserService</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.jsonFileUserService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="16" column="37" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a3da225840b9f062c9ce4e1d6ecd96f1e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Service.UserService.UserService.UserService.genericPW</definition>
+        <argsstring></argsstring>
+        <name>genericPW</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.genericPW</qualifiedname>
+        <initializer>= &quot;ResetPW1234&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="18" column="16" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a531855e376b560425977f76d3ac708ca" prot="private" static="no" mutable="no">
+        <type>PasswordHasher&lt; string &gt;</type>
+        <definition>PasswordHasher&lt;string&gt; Semesterprojekt2.Service.UserService.UserService.UserService.passwordHasher</definition>
+        <argsstring></argsstring>
+        <name>passwordHasher</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.passwordHasher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="20" column="24" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a1c8519827667e7bb6a1c14f9cfda526a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Service.UserService.UserService.UserService.UserService</definition>
+        <argsstring>(UserDbService userDbService, JsonFileUserService userService)</argsstring>
+        <name>UserService</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.UserService</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_db_service" kindref="compound">UserDbService</ref></type>
+          <declname>userDbService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service" kindref="compound">JsonFileUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+<para>Initialiserer en ny instans af UserService-klassen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userDbService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Database service til user operations.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userService</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Service for håndtering af user data gennem JSON filer. Bruges kun hvis vi har ingen Database. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="27" column="16" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="27" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a741bb5fcad26868964f6298199246cf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>async Task&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.UserService.AddUser</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>AddUser</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.AddUser</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1ae629b83c31017d8dbb0a1fcf9ac977f4">AddUser</reimplements>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Tilføjer en ny user asyknront. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User som skal oprettes i systemet.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>User som blev oprettet i systemet. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="51" column="27" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="51" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a1234158540f4281d863af91ecac91bb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Service.UserService.UserService.UserService.GetUser</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetUser</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.GetUser</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1ac64ac9bfb78ec593162729c78e847baa">GetUser</reimplements>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Henter en user fra DB ved brug af User ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID af user some skal hentes.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>User, hvis den findes. Ellers null.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="63" column="22" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="63" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1aa1f905cebf22443780b2042724c519b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>async Task&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.UserService.UpdateUser</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>UpdateUser</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.UpdateUser</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a9d2362b6f48d147f91c1b97cdf3d15e9">UpdateUser</reimplements>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Opdater en user asynkront. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User med detaljer som skal opdateres.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Opdateret user.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="80" column="27" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="80" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a955e962c44b265548870a14722a55312" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>async Task&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.UserService.DeleteUser</definition>
+        <argsstring>(int? userId)</argsstring>
+        <name>DeleteUser</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.DeleteUser</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a456511b798cb05ac654df2f407c49692">DeleteUser</reimplements>
+        <param>
+          <type>int?</type>
+          <declname>userId</declname>
+        </param>
+        <briefdescription>
+<para>Sletter en user fra Databasen asynkront, ved at bruger User ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID af user som skal slettes.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Den slettede user.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="127" column="27" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="127" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a3605b5200d2d927d0b368b62b76113c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>List&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.UserService.GetUsers</definition>
+        <argsstring>()</argsstring>
+        <name>GetUsers</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.GetUsers</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a83ba5786a4ac6442c44a1ddca9fa9c73">GetUsers</reimplements>
+        <briefdescription>
+<para>Henter alle user fra Databasen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Liste med alle user</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="152" column="21" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="152" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ae3aa3e0f52d8961964b6458b8eab2637" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Service.UserService.UserService.UserService.GetUserTidsbestillingOrders</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>GetUserTidsbestillingOrders</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.GetUserTidsbestillingOrders</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1aea78164d7b5b34da3c7f06f3e766bba9">GetUserTidsbestillingOrders</reimplements>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="158" column="22" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1affac406825d33cc7c2bb9753abfcfc9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Service.UserService.UserService.UserService.GetUserById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetUserById</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.GetUserById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="163" column="22" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ad86811dc1448733380404fcbe4ecc7e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Service.UserService.UserService.UserService.GetUserDogs</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>GetUserDogs</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.GetUserDogs</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1acdba4fea44236536b3f144c7ec5a724f">GetUserDogs</reimplements>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="167" column="21" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ad3d66aaa16cd7c0e0dd2f4b344b47472" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Service.UserService.UserService.UserService.GetUserProductOrders</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>GetUserProductOrders</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.GetUserProductOrders</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1afabe697b78e2c72941d2d7c8c538280e">GetUserProductOrders</reimplements>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="171" column="22" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="171" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1afcd7073e70496bfd461c7dcb34def0ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref> &gt;</type>
+        <definition>async Task&lt; Users &gt; Semesterprojekt2.Service.UserService.UserService.UserService.ResetPassword</definition>
+        <argsstring>(Users user)</argsstring>
+        <name>ResetPassword</name>
+        <qualifiedname>Semesterprojekt2.Service.UserService.UserService.UserService.ResetPassword</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a57ff5743905a1aac4f21b3be23c13596">ResetPassword</reimplements>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>&quot;Nullstiller&quot; kodeord af en user. Kodeord ændres til genericPW. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>user</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Den user hvis adgangskode bliver ændret.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Den user med den nulstillede adgangskode.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="182" column="27" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="182" bodyend="203"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Indeholder forskellige CRUD metoder til management af user, samt tilknyttede hunde, produkt- og tidsbestillinger. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IUserService</label>
+        <link refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service"/>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Service.UserService.UserService.UserService</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IUserService</label>
+        <link refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service"/>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Service.UserService.UserService.UserService</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Service/UserService/UserService.cs" line="12" column="11" bodyfile="Semesterprojekt2/Service/UserService/UserService.cs" bodystart="13" bodyend="211"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a75ded4c13f4e7905bab1c8319fc44047" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>_users</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a741bb5fcad26868964f6298199246cf9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>AddUser</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a2723ed79c4a9d01528af34910793846d" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>DbService</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a955e962c44b265548870a14722a55312" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>DeleteUser</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a3da225840b9f062c9ce4e1d6ecd96f1e" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>genericPW</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a1234158540f4281d863af91ecac91bb3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>GetUser</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1affac406825d33cc7c2bb9753abfcfc9e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>GetUserById</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ad86811dc1448733380404fcbe4ecc7e9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>GetUserDogs</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ad3d66aaa16cd7c0e0dd2f4b344b47472" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>GetUserProductOrders</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a3605b5200d2d927d0b368b62b76113c8" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>GetUsers</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ae3aa3e0f52d8961964b6458b8eab2637" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>GetUserTidsbestillingOrders</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ae09b5f74e8d58eb053c5f6a176ddb197" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>jsonFileUserService</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a531855e376b560425977f76d3ac708ca" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>passwordHasher</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1afcd7073e70496bfd461c7dcb34def0ef" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>ResetPassword</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1aa1f905cebf22443780b2042724c519b1" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>UpdateUser</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a1c8519827667e7bb6a1c14f9cfda526a" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::UserService::UserService::UserService</scope><name>UserService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_service_1_1_db_generic_service" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::DbGenericService</compoundname>
+    <basecompoundref refid="interface_semesterprojekt2_1_1_service_1_1_i_service" prot="public" virt="non-virtual">Semesterprojekt2::Service::IService&lt; T &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a5175ad686099ee468514ec6b1266f59d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IEnumerable&lt; T &gt; &gt;</type>
+        <definition>async Task&lt; IEnumerable&lt; T &gt; &gt; Semesterprojekt2.Service.DbGenericService&lt; T &gt;.GetObjectsAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetObjectsAsync</name>
+        <qualifiedname>Semesterprojekt2.Service.DbGenericService.GetObjectsAsync</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1ac8158812c784a39505b3f984710a1adf">GetObjectsAsync</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/DbGenericService.cs" line="7" column="27" bodyfile="Semesterprojekt2/Service/DbGenericService.cs" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a90eeb4f97ccf6e5a56d157fb8f583a29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Semesterprojekt2.Service.DbGenericService&lt; T &gt;.AddObjectAsync</definition>
+        <argsstring>(T obj)</argsstring>
+        <name>AddObjectAsync</name>
+        <qualifiedname>Semesterprojekt2.Service.DbGenericService.AddObjectAsync</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1a66fffb1afdf14527b1a070065c9375a3">AddObjectAsync</reimplements>
+        <param>
+          <type>T</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/DbGenericService.cs" line="14" column="27" bodyfile="Semesterprojekt2/Service/DbGenericService.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1afbadce183cbf025c5b2bedd759f49121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Semesterprojekt2.Service.DbGenericService&lt; T &gt;.SaveObjects</definition>
+        <argsstring>(List&lt; T &gt; objs)</argsstring>
+        <name>SaveObjects</name>
+        <qualifiedname>Semesterprojekt2.Service.DbGenericService.SaveObjects</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1abf3c3c1952b1a6f7c34d32b36f98d36e">SaveObjects</reimplements>
+        <param>
+          <type>List&lt; T &gt;</type>
+          <declname>objs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/DbGenericService.cs" line="22" column="27" bodyfile="Semesterprojekt2/Service/DbGenericService.cs" bodystart="22" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a391acd751c902debc6f9c3654ce9e4ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Semesterprojekt2.Service.DbGenericService&lt; T &gt;.DeleteObjectAsync</definition>
+        <argsstring>(T obj)</argsstring>
+        <name>DeleteObjectAsync</name>
+        <qualifiedname>Semesterprojekt2.Service.DbGenericService.DeleteObjectAsync</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1aeaab49a088841fb667ccb96398b8d7b2">DeleteObjectAsync</reimplements>
+        <param>
+          <type>T</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/DbGenericService.cs" line="36" column="27" bodyfile="Semesterprojekt2/Service/DbGenericService.cs" bodystart="36" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a0f61aef92c0565602d844841d9385700" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Semesterprojekt2.Service.DbGenericService&lt; T &gt;.UpdateObjectAsync</definition>
+        <argsstring>(T obj)</argsstring>
+        <name>UpdateObjectAsync</name>
+        <qualifiedname>Semesterprojekt2.Service.DbGenericService.UpdateObjectAsync</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1ad4128964a5291c2bae00e8ed72a33bf9">UpdateObjectAsync</reimplements>
+        <param>
+          <type>T</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/DbGenericService.cs" line="45" column="27" bodyfile="Semesterprojekt2/Service/DbGenericService.cs" bodystart="45" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a0c0738c35a8d1c5230fd49e63b25ae23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; T &gt;</type>
+        <definition>async Task&lt; T &gt; Semesterprojekt2.Service.DbGenericService&lt; T &gt;.GetObjectByIdAsync</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetObjectByIdAsync</name>
+        <qualifiedname>Semesterprojekt2.Service.DbGenericService.GetObjectByIdAsync</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1a2600696ee92dffab9d23d4352aef9746">GetObjectByIdAsync</reimplements>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/DbGenericService.cs" line="55" column="27" bodyfile="Semesterprojekt2/Service/DbGenericService.cs" bodystart="55" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IService&lt; T &gt;</label>
+        <link refid="interface_semesterprojekt2_1_1_service_1_1_i_service"/>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Service.DbGenericService&lt; T &gt;</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IService&lt; T &gt;</label>
+        <link refid="interface_semesterprojekt2_1_1_service_1_1_i_service"/>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Service.DbGenericService&lt; T &gt;</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Service/DbGenericService.cs" line="5" column="11" bodyfile="Semesterprojekt2/Service/DbGenericService.cs" bodystart="6" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a90eeb4f97ccf6e5a56d157fb8f583a29" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::DbGenericService</scope><name>AddObjectAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a391acd751c902debc6f9c3654ce9e4ca" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::DbGenericService</scope><name>DeleteObjectAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a0c0738c35a8d1c5230fd49e63b25ae23" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::DbGenericService</scope><name>GetObjectByIdAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a5175ad686099ee468514ec6b1266f59d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::DbGenericService</scope><name>GetObjectsAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1afbadce183cbf025c5b2bedd759f49121" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::DbGenericService</scope><name>SaveObjects</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a0f61aef92c0565602d844841d9385700" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::DbGenericService</scope><name>UpdateObjectAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

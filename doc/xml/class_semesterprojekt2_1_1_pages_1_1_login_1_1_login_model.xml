@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Login::LoginModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a53767b7c476b19aed2dc785726524c60" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+        <definition>Users Semesterprojekt2.Pages.Login.LoginModel.LoggedInUser</definition>
+        <argsstring></argsstring>
+        <name>LoggedInUser</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.LoginModel.LoggedInUser</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/Login.cshtml.cs" line="20" column="29" bodyfile="Semesterprojekt2/Pages/Login/Login.cshtml.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1ad303a611c381a3cb7aeff343d4f34d73" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.LoginModel.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.LoginModel.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/Login.cshtml.cs" line="25" column="23" bodyfile="Semesterprojekt2/Pages/Login/Login.cshtml.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a5e2050c530ede423afbe2c2f9c4ceacf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.LoginModel.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.LoginModel.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/Login.cshtml.cs" line="28" column="23" bodyfile="Semesterprojekt2/Pages/Login/Login.cshtml.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1ab6c2842555151f6c51d6cd7f0b56b5a3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.LoginModel.Message</definition>
+        <argsstring></argsstring>
+        <name>Message</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.LoginModel.Message</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/Login.cshtml.cs" line="30" column="23" bodyfile="Semesterprojekt2/Pages/Login/Login.cshtml.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a30306c9a85e9b4646dae2fef61455906" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Login.LoginModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.LoginModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/Login.cshtml.cs" line="22" column="30" bodyfile="Semesterprojekt2/Pages/Login/Login.cshtml.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1aa339c4212a2cc7ed921439ea46c18897" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Login.LoginModel.LoginModel</definition>
+        <argsstring>(IUserService userService)</argsstring>
+        <name>LoginModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.LoginModel.LoginModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/Login.cshtml.cs" line="32" column="16" bodyfile="Semesterprojekt2/Pages/Login/Login.cshtml.cs" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a295179e88c13e49c858982c435f27210" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Pages.Login.LoginModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.LoginModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/Login.cshtml.cs" line="37" column="21" bodyfile="Semesterprojekt2/Pages/Login/Login.cshtml.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a58126f922ed2ea17f3a2bba1c19d4154" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Login.LoginModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.LoginModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/Login.cshtml.cs" line="42" column="27" bodyfile="Semesterprojekt2/Pages/Login/Login.cshtml.cs" bodystart="42" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.LoginModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.LoginModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Login/Login.cshtml.cs" line="17" column="11" bodyfile="Semesterprojekt2/Pages/Login/Login.cshtml.cs" bodystart="18" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a30306c9a85e9b4646dae2fef61455906" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::LoginModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1ad303a611c381a3cb7aeff343d4f34d73" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::LoginModel</scope><name>Email</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a53767b7c476b19aed2dc785726524c60" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::LoginModel</scope><name>LoggedInUser</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1aa339c4212a2cc7ed921439ea46c18897" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::LoginModel</scope><name>LoginModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1ab6c2842555151f6c51d6cd7f0b56b5a3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::LoginModel</scope><name>Message</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a295179e88c13e49c858982c435f27210" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::LoginModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a58126f922ed2ea17f3a2bba1c19d4154" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::LoginModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a5e2050c530ede423afbe2c2f9c4ceacf" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::LoginModel</scope><name>Password</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

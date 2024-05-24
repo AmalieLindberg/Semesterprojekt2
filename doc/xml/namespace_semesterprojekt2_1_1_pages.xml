@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_pages" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Pages</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_error_model" prot="public">Semesterprojekt2::Pages::ErrorModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_index_model" prot="public">Semesterprojekt2::Pages::IndexModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_privacy_model" prot="public">Semesterprojekt2::Pages::PrivacyModel</innerclass>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_book_a_time">Semesterprojekt2::Pages::BookATime</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_error_page">Semesterprojekt2::Pages::ErrorPage</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_footer_pages">Semesterprojekt2::Pages::FooterPages</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_info">Semesterprojekt2::Pages::Info</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_login">Semesterprojekt2::Pages::Login</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_orderhistory">Semesterprojekt2::Pages::Orderhistory</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_prices">Semesterprojekt2::Pages::Prices</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_profil">Semesterprojekt2::Pages::Profil</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_shop">Semesterprojekt2::Pages::Shop</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_shopping_cart">Semesterprojekt2::Pages::ShoppingCart</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/BookATime/BookATime.cshtml.cs" line="12" column="1"/>
+  </compounddef>
+</doxygen>

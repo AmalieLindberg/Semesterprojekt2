@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a9ebd603b62c9f97153917720e4f66df8" prot="private" static="no" mutable="no">
+        <type>IWebHostEnvironment</type>
+        <definition>IWebHostEnvironment Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._webHostEnvironment</definition>
+        <argsstring></argsstring>
+        <name>_webHostEnvironment</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._webHostEnvironment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="14" column="37" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1aa28eebd8e81cf4eba9006f2212aaabd0" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+        <definition>readonly IBookATimeService Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._bookATimeService</definition>
+        <argsstring></argsstring>
+        <name>_bookATimeService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._bookATimeService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="49" column="44" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1af2c1a6d3adad90f1f1df31189a8246ee" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service" kindref="compound">YdelseService</ref></type>
+        <definition>readonly YdelseService Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._ydelseService</definition>
+        <argsstring></argsstring>
+        <name>_ydelseService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._ydelseService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="50" column="40" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1af638e6ccb7556d4c2d6aac1a96ca7d3d" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>readonly IUserService Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="51" column="39" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1aeb84ec53d3990bf6687ea0188e8a8b66" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+        <definition>readonly DogService Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._dogService</definition>
+        <argsstring></argsstring>
+        <name>_dogService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel._dogService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="52" column="37" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a06bc2b6deac2b5c651c0dadb3e11df54" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">Models.BookATime.BookATime</ref></type>
+        <definition>Models.BookATime.BookATime Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.BookATime</definition>
+        <argsstring></argsstring>
+        <name>BookATime</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.BookATime</qualifiedname>
+        <initializer>= new <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">Models.BookATime.BookATime</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="17" column="41" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a08c37baa3b6220c37027ba2a59cdd917" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse" kindref="compound">Models.BookATime.Ydelse</ref></type>
+        <definition>Models.BookATime.Ydelse Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Ydelse</definition>
+        <argsstring></argsstring>
+        <name>Ydelse</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Ydelse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="19" column="38" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1ab60060d4750b757bf010cc757eff37a2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Models.Users</ref></type>
+        <definition>Models.Users Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.User</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="22" column="28" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a903a4f7811734db419789c8eaa4b2194" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref></type>
+        <definition>Models.Dog Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Dog</definition>
+        <argsstring></argsstring>
+        <name>Dog</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Dog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="24" column="26" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1ad2dd5421e234f0d93b3e92233f9049b5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Year</definition>
+        <argsstring></argsstring>
+        <name>Year</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Year</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="32" column="20" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1aaa41fe08244c46990a78e1aa5da70c4c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Month</definition>
+        <argsstring></argsstring>
+        <name>Month</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Month</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="35" column="20" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1afd257bacc4b2a3d1600ce99dbb9d7926" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Day</definition>
+        <argsstring></argsstring>
+        <name>Day</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Day</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="38" column="20" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a108fbf157caa394b800b019ec05ab995" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.fuldDatoOgTid</definition>
+        <argsstring></argsstring>
+        <name>fuldDatoOgTid</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.fuldDatoOgTid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="41" column="25" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a2c3ba363e487f1d4389ae6dfc300b0bb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Tidspunkt</definition>
+        <argsstring></argsstring>
+        <name>Tidspunkt</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.Tidspunkt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="43" column="23" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a2d93736420a4e2a75a6f86603a25cc61" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IFormFile?</type>
+        <definition>IFormFile? Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.DogPhoto</definition>
+        <argsstring></argsstring>
+        <name>DogPhoto</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.DogPhoto</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="45" column="26" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a3ad1f1bb0a12e5c9f499cd41a53b550e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IFormFile?</type>
+        <definition>IFormFile? Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.BathPhoto</definition>
+        <argsstring></argsstring>
+        <name>BathPhoto</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.BathPhoto</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="47" column="26" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a041c03da250e028640f3472b86bd169d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref> &gt;</type>
+        <definition>IEnumerable&lt;Models.Dog&gt; Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.MyDogs</definition>
+        <argsstring></argsstring>
+        <name>MyDogs</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.MyDogs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="62" column="28" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="62" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a347a5f1d5f71e5ef35ee19db8eb06542" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.BookATimeWithoutDogModel</definition>
+        <argsstring>(IBookATimeService bookATimeService, IUserService userService, YdelseService ydelseService, IWebHostEnvironment webHostEnvironment, DogService dogService)</argsstring>
+        <name>BookATimeWithoutDogModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.BookATimeWithoutDogModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+          <declname>bookATimeService</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service" kindref="compound">YdelseService</ref></type>
+          <declname>ydelseService</declname>
+        </param>
+        <param>
+          <type>IWebHostEnvironment</type>
+          <declname>webHostEnvironment</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+          <declname>dogService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="53" column="16" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="53" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a408860d0721df56cb0300362fc91cd5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="64" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="64" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a21e7d33cbad90928ca9bd1efcbaaa7f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.OnPost</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.OnPost</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="112" column="27" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="112" bodyend="154"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a2b355e395f92ae5fe42712b86a4c8240" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.ProcessUploadedDogFile</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessUploadedDogFile</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.ProcessUploadedDogFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="156" column="24" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="156" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a062e4f3f8fe6f8b3c06d24d954583c65" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.ProcessUploadedBathFile</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessUploadedBathFile</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel.ProcessUploadedBathFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="171" column="24" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="171" bodyend="185"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.BookATimeWithoutDogModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" line="12" column="11" bodyfile="Semesterprojekt2/Pages/BookATime/BookATimeWithoutDog.cshtml.cs" bodystart="13" bodyend="186"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1aa28eebd8e81cf4eba9006f2212aaabd0" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>_bookATimeService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1aeb84ec53d3990bf6687ea0188e8a8b66" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>_dogService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1af638e6ccb7556d4c2d6aac1a96ca7d3d" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a9ebd603b62c9f97153917720e4f66df8" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>_webHostEnvironment</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1af2c1a6d3adad90f1f1df31189a8246ee" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>_ydelseService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a3ad1f1bb0a12e5c9f499cd41a53b550e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>BathPhoto</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a06bc2b6deac2b5c651c0dadb3e11df54" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>BookATime</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a347a5f1d5f71e5ef35ee19db8eb06542" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>BookATimeWithoutDogModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1afd257bacc4b2a3d1600ce99dbb9d7926" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>Day</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a903a4f7811734db419789c8eaa4b2194" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>Dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a2d93736420a4e2a75a6f86603a25cc61" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>DogPhoto</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a108fbf157caa394b800b019ec05ab995" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>fuldDatoOgTid</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1aaa41fe08244c46990a78e1aa5da70c4c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>Month</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a041c03da250e028640f3472b86bd169d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>MyDogs</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a408860d0721df56cb0300362fc91cd5c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a21e7d33cbad90928ca9bd1efcbaaa7f9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a062e4f3f8fe6f8b3c06d24d954583c65" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>ProcessUploadedBathFile</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a2b355e395f92ae5fe42712b86a4c8240" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>ProcessUploadedDogFile</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a2c3ba363e487f1d4389ae6dfc300b0bb" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>Tidspunkt</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1ab60060d4750b757bf010cc757eff37a2" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>User</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a08c37baa3b6220c37027ba2a59cdd917" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>Ydelse</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1ad2dd5421e234f0d93b3e92233f9049b5" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</scope><name>Year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

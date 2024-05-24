@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_ec060c0b744f06c009ec2b753d4469cb" kind="dir">
+    <compoundname>Semesterprojekt2/Service</compoundname>
+    <innerdir refid="dir_ee3e3bb974f938840187b45c98cf725b">Semesterprojekt2/Service/BookATimeService</innerdir>
+    <innerdir refid="dir_c464ead12246df867747b60b929bf787">Semesterprojekt2/Service/UserService</innerdir>
+    <innerfile refid="_db_generic_service_8cs">DbGenericService.cs</innerfile>
+    <innerfile refid="_dog_service_8cs">DogService.cs</innerfile>
+    <innerfile refid="_i_product_service_8cs">IProductService.cs</innerfile>
+    <innerfile refid="_i_service_8cs">IService.cs</innerfile>
+    <innerfile refid="_json_file_product_service_8cs">JsonFileProductService.cs</innerfile>
+    <innerfile refid="_product_order_service_8cs">ProductOrderService.cs</innerfile>
+    <innerfile refid="_product_service_8cs">ProductService.cs</innerfile>
+    <innerfile refid="_shopping_cart_service_8cs">ShoppingCartService.cs</innerfile>
+    <innerfile refid="_ydelse_service_8cs">YdelseService.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Service/"/>
+  </compounddef>
+</doxygen>

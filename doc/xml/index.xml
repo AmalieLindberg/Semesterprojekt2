@@ -1,0 +1,1130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_accept_order_model" kind="class"><name>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::AcceptOrderModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_accept_order_model_1a70c4b00f6348f050705e50595565252e" kind="variable"><name>_BookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_accept_order_model_1a5848ac3b519d63b6e87dbedfb334fb06" kind="property"><name>BookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_accept_order_model_1a5546fa40d861b2067493d0cf6c262a62" kind="function"><name>AcceptOrderModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_accept_order_model_1ad946a4a68e7b7971b2eb2d4089de04d2" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_accept_order_model_1a7dc016dfea9cf4079cffd52135606e51" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_acess_denied_model" kind="class"><name>Semesterprojekt2::Pages::Login::AcessDeniedModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_acess_denied_model_1a687bd9d8c15e7ed54239976ae261625f" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model" kind="class"><name>Semesterprojekt2::Pages::Profil::Dog::AddDogModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1a55af278fbbb36857652b6147dbe85395" kind="variable"><name>_webHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1a6701b035d43716189c23cb3276b8ecc4" kind="property"><name>Users</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1ac6ef5052776a36bbab959f3862f8f15d" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1a244f193bebf2b8dd7ed599c6af73edcd" kind="property"><name>DogImage</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1aa3017c19e2c258a2b0e8c68b3cd145be" kind="property"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1abea62e3cffba7590a23ecf106115624d" kind="property"><name>_dogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1adef604c3995d33f69cd7c17ee2698286" kind="function"><name>AddDogModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1a8ca1a79bc02dd80ca90ae802a8364904" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1a8658013f2b8fa35e7e5bbfc8a562b44f" kind="function"><name>OnPost</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_add_dog_model_1a3dcabefb91444b4011ad71a4b52e9e9b" kind="function"><name>ProcessUploadedFile</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model" kind="class"><name>Semesterprojekt2::Pages::Shop::Products::AddProductModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a5410fb265f4399fbbc2384fa386a2cfd" kind="variable"><name>_productService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a28b37c12f7aaaa0df3add9345579bc55" kind="variable"><name>_webHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1ab496ff24ec494bdc6d0f03407d7b79c1" kind="property"><name>Product</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a9dd9488f90d3411039614195efc0961f" kind="property"><name>Photo</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a8a41ec16e2052b0c503d179522fd7e88" kind="function"><name>AddProductModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1af605d5bc585e518dfa78c99bdf151cd3" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a62372474f1df530fe2dcb01ef6a97641" kind="function"><name>OnPostAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_add_product_model_1a7ac9ec60e2b42fa3b467de25403ac6dd" kind="function"><name>ProcessUploadedFile</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kind="class"><name>Semesterprojekt2::Models::BookATime::BookATime</name>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a815ad342809701ed682f27fa08f19323" kind="property"><name>Id</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a450958bf4b6638ea6c529eeeace033d2" kind="property"><name>Comments</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1aa90b2c99edacadbccd177788032f8f45" kind="property"><name>DateForBooking</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1af7fdd049cdaa04c4b8fa40d94b79a4dc" kind="property"><name>Address</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a2c179ed58469ca2358e02359bdf39293" kind="property"><name>BathRoomImage</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a883851ab88cb19676b23b93a87ed0514" kind="property"><name>Elevator</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a86bf467e38df06b3a7f9b31ef6a8e320" kind="property"><name>ElevatorDisplay</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a66d0813cd55e7a1c10ed42d81bc6b73d" kind="property"><name>Floors</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a5d7be8753951befe05e169726a2ee13b" kind="property"><name>DateForOrder</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a4d8d96e557ed38dc37857561998e0cb2" kind="property"><name>YdelseId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a872dac4e4facdb61bb7f00964beab8e9" kind="property"><name>Ydelse</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a17fa5533f54c18fc5c0bf6a67f562a49" kind="property"><name>UserId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1aa4f19d6c9d27d1e596e3f0c301b459a5" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a7ebde2b2bff81dd6d8b28b96250f5309" kind="property"><name>DogId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1ae107c464e1f975f5595c74a2851e765c" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a71159526b1319cbbf0c65e3d3c4fc2a0" kind="property"><name>StatusForBooking</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1adee8691d31fd345b56d9c7d2c6d954da" kind="property"><name>FirstTime</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a2e29e2aadf0ac12e956db5c96d92a17d" kind="property"><name>FirstTimeDisplay</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a07095cf5dc97bdc6952ce219e85a22f8" kind="function"><name>BookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time_1a2dd6f93d90a3a3b81d8c61d365c38a13" kind="function"><name>BookATime</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_db_service" kind="class"><name>Semesterprojekt2::Service::BookATimeService::BookATimeDbService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_db_service_1aea215225e2d9ff405a9f75af1ef36a6f" kind="function"><name>GetBookedTimesForDate</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model" kind="class"><name>Semesterprojekt2::Pages::BookATime::BookATimeModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a0d0428e1de57d5dfe5a8e3cafd51568c" kind="variable"><name>_webHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1aa423ef3339a53c4ab026eee79e525174" kind="variable"><name>_bookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1ae47c1a246b1bc932533c74a912e34cbd" kind="variable"><name>_ydelseService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a8303219af1d8892d465b5c1414f0f6e7" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1af48a5cb90db414c0f3021c067617ddf1" kind="variable"><name>_dogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a17f44173848ddc93dab87701fc6b8740" kind="property"><name>BookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a2850aa2d7679dff2aed52f4ce25204e7" kind="property"><name>Ydelse</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1ac158e1bf851d2eca5869d6e63d8f1086" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1ac91d03238de4744e056416d98e09cae8" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1ab72877568d505901d62b2ca0e24f63e2" kind="property"><name>Year</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a26e7978f5003374c9d024018a8726825" kind="property"><name>Month</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a0af5dfa17d5e588fecc4dc39590fb845" kind="property"><name>Day</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a591db216dcde54e3dfd22d3088d56d17" kind="property"><name>fuldDatoOgTid</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1adb53b90453597e516daddc6e70ffced3" kind="property"><name>Tidspunkt</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1ad99996b61f7bba56ed7b8faee909f41a" kind="property"><name>DogPhoto</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1ab969b3dd845e8fcfc179d05fe646219d" kind="property"><name>BathPhoto</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1aebcd238965c0a523180179e009591b5d" kind="property"><name>MyDogs</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a449fc2eaec097a538aa91c20f301ef24" kind="function"><name>BookATimeModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a59b43fdeb6afa62d771666c460b284bd" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1aed680a79da17e3ed33036bc47f5ceadc" kind="function"><name>OnPost</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_model_1a1e6099f8aa5f431320d89d8e673ac369" kind="function"><name>ProcessUploadedBathFile</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_overview_model" kind="class"><name>Semesterprojekt2::Pages::Orderhistory::BookATimeOverviewModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_overview_model_1aa1ef462f7520f88e1708faf68c535108" kind="property"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_overview_model_1a0e53a7280cab6549c4a3cd5d67a5dd62" kind="property"><name>_ydelseService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_overview_model_1a7063f72940ecb0e91069aa0c333ca4ba" kind="property"><name>_dogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_overview_model_1ad69e588b4e6fd3a215af331ac38a1663" kind="property"><name>_bookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_overview_model_1a19efcc351bd38cd81e7135852e79c204" kind="property"><name>BookATimes</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_overview_model_1a6dbcfe8cd1b08212d198f6699f3e8649" kind="function"><name>BookATimeOverviewModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_overview_model_1aff0da8da947eac25530901e85d1b6934" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service" kind="class"><name>Semesterprojekt2::Service::BookATimeService::BookATimeService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1abc27f34912f41c5d2ec5433babc37207" kind="property"><name>_bookATimeDbService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a8d7d86f36e19b7b49c1a60a620de330a" kind="property"><name>_bookedDaysService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a0b904098d84ef65300476f24e32bb674" kind="property"><name>BookATimeList</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1abcb361b6c3a4e2ad71eb3e54678381f4" kind="variable"><name>Year</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a3f0269172056ddd0281a1fa281d35cac" kind="function"><name>BookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a3a0ed0f2c7a2ff8a0078ac3f0aa68c24" kind="function"><name>addTidsbestilling</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ad890fbd09f37fe6de6b2d1f757c51c26" kind="function"><name>AdjustYearAndMonth</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ae92307e989226d252bb565a01449004e" kind="function"><name>GetUpdatedAvailableTimes</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a6cdf0f2bfb7f6ad31b37a12bb08fe327" kind="function"><name>GetServiceTimes</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a2dd41afb55ee26420bd82a316f019715" kind="function"><name>GetAvailableTimes</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a5212b6e4f23703d006e8133554b0f1f2" kind="function"><name>GetColurDay</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a41db96f5a9b27e117d52d82259b24c5e" kind="function"><name>GetAllBookATimeList</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ac9cab74578b33fbf2167cd6b6a40d7f9" kind="function"><name>GetBookATimeById</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ae89a0bd4f21f5cc7e591b3d5773b0e02" kind="function"><name>DeleteBookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a20dc83ae61525c8342d0bafd27243f1b" kind="function"><name>UpdateStatuesToAccept</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1ab40db7ab3d3f9a5b9765b3a7d521c9c6" kind="function"><name>UpdateBookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a6e0bf0adadcf2daec222c9a9764496db" kind="function"><name>DeleteDogInBookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_book_a_time_service_1a0ef5a330fc5979fd5fb07763e785e3be" kind="function"><name>DeleteUserInBookATime</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model" kind="class"><name>Semesterprojekt2::Pages::BookATime::BookATimeWithoutDogModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a9ebd603b62c9f97153917720e4f66df8" kind="variable"><name>_webHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1aa28eebd8e81cf4eba9006f2212aaabd0" kind="variable"><name>_bookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1af2c1a6d3adad90f1f1df31189a8246ee" kind="variable"><name>_ydelseService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1af638e6ccb7556d4c2d6aac1a96ca7d3d" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1aeb84ec53d3990bf6687ea0188e8a8b66" kind="variable"><name>_dogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a06bc2b6deac2b5c651c0dadb3e11df54" kind="property"><name>BookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a08c37baa3b6220c37027ba2a59cdd917" kind="property"><name>Ydelse</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1ab60060d4750b757bf010cc757eff37a2" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a903a4f7811734db419789c8eaa4b2194" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1ad2dd5421e234f0d93b3e92233f9049b5" kind="property"><name>Year</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1aaa41fe08244c46990a78e1aa5da70c4c" kind="property"><name>Month</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1afd257bacc4b2a3d1600ce99dbb9d7926" kind="property"><name>Day</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a108fbf157caa394b800b019ec05ab995" kind="property"><name>fuldDatoOgTid</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a2c3ba363e487f1d4389ae6dfc300b0bb" kind="property"><name>Tidspunkt</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a2d93736420a4e2a75a6f86603a25cc61" kind="property"><name>DogPhoto</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a3ad1f1bb0a12e5c9f499cd41a53b550e" kind="property"><name>BathPhoto</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a041c03da250e028640f3472b86bd169d" kind="property"><name>MyDogs</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a347a5f1d5f71e5ef35ee19db8eb06542" kind="function"><name>BookATimeWithoutDogModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a408860d0721df56cb0300362fc91cd5c" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a21e7d33cbad90928ca9bd1efcbaaa7f9" kind="function"><name>OnPost</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a2b355e395f92ae5fe42712b86a4c8240" kind="function"><name>ProcessUploadedDogFile</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_book_a_time_without_dog_model_1a062e4f3f8fe6f8b3c06d24d954583c65" kind="function"><name>ProcessUploadedBathFile</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kind="class"><name>Semesterprojekt2::Models::BookATime::BookedDays</name>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1ac19376f3d2c3d06635627ba415b2edfe" kind="property"><name>Id</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1a387167d1348186bb8e816b75f7eed0ec" kind="property"><name>StartDate</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1a31c80879e5345e9e1a1a22058bdd5a73" kind="property"><name>EndDate</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1a24249ccb8593c4d505cdde4d46317a64" kind="property"><name>UserId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1afb84d8dafff2311761b770839a3b56a3" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1acbea96f15f8e8a161c7e3b3da59dc249" kind="function"><name>BookedDays</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1af068f9a4404f623abe439040a4951c57" kind="function"><name>BookedDays</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model" kind="class"><name>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1ae9d9c54260a13608afa6258c816fb756" kind="property"><name>BookedDays</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a9a8e0d75465989dc5c59e894b98624cc" kind="variable"><name>_bookedDaysService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a12fda491a1dd504a01dcfcb9c7027afb" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1acc655b04384c97da0ee2e735825c139e" kind="function"><name>BookedDaysModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a15ad067edc973ab439047ba03c207308" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a65bbdd891c79d6ba8ee39d951b8b609c" kind="function"><name>OnGetSortById</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a6c965325210b9d09aa103ab4ef326b06" kind="function"><name>OnGetSortByIdDescending</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1ad2aac95c8b832789bb2b96d1b3a11f43" kind="function"><name>OnGetSortByStartDate</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a2d9ee672846678d63c08e9523c96d2fc" kind="function"><name>OnGetSortByStartDateDescending</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1aa490d6005bd8d70580e62d75f0930855" kind="function"><name>OnGetSortByEndDate</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a8cc496fe0984f66dfbbb6a76b2198c00" kind="function"><name>OnGetSortByEndDateDescending</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service" kind="class"><name>Semesterprojekt2::Service::BookATimeService::BookedDaysService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1aa060cf1ce5f086ce7695edca7da248f7" kind="property"><name>_BookedDaysDbService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a7873bc156902b1c973bc7783318c91db" kind="property"><name>_bookedDays</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1afdd8369b162fc01f13b2b4f71f34c3ce" kind="function"><name>BookedDaysService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1ada47df7b400e35deecf89c9a52515ddb" kind="function"><name>AddBookedDays</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a37efafd88eb6eafdee7a465ce0d26dd2" kind="function"><name>RemoveBookedDaysById</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a2b4e6f0fff0ee1e556f7c388de037648" kind="function"><name>GetBookedDaysList</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1aa4bd6e7218198ac86ff6984470a3f725" kind="function"><name>GetBookedDaysById</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a6c3e05b24030cf52a4e382bfd9e2d893" kind="function"><name>GetBlockedTimesForDate</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a4f1eb29d54d4a38976df3560838bddc0" kind="function"><name>SortById</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1ad9a0761ef59070cfd946b0dd9750a242" kind="function"><name>SortByIdDescending</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a7f2e74c672f45d5a96c7f18bca79afbc" kind="function"><name>SortByStartDate</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a30744a62df3f3dfed57595322b73ff45" kind="function"><name>SortByStartDateDescending</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1ad1681c63ba7c310bda718334a2091bf1" kind="function"><name>SortByEndDate</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a204fa48eb7e3be9ea54fc29f2d38cc28" kind="function"><name>SortByEndDateDescending</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a3aefc30a926680265f5a43ed093ec4c6" kind="function"><name>BlockWholeDay</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a819fa32b7a45456ec17db4b03dd9015e" kind="function"><name>BlockSingleDay</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a65a61258a1e136ada140808baa363a4e" kind="function"><name>BlockStartingDay</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a5a0f429e124d8ff84b496391931a7190" kind="function"><name>BlockEndingDay</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model" kind="class"><name>Semesterprojekt2::Pages::BookATime::CalendarModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a23ea1f9dd1d7b83815e419ce2b50f78b" kind="variable"><name>_bookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a5b00a24a9a285a1bc2909b1d2c652be0" kind="variable"><name>bookedDays</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1af0193367f63e8424db328826d798e3ab" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1af200f8255603ed85c61848284a7b959e" kind="property"><name>DaysInMonth</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a8bafd5462f4e2e136e25b54b363fe44f" kind="property"><name>MonthName</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a3b1c7bdf81d825f3ab688a6507e84880" kind="property"><name>Year</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a27b97ace2efe7a84f96f522737a3b5bb" kind="property"><name>Month</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a79671d546b58ea88142de55f84ae44da" kind="property"><name>Day</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a9eed7e93841be75177f90596b27f6e9f" kind="property"><name>Tidspunkt</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a64c61a65b167de3ae136f03bc16b181c" kind="property"><name>AvailableTimesDict</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a01e58f6588a68d42acf1dc6767ea327d" kind="property"><name>DayClasses</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a1ff79e4cde99f393aa7ae382de608602" kind="property"><name>IsPastDict</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1adad6ac3f1bfaf9086a14907ece5bf1f9" kind="property"><name>MyDogs</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a45b9f7ada8ad3e5a0c9ca14fd99c8439" kind="function"><name>CalendarModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a7c61d92be39e35b1febcc9accc2d60fb" kind="function"><name>IsPast</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a5a3a7107a48f9426f3ce15ab2d13b56d" kind="function"><name>OnGetAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a72cbc09f12626725170ba07621ca4f02" kind="function"><name>OnPost</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_calendar_model_1a86d66cc728dd83107d3f822253d22f86" kind="function"><name>InitializeCalendar</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_models_1_1_cart_item" kind="class"><name>Semesterprojekt2::Models::CartItem</name>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a8e76f109170a9d9549b75f40e303ce6c" kind="property"><name>Quantity</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a3424636ec7143488e74a53069b23cec7" kind="property"><name>Product</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a611734cf770d79eec991ba72f079cb9c" kind="property"><name>ProductId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a16bb5805769f85366f3c68487590a311" kind="function"><name>CartItem</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a977084575beb79e8d8e767c1fd9f543b" kind="function"><name>CartItem</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model" kind="class"><name>Semesterprojekt2::Pages::Login::CreateAdminModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a320bc1581d58c859be83135649fdd63e" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a1e31e7dcf9f829961c8c062dce70d9f8" kind="variable"><name>passwordHasher</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a55ea622c328bcbb51a0574a1b7b2c6e8" kind="property"><name>Name</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a5727175cfeae45b37219d8e41edc8c54" kind="property"><name>Email</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1aeea55c135091791420900baac76b7916" kind="property"><name>Phone</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a0c9a665d8489daff8310f7d28ba0cd55" kind="property"><name>Password</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a813c2932914b8ad1c3b960b2e2514241" kind="property"><name>ConfirmPassword</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a4ee12938cba152186d417c2686d42451" kind="property"><name>Role</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1ab725f90ce82db2004780a9de1ab1ab73" kind="function"><name>CreateAdminModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a44930b706f773db78bfb1244484b9748" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model_1a1652dccc04ea7df08989f23a4fb33535" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_create_booked_days_model" kind="class"><name>Semesterprojekt2::Pages::BookATime::BookedDays::CreateBookedDaysModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_create_booked_days_model_1a593fc3254e8d5c840bc814457d0a587e" kind="property"><name>BookedDays</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_create_booked_days_model_1aed1e3934acfd3d18813a70839112c15d" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_create_booked_days_model_1a46bc07331b3bc02044f5c05fb5f75f71" kind="variable"><name>BookedDaysService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_create_booked_days_model_1a779ce06145a1df8ec1e3de6e7c5ba8ec" kind="variable"><name>userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_create_booked_days_model_1a1104e32b4175fdd89925b8d675d7231c" kind="function"><name>CreateBookedDaysModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_create_booked_days_model_1a4c010eb2cd8c18bd9cfd4b77d144a4a7" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_create_booked_days_model_1a27fc1c9a17a05a90b7a49cc1e7704889" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service" kind="class"><name>Semesterprojekt2::Service::DbGenericService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a5175ad686099ee468514ec6b1266f59d" kind="function"><name>GetObjectsAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a90eeb4f97ccf6e5a56d157fb8f583a29" kind="function"><name>AddObjectAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1afbadce183cbf025c5b2bedd759f49121" kind="function"><name>SaveObjects</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a391acd751c902debc6f9c3654ce9e4ca" kind="function"><name>DeleteObjectAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a0f61aef92c0565602d844841d9385700" kind="function"><name>UpdateObjectAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service_1a0c0738c35a8d1c5230fd49e63b25ae23" kind="function"><name>GetObjectByIdAsync</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model" kind="class"><name>Semesterprojekt2::Pages::BookATime::BookedDays::DeleteBookedDaysModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a27ee1d86668db90296360886e008bf41" kind="variable"><name>BookedDaysService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a601d243b4b5ab5b5def36a4e54055f2c" kind="property"><name>BookedDays</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a20ebb14330fcfb0c88a053351684e6f0" kind="function"><name>DeleteBookedDaysModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a533eb236507ec8317d6a8d6e19708263" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a0d9ebc1c76196d794722570a7aa0fdc0" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model" kind="class"><name>Semesterprojekt2::Pages::Profil::Dog::DeleteDogModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a53146b595308b773d3c9389da2169e9f" kind="variable"><name>_dogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a9564ee635a6e3d14f1e536811daab3f5" kind="variable"><name>_bookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a9939a44b0007ace81e1f11ce67a43b2f" kind="property"><name>dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1afead414517827722790bf0700b2f397e" kind="function"><name>DeleteDogModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a06f3ec9dd8efd3193e0070db70c874ab" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a9d7288013d0be48150ce32c8ed8eba01" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model" kind="class"><name>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::DeleteOrderModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ae261cebef8f183dbbd1623780d8e78dd" kind="variable"><name>_BookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ab1762324b99deecd0f668560a82c41d1" kind="variable"><name>_UserService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ac78ad6fa308fbc5430b27f514ac73029" kind="property"><name>BookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1a6116b02c86f15ecdb2cc11b8f59f3cfc" kind="property"><name>Users</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1af3aaafaeba172c5ece56cc2fe5e6e876" kind="function"><name>DeleteOrderModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1aa6177c5f5b1304303f80a6c64d421519" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ac3a340be3781ceeea8103cbe73550b6d" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model" kind="class"><name>Semesterprojekt2::Pages::Shop::Products::DeleteProductModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a81b998eeb45f907c9b0b56ab37aedeee" kind="variable"><name>_productService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a87c9521cab5614e840b92bfefb44ec3f" kind="property"><name>Product</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a206d966b632f6023661f03b07b131903" kind="function"><name>DeleteProductModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a41bcde8a7af1ef1254b18c496770aa7b" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a77db276ea3262e4a7c061426d48830e5" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model" kind="class"><name>Semesterprojekt2::Pages::Orderhistory::ProductOrder::DeleteProductOrderModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1a0a640a5ba9f8fc9a1fa5a58aeaf2157a" kind="variable"><name>_productOrderService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1af7f376188066be46b96504eb848b95bc" kind="property"><name>ProductOrder</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1af4cfa794bc994c17ab777209883e4983" kind="function"><name>DeleteProductOrderModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1a94e47c2d79b3adfac03d98362457bad7" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_1_1_delete_product_order_model_1a55eaf60a14ed4ad416bd245b4bc6e93f" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model" kind="class"><name>Semesterprojekt2::Pages::Login::DeleteUserbyAdminModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1a0b604cf4cc9a6f43ef0d73850483c861" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1a05f29fc6b5d134fd06a316b777cdb342" kind="property"><name>user</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1ab7bb381923c71fd0f79add60dda00585" kind="function"><name>DeleteUserbyAdminModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1a400be61b5a8af6eea10eabc37559fdd5" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1aed3f8288c2fc8e1f5476f8716370b1bc" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model" kind="class"><name>Semesterprojekt2::Pages::Profil::DeleteUserModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a434beaf74b8a7c8aad7a540ac06b6b17" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a08f2f2624d8f36f7016722b8af6125a5" kind="variable"><name>_bookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a4f4862496d9a9bca9e73ea3c4722f9ec" kind="variable"><name>_dogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a54bf70ce7f93d2091cf4b9522a7cc819" kind="variable"><name>_productOrderService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a2381f48aff3c5ed813ff5e9b50485458" kind="property"><name>user</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1ac0612229f062e5430ca9fcb2a6bf06d3" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a84ff46d215ff5e5947c398c9e73c6c39" kind="property"><name>MyDogs</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1ac3d891b25845549f98418c59293c6651" kind="function"><name>DeleteUserModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a952f0d1e4c660e85274ba8178ff7b215" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1afc24550ab51605e3db97686a2194e374" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_detail_product_model" kind="class"><name>Semesterprojekt2::Pages::Shop::Products::DetailProductModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_detail_product_model_1a1273cf9ac56cb2c117d7706254e0f372" kind="property"><name>Product</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_detail_product_model_1ad14b30710a94f3c7217e5ed875fb083c" kind="variable"><name>_productService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_detail_product_model_1af5de49ad09e45fe864e8219f190d6a4f" kind="variable"><name>_shoppingCartService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_detail_product_model_1a4199e6668039b3d16a1ada3a8f402996" kind="function"><name>DetailProductModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_detail_product_model_1a8310ee5fa3477980eb3e405f57f867a4" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_detail_product_model_1aac40bdbaeae7c8e08487d7e108256412" kind="function"><name>OnPostAddToCart</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_models_1_1_dog" kind="class"><name>Semesterprojekt2::Models::Dog</name>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a8d599c0742e91620a9f3825218c11477" kind="property"><name>Id</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a358e5fc03239e12be4ce3bf00993ba4f" kind="property"><name>DogImage</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1ac2ebffbd0e0ac2d6f15d2fde4a48d704" kind="property"><name>Name</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a9531d3e3ab0e8aed112d350ea39da532" kind="property"><name>Age</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1add31014462f5048a2866bd0a530901bd" kind="property"><name>Race</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a65bf261cfea4a2a8ad72cdecda3539a8" kind="property"><name>UserId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a525de549240519bbef3df1b3fbb0062c" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1af40ed139cb19d70acd97b39d3ed810db" kind="property"><name>Comments</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1ac4909f072b3ae2bbeed5d59e3d6f259a" kind="function"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a3d9bdd395566a85ac4ba81a4f1e883f7" kind="function"><name>Dog</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kind="class"><name>Semesterprojekt2::Service::DogService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_dog_service_1aa2a826b4e441742840f1ba97564c4a0d" kind="property"><name>_dbGenericService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_dog_service_1a829bbb14dda4a652294d500c91c8d215" kind="property"><name>DogList</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_dog_service_1a6f8444dae085a13eb70be1ec4399308a" kind="function"><name>DogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_dog_service_1a2e6de114ac6d454d2142ea2932225bbf" kind="function"><name>AddDogAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_dog_service_1ab76df9cc13729698c73b4e0c92beee5d" kind="function"><name>GetDogById</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_dog_service_1a7c0b251cf06695a882802084bf76b86c" kind="function"><name>UpdateDog</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_dog_service_1a46c5f6027408d78482375149f4b4c81d" kind="function"><name>DeleteDog</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model" kind="class"><name>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a50fbc9d992c4637de0ce9127afe84e02" kind="variable"><name>_dogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1ac85092dbabd2be8e06fb9d2bb334be7f" kind="variable"><name>_webHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1aa6a141f70d35b8f0f4ac33c30263ff18" kind="property"><name>DogImages</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a0988d068d69a381058f1501865b3ae0f" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a3b6795438d5d9fa9a9e16f6f23b8c6d1" kind="function"><name>EditDogModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1aac1030f815b547cad6c01cdd35f99439" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1aad83975b94e02cb0efe5c4f5c36cd320" kind="function"><name>OnPostAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a416471dccd41bccabed7ee042bdd551a" kind="function"><name>ProcessUploadedFile</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model" kind="class"><name>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1aa8b2e5b4e333b70b5cdb78e748eb2eb5" kind="variable"><name>_BookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a78c921d0dcd3efe5f3af5df784a26826" kind="variable"><name>_DogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1af7b79fd6b42c09b267862066b2944362" kind="variable"><name>_YdelseService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a82f82be0a8a2441d36f11c4db61167d4" kind="variable"><name>_webHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1abd76939176e4fcbbb1ac64e5a7e01022" kind="variable"><name>_UserService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1ae0e1ecc6e14ff99faa61c9cfeeab76b6" kind="property"><name>BookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a4f17e431a1dc963a681d67fa32628a33" kind="property"><name>Users</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1afe513abb38fb5ee70bb6a302227b1be5" kind="property"><name>Ydelse</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a086d321730acf5c92826c5ab08c8c1cd" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a853cd71198007a3d79670a5693c1739f" kind="property"><name>DogPhoto</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a6033d62209e8961ee68d66f05ca8c57d" kind="property"><name>BathPhoto</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1ae327e07da0f6c5be9678efa702b1a1a5" kind="function"><name>EditOrderModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a596297ef84328b0c8a400c90045ce8ca" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a54430ee9bec806b799cdb5920734fdda" kind="function"><name>OnPost</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a2f1d35ec739fbce6a81f85d7804b6aeb" kind="function"><name>ProcessUploadedDogFile</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a5eeceadf5be1e9848cc30efd21a46929" kind="function"><name>ProcessUploadedBathFile</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model" kind="class"><name>Semesterprojekt2::Pages::Shop::Products::EditProductModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a2bd0a775314e9f3907eb81bd9fc97047" kind="variable"><name>_productService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1aa3e660641d926f70ca31d288d88ffa9e" kind="variable"><name>_webHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a7861a59dce1f55229b68b1594a61bef7" kind="property"><name>Product</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a660df7f958350b92feaae91d82f8bb82" kind="property"><name>Photo</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a08fcbd8277ab1a3d4017225ca81fe503" kind="function"><name>EditProductModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a3d3844eefa7db4de4193e77180614b20" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1acb05f6d97619de3cc1e5af573d1b0b66" kind="function"><name>OnPostAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a1ab51a4f67a905c6717bfda283d5096b" kind="function"><name>ProcessUploadedFile</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_edit_userby_admin_model" kind="class"><name>Semesterprojekt2::Pages::Login::EditUserbyAdminModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_edit_userby_admin_model_1ad0432ea524c217d51f1068a980a365a3" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_edit_userby_admin_model_1ab548c18afbbac18972a6cc42cfd775fc" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_edit_userby_admin_model_1add443876786cabdf47052ea5fed6a8be" kind="function"><name>EditUserbyAdminModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_edit_userby_admin_model_1a3fb3b836fa1ee7da200168dfee1f60f3" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_edit_userby_admin_model_1ab9ce1f1638e03b13f5a56c0e9af09ac6" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model" kind="class"><name>Semesterprojekt2::Pages::Profil::EditUserModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model_1a5fecd05f77147604904c2b81b9cca806" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model_1ad7605dbb9ac920677548f60502bb72e1" kind="variable"><name>_webHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model_1a9964869c2679fa7dca1af086e222b51b" kind="property"><name>ProfileImages</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model_1aae6d59fa575b4644833dff1d9435e37e" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model_1a891ad0d3f9bdd28f364f8dc33b345ba3" kind="property"><name>ConfirmPassword</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model_1ac967eb17bbd1402ee2d3d7d2f873893c" kind="function"><name>EditUserModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model_1a3b0c89a276bbdcd370dd7ee5ce7a58ec" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model_1a71cfcd78837ae0967caccf0cfc5ca4b4" kind="function"><name>OnPostAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_edit_user_model_1a8c0c5ab5218f9c396272d5d9ece53814" kind="function"><name>ProcessUploadedFile</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_error_model" kind="class"><name>Semesterprojekt2::Pages::ErrorModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1acad3d6e0aa3e87effc60d8e79715cd77" kind="property"><name>RequestId</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1af8b099efb89ed6fe04f028c323a67fa9" kind="property"><name>ShowRequestId</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1a3ec9b89a72edbb0b27e4186c51fc9969" kind="variable"><name>_logger</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1a6dd534f9038c087e1630956185ebeb2b" kind="function"><name>ErrorModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_error_model_1ae2a7a8f0918f8446efd003fe39f0ffca" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_error_page_1_1_error_page_model" kind="class"><name>Semesterprojekt2::Pages::ErrorPage::ErrorPageModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_error_page_1_1_error_page_model_1a0723a9d1aa8e2202bd29f30e8d86721b" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_footer_pages_1_1_f_a_q_model" kind="class"><name>Semesterprojekt2::Pages::FooterPages::FAQModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_footer_pages_1_1_f_a_q_model_1a5fc80fe1dcfb75936a950480e54872bd" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_forgot_password_model" kind="class"><name>Semesterprojekt2::Pages::Login::ForgotPasswordModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_forgot_password_model_1a141e3ab64ac129dd500faa02653f99f9" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kind="interface"><name>Semesterprojekt2::Service::BookATimeService::IBookATimeService</name>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a13ef1146ce831e304dd313f296486ced" kind="variable"><name>Year</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a0ae58cd54ace319512a93d4b09bcb47e" kind="function"><name>addTidsbestilling</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a7f03444935ec9ed709b677d03a882f07" kind="function"><name>AdjustYearAndMonth</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a2c19bfa942d0ce39bf83df901d3fef87" kind="function"><name>GetUpdatedAvailableTimes</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1ab24ba5227fbd2081b64bb90317108d5d" kind="function"><name>GetAvailableTimes</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a4390966585d995e730df6afe44a8f182" kind="function"><name>GetColurDay</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a8f9c105757b69969d30330bb5342f668" kind="function"><name>GetServiceTimes</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1aaa4743cf9c0f639e25b940cf13d14e34" kind="function"><name>GetAllBookATimeList</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1aa01b19ecf18d5efd89982045ebb15907" kind="function"><name>GetBookATimeById</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1acb507110d40b880290496c000dd4e833" kind="function"><name>DeleteBookATime</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1accf253dd36d168de47169fedf00b81f2" kind="function"><name>UpdateStatuesToAccept</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a167a42b65aa5c6cb385d3438dab83d84" kind="function"><name>UpdateBookATime</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a236b18fbeedf17662f5ad63b252cca53" kind="function"><name>DeleteDogInBookATime</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service_1a82af89c1e9e75c5d1569a04adfe69238" kind="function"><name>DeleteUserInBookATime</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_index_model" kind="class"><name>Semesterprojekt2::Pages::IndexModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_index_model_1aaa40b5627300fdee81fa5bd90ac12abd" kind="variable"><name>_logger</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_index_model_1a22a52225ad1ec9bfc1e7ffb8cf9c5aea" kind="function"><name>IndexModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_index_model_1afd58f795d65a6806f79e1e121c9d389c" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_info_1_1_info_model" kind="class"><name>Semesterprojekt2::Pages::Info::InfoModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_info_1_1_info_model_1a7e10e0e608bb57e39b41d0bd3739f7c9" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kind="interface"><name>Semesterprojekt2::Service::IProductService</name>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1a7cf46a81f43e515fbca83030080c0a55" kind="function"><name>GetProducts</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1ae74858eadbef700afe1ad7c106b40e63" kind="function"><name>AddProductAsync</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1aba57cd2b6053da85b044e437111957af" kind="function"><name>UpdateProductAsync</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1a06ef08c1cb5b2c0fc65ee0225f5b2de6" kind="function"><name>GetProduct</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1abc55b3aa4c34a9f1933032eed2edf6f3" kind="function"><name>DeleteProductAsync</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1a50bdf8dbcf0b120046cfc38958e0bf92" kind="function"><name>NameSearch</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1a5346818ae2398ab69f23a37d89ef9940" kind="function"><name>PriceFilter</name></member>
+  </compound>
+  <compound refid="interface_semesterprojekt2_1_1_service_1_1_i_service" kind="interface"><name>Semesterprojekt2::Service::IService</name>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1ac8158812c784a39505b3f984710a1adf" kind="function"><name>GetObjectsAsync</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1a66fffb1afdf14527b1a070065c9375a3" kind="function"><name>AddObjectAsync</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1aeaab49a088841fb667ccb96398b8d7b2" kind="function"><name>DeleteObjectAsync</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1ad4128964a5291c2bae00e8ed72a33bf9" kind="function"><name>UpdateObjectAsync</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1a2600696ee92dffab9d23d4352aef9746" kind="function"><name>GetObjectByIdAsync</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_i_service_1abf3c3c1952b1a6f7c34d32b36f98d36e" kind="function"><name>SaveObjects</name></member>
+  </compound>
+  <compound refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kind="interface"><name>Semesterprojekt2::Service::UserService::UserService::IUserService</name>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a83ba5786a4ac6442c44a1ddca9fa9c73" kind="function"><name>GetUsers</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1ae629b83c31017d8dbb0a1fcf9ac977f4" kind="function"><name>AddUser</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a9d2362b6f48d147f91c1b97cdf3d15e9" kind="function"><name>UpdateUser</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1ac64ac9bfb78ec593162729c78e847baa" kind="function"><name>GetUser</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a456511b798cb05ac654df2f407c49692" kind="function"><name>DeleteUser</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1a57ff5743905a1aac4f21b3be23c13596" kind="function"><name>ResetPassword</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1aea78164d7b5b34da3c7f06f3e766bba9" kind="function"><name>GetUserTidsbestillingOrders</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1acdba4fea44236536b3f144c7ec5a724f" kind="function"><name>GetUserDogs</name></member>
+    <member refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service_1afabe697b78e2c72941d2d7c8c538280e" kind="function"><name>GetUserProductOrders</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service" kind="class"><name>Semesterprojekt2::Service::JsonFileProductService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a244c45998bf9264114f9557f5b46d5ee" kind="property"><name>WebHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1ab9b086a0fa8e55c72571211339f5d5b6" kind="property"><name>JsonFileName</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a30fa92f06a41df60c4ed21ee9a0fe914" kind="function"><name>JsonFileProductService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a5d807148cc6373096e9097db3e20d94c" kind="function"><name>SaveJsonProducts</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a3ff4f444217c3d82fb2b7d02b873c9e8" kind="function"><name>GetJsonProducts</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service" kind="class"><name>Semesterprojekt2::Service::UserService::JsonFileUserService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1ad4bc579b2dc83c23983e76cfbb7457d3" kind="property"><name>WebHostEnvironment</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1abf57ef78144e714e1a2025efc42cbd3c" kind="property"><name>JsonFileName</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1af1b986247b64baefc0896926a3af3180" kind="function"><name>JsonFileUserService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1a68d3ba626a73160a1a5d1c0844d6ea1c" kind="function"><name>SaveJsonUsers</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_json_file_user_service_1a006a7e590ddcbcc624dc28ee9ca3b704" kind="function"><name>GetJsonUsers</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model" kind="class"><name>Semesterprojekt2::Pages::Login::LoginModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a53767b7c476b19aed2dc785726524c60" kind="property"><name>LoggedInUser</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1ad303a611c381a3cb7aeff343d4f34d73" kind="property"><name>Email</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a5e2050c530ede423afbe2c2f9c4ceacf" kind="property"><name>Password</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1ab6c2842555151f6c51d6cd7f0b56b5a3" kind="property"><name>Message</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a30306c9a85e9b4646dae2fef61455906" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1aa339c4212a2cc7ed921439ea46c18897" kind="function"><name>LoginModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a295179e88c13e49c858982c435f27210" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model_1a58126f922ed2ea17f3a2bba1c19d4154" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_log_out_model" kind="class"><name>Semesterprojekt2::Pages::Login::LogOutModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_log_out_model_1a0cf9203cee921d42633cac5c665c5935" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products" kind="class"><name>Semesterprojekt2::MockData::Shop::MockProducts</name>
+    <member refid="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products_1a7137994d1c60be910a65583946d35162" kind="variable"><name>products</name></member>
+    <member refid="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products_1a1e9875d316542f8b79d69cfc45bf0c16" kind="function"><name>GetMockProducts</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users" kind="class"><name>Semesterprojekt2::MockData::Profil::MockUsers</name>
+    <member refid="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users_1ae85f770d4b9702bf3637c9becb515f54" kind="variable"><name>passwordHasher</name></member>
+    <member refid="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users_1a3a562e77f26268f6bfe4390b7d745586" kind="variable"><name>users</name></member>
+    <member refid="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users_1a344f7babea84ef35f7849d64ea3bf4e5" kind="function"><name>GetMockUser</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model" kind="class"><name>Semesterprojekt2::Pages::Orderhistory::OrderhistoryModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a6994335e23d0b8bb7cf397662a2963d1" kind="property"><name>UserService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a15cff0a596c679cefbeb2c62b92f5bf0" kind="property"><name>_bookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1acb0542c36caa24046d8a47217511debe" kind="property"><name>MyBookATimeOrder</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a3470efe28ce1e9e4b0d777c3a7e6f10e" kind="function"><name>OrderhistoryModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model_1a535f6ee4a6b78288ac1e1e53c90d91d2" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_prices_1_1_prices_model" kind="class"><name>Semesterprojekt2::Pages::Prices::PricesModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_prices_1_1_prices_model_1a54686239e59000bb081056bdc5ed8eb0" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_privacy_model" kind="class"><name>Semesterprojekt2::Pages::PrivacyModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_privacy_model_1a22a6b365210d71e54b116bf879d753de" kind="variable"><name>_logger</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_privacy_model_1a66f3160161a6233e48162675ea19ee38" kind="function"><name>PrivacyModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_privacy_model_1a7e759fd23d2a38c3974d7d39307e85df" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kind="class"><name>Semesterprojekt2::Models::Shop::Product</name>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1ade375c2064f139abafe542de8ab5598a" kind="property"><name>Id</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a9f8ac89373d0d2fcb0408e0afca015ce" kind="property"><name>Name</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a9348bd81a368df1f34d02ca519f10329" kind="property"><name>Price</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1ace1f35d63ea30f7240cd41fa7b41b74c" kind="property"><name>Type</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a7919ad1ba96208a7d5c73869ccb8e9a1" kind="property"><name>Brand</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a9a8fc096f7cfeafb31f34987abedef52" kind="property"><name>Amount</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a4d46cea379b95cf84153962c0bf24530" kind="property"><name>Description</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a10d3ae5f60291be055f6910bc7bba6ae" kind="property"><name>ProductImage</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a24272b0e9accb256153831e432ec344c" kind="function"><name>Product</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1ad204ec2309ac8dafb0d405a10d164321" kind="function"><name>Product</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order" kind="class"><name>Semesterprojekt2::Models::Shop::ProductOrder</name>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a38ffebf491a4b1ad735bd6d9a63b28e9" kind="property"><name>OrderId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a0e733912930f2e1588f272f74265fed7" kind="property"><name>Counts</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a97d1b2aa2070e15c70bd94b6261dad28" kind="property"><name>Date</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1add4459eba420485773c9c7e4e7c9c816" kind="property"><name>UserId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1aa142ef75cf0c2376398e1a29fb54563f" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a875a403446dd84bd02fcaf79860b5dd5" kind="property"><name>ProductId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a89f18a5e12f76a598e7c62c6931e3ef6" kind="property"><name>Product</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a8ef42810bd7388f4dc6359b3cc63ae0a" kind="function"><name>ProductOrder</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order_1a9196588d4763e47f71909786f519daab" kind="function"><name>ProductOrder</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o" kind="class"><name>Semesterprojekt2::DAO::ProductOrderDAO</name>
+    <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a0302f548c1e9b473162b91aa932fcf7e" kind="property"><name>OrderId</name></member>
+    <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1afecbfbd5af72693fc0372003a206285c" kind="property"><name>ProductId</name></member>
+    <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a9c208d572da00f9cb07fdbd0eb81ce48" kind="property"><name>ProductName</name></member>
+    <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a78fbf95cd6af59928c218e31da6cda9e" kind="property"><name>Price</name></member>
+    <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1ad80d1178a9c2aee812ff4d7920192c6a" kind="property"><name>UserId</name></member>
+    <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1aec80d31cc4784bd0a03fff664b8bd3a3" kind="property"><name>UserName</name></member>
+    <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a550fc07bc6604b941f0b2629a1465889" kind="property"><name>Count</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_history_model" kind="class"><name>Semesterprojekt2::Pages::Orderhistory::ProductOrderHistoryModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_history_model_1ae078a3f2e3270b2b895bf279a05d606b" kind="property"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_history_model_1a367d4db834c49e2cfac4e836b9cf528d" kind="property"><name>_productOrderService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_history_model_1ac24d1305a46a77ac3c5c38195cecb952" kind="property"><name>_productService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_history_model_1a1853e563b13bf011c5e7163ac53338c6" kind="property"><name>MyProductOrders</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_history_model_1a8a639d7b4e4fb7df8e047cfb458e1498" kind="function"><name>ProductOrderHistoryModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_history_model_1a4a0a9db90b24ee4c19ca15942b927abd" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model" kind="class"><name>Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1aab1eaa4dd90cc0fe436e9c0d724b8784" kind="property"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1ad837afe872369775f96a4b6cd0af353c" kind="property"><name>_productOrderService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1a2fae492207943561b854eb228c0199e4" kind="property"><name>_productService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1aad2e4ef482c2a26962bcbebf6d205982" kind="property"><name>MyProductOrders</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1a116f8c7345dfbc6aa19864f7f0bc667e" kind="property"><name>ProductOrder</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1ad5f1d98664ed3a10ccb017c3902810cb" kind="function"><name>ProductOrderOverviewModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model_1aaf095686dbdecedc32f13db0f4c67749" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_product_order_service" kind="class"><name>Semesterprojekt2::Service::ProductOrderService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_order_service_1ad0d8ef69fef83ee47b71a0bc3d8ba487" kind="property"><name>OrderList</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_order_service_1aac6ea7ec7128488f29eeab21604fa85f" kind="property"><name>DbService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_order_service_1a3d0b326a16cb0a4979e1b0c32094578e" kind="function"><name>ProductOrderService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_order_service_1ace59349422d66d9c064082e292709b23" kind="function"><name>AddOrderAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_order_service_1a595195a81ea8d78d27483661016e03e5" kind="function"><name>GetAllProductOrders</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_order_service_1a085dcd06635f37b68999a1b7312e9b3c" kind="function"><name>GetProductOrderById</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_order_service_1a4c4137f734ac52c2155c9cf11dd8d03c" kind="function"><name>DeleteUserInProductOrder</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_order_service_1abfde64993d0e1fa59b06fc0ce0aca426" kind="function"><name>DeleteProductOrderAsync</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_product_service" kind="class"><name>Semesterprojekt2::Service::ProductService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a4904ebcb1ff68f19b9d06e33dadfa400" kind="property"><name>_products</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1af6a438bc6025f2b1234687644278fe33" kind="property"><name>_dbGenericService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a625bf6c133a258fb00dc05ea9a69d8a4" kind="property"><name>JsonFileProductService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a5cf1ce5b11b416c6e35456092c7f408b" kind="function"><name>ProductService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a933959fb254a5d042f9f6d195b619dcd" kind="function"><name>AddProductAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a991d1a37f6b4ee0d52c883d4b333d318" kind="function"><name>GetProduct</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a87644537b29652bb41ac7dfafa2a58f3" kind="function"><name>UpdateProductAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1af7b82716062780e3479afc0e132deb1c" kind="function"><name>DeleteProductAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a7681d106af5306838be46f5be9799300" kind="function"><name>GetProducts</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1aa16caf812397f62393c2631f144ad807" kind="function"><name>NameSearch</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a628e67a67df993323e0fcb20ee60f72f" kind="function"><name>PriceFilter</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model" kind="class"><name>Semesterprojekt2::Pages::Profil::ProfilModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1aeabd346079bab8543615365de1488b95" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a2117ccd1bb86b78c05c78d0f9e121f2c" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a26497b59da48ea07387233b1743adf13" kind="property"><name>_dogService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1aeae3d9f062c11b37c2e52ed1d4f58cb5" kind="property"><name>users</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1abf30e5b3246ccf00eb1c13a84d1f991f" kind="property"><name>MyDogs</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a9a60dbe398e01dcd8fe06b83f961fd17" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1adcc75939d8bbe63103cd10eeea7bddd8" kind="function"><name>ProfilModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_profil_model_1a45713538b2d6764bc0154ca33da9b9f8" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_reset_password_model" kind="class"><name>Semesterprojekt2::Pages::Login::ResetPasswordModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_reset_password_model_1a65d0d5cb66c134c3984b649a0906c7c9" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_reset_password_model_1a5ad6d50d58948732d4aa8119fcfe1659" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_reset_password_model_1a8aaa89499cde0a904adf14fc8feee5cd" kind="function"><name>ResetPasswordModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_reset_password_model_1aeb9621ef5b9c48c9e7de0aac584f9de3" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_reset_password_model_1a0aeadebd9c7d1ac876b1ab8b1289a0a2" kind="function"><name>OnPostAsync</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context" kind="class"><name>Semesterprojekt2::EFDbContext::SemsterprojektDbContext</name>
+    <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a9497a839cb8d9f90f64106c2c10b0cfb" kind="property"><name>BookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a4c8468450f71ce664ba9619143ae57f3" kind="property"><name>Users</name></member>
+    <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a7ee9ef142b48ed3d028d4fc6dfd757b0" kind="property"><name>Ydelse</name></member>
+    <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a120dca7c85c7fcf4ce190e43631a7870" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a346ef6302d7261196092814ac00e754f" kind="property"><name>Product</name></member>
+    <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1a220197b1127b2a43d3c9d83f4f3cef78" kind="property"><name>BookedDays</name></member>
+    <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1ae952657ca509eb3b29d50a2d2474c02f" kind="property"><name>ProductOrder</name></member>
+    <member refid="class_semesterprojekt2_1_1_e_f_db_context_1_1_semsterprojekt_db_context_1add69ee0a42f043882c877a48ff96418c" kind="function"><name>OnConfiguring</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model" kind="class"><name>Semesterprojekt2::Pages::Shop::ShopModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aa31a299c6b2387c0153dd6532600a321" kind="variable"><name>_productService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a7b4ce6b2acfc4f253421d5bfdaa49e84" kind="variable"><name>_shoppingCartService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a79637542f2f2b9d60c747b91faa4294d" kind="property"><name>Products</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aa1cb6b65f04e9f79dbdc8031690aa6f0" kind="property"><name>SearchString</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a198b23eb232241cc56b855fe3c9c6af1" kind="property"><name>MinPrice</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a4a6f8035de9ffab121e9c3cbc442033d" kind="property"><name>MaxPrice</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aaee8b0931c6781cbfa102554d6f9157b" kind="function"><name>ShopModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1a8444d84ad42bd63e3edf7b2d40f3c6b9" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1ad7cab74c41e2c1ba125e52b535a707dd" kind="function"><name>OnPostNameSearch</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1adc215684f5799b22d50732462b68b8c0" kind="function"><name>OnPostPriceFilter</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_shop_model_1aa310c8eccf7388809876e60acf9c3ac0" kind="function"><name>OnPostAddToCart</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model" kind="class"><name>Semesterprojekt2::Pages::ShoppingCart::ShoppingCartModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1a557cd944b9cd72f886e7f0440234d83a" kind="variable"><name>_shoppingCartService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1a22e98d1c6c045944d73a6eaee6579932" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1a79b2c4c2796c296e30ed3795392e98bf" kind="variable"><name>_orderService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1a103737d9214781a9e57eab05b0265efe" kind="property"><name>CartItem</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1a4379b7f40afd490726388f31359b0ca2" kind="property"><name>User</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1aabc6a9631a044373a99a4144e861be3d" kind="property"><name>Order</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1a8b44aec2fb3c7aa93e98ccf6429dc52e" kind="property"><name>TotalPrice</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1a350fc35ef10777a68d9be5cff996b5c0" kind="function"><name>ShoppingCartModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1a173f0e7417faeba56214cfa8948ca0d2" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1a1973090ed1e846b8418a3eb231511e7d" kind="function"><name>OnPostRemoveSingleCartItem</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1abd9c826b641ee30625ad4d7fb87951d0" kind="function"><name>OnPostRemoveAllCartItems</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shopping_cart_1_1_shopping_cart_model_1af5b210612879c6784c2cf397839466a2" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service" kind="class"><name>Semesterprojekt2::Service::ShoppingCartService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1ac936aa48e58a2c924a6f988dc2a30580" kind="variable"><name>_cartItems</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a006c749664f019a911053e9ce317e316" kind="function"><name>ShoppingCartService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a142267758e26989a2438fe410dff523f" kind="function"><name>AddToCart</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a3a5271c7ae7011f83757b42be52bf2cd" kind="function"><name>GetCartItem</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1ad85ff758cfe47b4c2d3599f088433f2b" kind="function"><name>GetAllCartItems</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1abe44e296215de11f5d2a4cf1912ec141" kind="function"><name>DeleteCartItem</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a7ad1043836608de9cea1dbb5c4e98532" kind="function"><name>ClearCart</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a44e45e08b42bfe00e71fa263f16eec13" kind="function"><name>CalculateTotalPrice</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model" kind="class"><name>Semesterprojekt2::Pages::Login::SignUpModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1afa380caa0dba4a41694b0fd39a330583" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a69df223b20b9014d25dd009a0aff9fc9" kind="variable"><name>passwordHasher</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a2225b7c1f8e75a3b3242da99f0ceee68" kind="property"><name>Name</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a92713423c1f90a72e2dbe1fdcb3c2a52" kind="property"><name>Email</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a2d29597f81a3d1a71957ee1164d185db" kind="property"><name>Phone</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a05f1a1f0a3bed3433f31fbd659f79123" kind="property"><name>Password</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a5eda09b46428a0c46cf5d50c3627eb4a" kind="property"><name>ConfirmPassword</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a8ff566a460e487094b84742572940d43" kind="property"><name>Role</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a5a8661b30a1cf4e99d8c8b67421e4901" kind="function"><name>SignUpModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a82ff94290f83921ed611adce06bc5e5d" kind="function"><name>OnGet</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1af780e5bff28d5d8768605f91db986a72" kind="function"><name>OnPost</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_footer_pages_1_1_terms__and___conditions_model" kind="class"><name>Semesterprojekt2::Pages::FooterPages::Terms_and_ConditionsModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_footer_pages_1_1_terms__and___conditions_model_1a3c99ed6dded77c373e590e81cdc84952" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model" kind="class"><name>Semesterprojekt2::Pages::Shop::Products::ThankYouforProductOrderModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1aa172b6397e71664131b81d651a3a18b0" kind="property"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1ab979fa3327675be531ca9a7645c73165" kind="property"><name>_productOrderService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1a47c63f43e11c868ae6639f14ea5ef987" kind="property"><name>Users</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1ae7bce5231f012a921938d1e63b6d3b4b" kind="property"><name>Order</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1af2ebd34d1590ee217910a4a61c9d1365" kind="function"><name>ThankYouforProductOrderModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_thank_youfor_product_order_model_1aa60b95663f0414ce041708789ab605e2" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model" kind="class"><name>Semesterprojekt2::Pages::BookATime::ThankYouForYourBookingModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1ad5abc13169269dac509dd811d38f866f" kind="property"><name>_bookATimeService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1afce73b6d53952f1ce1c1f57099b29a64" kind="property"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1a0aa969ac762fadecb7840379ae81f08a" kind="property"><name>BookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1a566638f8542f1f2e2fbc8ff1117820c3" kind="property"><name>Users</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1aa380e2dad99bc4c8d64cd68a6750f51a" kind="function"><name>ThankYouForYourBookingModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1ab313497b640b60ae07610e79315ab4e0" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_db_service" kind="class"><name>Semesterprojekt2::Service::UserService::UserDbService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_db_service_1a8a22c1df9ac9916006b1d26bec78db1f" kind="function"><name>GetTidsbestillingOrdersByUserIdAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_db_service_1a1d4b193d6dc8c1c171948ed85ee6aa6d" kind="function"><name>GetDogByUserIdAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_db_service_1a7a1365c6a774403f2fd47343cae14e35" kind="function"><name>GetOrdersByUserIdAsync</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model" kind="class"><name>Semesterprojekt2::Pages::Login::UserOverviewModel</name>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1a3a709db594badcefa85503fa0d9c049f" kind="variable"><name>_userService</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1a9132f677e0dd637512e1116a96c2f260" kind="property"><name>Users</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1a4485a1c29bc7169e0afca991bec03c5d" kind="function"><name>UserOverviewModel</name></member>
+    <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model_1abec9bb619722f2977e62fefef5578214" kind="function"><name>OnGet</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_models_1_1_users" kind="class"><name>Semesterprojekt2::Models::Users</name>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a5e931a34d1e7ab1d696dee92bb9988bc" kind="property"><name>UserId</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a51bcea9382dfd099c7c57c8bc9c1d4ea" kind="property"><name>Password</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1ab843ba29cbfc2055ce72163700becec5" kind="property"><name>Name</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a3438d90781552df203e2959f9e65d222" kind="property"><name>Telefonnummer</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a725c21badc564248ca5e3a9c5ae49ed9" kind="property"><name>Email</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a089731cb3ed1eb7b3dfbdd42dfad2abd" kind="property"><name>Role</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a0ebe1d23a4ac006896ccc186719d3f92" kind="property"><name>ProfileImages</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a3c9d29d7d91b2b21d78d4708dad35a63" kind="property"><name>Bio</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a74a2d02a995ca0aa362857f9c0cd1260" kind="property"><name>BookATime</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1ae4659c525e8e176180e593997d16d654" kind="property"><name>ProductOrders</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1aff3108d2d94871eb4413d3762c968b50" kind="property"><name>Dog</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1adbc7a61f62d9b20fc99366954ad23500" kind="function"><name>Users</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_users_1ab22f59ba15b1d4fec0969f76b1724018" kind="function"><name>Users</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service" kind="class"><name>Semesterprojekt2::Service::UserService::UserService::UserService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a2723ed79c4a9d01528af34910793846d" kind="property"><name>DbService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a75ded4c13f4e7905bab1c8319fc44047" kind="property"><name>_users</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ae09b5f74e8d58eb053c5f6a176ddb197" kind="property"><name>jsonFileUserService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a3da225840b9f062c9ce4e1d6ecd96f1e" kind="variable"><name>genericPW</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a531855e376b560425977f76d3ac708ca" kind="variable"><name>passwordHasher</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a1c8519827667e7bb6a1c14f9cfda526a" kind="function"><name>UserService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a741bb5fcad26868964f6298199246cf9" kind="function"><name>AddUser</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a1234158540f4281d863af91ecac91bb3" kind="function"><name>GetUser</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1aa1f905cebf22443780b2042724c519b1" kind="function"><name>UpdateUser</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a955e962c44b265548870a14722a55312" kind="function"><name>DeleteUser</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1a3605b5200d2d927d0b368b62b76113c8" kind="function"><name>GetUsers</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ae3aa3e0f52d8961964b6458b8eab2637" kind="function"><name>GetUserTidsbestillingOrders</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1affac406825d33cc7c2bb9753abfcfc9e" kind="function"><name>GetUserById</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ad86811dc1448733380404fcbe4ecc7e9" kind="function"><name>GetUserDogs</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1ad3d66aaa16cd7c0e0dd2f4b344b47472" kind="function"><name>GetUserProductOrders</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service_1afcd7073e70496bfd461c7dcb34def0ef" kind="function"><name>ResetPassword</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse" kind="class"><name>Semesterprojekt2::Models::BookATime::Ydelse</name>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1aacf3ac39224811065f98f99f3f72b90e" kind="property"><name>Id</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1a13c7dd607c09c1ed55e4cae239341ed9" kind="property"><name>DogSize</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1af7f61cad3c2c96e94fe93c97eadd121d" kind="property"><name>ServiceType</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1ad3065d223eea0fd60043c3a531b1c73f" kind="variable"><name>id</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1a212e304a4f63522643878ef7228a3d40" kind="function"><name>Ydelse</name></member>
+    <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse_1ab6d3cc23b6235ef6716a3c91fa8fc399" kind="function"><name>Ydelse</name></member>
+  </compound>
+  <compound refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service" kind="class"><name>Semesterprojekt2::Service::YdelseService</name>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service_1aefdd2e5e2f4658e80831f02171d9c930" kind="property"><name>DbGenericService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service_1a0392e85ad6fde47bf6064866c970372f" kind="property"><name>Ydelses</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service_1a4d0b83dffe4f53573c2d8ef3afc6cc44" kind="function"><name>YdelseService</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service_1a05cd66e19fb4c02f4329b0dd5617d9aa" kind="function"><name>AddYdelseAsync</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service_1a744498ed705802c0c5c827c45004a5b1" kind="function"><name>GetYdelseById</name></member>
+    <member refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service_1a846c264c89479de30a4f0ba0220b4cf9" kind="function"><name>UpdateYdelse</name></member>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_builder" kind="namespace"><name>global::Microsoft::AspNetCore::Builder</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_hosting" kind="namespace"><name>global::Microsoft::AspNetCore::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_http" kind="namespace"><name>global::Microsoft::AspNetCore::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_routing" kind="namespace"><name>global::Microsoft::AspNetCore::Routing</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_configuration" kind="namespace"><name>global::Microsoft::Extensions::Configuration</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>global::Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_hosting" kind="namespace"><name>global::Microsoft::Extensions::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_logging" kind="namespace"><name>global::Microsoft::Extensions::Logging</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http_1_1_json" kind="namespace"><name>global::System::Net::Http::Json</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_authentication" kind="namespace"><name>Microsoft::AspNetCore::Authentication</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_authentication_1_1_cookies" kind="namespace"><name>Microsoft::AspNetCore::Authentication::Cookies</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_authorization" kind="namespace"><name>Microsoft::AspNetCore::Authorization</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_cors_1_1_infrastructure" kind="namespace"><name>Microsoft::AspNetCore::Cors::Infrastructure</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_hosting" kind="namespace"><name>Microsoft::AspNetCore::Hosting</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_identity" kind="namespace"><name>Microsoft::AspNetCore::Identity</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc" kind="namespace"><name>Microsoft::AspNetCore::Mvc</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_mvc_1_1_razor_pages" kind="namespace"><name>Microsoft::AspNetCore::Mvc::RazorPages</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core" kind="namespace"><name>Microsoft::EntityFrameworkCore</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2" kind="namespace"><name>Semesterprojekt2</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_d_a_o" kind="namespace"><name>Semesterprojekt2::DAO</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_e_f_db_context" kind="namespace"><name>Semesterprojekt2::EFDbContext</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_mock_data" kind="namespace"><name>Semesterprojekt2::MockData</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_mock_data_1_1_profil" kind="namespace"><name>Semesterprojekt2::MockData::Profil</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_mock_data_1_1_shop" kind="namespace"><name>Semesterprojekt2::MockData::Shop</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_models" kind="namespace"><name>Semesterprojekt2::Models</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_models_1_1_book_a_time" kind="namespace"><name>Semesterprojekt2::Models::BookATime</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_models_1_1_shop" kind="namespace"><name>Semesterprojekt2::Models::Shop</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages" kind="namespace"><name>Semesterprojekt2::Pages</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_book_a_time" kind="namespace"><name>Semesterprojekt2::Pages::BookATime</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days" kind="namespace"><name>Semesterprojekt2::Pages::BookATime::BookedDays</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_error_page" kind="namespace"><name>Semesterprojekt2::Pages::ErrorPage</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_footer_pages" kind="namespace"><name>Semesterprojekt2::Pages::FooterPages</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_info" kind="namespace"><name>Semesterprojekt2::Pages::Info</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_login" kind="namespace"><name>Semesterprojekt2::Pages::Login</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_orderhistory" kind="namespace"><name>Semesterprojekt2::Pages::Orderhistory</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order" kind="namespace"><name>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order" kind="namespace"><name>Semesterprojekt2::Pages::Orderhistory::ProductOrder</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_prices" kind="namespace"><name>Semesterprojekt2::Pages::Prices</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_profil" kind="namespace"><name>Semesterprojekt2::Pages::Profil</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog" kind="namespace"><name>Semesterprojekt2::Pages::Profil::Dog</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_shop" kind="namespace"><name>Semesterprojekt2::Pages::Shop</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_shop_1_1_products" kind="namespace"><name>Semesterprojekt2::Pages::Shop::Products</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_pages_1_1_shopping_cart" kind="namespace"><name>Semesterprojekt2::Pages::ShoppingCart</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_service" kind="namespace"><name>Semesterprojekt2::Service</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_service_1_1_book_a_time_service" kind="namespace"><name>Semesterprojekt2::Service::BookATimeService</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_service_1_1_user_service" kind="namespace"><name>Semesterprojekt2::Service::UserService</name>
+  </compound>
+  <compound refid="namespace_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service" kind="namespace"><name>Semesterprojekt2::Service::UserService::UserService</name>
+  </compound>
+  <compound refid="namespacestatic" kind="namespace"><name>static</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model_1_1_data_annotations" kind="namespace"><name>System::ComponentModel::DataAnnotations</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model_1_1_data_annotations_1_1_schema" kind="namespace"><name>System::ComponentModel::DataAnnotations::Schema</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_constrained_execution" kind="namespace"><name>System::Runtime::ConstrainedExecution</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services_1_1_java_script_1_1_j_s_type" kind="namespace"><name>System::Runtime::InteropServices::JavaScript::JSType</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_intrinsics_1_1_x86" kind="namespace"><name>System::Runtime::Intrinsics::X86</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_claims" kind="namespace"><name>System::Security::Claims</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json" kind="namespace"><name>System::Text::Json</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_regular_expressions" kind="namespace"><name>System::Text::RegularExpressions</name>
+  </compound>
+  <compound refid="_product_order_d_a_o_8cs" kind="file"><name>ProductOrderDAO.cs</name>
+  </compound>
+  <compound refid="_semsterprojekt_db_context_8cs" kind="file"><name>SemsterprojektDbContext.cs</name>
+  </compound>
+  <compound refid="_mock_users_8cs" kind="file"><name>MockUsers.cs</name>
+  </compound>
+  <compound refid="_mock_products_8cs" kind="file"><name>MockProducts.cs</name>
+  </compound>
+  <compound refid="_book_a_time_8cs" kind="file"><name>BookATime.cs</name>
+  </compound>
+  <compound refid="_booked_days_8cs" kind="file"><name>BookedDays.cs</name>
+  </compound>
+  <compound refid="_ydelse_8cs" kind="file"><name>Ydelse.cs</name>
+  </compound>
+  <compound refid="_cart_item_8cs" kind="file"><name>CartItem.cs</name>
+  </compound>
+  <compound refid="_dog_8cs" kind="file"><name>Dog.cs</name>
+  </compound>
+  <compound refid="_product_8cs" kind="file"><name>Product.cs</name>
+  </compound>
+  <compound refid="_product_order_8cs" kind="file"><name>ProductOrder.cs</name>
+  </compound>
+  <compound refid="_users_8cs" kind="file"><name>Users.cs</name>
+  </compound>
+  <compound refid="_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_semesterprojekt2_8_assembly_info_8cs" kind="file"><name>Semesterprojekt2.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_semesterprojekt2_8_global_usings_8g_8cs" kind="file"><name>Semesterprojekt2.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_semesterprojekt2_8_razor_assembly_info_8cs" kind="file"><name>Semesterprojekt2.RazorAssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_book_a_time_8cshtml_8cs" kind="file"><name>BookATime.cshtml.cs</name>
+  </compound>
+  <compound refid="_book_a_time_without_dog_8cshtml_8cs" kind="file"><name>BookATimeWithoutDog.cshtml.cs</name>
+  </compound>
+  <compound refid="_booked_days_8cshtml_8cs" kind="file"><name>BookedDays.cshtml.cs</name>
+  </compound>
+  <compound refid="_create_booked_days_8cshtml_8cs" kind="file"><name>CreateBookedDays.cshtml.cs</name>
+  </compound>
+  <compound refid="_delete_booked_days_8cshtml_8cs" kind="file"><name>DeleteBookedDays.cshtml.cs</name>
+  </compound>
+  <compound refid="_calendar_8cshtml_8cs" kind="file"><name>Calendar.cshtml.cs</name>
+  </compound>
+  <compound refid="_thank_you_for_your_booking_8cshtml_8cs" kind="file"><name>ThankYouForYourBooking.cshtml.cs</name>
+  </compound>
+  <compound refid="_error_8cshtml_8cs" kind="file"><name>Error.cshtml.cs</name>
+  </compound>
+  <compound refid="_error_2_error_8cshtml_8cs" kind="file"><name>Error.cshtml.cs</name>
+  </compound>
+  <compound refid="_f_a_q_8cshtml_8cs" kind="file"><name>FAQ.cshtml.cs</name>
+  </compound>
+  <compound refid="_terms_01and_01_conditions_8cshtml_8cs" kind="file"><name>Terms and Conditions.cshtml.cs</name>
+  </compound>
+  <compound refid="_index_8cshtml_8cs" kind="file"><name>Index.cshtml.cs</name>
+  </compound>
+  <compound refid="_info_8cshtml_8cs" kind="file"><name>Info.cshtml.cs</name>
+  </compound>
+  <compound refid="_acess_denied_8cshtml_8cs" kind="file"><name>AcessDenied.cshtml.cs</name>
+  </compound>
+  <compound refid="_create_admin_8cshtml_8cs" kind="file"><name>CreateAdmin.cshtml.cs</name>
+  </compound>
+  <compound refid="_delete_userby_admin_8cshtml_8cs" kind="file"><name>DeleteUserbyAdmin.cshtml.cs</name>
+  </compound>
+  <compound refid="_edit_userby_admin_8cshtml_8cs" kind="file"><name>EditUserbyAdmin.cshtml.cs</name>
+  </compound>
+  <compound refid="_forgot_password_8cshtml_8cs" kind="file"><name>ForgotPassword.cshtml.cs</name>
+  </compound>
+  <compound refid="_login_8cshtml_8cs" kind="file"><name>Login.cshtml.cs</name>
+  </compound>
+  <compound refid="_log_out_8cshtml_8cs" kind="file"><name>LogOut.cshtml.cs</name>
+  </compound>
+  <compound refid="_reset_password_8cshtml_8cs" kind="file"><name>ResetPassword.cshtml.cs</name>
+  </compound>
+  <compound refid="_sign_up_8cshtml_8cs" kind="file"><name>SignUp.cshtml.cs</name>
+  </compound>
+  <compound refid="_user_overview_8cshtml_8cs" kind="file"><name>UserOverview.cshtml.cs</name>
+  </compound>
+  <compound refid="_accept_order_8cshtml_8cs" kind="file"><name>AcceptOrder.cshtml.cs</name>
+  </compound>
+  <compound refid="_delete_order_8cshtml_8cs" kind="file"><name>DeleteOrder.cshtml.cs</name>
+  </compound>
+  <compound refid="_edit_order_8cshtml_8cs" kind="file"><name>EditOrder.cshtml.cs</name>
+  </compound>
+  <compound refid="_book_a_time_order_history_8cshtml_8cs" kind="file"><name>BookATimeOrderHistory.cshtml.cs</name>
+  </compound>
+  <compound refid="_book_a_time_overview_8cshtml_8cs" kind="file"><name>BookATimeOverview.cshtml.cs</name>
+  </compound>
+  <compound refid="_delete_product_order_8cshtml_8cs" kind="file"><name>DeleteProductOrder.cshtml.cs</name>
+  </compound>
+  <compound refid="_product_order_history_8cshtml_8cs" kind="file"><name>ProductOrderHistory.cshtml.cs</name>
+  </compound>
+  <compound refid="_product_order_overview_8cshtml_8cs" kind="file"><name>ProductOrderOverview.cshtml.cs</name>
+  </compound>
+  <compound refid="_prices_8cshtml_8cs" kind="file"><name>Prices.cshtml.cs</name>
+  </compound>
+  <compound refid="_privacy_8cshtml_8cs" kind="file"><name>Privacy.cshtml.cs</name>
+  </compound>
+  <compound refid="_delete_user_8cshtml_8cs" kind="file"><name>DeleteUser.cshtml.cs</name>
+  </compound>
+  <compound refid="_add_dog_8cshtml_8cs" kind="file"><name>AddDog.cshtml.cs</name>
+  </compound>
+  <compound refid="_delete_dog_8cshtml_8cs" kind="file"><name>DeleteDog.cshtml.cs</name>
+  </compound>
+  <compound refid="_edit_dog_8cshtml_8cs" kind="file"><name>EditDog.cshtml.cs</name>
+  </compound>
+  <compound refid="_edit_user_8cshtml_8cs" kind="file"><name>EditUser.cshtml.cs</name>
+  </compound>
+  <compound refid="_profil_8cshtml_8cs" kind="file"><name>Profil.cshtml.cs</name>
+  </compound>
+  <compound refid="_add_product_8cshtml_8cs" kind="file"><name>AddProduct.cshtml.cs</name>
+  </compound>
+  <compound refid="_delete_product_8cshtml_8cs" kind="file"><name>DeleteProduct.cshtml.cs</name>
+  </compound>
+  <compound refid="_detail_product_8cshtml_8cs" kind="file"><name>DetailProduct.cshtml.cs</name>
+  </compound>
+  <compound refid="_edit_product_8cshtml_8cs" kind="file"><name>EditProduct.cshtml.cs</name>
+  </compound>
+  <compound refid="_thank_youfor_product_order_8cshtml_8cs" kind="file"><name>ThankYouforProductOrder.cshtml.cs</name>
+  </compound>
+  <compound refid="_shop_8cshtml_8cs" kind="file"><name>Shop.cshtml.cs</name>
+  </compound>
+  <compound refid="_shopping_cart_8cshtml_8cs" kind="file"><name>ShoppingCart.cshtml.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kind="variable"><name>app</name></member>
+    <member refid="_program_8cs_1a50ac3cc59e3f8d9e5c1a2734bd14b7f5" kind="function"><name>AddRazorPages</name></member>
+    <member refid="_program_8cs_1ad8c7ebb6e814cf42184b97ae915a72ff" kind="function"><name>AddSingleton&lt; ProductOrderService, ProductOrderService &gt;</name></member>
+    <member refid="_program_8cs_1a4b8cc0e43a26ceb443453336c450ea62" kind="function"><name>AddSingleton&lt; IBookATimeService, BookATimeService &gt;</name></member>
+    <member refid="_program_8cs_1adbe6ede3e836557e95866d1e54f99f53" kind="function"><name>AddSingleton&lt; IProductService, ProductService &gt;</name></member>
+    <member refid="_program_8cs_1aa3189cbf38a39f5dc1735ed026f8e92c" kind="function"><name>AddTransient&lt; JsonFileProductService &gt;</name></member>
+    <member refid="_program_8cs_1a8de244313a4fc2900df3baa3c7925216" kind="function"><name>AddSingleton&lt; IUserService, UserService &gt;</name></member>
+    <member refid="_program_8cs_1a9297e7d64f393848b31bd0f576b4c274" kind="function"><name>AddSingleton&lt; YdelseService, YdelseService &gt;</name></member>
+    <member refid="_program_8cs_1af92f7e7f7bb22977b0047ed45d1efcab" kind="function"><name>AddSingleton&lt; UserService, UserService &gt;</name></member>
+    <member refid="_program_8cs_1a8d8af228c0e55de360fd6232bc356565" kind="function"><name>AddSingleton&lt; DogService, DogService &gt;</name></member>
+    <member refid="_program_8cs_1a280764be519e29ca485edb72bc15b715" kind="function"><name>AddSingleton&lt; BookedDaysService, BookedDaysService &gt;</name></member>
+    <member refid="_program_8cs_1ae96b37f3565dcd3e435a87fc4991396a" kind="function"><name>AddTransient&lt; JsonFileUserService &gt;</name></member>
+    <member refid="_program_8cs_1aabe1df9955143f116d97b556c043e7b9" kind="function"><name>AddDbContext&lt; SemsterprojektDbContext &gt;</name></member>
+    <member refid="_program_8cs_1a32a1d213c45c84f5aa87a03da19bdc6b" kind="function"><name>AddSingleton&lt; ShoppingCartService, ShoppingCartService &gt;</name></member>
+    <member refid="_program_8cs_1a00063f3fa4515bc0f75d2110e3b1675d" kind="function"><name>AddTransient&lt; UserDbService, UserDbService &gt;</name></member>
+    <member refid="_program_8cs_1a0adbd08d5912ebde79099d378663ea57" kind="function"><name>AddTransient&lt; DbGenericService&lt; Product &gt;, DbGenericService&lt; Product &gt; &gt;</name></member>
+    <member refid="_program_8cs_1a0b1f4f1b10695d3f5d542c2b7e47e031" kind="function"><name>AddTransient&lt; DbGenericService&lt; BookedDays &gt;, DbGenericService&lt; BookedDays &gt; &gt;</name></member>
+    <member refid="_program_8cs_1a688a46f467d39d27cd04db54e7cb5daf" kind="function"><name>AddTransient&lt; BookATimeDbService, BookATimeDbService &gt;</name></member>
+    <member refid="_program_8cs_1a0ffd7cfa04ac57b7c01401685d243e96" kind="function"><name>AddTransient&lt; DbGenericService&lt; Dog &gt;, DbGenericService&lt; Dog &gt; &gt;</name></member>
+    <member refid="_program_8cs_1abee0d2b2ae9ff77051f6f2aea6b42df5" kind="function"><name>AddTransient&lt; DbGenericService&lt; Ydelse &gt;, DbGenericService&lt; Ydelse &gt; &gt;</name></member>
+    <member refid="_program_8cs_1a4c7e9229c321b19a337575baad8fa1ac" kind="function"><name>AddTransient&lt; DbGenericService&lt; ProductOrder &gt;, DbGenericService&lt; ProductOrder &gt; &gt;</name></member>
+    <member refid="_program_8cs_1a5e5f664748f58f501249371ec09ecb5b" kind="function"><name>Configure&lt; CookiePolicyOptions &gt;</name></member>
+    <member refid="_program_8cs_1a9f1129af2fb2adb21c396622f2191057" kind="function"><name>AddAuthentication</name></member>
+    <member refid="_program_8cs_1af2d0c02efe3fbc2d94e5b6e316777c4d" kind="function"><name>if</name></member>
+    <member refid="_program_8cs_1aa4d447fc3129a3aa301d736b8bd04ae9" kind="function"><name>UseHttpsRedirection</name></member>
+    <member refid="_program_8cs_1a906a3ce545279a7a73941f1d7b64d7cf" kind="function"><name>UseStaticFiles</name></member>
+    <member refid="_program_8cs_1a94c810d266751293a2d511a720a5625f" kind="function"><name>UseRouting</name></member>
+    <member refid="_program_8cs_1a6435d8beeff4999dc0b0c6d60a86a4e2" kind="function"><name>UseAuthentication</name></member>
+    <member refid="_program_8cs_1af6f72d752b2e73aa0292f74bd13237ab" kind="function"><name>UseAuthorization</name></member>
+    <member refid="_program_8cs_1aea1890390376604d4d91e0bdb76602a3" kind="function"><name>MapRazorPages</name></member>
+    <member refid="_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" kind="function"><name>Run</name></member>
+  </compound>
+  <compound refid="_book_a_time_db_service_8cs" kind="file"><name>BookATimeDbService.cs</name>
+  </compound>
+  <compound refid="_book_a_time_service_8cs" kind="file"><name>BookATimeService.cs</name>
+  </compound>
+  <compound refid="_booked_days_service_8cs" kind="file"><name>BookedDaysService.cs</name>
+  </compound>
+  <compound refid="_i_book_a_time_service_8cs" kind="file"><name>IBookATimeService.cs</name>
+  </compound>
+  <compound refid="_db_generic_service_8cs" kind="file"><name>DbGenericService.cs</name>
+  </compound>
+  <compound refid="_dog_service_8cs" kind="file"><name>DogService.cs</name>
+  </compound>
+  <compound refid="_i_product_service_8cs" kind="file"><name>IProductService.cs</name>
+  </compound>
+  <compound refid="_i_service_8cs" kind="file"><name>IService.cs</name>
+  </compound>
+  <compound refid="_json_file_product_service_8cs" kind="file"><name>JsonFileProductService.cs</name>
+  </compound>
+  <compound refid="_product_order_service_8cs" kind="file"><name>ProductOrderService.cs</name>
+  </compound>
+  <compound refid="_product_service_8cs" kind="file"><name>ProductService.cs</name>
+  </compound>
+  <compound refid="_shopping_cart_service_8cs" kind="file"><name>ShoppingCartService.cs</name>
+  </compound>
+  <compound refid="_i_user_service_8cs" kind="file"><name>IUserService.cs</name>
+  </compound>
+  <compound refid="_json_file_user_service_8cs" kind="file"><name>JsonFileUserService.cs</name>
+  </compound>
+  <compound refid="_user_db_service_8cs" kind="file"><name>UserDbService.cs</name>
+  </compound>
+  <compound refid="_user_service_8cs" kind="file"><name>UserService.cs</name>
+  </compound>
+  <compound refid="_ydelse_service_8cs" kind="file"><name>YdelseService.cs</name>
+  </compound>
+  <compound refid="_l_i_c_e_n_s_e_8md" kind="file"><name>LICENSE.md</name>
+  </compound>
+  <compound refid="md__semesterprojekt2_2wwwroot_2lib_2jquery-validation_2_l_i_c_e_n_s_e" kind="page"><name>md__semesterprojekt2_2wwwroot_2lib_2jquery-validation_2_l_i_c_e_n_s_e</name>
+  </compound>
+  <compound refid="dir_07c936de40c49d459327a70bb9e03c82" kind="dir"><name>Semesterprojekt2/Models/BookATime</name>
+  </compound>
+  <compound refid="dir_00618baae266e4263cdec1ed73aef0ed" kind="dir"><name>Semesterprojekt2/Pages/BookATime</name>
+  </compound>
+  <compound refid="dir_3e4f94b7eaa9ab53e18631b256639dd1" kind="dir"><name>Semesterprojekt2/Pages/Orderhistory/BookATimeOrder</name>
+  </compound>
+  <compound refid="dir_ee3e3bb974f938840187b45c98cf725b" kind="dir"><name>Semesterprojekt2/Service/BookATimeService</name>
+  </compound>
+  <compound refid="dir_e53198dee2f3f319935333983a86d285" kind="dir"><name>Semesterprojekt2/Pages/BookATime/BookedDays</name>
+  </compound>
+  <compound refid="dir_2268f43ecb91a0547234aabc27a27c71" kind="dir"><name>Semesterprojekt2/DAO</name>
+  </compound>
+  <compound refid="dir_9569f217d6f1c6ef9b7a089dc0e08df8" kind="dir"><name>Semesterprojekt2/obj/Debug</name>
+  </compound>
+  <compound refid="dir_401b5752a5e86033144c040e4524b65e" kind="dir"><name>Semesterprojekt2/Pages/Profil/Dog</name>
+  </compound>
+  <compound refid="dir_32497ad764f2fb3a74c36bc971f2f51f" kind="dir"><name>Semesterprojekt2/EFDbContext</name>
+  </compound>
+  <compound refid="dir_0dac4ebef94ec0b4a4ee84f67bcc1a2f" kind="dir"><name>Semesterprojekt2/Pages/Error</name>
+  </compound>
+  <compound refid="dir_209427c62b100d925482d3995209e249" kind="dir"><name>Semesterprojekt2/Pages/FooterPages</name>
+  </compound>
+  <compound refid="dir_38bbfbecae8d2e0fc67c53812721b10f" kind="dir"><name>Semesterprojekt2/Pages/Info</name>
+  </compound>
+  <compound refid="dir_a70c66acbd5cb0904c17c994a5dde695" kind="dir"><name>Semesterprojekt2/wwwroot/lib/jquery-validation</name>
+  </compound>
+  <compound refid="dir_b380957f714b69cd4a8bd54a87a49bac" kind="dir"><name>Semesterprojekt2/wwwroot/lib</name>
+  </compound>
+  <compound refid="dir_cf8188ea529df69be276545085f1b2bd" kind="dir"><name>Semesterprojekt2/Pages/Login</name>
+  </compound>
+  <compound refid="dir_cb7c308dc8752f290c47a9dccb89e9a7" kind="dir"><name>Semesterprojekt2/MockData</name>
+  </compound>
+  <compound refid="dir_40cfce4fcd392b0d794cfe0cc810d331" kind="dir"><name>Semesterprojekt2/Models</name>
+  </compound>
+  <compound refid="dir_5c8b6ce17d4a2e6a5c8a95e9613fabf7" kind="dir"><name>Semesterprojekt2/obj/Debug/net8.0</name>
+  </compound>
+  <compound refid="dir_a752624eda4b699514d947235c95f39f" kind="dir"><name>Semesterprojekt2/obj</name>
+  </compound>
+  <compound refid="dir_c2a4f6480852d29c486a3967084be52c" kind="dir"><name>Semesterprojekt2/Pages/Orderhistory</name>
+  </compound>
+  <compound refid="dir_8865e6f0489a950b76cc71b128157bd5" kind="dir"><name>Semesterprojekt2/Pages</name>
+  </compound>
+  <compound refid="dir_be60eba24bf6d7300bd8a2e519be4f6f" kind="dir"><name>Semesterprojekt2/Pages/Prices</name>
+  </compound>
+  <compound refid="dir_39e7bf511422f392a32c26f77b1d8e33" kind="dir"><name>Semesterprojekt2/Pages/Orderhistory/ProductOrder</name>
+  </compound>
+  <compound refid="dir_6d9d1e2b82f27194e60adfb6330b8354" kind="dir"><name>Semesterprojekt2/Pages/Shop/Products</name>
+  </compound>
+  <compound refid="dir_286499bfa68fc9541182dd5ac0febcb5" kind="dir"><name>Semesterprojekt2/MockData/Profil</name>
+  </compound>
+  <compound refid="dir_56b962d8a72bf91c7e96dea5f82c23ee" kind="dir"><name>Semesterprojekt2/Pages/Profil</name>
+  </compound>
+  <compound refid="dir_31273b46b20449c0c4386e17f7658b99" kind="dir"><name>Semesterprojekt2</name>
+  </compound>
+  <compound refid="dir_ec060c0b744f06c009ec2b753d4469cb" kind="dir"><name>Semesterprojekt2/Service</name>
+  </compound>
+  <compound refid="dir_fbcd73e176ca6bf8f2d438e66af536b4" kind="dir"><name>Semesterprojekt2/MockData/Shop</name>
+  </compound>
+  <compound refid="dir_949035cff5e3b7990c3986545378cc04" kind="dir"><name>Semesterprojekt2/Models/Shop</name>
+  </compound>
+  <compound refid="dir_750c0549d8618d5475a48032d8f34822" kind="dir"><name>Semesterprojekt2/Pages/Shop</name>
+  </compound>
+  <compound refid="dir_38f9a313112fa115a383c0858c0a73e6" kind="dir"><name>Semesterprojekt2/Pages/ShoppingCart</name>
+  </compound>
+  <compound refid="dir_c464ead12246df867747b60b929bf787" kind="dir"><name>Semesterprojekt2/Service/UserService</name>
+  </compound>
+  <compound refid="dir_c5553a9a4e220bdd880a29a2b306c458" kind="dir"><name>Semesterprojekt2/wwwroot</name>
+  </compound>
+</doxygenindex>

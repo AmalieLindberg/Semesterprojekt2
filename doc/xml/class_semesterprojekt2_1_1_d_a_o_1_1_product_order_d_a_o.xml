@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::DAO::ProductOrderDAO</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a0302f548c1e9b473162b91aa932fcf7e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.DAO.ProductOrderDAO.OrderId</definition>
+        <argsstring></argsstring>
+        <name>OrderId</name>
+        <qualifiedname>Semesterprojekt2.DAO.ProductOrderDAO.OrderId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/DAO/ProductOrderDAO.cs" line="5" column="24" bodyfile="Semesterprojekt2/DAO/ProductOrderDAO.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1afecbfbd5af72693fc0372003a206285c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.DAO.ProductOrderDAO.ProductId</definition>
+        <argsstring></argsstring>
+        <name>ProductId</name>
+        <qualifiedname>Semesterprojekt2.DAO.ProductOrderDAO.ProductId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/DAO/ProductOrderDAO.cs" line="6" column="24" bodyfile="Semesterprojekt2/DAO/ProductOrderDAO.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a9c208d572da00f9cb07fdbd0eb81ce48" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.DAO.ProductOrderDAO.ProductName</definition>
+        <argsstring></argsstring>
+        <name>ProductName</name>
+        <qualifiedname>Semesterprojekt2.DAO.ProductOrderDAO.ProductName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/DAO/ProductOrderDAO.cs" line="7" column="27" bodyfile="Semesterprojekt2/DAO/ProductOrderDAO.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a78fbf95cd6af59928c218e31da6cda9e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>decimal</type>
+        <definition>decimal Semesterprojekt2.DAO.ProductOrderDAO.Price</definition>
+        <argsstring></argsstring>
+        <name>Price</name>
+        <qualifiedname>Semesterprojekt2.DAO.ProductOrderDAO.Price</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/DAO/ProductOrderDAO.cs" line="8" column="28" bodyfile="Semesterprojekt2/DAO/ProductOrderDAO.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1ad80d1178a9c2aee812ff4d7920192c6a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.DAO.ProductOrderDAO.UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>Semesterprojekt2.DAO.ProductOrderDAO.UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/DAO/ProductOrderDAO.cs" line="9" column="24" bodyfile="Semesterprojekt2/DAO/ProductOrderDAO.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1aec80d31cc4784bd0a03fff664b8bd3a3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.DAO.ProductOrderDAO.UserName</definition>
+        <argsstring></argsstring>
+        <name>UserName</name>
+        <qualifiedname>Semesterprojekt2.DAO.ProductOrderDAO.UserName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/DAO/ProductOrderDAO.cs" line="10" column="27" bodyfile="Semesterprojekt2/DAO/ProductOrderDAO.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a550fc07bc6604b941f0b2629a1465889" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.DAO.ProductOrderDAO.Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <qualifiedname>Semesterprojekt2.DAO.ProductOrderDAO.Count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/DAO/ProductOrderDAO.cs" line="11" column="24" bodyfile="Semesterprojekt2/DAO/ProductOrderDAO.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/DAO/ProductOrderDAO.cs" line="3" column="11" bodyfile="Semesterprojekt2/DAO/ProductOrderDAO.cs" bodystart="4" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a550fc07bc6604b941f0b2629a1465889" prot="public" virt="non-virtual"><scope>Semesterprojekt2::DAO::ProductOrderDAO</scope><name>Count</name></member>
+      <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a0302f548c1e9b473162b91aa932fcf7e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::DAO::ProductOrderDAO</scope><name>OrderId</name></member>
+      <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a78fbf95cd6af59928c218e31da6cda9e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::DAO::ProductOrderDAO</scope><name>Price</name></member>
+      <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1afecbfbd5af72693fc0372003a206285c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::DAO::ProductOrderDAO</scope><name>ProductId</name></member>
+      <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1a9c208d572da00f9cb07fdbd0eb81ce48" prot="public" virt="non-virtual"><scope>Semesterprojekt2::DAO::ProductOrderDAO</scope><name>ProductName</name></member>
+      <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1ad80d1178a9c2aee812ff4d7920192c6a" prot="public" virt="non-virtual"><scope>Semesterprojekt2::DAO::ProductOrderDAO</scope><name>UserId</name></member>
+      <member refid="class_semesterprojekt2_1_1_d_a_o_1_1_product_order_d_a_o_1aec80d31cc4784bd0a03fff664b8bd3a3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::DAO::ProductOrderDAO</scope><name>UserName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

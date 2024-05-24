@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Models::Shop::Product</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1ade375c2064f139abafe542de8ab5598a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.Shop.Product.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="17" column="12" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a9f8ac89373d0d2fcb0408e0afca015ce" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Shop.Product.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="23" column="23" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a9348bd81a368df1f34d02ca519f10329" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>decimal?</type>
+        <definition>decimal? Semesterprojekt2.Models.Shop.Product.Price</definition>
+        <argsstring></argsstring>
+        <name>Price</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.Price</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="27" column="24" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1ace1f35d63ea30f7240cd41fa7b41b74c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Shop.Product.Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.Type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="31" column="23" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a7919ad1ba96208a7d5c73869ccb8e9a1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Shop.Product.Brand</definition>
+        <argsstring></argsstring>
+        <name>Brand</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.Brand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="35" column="23" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a9a8fc096f7cfeafb31f34987abedef52" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? Semesterprojekt2.Models.Shop.Product.Amount</definition>
+        <argsstring></argsstring>
+        <name>Amount</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.Amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="39" column="20" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a4d46cea379b95cf84153962c0bf24530" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Shop.Product.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.Description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="43" column="23" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a10d3ae5f60291be055f6910bc7bba6ae" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Shop.Product.ProductImage</definition>
+        <argsstring></argsstring>
+        <name>ProductImage</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.ProductImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="47" column="23" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="47" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a24272b0e9accb256153831e432ec344c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.Shop.Product.Product</definition>
+        <argsstring>(string name, decimal price, string type, string brand, int amount, string description)</argsstring>
+        <name>Product</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.Product</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>decimal</type>
+          <declname>price</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="52" column="8" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1ad204ec2309ac8dafb0d405a10d164321" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.Shop.Product.Product</definition>
+        <argsstring>()</argsstring>
+        <name>Product</name>
+        <qualifiedname>Semesterprojekt2.Models.Shop.Product.Product</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Shop/Product.cs" line="64" column="8" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="64" bodyend="66"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Models/Shop/Product.cs" line="13" column="7" bodyfile="Semesterprojekt2/Models/Shop/Product.cs" bodystart="14" bodyend="67"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a9a8fc096f7cfeafb31f34987abedef52" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>Amount</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a7919ad1ba96208a7d5c73869ccb8e9a1" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>Brand</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a4d46cea379b95cf84153962c0bf24530" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>Description</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1ade375c2064f139abafe542de8ab5598a" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>Id</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a9f8ac89373d0d2fcb0408e0afca015ce" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>Name</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a9348bd81a368df1f34d02ca519f10329" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>Price</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a24272b0e9accb256153831e432ec344c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>Product</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1ad204ec2309ac8dafb0d405a10d164321" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>Product</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1a10d3ae5f60291be055f6910bc7bba6ae" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>ProductImage</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_1ace1f35d63ea30f7240cd41fa7b41b74c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Shop::Product</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

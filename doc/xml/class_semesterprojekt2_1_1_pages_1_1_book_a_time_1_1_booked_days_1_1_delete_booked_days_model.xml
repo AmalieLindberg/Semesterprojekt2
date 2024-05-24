@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::BookATime::BookedDays::DeleteBookedDaysModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a27ee1d86668db90296360886e008bf41" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service" kindref="compound">BookedDaysService</ref></type>
+        <definition>BookedDaysService Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.BookedDaysService</definition>
+        <argsstring></argsstring>
+        <name>BookedDaysService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.BookedDaysService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" line="13" column="35" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a601d243b4b5ab5b5def36a4e54055f2c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">Models.BookATime.BookedDays</ref></type>
+        <definition>Models.BookATime.BookedDays Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.BookedDays</definition>
+        <argsstring></argsstring>
+        <name>BookedDays</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.BookedDays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" line="16" column="42" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a20ebb14330fcfb0c88a053351684e6f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.DeleteBookedDaysModel</definition>
+        <argsstring>(BookedDaysService bookedDaysService)</argsstring>
+        <name>DeleteBookedDaysModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.DeleteBookedDaysModel</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service" kindref="compound">BookedDaysService</ref></type>
+          <declname>bookedDaysService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" line="18" column="16" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a533eb236507ec8317d6a8d6e19708263" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" line="22" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a0d9ebc1c76196d794722570a7aa0fdc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" line="30" column="27" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" bodystart="30" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.BookedDays.DeleteBookedDaysModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" line="11" column="11" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/DeleteBookedDays.cshtml.cs" bodystart="12" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a601d243b4b5ab5b5def36a4e54055f2c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::DeleteBookedDaysModel</scope><name>BookedDays</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a27ee1d86668db90296360886e008bf41" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::DeleteBookedDaysModel</scope><name>BookedDaysService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a20ebb14330fcfb0c88a053351684e6f0" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::DeleteBookedDaysModel</scope><name>DeleteBookedDaysModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a533eb236507ec8317d6a8d6e19708263" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::DeleteBookedDaysModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_delete_booked_days_model_1a0d9ebc1c76196d794722570a7aa0fdc0" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::DeleteBookedDaysModel</scope><name>OnPost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

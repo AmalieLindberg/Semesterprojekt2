@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_models_1_1_users" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Models::Users</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1a5e931a34d1e7ab1d696dee92bb9988bc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.Users.UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="17" column="20" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1a51bcea9382dfd099c7c57c8bc9c1d4ea" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Models.Users.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="20" column="23" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1ab843ba29cbfc2055ce72163700becec5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Models.Users.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="23" column="23" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1a3438d90781552df203e2959f9e65d222" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? Semesterprojekt2.Models.Users.Telefonnummer</definition>
+        <argsstring></argsstring>
+        <name>Telefonnummer</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.Telefonnummer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="25" column="20" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1a725c21badc564248ca5e3a9c5ae49ed9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Models.Users.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="27" column="23" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1a089731cb3ed1eb7b3dfbdd42dfad2abd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Models.Users.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.Role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="29" column="23" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1a0ebe1d23a4ac006896ccc186719d3f92" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Users.ProfileImages</definition>
+        <argsstring></argsstring>
+        <name>ProfileImages</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.ProfileImages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="31" column="23" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1a3c9d29d7d91b2b21d78d4708dad35a63" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Users.Bio</definition>
+        <argsstring></argsstring>
+        <name>Bio</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.Bio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="32" column="23" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1a74a2d02a995ca0aa362857f9c0cd1260" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">Models.BookATime.BookATime</ref> &gt;?</type>
+        <definition>IEnumerable&lt;Models.BookATime.BookATime&gt;? Semesterprojekt2.Models.Users.BookATime</definition>
+        <argsstring></argsstring>
+        <name>BookATime</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.BookATime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="33" column="28" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1ae4659c525e8e176180e593997d16d654" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product_order" kindref="compound">Models.Shop.ProductOrder</ref> &gt;?</type>
+        <definition>IEnumerable&lt;Models.Shop.ProductOrder&gt;? Semesterprojekt2.Models.Users.ProductOrders</definition>
+        <argsstring></argsstring>
+        <name>ProductOrders</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.ProductOrders</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="34" column="28" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_users_1aff3108d2d94871eb4413d3762c968b50" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref> &gt;?</type>
+        <definition>IEnumerable&lt;Models.Dog&gt;? Semesterprojekt2.Models.Users.Dog</definition>
+        <argsstring></argsstring>
+        <name>Dog</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.Dog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="36" column="28" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_users_1adbc7a61f62d9b20fc99366954ad23500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.Users.Users</definition>
+        <argsstring>(string password, string name, int telefonnummer, string email, string role)</argsstring>
+        <name>Users</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.Users</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>telefonnummer</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="37" column="16" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_users_1ab22f59ba15b1d4fec0969f76b1724018" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.Users.Users</definition>
+        <argsstring>()</argsstring>
+        <name>Users</name>
+        <qualifiedname>Semesterprojekt2.Models.Users.Users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Users.cs" line="46" column="16" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="46" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Models/Users.cs" line="10" column="11" bodyfile="Semesterprojekt2/Models/Users.cs" bodystart="11" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a3c9d29d7d91b2b21d78d4708dad35a63" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>Bio</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a74a2d02a995ca0aa362857f9c0cd1260" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>BookATime</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1aff3108d2d94871eb4413d3762c968b50" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>Dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a725c21badc564248ca5e3a9c5ae49ed9" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>Email</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1ab843ba29cbfc2055ce72163700becec5" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>Name</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a51bcea9382dfd099c7c57c8bc9c1d4ea" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>Password</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1ae4659c525e8e176180e593997d16d654" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>ProductOrders</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a0ebe1d23a4ac006896ccc186719d3f92" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>ProfileImages</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a089731cb3ed1eb7b3dfbdd42dfad2abd" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>Role</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a3438d90781552df203e2959f9e65d222" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>Telefonnummer</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1a5e931a34d1e7ab1d696dee92bb9988bc" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>UserId</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1adbc7a61f62d9b20fc99366954ad23500" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>Users</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_users_1ab22f59ba15b1d4fec0969f76b1724018" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Users</scope><name>Users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Profil::Dog::DeleteDogModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a53146b595308b773d3c9389da2169e9f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+        <definition>DogService Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel._dogService</definition>
+        <argsstring></argsstring>
+        <name>_dogService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel._dogService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" line="13" column="28" bodyfile="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a9564ee635a6e3d14f1e536811daab3f5" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+        <definition>IBookATimeService Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel._bookATimeService</definition>
+        <argsstring></argsstring>
+        <name>_bookATimeService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel._bookATimeService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" line="14" column="35" bodyfile="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a9939a44b0007ace81e1f11ce67a43b2f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref></type>
+        <definition>Models.Dog Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel.dog</definition>
+        <argsstring></argsstring>
+        <name>dog</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel.dog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" line="23" column="26" bodyfile="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1afead414517827722790bf0700b2f397e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel.DeleteDogModel</definition>
+        <argsstring>(DogService dogService, IBookATimeService bookATimeService)</argsstring>
+        <name>DeleteDogModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel.DeleteDogModel</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+          <declname>dogService</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+          <declname>bookATimeService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" line="16" column="16" bodyfile="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a06f3ec9dd8efd3193e0070db70c874ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" line="27" column="30" bodyfile="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" bodystart="27" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a9d7288013d0be48150ce32c8ed8eba01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" line="37" column="27" bodyfile="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" bodystart="37" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Profil.Dog.DeleteDogModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" line="11" column="11" bodyfile="Semesterprojekt2/Pages/Profil/Dog/DeleteDog.cshtml.cs" bodystart="12" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a9564ee635a6e3d14f1e536811daab3f5" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::DeleteDogModel</scope><name>_bookATimeService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a53146b595308b773d3c9389da2169e9f" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::DeleteDogModel</scope><name>_dogService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1afead414517827722790bf0700b2f397e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::DeleteDogModel</scope><name>DeleteDogModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a9939a44b0007ace81e1f11ce67a43b2f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::DeleteDogModel</scope><name>dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a06f3ec9dd8efd3193e0070db70c874ab" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::DeleteDogModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_delete_dog_model_1a9d7288013d0be48150ce32c8ed8eba01" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::DeleteDogModel</scope><name>OnPost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

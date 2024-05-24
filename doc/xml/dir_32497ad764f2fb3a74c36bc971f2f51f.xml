@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_32497ad764f2fb3a74c36bc971f2f51f" kind="dir">
+    <compoundname>Semesterprojekt2/EFDbContext</compoundname>
+    <innerfile refid="_semsterprojekt_db_context_8cs">SemsterprojektDbContext.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/EFDbContext/"/>
+  </compounddef>
+</doxygen>

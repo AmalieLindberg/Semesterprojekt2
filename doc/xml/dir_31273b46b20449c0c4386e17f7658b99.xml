@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_31273b46b20449c0c4386e17f7658b99" kind="dir">
+    <compoundname>Semesterprojekt2</compoundname>
+    <innerdir refid="dir_2268f43ecb91a0547234aabc27a27c71">Semesterprojekt2/DAO</innerdir>
+    <innerdir refid="dir_32497ad764f2fb3a74c36bc971f2f51f">Semesterprojekt2/EFDbContext</innerdir>
+    <innerdir refid="dir_cb7c308dc8752f290c47a9dccb89e9a7">Semesterprojekt2/MockData</innerdir>
+    <innerdir refid="dir_40cfce4fcd392b0d794cfe0cc810d331">Semesterprojekt2/Models</innerdir>
+    <innerdir refid="dir_a752624eda4b699514d947235c95f39f">Semesterprojekt2/obj</innerdir>
+    <innerdir refid="dir_8865e6f0489a950b76cc71b128157bd5">Semesterprojekt2/Pages</innerdir>
+    <innerdir refid="dir_ec060c0b744f06c009ec2b753d4469cb">Semesterprojekt2/Service</innerdir>
+    <innerdir refid="dir_c5553a9a4e220bdd880a29a2b306c458">Semesterprojekt2/wwwroot</innerdir>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/"/>
+  </compounddef>
+</doxygen>

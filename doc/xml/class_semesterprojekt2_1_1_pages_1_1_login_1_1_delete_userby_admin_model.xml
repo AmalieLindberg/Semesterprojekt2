@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Login::DeleteUserbyAdminModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1a0b604cf4cc9a6f43ef0d73850483c861" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" line="9" column="22" bodyfile="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1a05f29fc6b5d134fd06a316b777cdb342" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Models.? Users</type>
+        <definition>Models.? Users Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel.user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel.user</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" line="17" column="20" bodyfile="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1ab7bb381923c71fd0f79add60dda00585" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel.DeleteUserbyAdminModel</definition>
+        <argsstring>(IUserService userService)</argsstring>
+        <name>DeleteUserbyAdminModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel.DeleteUserbyAdminModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" line="11" column="8" bodyfile="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1a400be61b5a8af6eea10eabc37559fdd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" line="19" column="22" bodyfile="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" bodystart="19" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1aed3f8288c2fc8e1f5476f8716370b1bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel.OnPost</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel.OnPost</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" line="28" column="19" bodyfile="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" bodystart="28" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.DeleteUserbyAdminModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" line="7" column="11" bodyfile="Semesterprojekt2/Pages/Login/DeleteUserbyAdmin.cshtml.cs" bodystart="8" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1a0b604cf4cc9a6f43ef0d73850483c861" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::DeleteUserbyAdminModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1ab7bb381923c71fd0f79add60dda00585" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::DeleteUserbyAdminModel</scope><name>DeleteUserbyAdminModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1a400be61b5a8af6eea10eabc37559fdd5" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::DeleteUserbyAdminModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1aed3f8288c2fc8e1f5476f8716370b1bc" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::DeleteUserbyAdminModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model_1a05f29fc6b5d134fd06a316b777cdb342" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::DeleteUserbyAdminModel</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

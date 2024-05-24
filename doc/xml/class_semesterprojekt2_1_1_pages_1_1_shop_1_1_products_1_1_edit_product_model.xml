@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Shop::Products::EditProductModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a2bd0a775314e9f3907eb81bd9fc97047" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+        <definition>IProductService Semesterprojekt2.Pages.Shop.Products.EditProductModel._productService</definition>
+        <argsstring></argsstring>
+        <name>_productService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.EditProductModel._productService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" line="13" column="25" bodyfile="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1aa3e660641d926f70ca31d288d88ffa9e" prot="private" static="no" mutable="no">
+        <type>IWebHostEnvironment</type>
+        <definition>IWebHostEnvironment Semesterprojekt2.Pages.Shop.Products.EditProductModel._webHostEnvironment</definition>
+        <argsstring></argsstring>
+        <name>_webHostEnvironment</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.EditProductModel._webHostEnvironment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" line="16" column="29" bodyfile="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a7861a59dce1f55229b68b1594a61bef7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Models.Shop.Product</ref></type>
+        <definition>Models.Shop.Product Semesterprojekt2.Pages.Shop.Products.EditProductModel.Product</definition>
+        <argsstring></argsstring>
+        <name>Product</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.EditProductModel.Product</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" line="27" column="34" bodyfile="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a660df7f958350b92feaae91d82f8bb82" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IFormFile?</type>
+        <definition>IFormFile? Semesterprojekt2.Pages.Shop.Products.EditProductModel.Photo</definition>
+        <argsstring></argsstring>
+        <name>Photo</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.EditProductModel.Photo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" line="31" column="18" bodyfile="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a08fcbd8277ab1a3d4017225ca81fe503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Shop.Products.EditProductModel.EditProductModel</definition>
+        <argsstring>(IProductService productService, IWebHostEnvironment webHost)</argsstring>
+        <name>EditProductModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.EditProductModel.EditProductModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+          <declname>productService</declname>
+        </param>
+        <param>
+          <type>IWebHostEnvironment</type>
+          <declname>webHost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" line="19" column="8" bodyfile="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a3d3844eefa7db4de4193e77180614b20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Shop.Products.EditProductModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.EditProductModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" line="33" column="22" bodyfile="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1acb05f6d97619de3cc1e5af573d1b0b66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Shop.Products.EditProductModel.OnPostAsync</definition>
+        <argsstring>()</argsstring>
+        <name>OnPostAsync</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.EditProductModel.OnPostAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" line="42" column="19" bodyfile="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" bodystart="42" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a1ab51a4f67a905c6717bfda283d5096b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Shop.Products.EditProductModel.ProcessUploadedFile</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessUploadedFile</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.EditProductModel.ProcessUploadedFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" line="61" column="16" bodyfile="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" bodystart="61" bodyend="75"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.Products.EditProductModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.Products.EditProductModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" line="10" column="7" bodyfile="Semesterprojekt2/Pages/Shop/Products/EditProduct.cshtml.cs" bodystart="11" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a2bd0a775314e9f3907eb81bd9fc97047" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::EditProductModel</scope><name>_productService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1aa3e660641d926f70ca31d288d88ffa9e" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::EditProductModel</scope><name>_webHostEnvironment</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a08fcbd8277ab1a3d4017225ca81fe503" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::EditProductModel</scope><name>EditProductModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a3d3844eefa7db4de4193e77180614b20" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::EditProductModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1acb05f6d97619de3cc1e5af573d1b0b66" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::EditProductModel</scope><name>OnPostAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a660df7f958350b92feaae91d82f8bb82" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::EditProductModel</scope><name>Photo</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a1ab51a4f67a905c6717bfda283d5096b" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::EditProductModel</scope><name>ProcessUploadedFile</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_edit_product_model_1a7861a59dce1f55229b68b1594a61bef7" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::EditProductModel</scope><name>Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

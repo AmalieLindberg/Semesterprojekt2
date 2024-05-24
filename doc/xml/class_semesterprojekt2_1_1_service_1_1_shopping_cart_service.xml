@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::ShoppingCartService</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1ac936aa48e58a2c924a6f988dc2a30580" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_cart_item" kindref="compound">CartItem</ref> &gt;</type>
+        <definition>List&lt;CartItem&gt; Semesterprojekt2.Service.ShoppingCartService._cartItems</definition>
+        <argsstring></argsstring>
+        <name>_cartItems</name>
+        <qualifiedname>Semesterprojekt2.Service.ShoppingCartService._cartItems</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ShoppingCartService.cs" line="11" column="22" bodyfile="Semesterprojekt2/Service/ShoppingCartService.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a006c749664f019a911053e9ce317e316" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Service.ShoppingCartService.ShoppingCartService</definition>
+        <argsstring>()</argsstring>
+        <name>ShoppingCartService</name>
+        <qualifiedname>Semesterprojekt2.Service.ShoppingCartService.ShoppingCartService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ShoppingCartService.cs" line="13" column="16" bodyfile="Semesterprojekt2/Service/ShoppingCartService.cs" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a142267758e26989a2438fe410dff523f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Service.ShoppingCartService.AddToCart</definition>
+        <argsstring>(Product product, int quantity)</argsstring>
+        <name>AddToCart</name>
+        <qualifiedname>Semesterprojekt2.Service.ShoppingCartService.AddToCart</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ShoppingCartService.cs" line="20" column="21" bodyfile="Semesterprojekt2/Service/ShoppingCartService.cs" bodystart="20" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a3a5271c7ae7011f83757b42be52bf2cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_cart_item" kindref="compound">CartItem</ref></type>
+        <definition>CartItem Semesterprojekt2.Service.ShoppingCartService.GetCartItem</definition>
+        <argsstring>(int productId)</argsstring>
+        <name>GetCartItem</name>
+        <qualifiedname>Semesterprojekt2.Service.ShoppingCartService.GetCartItem</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>productId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ShoppingCartService.cs" line="39" column="25" bodyfile="Semesterprojekt2/Service/ShoppingCartService.cs" bodystart="39" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1ad85ff758cfe47b4c2d3599f088433f2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_cart_item" kindref="compound">CartItem</ref> &gt;</type>
+        <definition>List&lt; CartItem &gt; Semesterprojekt2.Service.ShoppingCartService.GetAllCartItems</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllCartItems</name>
+        <qualifiedname>Semesterprojekt2.Service.ShoppingCartService.GetAllCartItems</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ShoppingCartService.cs" line="51" column="21" bodyfile="Semesterprojekt2/Service/ShoppingCartService.cs" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1abe44e296215de11f5d2a4cf1912ec141" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Semesterprojekt2.Service.ShoppingCartService.DeleteCartItem</definition>
+        <argsstring>(int productId)</argsstring>
+        <name>DeleteCartItem</name>
+        <qualifiedname>Semesterprojekt2.Service.ShoppingCartService.DeleteCartItem</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>productId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ShoppingCartService.cs" line="56" column="21" bodyfile="Semesterprojekt2/Service/ShoppingCartService.cs" bodystart="56" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a7ad1043836608de9cea1dbb5c4e98532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Service.ShoppingCartService.ClearCart</definition>
+        <argsstring>()</argsstring>
+        <name>ClearCart</name>
+        <qualifiedname>Semesterprojekt2.Service.ShoppingCartService.ClearCart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ShoppingCartService.cs" line="76" column="21" bodyfile="Semesterprojekt2/Service/ShoppingCartService.cs" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a44e45e08b42bfe00e71fa263f16eec13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>decimal</type>
+        <definition>decimal Semesterprojekt2.Service.ShoppingCartService.CalculateTotalPrice</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateTotalPrice</name>
+        <qualifiedname>Semesterprojekt2.Service.ShoppingCartService.CalculateTotalPrice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ShoppingCartService.cs" line="81" column="24" bodyfile="Semesterprojekt2/Service/ShoppingCartService.cs" bodystart="81" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Service/ShoppingCartService.cs" line="8" column="11" bodyfile="Semesterprojekt2/Service/ShoppingCartService.cs" bodystart="9" bodyend="101"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1ac936aa48e58a2c924a6f988dc2a30580" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::ShoppingCartService</scope><name>_cartItems</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a142267758e26989a2438fe410dff523f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ShoppingCartService</scope><name>AddToCart</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a44e45e08b42bfe00e71fa263f16eec13" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ShoppingCartService</scope><name>CalculateTotalPrice</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a7ad1043836608de9cea1dbb5c4e98532" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ShoppingCartService</scope><name>ClearCart</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1abe44e296215de11f5d2a4cf1912ec141" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ShoppingCartService</scope><name>DeleteCartItem</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1ad85ff758cfe47b4c2d3599f088433f2b" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ShoppingCartService</scope><name>GetAllCartItems</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a3a5271c7ae7011f83757b42be52bf2cd" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ShoppingCartService</scope><name>GetCartItem</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_shopping_cart_service_1a006c749664f019a911053e9ce317e316" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ShoppingCartService</scope><name>ShoppingCartService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

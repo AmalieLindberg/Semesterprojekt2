@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a50fbc9d992c4637de0ce9127afe84e02" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+        <definition>DogService Semesterprojekt2.Pages.Profil.Dog.EditDogModel._dogService</definition>
+        <argsstring></argsstring>
+        <name>_dogService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.EditDogModel._dogService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" line="9" column="20" bodyfile="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1ac85092dbabd2be8e06fb9d2bb334be7f" prot="private" static="no" mutable="no">
+        <type>IWebHostEnvironment</type>
+        <definition>IWebHostEnvironment Semesterprojekt2.Pages.Profil.Dog.EditDogModel._webHostEnvironment</definition>
+        <argsstring></argsstring>
+        <name>_webHostEnvironment</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.EditDogModel._webHostEnvironment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" line="10" column="29" bodyfile="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1aa6a141f70d35b8f0f4ac33c30263ff18" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IFormFile?</type>
+        <definition>IFormFile? Semesterprojekt2.Pages.Profil.Dog.EditDogModel.DogImages</definition>
+        <argsstring></argsstring>
+        <name>DogImages</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.EditDogModel.DogImages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" line="12" column="18" bodyfile="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a0988d068d69a381058f1501865b3ae0f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref></type>
+        <definition>Models.Dog Semesterprojekt2.Pages.Profil.Dog.EditDogModel.Dog</definition>
+        <argsstring></argsstring>
+        <name>Dog</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.EditDogModel.Dog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" line="20" column="18" bodyfile="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a3b6795438d5d9fa9a9e16f6f23b8c6d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Profil.Dog.EditDogModel.EditDogModel</definition>
+        <argsstring>(DogService dogService, IWebHostEnvironment webHost)</argsstring>
+        <name>EditDogModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.EditDogModel.EditDogModel</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+          <declname>dogService</declname>
+        </param>
+        <param>
+          <type>IWebHostEnvironment</type>
+          <declname>webHost</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" line="13" column="8" bodyfile="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1aac1030f815b547cad6c01cdd35f99439" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Profil.Dog.EditDogModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.EditDogModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" line="22" column="22" bodyfile="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1aad83975b94e02cb0efe5c4f5c36cd320" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Profil.Dog.EditDogModel.OnPostAsync</definition>
+        <argsstring>()</argsstring>
+        <name>OnPostAsync</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.EditDogModel.OnPostAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" line="30" column="19" bodyfile="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" bodystart="30" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a416471dccd41bccabed7ee042bdd551a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Profil.Dog.EditDogModel.ProcessUploadedFile</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessUploadedFile</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.Dog.EditDogModel.ProcessUploadedFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" line="51" column="16" bodyfile="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" bodystart="51" bodyend="65"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Profil.Dog.EditDogModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Profil.Dog.EditDogModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" line="7" column="11" bodyfile="Semesterprojekt2/Pages/Profil/Dog/EditDog.cshtml.cs" bodystart="8" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a50fbc9d992c4637de0ce9127afe84e02" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</scope><name>_dogService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1ac85092dbabd2be8e06fb9d2bb334be7f" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</scope><name>_webHostEnvironment</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a0988d068d69a381058f1501865b3ae0f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</scope><name>Dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1aa6a141f70d35b8f0f4ac33c30263ff18" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</scope><name>DogImages</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a3b6795438d5d9fa9a9e16f6f23b8c6d1" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</scope><name>EditDogModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1aac1030f815b547cad6c01cdd35f99439" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1aad83975b94e02cb0efe5c4f5c36cd320" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</scope><name>OnPostAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_dog_1_1_edit_dog_model_1a416471dccd41bccabed7ee042bdd551a" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::Dog::EditDogModel</scope><name>ProcessUploadedFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

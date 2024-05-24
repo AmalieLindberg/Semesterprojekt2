@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_pages_1_1_footer_pages" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Pages::FooterPages</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_footer_pages_1_1_f_a_q_model" prot="public">Semesterprojekt2::Pages::FooterPages::FAQModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_footer_pages_1_1_terms__and___conditions_model" prot="public">Semesterprojekt2::Pages::FooterPages::Terms_and_ConditionsModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/FooterPages/FAQ.cshtml.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

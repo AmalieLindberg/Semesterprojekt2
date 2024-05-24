@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_service_1_1_product_service" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::ProductService</compoundname>
+    <basecompoundref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" prot="public" virt="non-virtual">Semesterprojekt2.Service.IProductService</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_product_service_1a4904ebcb1ff68f19b9d06e33dadfa400" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>List&lt;Product&gt; Semesterprojekt2.Service.ProductService._products</definition>
+        <argsstring></argsstring>
+        <name>_products</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService._products</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="11" column="22" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_product_service_1af6a438bc6025f2b1234687644278fe33" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service" kindref="compound">DbGenericService</ref>&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>DbGenericService&lt;Product&gt; Semesterprojekt2.Service.ProductService._dbGenericService</definition>
+        <argsstring></argsstring>
+        <name>_dbGenericService</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService._dbGenericService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="12" column="34" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_product_service_1a625bf6c133a258fb00dc05ea9a69d8a4" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service" kindref="compound">JsonFileProductService</ref></type>
+        <definition>JsonFileProductService Semesterprojekt2.Service.ProductService.JsonFileProductService</definition>
+        <argsstring></argsstring>
+        <name>JsonFileProductService</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService.JsonFileProductService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="14" column="40" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_product_service_1a5cf1ce5b11b416c6e35456092c7f408b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Service.ProductService.ProductService</definition>
+        <argsstring>(JsonFileProductService jsonFileProductService, DbGenericService&lt; Product &gt; dbGenericService)</argsstring>
+        <name>ProductService</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService.ProductService</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service" kindref="compound">JsonFileProductService</ref></type>
+          <declname>jsonFileProductService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service" kindref="compound">DbGenericService</ref>&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+          <declname>dbGenericService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="16" column="16" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_product_service_1a933959fb254a5d042f9f6d195b619dcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Semesterprojekt2.Service.ProductService.AddProductAsync</definition>
+        <argsstring>(Product product)</argsstring>
+        <name>AddProductAsync</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService.AddProductAsync</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1ae74858eadbef700afe1ad7c106b40e63">AddProductAsync</reimplements>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref></type>
+          <declname>product</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="26" column="27" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_product_service_1a991d1a37f6b4ee0d52c883d4b333d318" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref></type>
+        <definition>Product Semesterprojekt2.Service.ProductService.GetProduct</definition>
+        <argsstring>(int productId)</argsstring>
+        <name>GetProduct</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService.GetProduct</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1a06ef08c1cb5b2c0fc65ee0225f5b2de6">GetProduct</reimplements>
+        <param>
+          <type>int</type>
+          <declname>productId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="32" column="24" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_product_service_1a87644537b29652bb41ac7dfafa2a58f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Semesterprojekt2.Service.ProductService.UpdateProductAsync</definition>
+        <argsstring>(Product product)</argsstring>
+        <name>UpdateProductAsync</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService.UpdateProductAsync</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1aba57cd2b6053da85b044e437111957af">UpdateProductAsync</reimplements>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref></type>
+          <declname>product</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="42" column="27" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="42" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_product_service_1af7b82716062780e3479afc0e132deb1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>async Task&lt; Product &gt; Semesterprojekt2.Service.ProductService.DeleteProductAsync</definition>
+        <argsstring>(int? productId)</argsstring>
+        <name>DeleteProductAsync</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService.DeleteProductAsync</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1abc55b3aa4c34a9f1933032eed2edf6f3">DeleteProductAsync</reimplements>
+        <param>
+          <type>int?</type>
+          <declname>productId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="71" column="27" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="71" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_product_service_1a7681d106af5306838be46f5be9799300" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>List&lt; Product &gt; Semesterprojekt2.Service.ProductService.GetProducts</definition>
+        <argsstring>()</argsstring>
+        <name>GetProducts</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService.GetProducts</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1a7cf46a81f43e515fbca83030080c0a55">GetProducts</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="93" column="21" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_product_service_1aa16caf812397f62393c2631f144ad807" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>IEnumerable&lt; Product &gt; Semesterprojekt2.Service.ProductService.NameSearch</definition>
+        <argsstring>(string str)</argsstring>
+        <name>NameSearch</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService.NameSearch</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1a50bdf8dbcf0b120046cfc38958e0bf92">NameSearch</reimplements>
+        <param>
+          <type>string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="95" column="28" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="95" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_product_service_1a628e67a67df993323e0fcb20ee60f72f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>IEnumerable&lt; Product &gt; Semesterprojekt2.Service.ProductService.PriceFilter</definition>
+        <argsstring>(int maxPrice, int minPrice=0)</argsstring>
+        <name>PriceFilter</name>
+        <qualifiedname>Semesterprojekt2.Service.ProductService.PriceFilter</qualifiedname>
+        <reimplements refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service_1a5346818ae2398ab69f23a37d89ef9940">PriceFilter</reimplements>
+        <param>
+          <type>int</type>
+          <declname>maxPrice</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minPrice</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/ProductService.cs" line="109" column="28" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="109" bodyend="121"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IProductService</label>
+        <link refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service"/>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Service.ProductService</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_product_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IProductService</label>
+        <link refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service"/>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Service.ProductService</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_product_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Service/ProductService.cs" line="9" column="11" bodyfile="Semesterprojekt2/Service/ProductService.cs" bodystart="10" bodyend="122"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1af6a438bc6025f2b1234687644278fe33" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>_dbGenericService</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a4904ebcb1ff68f19b9d06e33dadfa400" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>_products</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a933959fb254a5d042f9f6d195b619dcd" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>AddProductAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1af7b82716062780e3479afc0e132deb1c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>DeleteProductAsync</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a991d1a37f6b4ee0d52c883d4b333d318" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>GetProduct</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a7681d106af5306838be46f5be9799300" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>GetProducts</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a625bf6c133a258fb00dc05ea9a69d8a4" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>JsonFileProductService</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1aa16caf812397f62393c2631f144ad807" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>NameSearch</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a628e67a67df993323e0fcb20ee60f72f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>PriceFilter</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a5cf1ce5b11b416c6e35456092c7f408b" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>ProductService</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_product_service_1a87644537b29652bb41ac7dfafa2a58f3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::ProductService</scope><name>UpdateProductAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

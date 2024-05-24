@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_pages_1_1_orderhistory" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Pages::Orderhistory</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_overview_model" prot="public">Semesterprojekt2::Pages::Orderhistory::BookATimeOverviewModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_orderhistory_model" prot="public">Semesterprojekt2::Pages::Orderhistory::OrderhistoryModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_history_model" prot="public">Semesterprojekt2::Pages::Orderhistory::ProductOrderHistoryModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order_overview_model" prot="public">Semesterprojekt2::Pages::Orderhistory::ProductOrderOverviewModel</innerclass>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order">Semesterprojekt2::Pages::Orderhistory::BookATimeOrder</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_product_order">Semesterprojekt2::Pages::Orderhistory::ProductOrder</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/AcceptOrder.cshtml.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

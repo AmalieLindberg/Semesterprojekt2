@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_mock_products_8cs" kind="file" language="C#">
+    <compoundname>MockProducts.cs</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products" prot="public">Semesterprojekt2::MockData::Shop::MockProducts</innerclass>
+    <innernamespace refid="namespace_semesterprojekt2">Semesterprojekt2</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_mock_data">Semesterprojekt2::MockData</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_mock_data_1_1_shop">Semesterprojekt2::MockData::Shop</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_semesterprojekt2_1_1_models_1_1_shop" kindref="compound">Semesterprojekt2.Models.Shop</ref>;</highlight></codeline>
+<codeline lineno="2" refid="namespace_semesterprojekt2_1_1_mock_data_1_1_shop" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_semesterprojekt2_1_1_mock_data_1_1_shop" kindref="compound">Semesterprojekt2.MockData.Shop</ref></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4" refid="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_semesterprojekt2_1_1_mock_data_1_1_shop_1_1_mock_products" kindref="compound">MockProducts</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>List&lt;Product&gt;<sp/>products<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;Product&gt;()<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref>(</highlight><highlight class="stringliteral">&quot;Lavender<sp/>Shampoo&quot;</highlight><highlight class="normal">,<sp/>59,<sp/></highlight><highlight class="stringliteral">&quot;Soap&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Nivea&quot;</highlight><highlight class="normal">,<sp/>1,</highlight><highlight class="stringliteral">&quot;Shampoo<sp/>with<sp/>smell<sp/>of<sp/>lavender&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref>(</highlight><highlight class="stringliteral">&quot;Lever<sp/>Treats&quot;</highlight><highlight class="normal">,<sp/>150,<sp/></highlight><highlight class="stringliteral">&quot;Treats&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Dog<sp/>Treats&quot;</highlight><highlight class="normal">,<sp/>200,</highlight><highlight class="stringliteral">&quot;Treats<sp/>with<sp/>a<sp/>taste<sp/>of<sp/>lever&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref>(</highlight><highlight class="stringliteral">&quot;Squeaky<sp/>Cat&quot;</highlight><highlight class="normal">,<sp/>120,<sp/></highlight><highlight class="stringliteral">&quot;Toy&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ToysRUs&quot;</highlight><highlight class="normal">,<sp/>1,</highlight><highlight class="stringliteral">&quot;A<sp/>toy<sp/>cat,<sp/>that<sp/>makes<sp/>a<sp/>squeaky<sp/>sound<sp/>when<sp/>the<sp/>dog<sp/>bites<sp/>it.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>List&lt;Product&gt;<sp/>GetMockProducts()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>products;<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Semesterprojekt2/MockData/Shop/MockProducts.cs"/>
+  </compounddef>
+</doxygen>

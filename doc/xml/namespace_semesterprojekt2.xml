@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2</compoundname>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_d_a_o">Semesterprojekt2::DAO</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_e_f_db_context">Semesterprojekt2::EFDbContext</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_mock_data">Semesterprojekt2::MockData</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_models">Semesterprojekt2::Models</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_pages">Semesterprojekt2::Pages</innernamespace>
+    <innernamespace refid="namespace_semesterprojekt2_1_1_service">Semesterprojekt2::Service</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/DAO/ProductOrderDAO.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

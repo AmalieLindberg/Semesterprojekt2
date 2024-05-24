@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::BookATime::ThankYouForYourBookingModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1ad5abc13169269dac509dd811d38f866f" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+        <definition>IBookATimeService Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel._bookATimeService</definition>
+        <argsstring></argsstring>
+        <name>_bookATimeService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel._bookATimeService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" line="15" column="35" bodyfile="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1afce73b6d53952f1ce1c1f57099b29a64" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" line="16" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1a0aa969ac762fadecb7840379ae81f08a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">Models.BookATime.BookATime</ref></type>
+        <definition>Models.BookATime.BookATime Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel.BookATime</definition>
+        <argsstring></argsstring>
+        <name>BookATime</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel.BookATime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" line="19" column="41" bodyfile="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1a566638f8542f1f2e2fbc8ff1117820c3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Models.Users</ref></type>
+        <definition>Models.Users Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel.Users</definition>
+        <argsstring></argsstring>
+        <name>Users</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel.Users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" line="21" column="28" bodyfile="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1aa380e2dad99bc4c8d64cd68a6750f51a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel.ThankYouForYourBookingModel</definition>
+        <argsstring>(IBookATimeService bookATimeService, IUserService userService)</argsstring>
+        <name>ThankYouForYourBookingModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel.ThankYouForYourBookingModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+          <declname>bookATimeService</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" line="23" column="16" bodyfile="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1ab313497b640b60ae07610e79315ab4e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" line="30" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" bodystart="30" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.ThankYouForYourBookingModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" line="11" column="11" bodyfile="Semesterprojekt2/Pages/BookATime/ThankYouForYourBooking.cshtml.cs" bodystart="13" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1ad5abc13169269dac509dd811d38f866f" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::ThankYouForYourBookingModel</scope><name>_bookATimeService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1afce73b6d53952f1ce1c1f57099b29a64" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::ThankYouForYourBookingModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1a0aa969ac762fadecb7840379ae81f08a" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::ThankYouForYourBookingModel</scope><name>BookATime</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1ab313497b640b60ae07610e79315ab4e0" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::ThankYouForYourBookingModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1aa380e2dad99bc4c8d64cd68a6750f51a" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::ThankYouForYourBookingModel</scope><name>ThankYouForYourBookingModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_thank_you_for_your_booking_model_1a566638f8542f1f2e2fbc8ff1117820c3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::ThankYouForYourBookingModel</scope><name>Users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

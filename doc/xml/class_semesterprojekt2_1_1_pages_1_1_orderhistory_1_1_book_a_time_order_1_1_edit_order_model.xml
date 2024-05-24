@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1aa8b2e5b4e333b70b5cdb78e748eb2eb5" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+        <definition>IBookATimeService Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._BookATimeService</definition>
+        <argsstring></argsstring>
+        <name>_BookATimeService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._BookATimeService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="13" column="35" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a78c921d0dcd3efe5f3af5df784a26826" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+        <definition>DogService Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._DogService</definition>
+        <argsstring></argsstring>
+        <name>_DogService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._DogService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="14" column="28" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1af7b79fd6b42c09b267862066b2944362" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service" kindref="compound">YdelseService</ref></type>
+        <definition>YdelseService Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._YdelseService</definition>
+        <argsstring></argsstring>
+        <name>_YdelseService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._YdelseService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="15" column="31" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a82f82be0a8a2441d36f11c4db61167d4" prot="private" static="no" mutable="no">
+        <type>IWebHostEnvironment</type>
+        <definition>IWebHostEnvironment Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._webHostEnvironment</definition>
+        <argsstring></argsstring>
+        <name>_webHostEnvironment</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._webHostEnvironment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="16" column="37" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1abd76939176e4fcbbb1ac64e5a7e01022" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._UserService</definition>
+        <argsstring></argsstring>
+        <name>_UserService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel._UserService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="17" column="30" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1ae0e1ecc6e14ff99faa61c9cfeeab76b6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">Models.BookATime.BookATime</ref></type>
+        <definition>Models.BookATime.BookATime Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.BookATime</definition>
+        <argsstring></argsstring>
+        <name>BookATime</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.BookATime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="19" column="41" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a4f17e431a1dc963a681d67fa32628a33" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Models.Users</ref></type>
+        <definition>Models.Users Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.Users</definition>
+        <argsstring></argsstring>
+        <name>Users</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.Users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="20" column="28" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1afe513abb38fb5ee70bb6a302227b1be5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_ydelse" kindref="compound">Models.BookATime.Ydelse</ref></type>
+        <definition>Models.BookATime.Ydelse Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.Ydelse</definition>
+        <argsstring></argsstring>
+        <name>Ydelse</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.Ydelse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="22" column="38" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a086d321730acf5c92826c5ab08c8c1cd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref></type>
+        <definition>Models.Dog Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.Dog</definition>
+        <argsstring></argsstring>
+        <name>Dog</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.Dog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="24" column="26" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a853cd71198007a3d79670a5693c1739f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IFormFile?</type>
+        <definition>IFormFile? Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.DogPhoto</definition>
+        <argsstring></argsstring>
+        <name>DogPhoto</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.DogPhoto</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="26" column="18" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a6033d62209e8961ee68d66f05ca8c57d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IFormFile?</type>
+        <definition>IFormFile? Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.BathPhoto</definition>
+        <argsstring></argsstring>
+        <name>BathPhoto</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.BathPhoto</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="28" column="26" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1ae327e07da0f6c5be9678efa702b1a1a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.EditOrderModel</definition>
+        <argsstring>(IBookATimeService bookATimeService, YdelseService ydelseService, DogService dogService, IWebHostEnvironment webHostEnvironment, IUserService userService)</argsstring>
+        <name>EditOrderModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.EditOrderModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+          <declname>bookATimeService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_ydelse_service" kindref="compound">YdelseService</ref></type>
+          <declname>ydelseService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+          <declname>dogService</declname>
+        </param>
+        <param>
+          <type>IWebHostEnvironment</type>
+          <declname>webHostEnvironment</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="29" column="16" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="29" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a596297ef84328b0c8a400c90045ce8ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="39" column="30" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="39" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a54430ee9bec806b799cdb5920734fdda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="60" column="27" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="60" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a2f1d35ec739fbce6a81f85d7804b6aeb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.ProcessUploadedDogFile</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessUploadedDogFile</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.ProcessUploadedDogFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="109" column="24" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="109" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a5eeceadf5be1e9848cc30efd21a46929" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.ProcessUploadedBathFile</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessUploadedBathFile</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel.ProcessUploadedBathFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="124" column="24" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="124" bodyend="138"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.EditOrderModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" line="11" column="11" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/EditOrder.cshtml.cs" bodystart="12" bodyend="139"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1aa8b2e5b4e333b70b5cdb78e748eb2eb5" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>_BookATimeService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a78c921d0dcd3efe5f3af5df784a26826" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>_DogService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1abd76939176e4fcbbb1ac64e5a7e01022" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>_UserService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a82f82be0a8a2441d36f11c4db61167d4" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>_webHostEnvironment</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1af7b79fd6b42c09b267862066b2944362" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>_YdelseService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a6033d62209e8961ee68d66f05ca8c57d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>BathPhoto</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1ae0e1ecc6e14ff99faa61c9cfeeab76b6" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>BookATime</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a086d321730acf5c92826c5ab08c8c1cd" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>Dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a853cd71198007a3d79670a5693c1739f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>DogPhoto</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1ae327e07da0f6c5be9678efa702b1a1a5" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>EditOrderModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a596297ef84328b0c8a400c90045ce8ca" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a54430ee9bec806b799cdb5920734fdda" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a5eeceadf5be1e9848cc30efd21a46929" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>ProcessUploadedBathFile</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a2f1d35ec739fbce6a81f85d7804b6aeb" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>ProcessUploadedDogFile</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1a4f17e431a1dc963a681d67fa32628a33" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>Users</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_edit_order_model_1afe513abb38fb5ee70bb6a302227b1be5" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::EditOrderModel</scope><name>Ydelse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Shop::Products::DeleteProductModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a81b998eeb45f907c9b0b56ab37aedeee" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+        <definition>IProductService Semesterprojekt2.Pages.Shop.Products.DeleteProductModel._productService</definition>
+        <argsstring></argsstring>
+        <name>_productService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.DeleteProductModel._productService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" line="12" column="25" bodyfile="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a87c9521cab5614e840b92bfefb44ec3f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Models.Shop.Product</ref></type>
+        <definition>Models.Shop.Product Semesterprojekt2.Pages.Shop.Products.DeleteProductModel.Product</definition>
+        <argsstring></argsstring>
+        <name>Product</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.DeleteProductModel.Product</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" line="22" column="34" bodyfile="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a206d966b632f6023661f03b07b131903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Shop.Products.DeleteProductModel.DeleteProductModel</definition>
+        <argsstring>(IProductService productService)</argsstring>
+        <name>DeleteProductModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.DeleteProductModel.DeleteProductModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_i_product_service" kindref="compound">IProductService</ref></type>
+          <declname>productService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" line="15" column="8" bodyfile="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a41bcde8a7af1ef1254b18c496770aa7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Shop.Products.DeleteProductModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.DeleteProductModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" line="25" column="22" bodyfile="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" bodystart="25" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a77db276ea3262e4a7c061426d48830e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Shop.Products.DeleteProductModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Shop.Products.DeleteProductModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" line="37" column="19" bodyfile="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" bodystart="37" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.Products.DeleteProductModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Shop.Products.DeleteProductModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" line="9" column="7" bodyfile="Semesterprojekt2/Pages/Shop/Products/DeleteProduct.cshtml.cs" bodystart="10" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a81b998eeb45f907c9b0b56ab37aedeee" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::DeleteProductModel</scope><name>_productService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a206d966b632f6023661f03b07b131903" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::DeleteProductModel</scope><name>DeleteProductModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a41bcde8a7af1ef1254b18c496770aa7b" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::DeleteProductModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a77db276ea3262e4a7c061426d48830e5" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::DeleteProductModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_shop_1_1_products_1_1_delete_product_model_1a87c9521cab5614e840b92bfefb44ec3f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Shop::Products::DeleteProductModel</scope><name>Product</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

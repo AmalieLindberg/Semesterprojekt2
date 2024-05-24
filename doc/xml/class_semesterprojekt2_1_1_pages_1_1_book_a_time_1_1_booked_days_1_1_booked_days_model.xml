@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1ae9d9c54260a13608afa6258c816fb756" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">Models.BookATime.BookedDays</ref> &gt;</type>
+        <definition>List&lt;Models.BookATime.BookedDays&gt; Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.BookedDays</definition>
+        <argsstring></argsstring>
+        <name>BookedDays</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.BookedDays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="22" column="21" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a9a8e0d75465989dc5c59e894b98624cc" prot="public" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service" kindref="compound">BookedDaysService</ref></type>
+        <definition>BookedDaysService Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel._bookedDaysService</definition>
+        <argsstring></argsstring>
+        <name>_bookedDaysService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel._bookedDaysService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="23" column="34" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a12fda491a1dd504a01dcfcb9c7027afb" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="24" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1acc655b04384c97da0ee2e735825c139e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.BookedDaysModel</definition>
+        <argsstring>(BookedDaysService bookedDaysService, IUserService userService)</argsstring>
+        <name>BookedDaysModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.BookedDaysModel</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service" kindref="compound">BookedDaysService</ref></type>
+          <declname>bookedDaysService</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="16" column="16" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a15ad067edc973ab439047ba03c207308" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="25" column="21" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="25" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a65bbdd891c79d6ba8ee39d951b8b609c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortById</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetSortById</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortById</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="38" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a6c965325210b9d09aa103ab4ef326b06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByIdDescending</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetSortByIdDescending</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByIdDescending</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="43" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1ad2aac95c8b832789bb2b96d1b3a11f43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByStartDate</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetSortByStartDate</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByStartDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="48" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a2d9ee672846678d63c08e9523c96d2fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByStartDateDescending</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetSortByStartDateDescending</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByStartDateDescending</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="53" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1aa490d6005bd8d70580e62d75f0930855" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByEndDate</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetSortByEndDate</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByEndDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="58" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a8cc496fe0984f66dfbbb6a76b2198c00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByEndDateDescending</definition>
+        <argsstring>()</argsstring>
+        <name>OnGetSortByEndDateDescending</name>
+        <qualifiedname>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel.OnGetSortByEndDateDescending</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="63" column="30" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="63" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.BookATime.BookedDays.BookedDaysModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_bookedDaysService</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Semesterprojekt2.Service.BookATimeService.BookedDaysService</label>
+        <link refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" line="13" column="11" bodyfile="Semesterprojekt2/Pages/BookATime/BookedDays/BookedDays.cshtml.cs" bodystart="14" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a9a8e0d75465989dc5c59e894b98624cc" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>_bookedDaysService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a12fda491a1dd504a01dcfcb9c7027afb" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1ae9d9c54260a13608afa6258c816fb756" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>BookedDays</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1acc655b04384c97da0ee2e735825c139e" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>BookedDaysModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a15ad067edc973ab439047ba03c207308" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1aa490d6005bd8d70580e62d75f0930855" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>OnGetSortByEndDate</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a8cc496fe0984f66dfbbb6a76b2198c00" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>OnGetSortByEndDateDescending</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a65bbdd891c79d6ba8ee39d951b8b609c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>OnGetSortById</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a6c965325210b9d09aa103ab4ef326b06" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>OnGetSortByIdDescending</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1ad2aac95c8b832789bb2b96d1b3a11f43" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>OnGetSortByStartDate</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_book_a_time_1_1_booked_days_1_1_booked_days_model_1a2d9ee672846678d63c08e9523c96d2fc" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::BookATime::BookedDays::BookedDaysModel</scope><name>OnGetSortByStartDateDescending</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

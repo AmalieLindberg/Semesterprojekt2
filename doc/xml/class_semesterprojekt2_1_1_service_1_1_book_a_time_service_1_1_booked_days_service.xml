@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::BookATimeService::BookedDaysService</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1aa060cf1ce5f086ce7695edca7da248f7" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service" kindref="compound">DbGenericService</ref>&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>DbGenericService&lt;BookedDays&gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService._BookedDaysDbService</definition>
+        <argsstring></argsstring>
+        <name>_BookedDaysDbService</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService._BookedDaysDbService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="11" column="34" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a7873bc156902b1c973bc7783318c91db" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>List&lt;BookedDays&gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService._bookedDays</definition>
+        <argsstring></argsstring>
+        <name>_bookedDays</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService._bookedDays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="12" column="28" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1afdd8369b162fc01f13b2b4f71f34c3ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Service.BookATimeService.BookedDaysService.BookedDaysService</definition>
+        <argsstring>(DbGenericService&lt; BookedDays &gt; bookedDaysDbService)</argsstring>
+        <name>BookedDaysService</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.BookedDaysService</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_db_generic_service" kindref="compound">DbGenericService</ref>&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+          <declname>bookedDaysDbService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="14" column="16" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1ada47df7b400e35deecf89c9a52515ddb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Semesterprojekt2.Service.BookATimeService.BookedDaysService.AddBookedDays</definition>
+        <argsstring>(BookedDays dBookedDays)</argsstring>
+        <name>AddBookedDays</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.AddBookedDays</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref></type>
+          <declname>dBookedDays</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="21" column="27" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a37efafd88eb6eafdee7a465ce0d26dd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>async Task&lt; BookedDays &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.RemoveBookedDaysById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>RemoveBookedDaysById</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.RemoveBookedDaysById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="27" column="27" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="27" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a2b4e6f0fff0ee1e556f7c388de037648" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>List&lt; BookedDays &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.GetBookedDaysList</definition>
+        <argsstring>()</argsstring>
+        <name>GetBookedDaysList</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.GetBookedDaysList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="41" column="21" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1aa4bd6e7218198ac86ff6984470a3f725" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref></type>
+        <definition>BookedDays Semesterprojekt2.Service.BookATimeService.BookedDaysService.GetBookedDaysById</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetBookedDaysById</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.GetBookedDaysById</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="49" column="27" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="49" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a6c3e05b24030cf52a4e382bfd9e2d893" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt; string &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.GetBlockedTimesForDate</definition>
+        <argsstring>(DateTime date)</argsstring>
+        <name>GetBlockedTimesForDate</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.GetBlockedTimesForDate</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="58" column="21" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="58" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a4f1eb29d54d4a38976df3560838bddc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>IEnumerable&lt; BookedDays &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortById</definition>
+        <argsstring>()</argsstring>
+        <name>SortById</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortById</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="187" column="28" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="187" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1ad9a0761ef59070cfd946b0dd9750a242" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>IEnumerable&lt; BookedDays &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByIdDescending</definition>
+        <argsstring>()</argsstring>
+        <name>SortByIdDescending</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByIdDescending</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="194" column="28" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="194" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a7f2e74c672f45d5a96c7f18bca79afbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>IEnumerable&lt; BookedDays &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByStartDate</definition>
+        <argsstring>()</argsstring>
+        <name>SortByStartDate</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByStartDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="201" column="28" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="201" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a30744a62df3f3dfed57595322b73ff45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>IEnumerable&lt; BookedDays &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByStartDateDescending</definition>
+        <argsstring>()</argsstring>
+        <name>SortByStartDateDescending</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByStartDateDescending</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="208" column="28" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="208" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1ad1681c63ba7c310bda718334a2091bf1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>IEnumerable&lt; BookedDays &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByEndDate</definition>
+        <argsstring>()</argsstring>
+        <name>SortByEndDate</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByEndDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="215" column="28" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="215" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a204fa48eb7e3be9ea54fc29f2d38cc28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref> &gt;</type>
+        <definition>IEnumerable&lt; BookedDays &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByEndDateDescending</definition>
+        <argsstring>()</argsstring>
+        <name>SortByEndDateDescending</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.SortByEndDateDescending</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="222" column="28" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="222" bodyend="228"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a3aefc30a926680265f5a43ed093ec4c6" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>static List&lt; string &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.BlockWholeDay</definition>
+        <argsstring>(DateTime date)</argsstring>
+        <name>BlockWholeDay</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.BlockWholeDay</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="111" column="29" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="111" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a819fa32b7a45456ec17db4b03dd9015e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt; string &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.BlockSingleDay</definition>
+        <argsstring>(BookedDays bookedDays)</argsstring>
+        <name>BlockSingleDay</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.BlockSingleDay</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref></type>
+          <declname>bookedDays</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="123" column="22" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="123" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a65a61258a1e136ada140808baa363a4e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt; string &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.BlockStartingDay</definition>
+        <argsstring>(BookedDays bookedDays, DateTime date)</argsstring>
+        <name>BlockStartingDay</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.BlockStartingDay</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref></type>
+          <declname>bookedDays</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="150" column="22" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="150" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a5a0f429e124d8ff84b496391931a7190" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt; string &gt; Semesterprojekt2.Service.BookATimeService.BookedDaysService.BlockEndingDay</definition>
+        <argsstring>(BookedDays bookedDays, DateTime date)</argsstring>
+        <name>BlockEndingDay</name>
+        <qualifiedname>Semesterprojekt2.Service.BookATimeService.BookedDaysService.BlockEndingDay</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kindref="compound">BookedDays</ref></type>
+          <declname>bookedDays</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>date</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="170" column="22" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="170" bodyend="186"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" line="9" column="11" bodyfile="Semesterprojekt2/Service/BookATimeService/BookedDaysService.cs" bodystart="10" bodyend="230"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a7873bc156902b1c973bc7783318c91db" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>_bookedDays</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1aa060cf1ce5f086ce7695edca7da248f7" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>_BookedDaysDbService</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1ada47df7b400e35deecf89c9a52515ddb" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>AddBookedDays</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a5a0f429e124d8ff84b496391931a7190" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>BlockEndingDay</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a819fa32b7a45456ec17db4b03dd9015e" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>BlockSingleDay</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a65a61258a1e136ada140808baa363a4e" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>BlockStartingDay</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a3aefc30a926680265f5a43ed093ec4c6" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>BlockWholeDay</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1afdd8369b162fc01f13b2b4f71f34c3ce" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>BookedDaysService</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a6c3e05b24030cf52a4e382bfd9e2d893" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>GetBlockedTimesForDate</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1aa4bd6e7218198ac86ff6984470a3f725" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>GetBookedDaysById</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a2b4e6f0fff0ee1e556f7c388de037648" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>GetBookedDaysList</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a37efafd88eb6eafdee7a465ce0d26dd2" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>RemoveBookedDaysById</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1ad1681c63ba7c310bda718334a2091bf1" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>SortByEndDate</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a204fa48eb7e3be9ea54fc29f2d38cc28" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>SortByEndDateDescending</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a4f1eb29d54d4a38976df3560838bddc0" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>SortById</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1ad9a0761ef59070cfd946b0dd9750a242" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>SortByIdDescending</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a7f2e74c672f45d5a96c7f18bca79afbc" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>SortByStartDate</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_booked_days_service_1a30744a62df3f3dfed57595322b73ff45" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::BookATimeService::BookedDaysService</scope><name>SortByStartDateDescending</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

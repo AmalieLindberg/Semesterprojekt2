@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Login::SignUpModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1afa380caa0dba4a41694b0fd39a330583" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service" kindref="compound">UserService</ref></type>
+        <definition>UserService Semesterprojekt2.Pages.Login.SignUpModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="13" column="29" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a69df223b20b9014d25dd009a0aff9fc9" prot="private" static="no" mutable="no">
+        <type>PasswordHasher&lt; string &gt;</type>
+        <definition>PasswordHasher&lt;string&gt; Semesterprojekt2.Pages.Login.SignUpModel.passwordHasher</definition>
+        <argsstring></argsstring>
+        <name>passwordHasher</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.passwordHasher</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="14" column="32" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a2225b7c1f8e75a3b3242da99f0ceee68" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.SignUpModel.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="18" column="23" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a92713423c1f90a72e2dbe1fdcb3c2a52" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.SignUpModel.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="22" column="23" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a2d29597f81a3d1a71957ee1164d185db" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Pages.Login.SignUpModel.Phone</definition>
+        <argsstring></argsstring>
+        <name>Phone</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.Phone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="25" column="20" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a05f1a1f0a3bed3433f31fbd659f79123" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.SignUpModel.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="29" column="23" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a5eda09b46428a0c46cf5d50c3627eb4a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.SignUpModel.ConfirmPassword</definition>
+        <argsstring></argsstring>
+        <name>ConfirmPassword</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.ConfirmPassword</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="34" column="23" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a8ff566a460e487094b84742572940d43" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Pages.Login.SignUpModel.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.Role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="37" column="23" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a5a8661b30a1cf4e99d8c8b67421e4901" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Login.SignUpModel.SignUpModel</definition>
+        <argsstring>(UserService userService)</argsstring>
+        <name>SignUpModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.SignUpModel</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_user_service" kindref="compound">UserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="40" column="16" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a82ff94290f83921ed611adce06bc5e5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Login.SignUpModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="46" column="30" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1af780e5bff28d5d8768605f91db986a72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Login.SignUpModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Login.SignUpModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="51" column="27" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="51" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.SignUpModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Login.SignUpModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" line="11" column="11" bodyfile="Semesterprojekt2/Pages/Login/SignUp.cshtml.cs" bodystart="12" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1afa380caa0dba4a41694b0fd39a330583" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a5eda09b46428a0c46cf5d50c3627eb4a" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>ConfirmPassword</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a92713423c1f90a72e2dbe1fdcb3c2a52" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>Email</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a2225b7c1f8e75a3b3242da99f0ceee68" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>Name</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a82ff94290f83921ed611adce06bc5e5d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1af780e5bff28d5d8768605f91db986a72" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a05f1a1f0a3bed3433f31fbd659f79123" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>Password</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a69df223b20b9014d25dd009a0aff9fc9" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>passwordHasher</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a2d29597f81a3d1a71957ee1164d185db" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>Phone</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a8ff566a460e487094b84742572940d43" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>Role</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model_1a5a8661b30a1cf4e99d8c8b67421e4901" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Login::SignUpModel</scope><name>SignUpModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

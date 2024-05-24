@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_3e4f94b7eaa9ab53e18631b256639dd1" kind="dir">
+    <compoundname>Semesterprojekt2/Pages/Orderhistory/BookATimeOrder</compoundname>
+    <innerfile refid="_accept_order_8cshtml_8cs">AcceptOrder.cshtml.cs</innerfile>
+    <innerfile refid="_delete_order_8cshtml_8cs">DeleteOrder.cshtml.cs</innerfile>
+    <innerfile refid="_edit_order_8cshtml_8cs">EditOrder.cshtml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/"/>
+  </compounddef>
+</doxygen>

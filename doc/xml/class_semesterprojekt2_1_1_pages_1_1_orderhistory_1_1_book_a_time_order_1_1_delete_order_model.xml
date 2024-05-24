@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::DeleteOrderModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ae261cebef8f183dbbd1623780d8e78dd" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+        <definition>IBookATimeService Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel._BookATimeService</definition>
+        <argsstring></argsstring>
+        <name>_BookATimeService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel._BookATimeService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" line="11" column="35" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ab1762324b99deecd0f668560a82c41d1" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel._UserService</definition>
+        <argsstring></argsstring>
+        <name>_UserService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel._UserService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" line="12" column="30" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ac78ad6fa308fbc5430b27f514ac73029" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_book_a_time" kindref="compound">Models.BookATime.BookATime</ref></type>
+        <definition>Models.BookATime.BookATime Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.BookATime</definition>
+        <argsstring></argsstring>
+        <name>BookATime</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.BookATime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" line="15" column="41" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1a6116b02c86f15ecdb2cc11b8f59f3cfc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Models.Users</ref></type>
+        <definition>Models.Users Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.Users</definition>
+        <argsstring></argsstring>
+        <name>Users</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.Users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" line="16" column="28" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1af3aaafaeba172c5ece56cc2fe5e6e876" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.DeleteOrderModel</definition>
+        <argsstring>(IBookATimeService bookATimeService, IUserService userService)</argsstring>
+        <name>DeleteOrderModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.DeleteOrderModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+          <declname>bookATimeService</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" line="18" column="16" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1aa6177c5f5b1304303f80a6c64d421519" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" line="23" column="30" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" bodystart="23" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ac3a340be3781ceeea8103cbe73550b6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" line="33" column="27" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" bodystart="33" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Orderhistory.BookATimeOrder.DeleteOrderModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" line="9" column="11" bodyfile="Semesterprojekt2/Pages/Orderhistory/BookATimeOrder/DeleteOrder.cshtml.cs" bodystart="10" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ae261cebef8f183dbbd1623780d8e78dd" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::DeleteOrderModel</scope><name>_BookATimeService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ab1762324b99deecd0f668560a82c41d1" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::DeleteOrderModel</scope><name>_UserService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ac78ad6fa308fbc5430b27f514ac73029" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::DeleteOrderModel</scope><name>BookATime</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1af3aaafaeba172c5ece56cc2fe5e6e876" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::DeleteOrderModel</scope><name>DeleteOrderModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1aa6177c5f5b1304303f80a6c64d421519" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::DeleteOrderModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1ac3a340be3781ceeea8103cbe73550b6d" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::DeleteOrderModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_orderhistory_1_1_book_a_time_order_1_1_delete_order_model_1a6116b02c86f15ecdb2cc11b8f59f3cfc" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Orderhistory::BookATimeOrder::DeleteOrderModel</scope><name>Users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_mock_data_1_1_profil" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::MockData::Profil</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_mock_data_1_1_profil_1_1_mock_users" prot="public">Semesterprojekt2::MockData::Profil::MockUsers</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/MockData/Profil/MockUsers.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

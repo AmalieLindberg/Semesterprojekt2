@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Models::BookATime::BookedDays</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1ac19376f3d2c3d06635627ba415b2edfe" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.BookATime.BookedDays.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.BookedDays.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/BookedDays.cs" line="12" column="20" bodyfile="Semesterprojekt2/Models/BookATime/BookedDays.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1a387167d1348186bb8e816b75f7eed0ec" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Semesterprojekt2.Models.BookATime.BookedDays.StartDate</definition>
+        <argsstring></argsstring>
+        <name>StartDate</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.BookedDays.StartDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/BookedDays.cs" line="16" column="25" bodyfile="Semesterprojekt2/Models/BookATime/BookedDays.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1a31c80879e5345e9e1a1a22058bdd5a73" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Semesterprojekt2.Models.BookATime.BookedDays.EndDate</definition>
+        <argsstring></argsstring>
+        <name>EndDate</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.BookedDays.EndDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/BookedDays.cs" line="20" column="25" bodyfile="Semesterprojekt2/Models/BookATime/BookedDays.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1a24249ccb8593c4d505cdde4d46317a64" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.BookATime.BookedDays.UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.BookedDays.UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/BookedDays.cs" line="24" column="20" bodyfile="Semesterprojekt2/Models/BookATime/BookedDays.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1afb84d8dafff2311761b770839a3b56a3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref>?</type>
+        <definition>Users? Semesterprojekt2.Models.BookATime.BookedDays.User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.BookedDays.User</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/BookedDays.cs" line="25" column="22" bodyfile="Semesterprojekt2/Models/BookATime/BookedDays.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1acbea96f15f8e8a161c7e3b3da59dc249" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.BookATime.BookedDays.BookedDays</definition>
+        <argsstring>()</argsstring>
+        <name>BookedDays</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.BookedDays.BookedDays</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/BookedDays.cs" line="27" column="16" bodyfile="Semesterprojekt2/Models/BookATime/BookedDays.cs" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1af068f9a4404f623abe439040a4951c57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.BookATime.BookedDays.BookedDays</definition>
+        <argsstring>(DateTime startDate, DateTime endDate, Users user)</argsstring>
+        <name>BookedDays</name>
+        <qualifiedname>Semesterprojekt2.Models.BookATime.BookedDays.BookedDays</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>startDate</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>endDate</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/BookATime/BookedDays.cs" line="31" column="16" bodyfile="Semesterprojekt2/Models/BookATime/BookedDays.cs" bodystart="31" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Models/BookATime/BookedDays.cs" line="6" column="11" bodyfile="Semesterprojekt2/Models/BookATime/BookedDays.cs" bodystart="7" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1acbea96f15f8e8a161c7e3b3da59dc249" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::BookedDays</scope><name>BookedDays</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1af068f9a4404f623abe439040a4951c57" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::BookedDays</scope><name>BookedDays</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1a31c80879e5345e9e1a1a22058bdd5a73" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::BookedDays</scope><name>EndDate</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1ac19376f3d2c3d06635627ba415b2edfe" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::BookedDays</scope><name>Id</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1a387167d1348186bb8e816b75f7eed0ec" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::BookedDays</scope><name>StartDate</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1afb84d8dafff2311761b770839a3b56a3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::BookedDays</scope><name>User</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_book_a_time_1_1_booked_days_1a24249ccb8593c4d505cdde4d46317a64" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::BookATime::BookedDays</scope><name>UserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

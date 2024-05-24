@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_c464ead12246df867747b60b929bf787" kind="dir">
+    <compoundname>Semesterprojekt2/Service/UserService</compoundname>
+    <innerfile refid="_i_user_service_8cs">IUserService.cs</innerfile>
+    <innerfile refid="_json_file_user_service_8cs">JsonFileUserService.cs</innerfile>
+    <innerfile refid="_user_db_service_8cs">UserDbService.cs</innerfile>
+    <innerfile refid="_user_service_8cs">UserService.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Service/UserService/"/>
+  </compounddef>
+</doxygen>

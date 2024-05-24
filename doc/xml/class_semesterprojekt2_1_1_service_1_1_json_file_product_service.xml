@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_service_1_1_json_file_product_service" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Service::JsonFileProductService</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a244c45998bf9264114f9557f5b46d5ee" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IWebHostEnvironment</type>
+        <definition>IWebHostEnvironment Semesterprojekt2.Service.JsonFileProductService.WebHostEnvironment</definition>
+        <argsstring></argsstring>
+        <name>WebHostEnvironment</name>
+        <qualifiedname>Semesterprojekt2.Service.JsonFileProductService.WebHostEnvironment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/JsonFileProductService.cs" line="8" column="36" bodyfile="Semesterprojekt2/Service/JsonFileProductService.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1ab9b086a0fa8e55c72571211339f5d5b6" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Semesterprojekt2.Service.JsonFileProductService.JsonFileName</definition>
+        <argsstring></argsstring>
+        <name>JsonFileName</name>
+        <qualifiedname>Semesterprojekt2.Service.JsonFileProductService.JsonFileName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/JsonFileProductService.cs" line="15" column="24" bodyfile="Semesterprojekt2/Service/JsonFileProductService.cs" bodystart="16" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a30fa92f06a41df60c4ed21ee9a0fe914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Service.JsonFileProductService.JsonFileProductService</definition>
+        <argsstring>(IWebHostEnvironment webHostEnvironment)</argsstring>
+        <name>JsonFileProductService</name>
+        <qualifiedname>Semesterprojekt2.Service.JsonFileProductService.JsonFileProductService</qualifiedname>
+        <param>
+          <type>IWebHostEnvironment</type>
+          <declname>webHostEnvironment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/JsonFileProductService.cs" line="10" column="16" bodyfile="Semesterprojekt2/Service/JsonFileProductService.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a5d807148cc6373096e9097db3e20d94c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Semesterprojekt2.Service.JsonFileProductService.SaveJsonProducts</definition>
+        <argsstring>(List&lt; Product &gt; products)</argsstring>
+        <name>SaveJsonProducts</name>
+        <qualifiedname>Semesterprojekt2.Service.JsonFileProductService.SaveJsonProducts</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+          <declname>products</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/JsonFileProductService.cs" line="20" column="21" bodyfile="Semesterprojekt2/Service/JsonFileProductService.cs" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a3ff4f444217c3d82fb2b7d02b873c9e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref> &gt;</type>
+        <definition>IEnumerable&lt; Product &gt; Semesterprojekt2.Service.JsonFileProductService.GetJsonProducts</definition>
+        <argsstring>()</argsstring>
+        <name>GetJsonProducts</name>
+        <qualifiedname>Semesterprojekt2.Service.JsonFileProductService.GetJsonProducts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Service/JsonFileProductService.cs" line="33" column="28" bodyfile="Semesterprojekt2/Service/JsonFileProductService.cs" bodystart="33" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Service/JsonFileProductService.cs" line="6" column="11" bodyfile="Semesterprojekt2/Service/JsonFileProductService.cs" bodystart="7" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a3ff4f444217c3d82fb2b7d02b873c9e8" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::JsonFileProductService</scope><name>GetJsonProducts</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1ab9b086a0fa8e55c72571211339f5d5b6" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Service::JsonFileProductService</scope><name>JsonFileName</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a30fa92f06a41df60c4ed21ee9a0fe914" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::JsonFileProductService</scope><name>JsonFileProductService</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a5d807148cc6373096e9097db3e20d94c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::JsonFileProductService</scope><name>SaveJsonProducts</name></member>
+      <member refid="class_semesterprojekt2_1_1_service_1_1_json_file_product_service_1a244c45998bf9264114f9557f5b46d5ee" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Service::JsonFileProductService</scope><name>WebHostEnvironment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_models_1_1_cart_item" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Models::CartItem</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_cart_item_1a8e76f109170a9d9549b75f40e303ce6c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.CartItem.Quantity</definition>
+        <argsstring></argsstring>
+        <name>Quantity</name>
+        <qualifiedname>Semesterprojekt2.Models.CartItem.Quantity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/CartItem.cs" line="9" column="20" bodyfile="Semesterprojekt2/Models/CartItem.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_cart_item_1a3424636ec7143488e74a53069b23cec7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref></type>
+        <definition>Product Semesterprojekt2.Models.CartItem.Product</definition>
+        <argsstring></argsstring>
+        <name>Product</name>
+        <qualifiedname>Semesterprojekt2.Models.CartItem.Product</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/CartItem.cs" line="10" column="24" bodyfile="Semesterprojekt2/Models/CartItem.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_cart_item_1a611734cf770d79eec991ba72f079cb9c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.CartItem.ProductId</definition>
+        <argsstring></argsstring>
+        <name>ProductId</name>
+        <qualifiedname>Semesterprojekt2.Models.CartItem.ProductId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/CartItem.cs" line="12" column="20" bodyfile="Semesterprojekt2/Models/CartItem.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_cart_item_1a16bb5805769f85366f3c68487590a311" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.CartItem.CartItem</definition>
+        <argsstring>(Product product, int quantity)</argsstring>
+        <name>CartItem</name>
+        <qualifiedname>Semesterprojekt2.Models.CartItem.CartItem</qualifiedname>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_shop_1_1_product" kindref="compound">Product</ref></type>
+          <declname>product</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>quantity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/CartItem.cs" line="15" column="16" bodyfile="Semesterprojekt2/Models/CartItem.cs" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_cart_item_1a977084575beb79e8d8e767c1fd9f543b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.CartItem.CartItem</definition>
+        <argsstring>()</argsstring>
+        <name>CartItem</name>
+        <qualifiedname>Semesterprojekt2.Models.CartItem.CartItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/CartItem.cs" line="21" column="16" bodyfile="Semesterprojekt2/Models/CartItem.cs" bodystart="21" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Models/CartItem.cs" line="6" column="11" bodyfile="Semesterprojekt2/Models/CartItem.cs" bodystart="7" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a16bb5805769f85366f3c68487590a311" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::CartItem</scope><name>CartItem</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a977084575beb79e8d8e767c1fd9f543b" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::CartItem</scope><name>CartItem</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a3424636ec7143488e74a53069b23cec7" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::CartItem</scope><name>Product</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a611734cf770d79eec991ba72f079cb9c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::CartItem</scope><name>ProductId</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_cart_item_1a8e76f109170a9d9549b75f40e303ce6c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::CartItem</scope><name>Quantity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

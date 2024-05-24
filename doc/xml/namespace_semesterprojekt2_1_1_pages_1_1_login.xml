@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="namespace_semesterprojekt2_1_1_pages_1_1_login" kind="namespace" language="C#">
+    <compoundname>Semesterprojekt2::Pages::Login</compoundname>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_acess_denied_model" prot="public">Semesterprojekt2::Pages::Login::AcessDeniedModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_create_admin_model" prot="public">Semesterprojekt2::Pages::Login::CreateAdminModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_delete_userby_admin_model" prot="public">Semesterprojekt2::Pages::Login::DeleteUserbyAdminModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_edit_userby_admin_model" prot="public">Semesterprojekt2::Pages::Login::EditUserbyAdminModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_forgot_password_model" prot="public">Semesterprojekt2::Pages::Login::ForgotPasswordModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_login_model" prot="public">Semesterprojekt2::Pages::Login::LoginModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_log_out_model" prot="public">Semesterprojekt2::Pages::Login::LogOutModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_reset_password_model" prot="public">Semesterprojekt2::Pages::Login::ResetPasswordModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_sign_up_model" prot="public">Semesterprojekt2::Pages::Login::SignUpModel</innerclass>
+    <innerclass refid="class_semesterprojekt2_1_1_pages_1_1_login_1_1_user_overview_model" prot="public">Semesterprojekt2::Pages::Login::UserOverviewModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Login/AcessDenied.cshtml.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

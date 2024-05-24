@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_9569f217d6f1c6ef9b7a089dc0e08df8" kind="dir">
+    <compoundname>Semesterprojekt2/obj/Debug</compoundname>
+    <innerdir refid="dir_5c8b6ce17d4a2e6a5c8a95e9613fabf7">Semesterprojekt2/obj/Debug/net8.0</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/obj/Debug/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Pages::Profil::DeleteUserModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a434beaf74b8a7c8aad7a540ac06b6b17" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+        <definition>IUserService Semesterprojekt2.Pages.Profil.DeleteUserModel._userService</definition>
+        <argsstring></argsstring>
+        <name>_userService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel._userService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="13" column="30" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a08f2f2624d8f36f7016722b8af6125a5" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+        <definition>IBookATimeService Semesterprojekt2.Pages.Profil.DeleteUserModel._bookATimeService</definition>
+        <argsstring></argsstring>
+        <name>_bookATimeService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel._bookATimeService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="14" column="35" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a4f4862496d9a9bca9e73ea3c4722f9ec" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+        <definition>DogService Semesterprojekt2.Pages.Profil.DeleteUserModel._dogService</definition>
+        <argsstring></argsstring>
+        <name>_dogService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel._dogService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="15" column="28" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a54bf70ce7f93d2091cf4b9522a7cc819" prot="private" static="no" mutable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_service_1_1_product_order_service" kindref="compound">ProductOrderService</ref></type>
+        <definition>ProductOrderService Semesterprojekt2.Pages.Profil.DeleteUserModel._productOrderService</definition>
+        <argsstring></argsstring>
+        <name>_productOrderService</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel._productOrderService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="16" column="37" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a2381f48aff3c5ed813ff5e9b50485458" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Models.Users</ref></type>
+        <definition>Models.Users Semesterprojekt2.Pages.Profil.DeleteUserModel.user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel.user</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="27" column="28" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1ac0612229f062e5430ca9fcb2a6bf06d3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref></type>
+        <definition>Models.Dog Semesterprojekt2.Pages.Profil.DeleteUserModel.Dog</definition>
+        <argsstring></argsstring>
+        <name>Dog</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel.Dog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="28" column="26" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a84ff46d215ff5e5947c398c9e73c6c39" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>IEnumerable&lt; <ref refid="class_semesterprojekt2_1_1_models_1_1_dog" kindref="compound">Models.Dog</ref> &gt;</type>
+        <definition>IEnumerable&lt;Models.Dog&gt; Semesterprojekt2.Pages.Profil.DeleteUserModel.MyDogs</definition>
+        <argsstring></argsstring>
+        <name>MyDogs</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel.MyDogs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="29" column="20" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1ac3d891b25845549f98418c59293c6651" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Pages.Profil.DeleteUserModel.DeleteUserModel</definition>
+        <argsstring>(IUserService userService, IBookATimeService bookATimeService, DogService dogService, ProductOrderService productOrderService)</argsstring>
+        <name>DeleteUserModel</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel.DeleteUserModel</qualifiedname>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_user_service_1_1_user_service_1_1_i_user_service" kindref="compound">IUserService</ref></type>
+          <declname>userService</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_semesterprojekt2_1_1_service_1_1_book_a_time_service_1_1_i_book_a_time_service" kindref="compound">IBookATimeService</ref></type>
+          <declname>bookATimeService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_dog_service" kindref="compound">DogService</ref></type>
+          <declname>dogService</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_service_1_1_product_order_service" kindref="compound">ProductOrderService</ref></type>
+          <declname>productOrderService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="18" column="16" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a952f0d1e4c660e85274ba8178ff7b215" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IActionResult</type>
+        <definition>IActionResult Semesterprojekt2.Pages.Profil.DeleteUserModel.OnGet</definition>
+        <argsstring>(int id)</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel.OnGet</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="31" column="22" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="31" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1afc24550ab51605e3db97686a2194e374" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; IActionResult &gt;</type>
+        <definition>async Task&lt; IActionResult &gt; Semesterprojekt2.Pages.Profil.DeleteUserModel.OnPost</definition>
+        <argsstring>()</argsstring>
+        <name>OnPost</name>
+        <qualifiedname>Semesterprojekt2.Pages.Profil.DeleteUserModel.OnPost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="41" column="27" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="41" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Profil.DeleteUserModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+      <node id="1">
+        <label>Semesterprojekt2.Pages.Profil.DeleteUserModel</label>
+        <link refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" line="11" column="11" bodyfile="Semesterprojekt2/Pages/Profil/DeleteUser.cshtml.cs" bodystart="12" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a08f2f2624d8f36f7016722b8af6125a5" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>_bookATimeService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a4f4862496d9a9bca9e73ea3c4722f9ec" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>_dogService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a54bf70ce7f93d2091cf4b9522a7cc819" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>_productOrderService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a434beaf74b8a7c8aad7a540ac06b6b17" prot="private" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>_userService</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1ac3d891b25845549f98418c59293c6651" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>DeleteUserModel</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1ac0612229f062e5430ca9fcb2a6bf06d3" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>Dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a84ff46d215ff5e5947c398c9e73c6c39" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>MyDogs</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a952f0d1e4c660e85274ba8178ff7b215" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>OnGet</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1afc24550ab51605e3db97686a2194e374" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>OnPost</name></member>
+      <member refid="class_semesterprojekt2_1_1_pages_1_1_profil_1_1_delete_user_model_1a2381f48aff3c5ed813ff5e9b50485458" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Pages::Profil::DeleteUserModel</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

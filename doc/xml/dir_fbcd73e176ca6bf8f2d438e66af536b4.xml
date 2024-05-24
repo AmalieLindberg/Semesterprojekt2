@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_fbcd73e176ca6bf8f2d438e66af536b4" kind="dir">
+    <compoundname>Semesterprojekt2/MockData/Shop</compoundname>
+    <innerfile refid="_mock_products_8cs">MockProducts.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/MockData/Shop/"/>
+  </compounddef>
+</doxygen>

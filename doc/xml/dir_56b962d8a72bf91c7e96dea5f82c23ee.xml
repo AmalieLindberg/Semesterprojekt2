@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_56b962d8a72bf91c7e96dea5f82c23ee" kind="dir">
+    <compoundname>Semesterprojekt2/Pages/Profil</compoundname>
+    <innerdir refid="dir_401b5752a5e86033144c040e4524b65e">Semesterprojekt2/Pages/Profil/Dog</innerdir>
+    <innerfile refid="_delete_user_8cshtml_8cs">DeleteUser.cshtml.cs</innerfile>
+    <innerfile refid="_edit_user_8cshtml_8cs">EditUser.cshtml.cs</innerfile>
+    <innerfile refid="_profil_8cshtml_8cs">Profil.cshtml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Pages/Profil/"/>
+  </compounddef>
+</doxygen>

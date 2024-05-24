@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_semesterprojekt2_1_1_models_1_1_dog" kind="class" language="C#" prot="public">
+    <compoundname>Semesterprojekt2::Models::Dog</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_dog_1a8d599c0742e91620a9f3825218c11477" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.Dog.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="13" column="20" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_dog_1a358e5fc03239e12be4ce3bf00993ba4f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Dog.DogImage</definition>
+        <argsstring></argsstring>
+        <name>DogImage</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.DogImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="14" column="15" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_dog_1ac2ebffbd0e0ac2d6f15d2fde4a48d704" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Dog.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="15" column="15" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_dog_1a9531d3e3ab0e8aed112d350ea39da532" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime?</type>
+        <definition>DateTime? Semesterprojekt2.Models.Dog.Age</definition>
+        <argsstring></argsstring>
+        <name>Age</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.Age</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="16" column="25" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_dog_1add31014462f5048a2866bd0a530901bd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Dog.Race</definition>
+        <argsstring></argsstring>
+        <name>Race</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.Race</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="17" column="23" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_dog_1a65bf261cfea4a2a8ad72cdecda3539a8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Semesterprojekt2.Models.Dog.UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="20" column="20" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_dog_1a525de549240519bbef3df1b3fbb0062c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref>?</type>
+        <definition>Users? Semesterprojekt2.Models.Dog.User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.User</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="21" column="22" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_semesterprojekt2_1_1_models_1_1_dog_1af40ed139cb19d70acd97b39d3ed810db" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Semesterprojekt2.Models.Dog.Comments</definition>
+        <argsstring></argsstring>
+        <name>Comments</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.Comments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="22" column="23" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_dog_1ac4909f072b3ae2bbeed5d59e3d6f259a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.Dog.Dog</definition>
+        <argsstring>(string name, DateTime age, string race, string comments, Users users)</argsstring>
+        <name>Dog</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.Dog</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>age</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>race</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>comments</declname>
+        </param>
+        <param>
+          <type><ref refid="class_semesterprojekt2_1_1_models_1_1_users" kindref="compound">Users</ref></type>
+          <declname>users</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="26" column="16" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="26" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_semesterprojekt2_1_1_models_1_1_dog_1a3d9bdd395566a85ac4ba81a4f1e883f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Semesterprojekt2.Models.Dog.Dog</definition>
+        <argsstring>()</argsstring>
+        <name>Dog</name>
+        <qualifiedname>Semesterprojekt2.Models.Dog.Dog</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Semesterprojekt2/Models/Dog.cs" line="36" column="16" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="36" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Semesterprojekt2/Models/Dog.cs" line="7" column="11" bodyfile="Semesterprojekt2/Models/Dog.cs" bodystart="8" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a9531d3e3ab0e8aed112d350ea39da532" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>Age</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1af40ed139cb19d70acd97b39d3ed810db" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>Comments</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1ac4909f072b3ae2bbeed5d59e3d6f259a" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>Dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a3d9bdd395566a85ac4ba81a4f1e883f7" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>Dog</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a358e5fc03239e12be4ce3bf00993ba4f" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>DogImage</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a8d599c0742e91620a9f3825218c11477" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>Id</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1ac2ebffbd0e0ac2d6f15d2fde4a48d704" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>Name</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1add31014462f5048a2866bd0a530901bd" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>Race</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a525de549240519bbef3df1b3fbb0062c" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>User</name></member>
+      <member refid="class_semesterprojekt2_1_1_models_1_1_dog_1a65bf261cfea4a2a8ad72cdecda3539a8" prot="public" virt="non-virtual"><scope>Semesterprojekt2::Models::Dog</scope><name>UserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

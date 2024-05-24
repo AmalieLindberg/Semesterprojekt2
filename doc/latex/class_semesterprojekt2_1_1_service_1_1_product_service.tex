@@ -1,0 +1,106 @@
+\doxysection{Semesterprojekt2.\+Service.\+Product\+Service Class Reference}
+\hypertarget{class_semesterprojekt2_1_1_service_1_1_product_service}{}\label{class_semesterprojekt2_1_1_service_1_1_product_service}\index{Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}}
+Inheritance diagram for Semesterprojekt2.\+Service.\+Product\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_semesterprojekt2_1_1_service_1_1_product_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_product_service_a5cf1ce5b11b416c6e35456092c7f408b}\label{class_semesterprojekt2_1_1_service_1_1_product_service_a5cf1ce5b11b416c6e35456092c7f408b} 
+{\bfseries Product\+Service} (\mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_json_file_product_service}{Json\+File\+Product\+Service}} json\+File\+Product\+Service, \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_db_generic_service}{Db\+Generic\+Service}}$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} $>$ db\+Generic\+Service)
+\item 
+async Task \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_product_service_a933959fb254a5d042f9f6d195b619dcd}{Add\+Product\+Async}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} product)
+\item 
+\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_product_service_a991d1a37f6b4ee0d52c883d4b333d318}{Get\+Product}} (int product\+Id)
+\item 
+async Task \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_product_service_a87644537b29652bb41ac7dfafa2a58f3}{Update\+Product\+Async}} (\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} product)
+\item 
+async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_product_service_af7b82716062780e3479afc0e132deb1c}{Delete\+Product\+Async}} (int? product\+Id)
+\item 
+List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_product_service_a7681d106af5306838be46f5be9799300}{Get\+Products}} ()
+\item 
+IEnumerable$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_product_service_aa16caf812397f62393c2631f144ad807}{Name\+Search}} (string str)
+\item 
+IEnumerable$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_semesterprojekt2_1_1_service_1_1_product_service_a628e67a67df993323e0fcb20ee60f72f}{Price\+Filter}} (int max\+Price, int min\+Price=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_product_service_a933959fb254a5d042f9f6d195b619dcd}\label{class_semesterprojekt2_1_1_service_1_1_product_service_a933959fb254a5d042f9f6d195b619dcd} 
+\index{Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}!AddProductAsync@{AddProductAsync}}
+\index{AddProductAsync@{AddProductAsync}!Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}}
+\doxysubsubsection{\texorpdfstring{AddProductAsync()}{AddProductAsync()}}
+{\footnotesize\ttfamily async Task Semesterprojekt2.\+Service.\+Product\+Service.\+Add\+Product\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}}}]{product }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_i_product_service}{Semesterprojekt2.\+Service.\+IProduct\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_product_service_af7b82716062780e3479afc0e132deb1c}\label{class_semesterprojekt2_1_1_service_1_1_product_service_af7b82716062780e3479afc0e132deb1c} 
+\index{Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}!DeleteProductAsync@{DeleteProductAsync}}
+\index{DeleteProductAsync@{DeleteProductAsync}!Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}}
+\doxysubsubsection{\texorpdfstring{DeleteProductAsync()}{DeleteProductAsync()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} $>$ Semesterprojekt2.\+Service.\+Product\+Service.\+Delete\+Product\+Async (\begin{DoxyParamCaption}\item[{int?}]{product\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_i_product_service}{Semesterprojekt2.\+Service.\+IProduct\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_product_service_a991d1a37f6b4ee0d52c883d4b333d318}\label{class_semesterprojekt2_1_1_service_1_1_product_service_a991d1a37f6b4ee0d52c883d4b333d318} 
+\index{Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}!GetProduct@{GetProduct}}
+\index{GetProduct@{GetProduct}!Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}}
+\doxysubsubsection{\texorpdfstring{GetProduct()}{GetProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} Semesterprojekt2.\+Service.\+Product\+Service.\+Get\+Product (\begin{DoxyParamCaption}\item[{int}]{product\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_i_product_service}{Semesterprojekt2.\+Service.\+IProduct\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_product_service_a7681d106af5306838be46f5be9799300}\label{class_semesterprojekt2_1_1_service_1_1_product_service_a7681d106af5306838be46f5be9799300} 
+\index{Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}!GetProducts@{GetProducts}}
+\index{GetProducts@{GetProducts}!Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}}
+\doxysubsubsection{\texorpdfstring{GetProducts()}{GetProducts()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} $>$ Semesterprojekt2.\+Service.\+Product\+Service.\+Get\+Products (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_i_product_service}{Semesterprojekt2.\+Service.\+IProduct\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_product_service_aa16caf812397f62393c2631f144ad807}\label{class_semesterprojekt2_1_1_service_1_1_product_service_aa16caf812397f62393c2631f144ad807} 
+\index{Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}!NameSearch@{NameSearch}}
+\index{NameSearch@{NameSearch}!Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}}
+\doxysubsubsection{\texorpdfstring{NameSearch()}{NameSearch()}}
+{\footnotesize\ttfamily IEnumerable$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} $>$ Semesterprojekt2.\+Service.\+Product\+Service.\+Name\+Search (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_i_product_service}{Semesterprojekt2.\+Service.\+IProduct\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_product_service_a628e67a67df993323e0fcb20ee60f72f}\label{class_semesterprojekt2_1_1_service_1_1_product_service_a628e67a67df993323e0fcb20ee60f72f} 
+\index{Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}!PriceFilter@{PriceFilter}}
+\index{PriceFilter@{PriceFilter}!Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}}
+\doxysubsubsection{\texorpdfstring{PriceFilter()}{PriceFilter()}}
+{\footnotesize\ttfamily IEnumerable$<$ \mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}} $>$ Semesterprojekt2.\+Service.\+Product\+Service.\+Price\+Filter (\begin{DoxyParamCaption}\item[{int}]{max\+Price,  }\item[{int}]{min\+Price = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_i_product_service}{Semesterprojekt2.\+Service.\+IProduct\+Service}}.
+
+\Hypertarget{class_semesterprojekt2_1_1_service_1_1_product_service_a87644537b29652bb41ac7dfafa2a58f3}\label{class_semesterprojekt2_1_1_service_1_1_product_service_a87644537b29652bb41ac7dfafa2a58f3} 
+\index{Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}!UpdateProductAsync@{UpdateProductAsync}}
+\index{UpdateProductAsync@{UpdateProductAsync}!Semesterprojekt2.Service.ProductService@{Semesterprojekt2.Service.ProductService}}
+\doxysubsubsection{\texorpdfstring{UpdateProductAsync()}{UpdateProductAsync()}}
+{\footnotesize\ttfamily async Task Semesterprojekt2.\+Service.\+Product\+Service.\+Update\+Product\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_semesterprojekt2_1_1_models_1_1_shop_1_1_product}{Product}}}]{product }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interface_semesterprojekt2_1_1_service_1_1_i_product_service}{Semesterprojekt2.\+Service.\+IProduct\+Service}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Semesterprojekt2/\+Service/Product\+Service.\+cs\end{DoxyCompactItemize}
