@@ -69,6 +69,13 @@ namespace Semesterprojekt2.Pages.ShoppingCart
             {
                 return Page();
             }
+
+            var cartItems = _shoppingCartService.GetAllCartItems();
+            if (cartItems == null || !cartItems.Any())
+            {
+                return RedirectToPage("/Error/Error");
+            }
+
             int id = LoginModel.LoggedInUser.UserId;
             User = _userService.GetUser(id);
            

@@ -32,11 +32,10 @@
         <table class="table table-bordered table-hover table-striped" width="60%">
             <thead>
                 <tr class="btn-secondary active">
-                    <th>User ID</th>
-                    <th>User Name</th>
                     <th>Order ID</th>
-                    <th>Product ID</th>
-                    <th>Product Name</th>
+                    <th>Date</th>
+                    <th>User</th>
+                    <th>Product</th>
                     <th>Count</th>
                     <th>Total Order Price</th>
                     <th>Action</th>
@@ -49,25 +48,24 @@
                     {
                         <tr class="btn-secondary">
                             <td>
-                                @order.UserId
-                            </td>
-                            <td>
-                                @order.User.Name
-                            </td>
-                            <td>
                                 @order.OrderId
                             </td>
+                            <td>@order.Date</td>
                             <td>
-                                @order.ProductId
+                                <p>ID: @order.UserId</p>
+                                <p>Name: @order.User.Name</p>
+                                <p>Telephone number: @order.User.Telefonnummer</p>
                             </td>
                             <td>
-                                @order.Product.Name
+                                <p>ID: @order.ProductId</p>
+                                <p>Name: @order.ProductId</p>
+                                <img src="~/Images/Shop/@order.Product.ProductImage" alt="Product image" style="width:50%; max-width: 200px;" />
                             </td>
                             <td>
                                 @order.Counts
                             </td>
                             <td>
-                                @(order.Counts * order.Product.Price)
+                                @(order.Counts * order.Product.Price),-
                             </td>
                             <td>
                                 <form method="post">

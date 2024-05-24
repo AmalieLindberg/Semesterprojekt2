@@ -89,10 +89,10 @@
 
         /* Styling for inputgruppen */
         .input-group {
-            margin: 0; /* Remove auto margin */
+            margin-left: 8%; /* Remove auto margin */
             max-width: 100%; /* Allow full width usage */
             display: flex;
-            justify-content: flex-start; /* Align items to the left */
+            justify-content: left; /* Align items to the left */
             align-items: center;
             gap: 0px; /* Smaller gap between fields */
         }
@@ -120,7 +120,7 @@
     @if (LoginModel.LoggedInUser != null && LoginModel.LoggedInUser.Role == "Admin")
     {
         <p>
-            <a class="btn btn-primary" style="float: right; position:absolute; right: 10px; top: 103px; background-color: #C65127; color: #ffffff;" asp-page="Products/AddProduct">Create a new product</a>
+            <a class="btn btn-primary" style="float: right; position:absolute; right: 12%; top: 103px; background-color: #C65127; color: #ffffff;" asp-page="Products/AddProduct">Create a new product</a>
         </p>
     }
 

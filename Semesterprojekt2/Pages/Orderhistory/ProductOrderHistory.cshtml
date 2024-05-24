@@ -30,10 +30,9 @@
     <table class="table table-bordered table-hover table-striped" width="60%">
         <thead>
             <tr class="btn-secondary active">
-                <th>Order ID</th>
-                <th>Product Id</th>
-                <th>Product Name</th>
-                <th>Product Price</th>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Product</th>
                 <th>Count</th>
                 <th>Total Order Price</th>
             </tr>
@@ -47,21 +46,17 @@
                         <td>
                             @order.OrderId
                         </td>
-
+                        <td>@order.Date</td>
                         <td>
-                            @order.ProductId
-                        </td>
-                        <td>
-                            @order.Product.Name
-                        </td>
-                        <td>
-                            @order.Product.Price
+                            <p> Product name: @order.Product.Name</p>
+                            <p> Price: @order.Product.Price</p>
+                            <img src="~/Images/Shop/@order.Product.ProductImage" alt="Product image" style="width:40%; max-width: 300px;" />
                         </td>
                         <td>
                             @order.Counts
                         </td>
                         <td>
-                             @(order.Counts * order.Product.Price)
+                             @(order.Counts * order.Product.Price),-
                         </td>
                     </tr>
                 }
