@@ -5,7 +5,7 @@ using Semesterprojekt2.DAO;
 using Semesterprojekt2.MockData.Profil;
 
 namespace Semesterprojekt2.Service.UserService.UserService
-{   
+{
     /// <summary>
     /// Indeholder forskellige CRUD metoder til management af user, samt tilknyttede hunde, produkt- og tidsbestillinger.
     /// </summary>
@@ -15,9 +15,9 @@ namespace Semesterprojekt2.Service.UserService.UserService
         public List<Users> _users { get; set; }
         private JsonFileUserService jsonFileUserService { get; set; }
 
-		private string genericPW = "ResetPW1234";
+        private string genericPW = "ResetPW1234";
 
-		private PasswordHasher<string> passwordHasher;
+        private PasswordHasher<string> passwordHasher;
 
         /// <summary>
         /// Initialiserer en ny instans af UserService-klassen
@@ -62,8 +62,8 @@ namespace Semesterprojekt2.Service.UserService.UserService
         /// <returns> User, hvis den findes. Ellers null.</returns>
         public Users GetUser(int id)
         {
-			
-			foreach (Users user in _users)
+
+            foreach (Users user in _users)
             {
                 if (user.UserId == id)
                     return user;
@@ -88,33 +88,27 @@ namespace Semesterprojekt2.Service.UserService.UserService
                         u.UserId = user.UserId;
                         u.Name = user.Name;
                         u.Email = user.Email;
-   
-                        u.Telefonnummer = user.Telefonnummer;
-						// Hash the password only if it's changed, and ensure it's being hashed
-						if (!string.IsNullOrEmpty(user.Password))
-						{
-							u.Password = passwordHasher.HashPassword(null, user.Password);
-							// Debug: Log or check the hash
-							// Console.WriteLine($"Hashed Password: {u.Password}");
-						}
 
-						u.Role = user.Role;
-                        if (user.ProfileImages== null)
+                        u.Telefonnummer = user.Telefonnummer;
+                        u.Password = passwordHasher.HashPassword(null, user.Password);
+                        // Kan bruges til debugging
+                        // Console.WriteLine($"Hashed Password: {u.Password}");
+                        u.Role = user.Role;
+                        if (user.ProfileImages == null)
                         {
                             user.ProfileImages = u.ProfileImages;
                         }
-                        else {
-                        u.ProfileImages = user.ProfileImages; }
+                        else
+                        {
+                            u.ProfileImages = user.ProfileImages;
+                        }
                         u.Bio = user.Bio;
 
-						await DbService.UpdateObjectAsync(u);
-						return u;
-					}
+                        await DbService.UpdateObjectAsync(u);
+                        return u;
+                    }
                 }
-
-				
-
-			}
+            }
 
             return null;
         }
@@ -149,25 +143,47 @@ namespace Semesterprojekt2.Service.UserService.UserService
         /// Henter alle user fra Databasen.
         /// </summary>
         /// <returns>Liste med alle user</returns>
-        public List<Users> GetUsers() 
+        public List<Users> GetUsers()
         {
-			_users = DbService.GetObjectsAsync().Result.ToList();
-			return _users; 
+            _users = DbService.GetObjectsAsync().Result.ToList();
+            return _users;
         }
 
+        /// <summary>
+        /// Henter brugerens tidsbestillinger fra Databasen asynkront
+        /// </summary>
+        /// <param name="user">Bruger hvilken tidsbestillinger skal hentes.</param>
+        /// <returns>Brugerens tidsbestillinger.</returns>
         public Users GetUserTidsbestillingOrders(Users user)
         {
             return DbService.GetTidsbestillingOrdersByUserIdAsync(user.UserId).Result;
         }
 
+        /// <summary>
+        /// Henter et brugerens informationer fra Databasen, via Id.
+        /// </summary>
+        /// <param name="id">ID af user som skal hentes fra Databasen.</param>
+        /// <returns>User Objekt man har anmodt .</returns>
         public Users GetUserById(int id)
         {
             return DbService.GetObjectByIdAsync(id).Result;
         }
-       public Users GetUserDogs(Users user)
+
+        /// <summary>
+        /// Henter bruger objekt og dens associerede hunde objekter fra Databasen.
+        /// </summary>
+        /// <param name="user">Bruger objektet, hvilken hunde skal hentes.</param>
+        /// <returns> Bruger-objektet og dens associerede hunde objekter eller null hvis brugeren ikke eksisterer.</returns>
+        public Users GetUserDogs(Users user)
         {
             return DbService.GetDogByUserIdAsync(user.UserId).Result;
         }
+
+        /// <summary>
+        /// Henter brugeren og deres produkt ordrer fra Databasen
+        /// </summary>
+        /// <param name="user">Bruger objektet, som skal hentes.</param>
+        /// <returns> Brugeren og dens associerede produktordrer (eller null hvis brugeren ikke findes).</returns>
         public Users GetUserProductOrders(Users user)
         {
             return DbService.GetOrdersByUserIdAsync(user.UserId).Result;
@@ -186,33 +202,32 @@ namespace Semesterprojekt2.Service.UserService.UserService
         /// </summary>
         /// <param name="user">Den user hvis adgangskode bliver ændret.</param>
         /// <returns>Den user med den nulstillede adgangskode.</returns>
-
         public async Task<Users> ResetPassword(Users user)
-		{
-			if (user != null)
-			{
-				foreach (Users u in _users)
-				{
-					if (u.UserId == user.UserId)
-					{
-						u.Password = passwordHasher.HashPassword(null, genericPW);
-						Console.WriteLine($"Hashed Password: {user.Password}");
+        {
+            if (user != null)
+            {
+                foreach (Users u in _users)
+                {
+                    if (u.UserId == user.UserId)
+                    {
+                        u.Password = passwordHasher.HashPassword(null, genericPW);
+                        Console.WriteLine($"Hashed Password: {user.Password}");
 
-						await DbService.UpdateObjectAsync(u);
-						return u;
+                        await DbService.UpdateObjectAsync(u);
+                        return u;
 
-					}
-				}
+                    }
+                }
 
-			}
+            }
 
-			return null;
+            return null;
 
-		}
+        }
 
-       
 
-        
+
+
 
     }
 }

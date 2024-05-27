@@ -8,6 +8,7 @@ using System.Diagnostics;
 
 namespace Semesterprojekt2.Pages.Login
 {
+
     public class SignUpModel : PageModel
     {
         private UserService _userService;
@@ -24,13 +25,13 @@ namespace Semesterprojekt2.Pages.Login
         [BindProperty]
         public int Phone { get; set; }
 
-        [BindProperty, DataType(DataType.Password), MinLength(6, ErrorMessage = "Passwordet skal være mindst 6 tegn.")]
-        [RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$", ErrorMessage = "Passwordet skal indeholde mindst ét bogstav og ét tal.")]
+        [BindProperty, DataType(DataType.Password), MinLength(6, ErrorMessage = "Password needs to be min. 6 characters.")]
+        [RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$", ErrorMessage = "Passwordet needs min. one letter and one digit.")]
         public string Password { get; set; }
 
-        [BindProperty, DataType(DataType.Password), MinLength(6, ErrorMessage = "Passwordet skal være mindst 6 tegn.")]
-        [RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$", ErrorMessage = "Passwordet skal indeholde mindst ét bogstav og ét tal.")]
-        [Compare("Password", ErrorMessage = "De indtastede passwords matcher ikke.")]
+        [BindProperty, DataType(DataType.Password), MinLength(6, ErrorMessage = "Password needs to be min. 6 characters.")]
+        [RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$", ErrorMessage = "Password needs min. one letter and one digit.")]
+        [Compare("Password", ErrorMessage = "Passwords dont match.")]
         public string ConfirmPassword { get; set; }
 
         [BindProperty]
@@ -50,7 +51,7 @@ namespace Semesterprojekt2.Pages.Login
 
         public async Task<IActionResult> OnPost()
         {
-            
+
             if (!ModelState.IsValid)
             {
                 // Log validation errors
@@ -72,14 +73,14 @@ namespace Semesterprojekt2.Pages.Login
                     ModelState.AddModelError(nameof(Email), "Email already exists.");
                     return Page();
                 }
-  
+
             }
 
             string hashedPassword = passwordHasher.HashPassword(null, Password);
-         
-           
+
+
             await _userService.AddUser(new Users(hashedPassword, Name, Phone, Email, Role));
-            //Putter kun await der hvor vi kalder DB
+
             return RedirectToPage("Login");
         }
 
@@ -88,4 +89,3 @@ namespace Semesterprojekt2.Pages.Login
 
 
 }
-
