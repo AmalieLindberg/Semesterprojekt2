@@ -35,7 +35,7 @@ namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
             Models.BookATime.BookATime deletedBookATime = await _BookATimeService.DeleteBookATime(BookATime.Id);
             if (deletedBookATime == null)
                 return RedirectToPage("/Error/Error");
-            return RedirectToPage("/Index");
+            return RedirectToPage("/Orderhistory/BookATimeOverviw");
         }
     }
 }
