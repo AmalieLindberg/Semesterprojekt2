@@ -25,11 +25,6 @@ namespace Semesterprojekt2.Pages.BookATime
         [BindProperty]
         public Models.Dog Dog { get; set; }
 
-        // Ensure these properties are bound correctly in the form
-        //Når du sætter SupportsGet = true, fortæller man ASP.NET Core,
-        //at det er sikkert at binde værdier fra forespørgselsstrengen til egenskaben under GET forespørgsler.
-        //Dette er nyttigt i scenarier, hvor du ønsker at opretholde eller præ-indstille data gennem en URL, såsom filtrering,
-        //sortering eller vedligeholdelse af tilstande over flere forespørgsler.
         [BindProperty]
         public int Year { get; set; }
 

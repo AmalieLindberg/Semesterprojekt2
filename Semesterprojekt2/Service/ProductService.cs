@@ -23,10 +23,15 @@ namespace Semesterprojekt2.Service
             _products = _dbGenericService.GetObjectsAsync().Result.ToList();
         }
 
+        public ProductService(List<Product> products)
+        {
+            _products = products;
+        }
+
         public async Task AddProductAsync(Product product)
         {
             _products.Add(product);
-          await _dbGenericService.AddObjectAsync(product);
+            await _dbGenericService.AddObjectAsync(product);
         }
 
         public Product GetProduct(int productId)
