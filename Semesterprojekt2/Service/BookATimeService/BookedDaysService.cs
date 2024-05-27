@@ -55,6 +55,60 @@ namespace Semesterprojekt2.Service.BookATimeService
             }
             return null;
         }
+
+        //public List<string> GetBlockedTimesForDate(DateTime date)
+        //{
+        //    List<string> blockedTimes = new List<string>();
+
+        //    foreach (var holiday in _bookedDays)
+        //    {
+        //        // Check if the holiday covers the entire day
+        //        if (date.Date > holiday.StartDate.Date && date.Date < holiday.EndDate.Date)
+        //        {
+        //            // Block the whole day if the date is in the middle of a holiday period
+        //            for (int hour = 0; hour < 24; hour++)
+        //            {
+        //                blockedTimes.Add(date.Date.AddHours(hour).ToString("HH:mm"));
+        //            }
+        //        }
+        //        else
+        //        {
+        //            // Handle holidays that start or end on the given date
+        //            if (date.Date == holiday.StartDate.Date && date.Date == holiday.EndDate.Date)
+        //            {
+        //                // Holiday starts and ends on the same day
+        //                DateTime time = new DateTime(holiday.StartDate.Year, holiday.StartDate.Month, holiday.StartDate.Day, holiday.StartDate.Hour, 0, 0);
+        //                while (time <= holiday.EndDate)
+        //                {
+        //                    blockedTimes.Add(time.ToString("HH:mm"));
+        //                    time = time.AddHours(1);
+        //                }
+        //            }
+        //            else if (date.Date == holiday.StartDate.Date)
+        //            {
+        //                // Holiday starts on this date but does not end on the same day
+        //                DateTime time = new DateTime(holiday.StartDate.Year, holiday.StartDate.Month, holiday.StartDate.Day, holiday.StartDate.Hour, 0, 0);
+        //                while (time < date.Date.AddDays(1))  // Block until the end of the day
+        //                {
+        //                    blockedTimes.Add(time.ToString("HH:mm"));
+        //                    time = time.AddHours(1);
+        //                }
+        //            }
+        //            else if (date.Date == holiday.EndDate.Date)
+        //            {
+        //                // Holiday ends on this date
+        //                DateTime time = date.Date;  // Start of the day
+        //                while (time <= holiday.EndDate)
+        //                {
+        //                    blockedTimes.Add(time.ToString("HH:mm"));
+        //                    time = time.AddHours(1);
+        //                }
+        //            }
+        //        }
+        //    }
+        //    return blockedTimes.Distinct().ToList();
+        //}
+
         public List<string> GetBlockedTimesForDate(DateTime date)
         { //Formål: Opretter en tom liste, der skal holde de blokerede tider.
            //Hvordan: Initialiserer en ny liste af typen string.

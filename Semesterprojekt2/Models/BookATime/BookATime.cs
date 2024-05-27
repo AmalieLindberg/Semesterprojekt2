@@ -14,8 +14,6 @@ namespace Semesterprojekt2.Models.BookATime
         [Required]
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd HH:mm}")]
-
-        
         public DateTime DateForBooking { get; set; }
         public string? Address {  get; set; }
     
