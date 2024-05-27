@@ -18,8 +18,9 @@ namespace Semesterprojekt2.Service
 
         public async Task AddOrderAsync(ProductOrder productOrder)
         {
-        
+            // Tilføjer ordren til den lokale liste
             OrderList.Add(productOrder);
+            // Tilføjer ordren til databasen
             await DbService.AddObjectAsync(productOrder);
         }
 
@@ -30,6 +31,7 @@ namespace Semesterprojekt2.Service
 
         public ProductOrder GetProductOrderById(int id)
         {
+            // Gennemløber listen af ordrer og returnerer den, der matcher det givne ID
             foreach (var order in OrderList)
             {
                 if (id == order.OrderId)
@@ -40,9 +42,10 @@ namespace Semesterprojekt2.Service
 
         public async Task<List<ProductOrder>> DeleteUserInProductOrder(int userid)
         {
+            // Liste til at holde de ordrer, der skal slettes
             List<ProductOrder> itemsToBeDeleted = new List<ProductOrder>();
 
-            // Collect all items matching the userId
+            // Finder alle ordrer, der matcher brugerens ID
             foreach (ProductOrder productOrder in OrderList)
             {
                 if (productOrder.UserId == userid)
@@ -51,7 +54,7 @@ namespace Semesterprojekt2.Service
                 }
             }
 
-            //Delete all collected items
+            // Sletter de fundne ordrer fra listen og databasen
             foreach (ProductOrder itemToBeDeleted in itemsToBeDeleted)
             {
                 OrderList.Remove(itemToBeDeleted);
@@ -63,8 +66,11 @@ namespace Semesterprojekt2.Service
 
 		public async Task<ProductOrder> DeleteProductOrderAsync(int? orderId)
 		{
-			ProductOrder productOrdersToBeDeleted = null;
-			foreach (ProductOrder productOrder in OrderList)
+            // Variabel til at holde den ordre, der skal slettes
+            ProductOrder productOrdersToBeDeleted = null;
+
+            // Finder ordren, der matcher det givne ID
+            foreach (ProductOrder productOrder in OrderList)
 			{
 				if (productOrder.OrderId == orderId)
 				{
@@ -73,10 +79,10 @@ namespace Semesterprojekt2.Service
 				}
 			}
 
-			if (productOrdersToBeDeleted != null)
+            // Sletter den fundne ordre fra listen og databasen
+            if (productOrdersToBeDeleted != null)
 			{
 				OrderList.Remove(productOrdersToBeDeleted);
-				//JsonFileProductService.SaveJsonProducts(_products);
 				await DbService.DeleteObjectAsync(productOrdersToBeDeleted);
 			}
 

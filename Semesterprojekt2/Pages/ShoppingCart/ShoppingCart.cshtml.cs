@@ -12,49 +12,43 @@ namespace Semesterprojekt2.Pages.ShoppingCart
     public class ShoppingCartModel : PageModel
     {
         private ShoppingCartService _shoppingCartService;
-        //private IProductService _productService;
         private IUserService _userService;
         private ProductOrderService _orderService;
 
-        public ShoppingCartModel(ShoppingCartService shoppingCartService/*, IProductService productService*/, IUserService userService, ProductOrderService productOrderService)
+        public ShoppingCartModel(ShoppingCartService shoppingCartService, IUserService userService, ProductOrderService productOrderService)
         {
             _shoppingCartService = shoppingCartService;
-            //_productService = productService;
             _userService = userService;
             _orderService = productOrderService;
             
         }
 
         public List<Models.CartItem> CartItem { get; set; } = new List<CartItem>();
-        //public Models.Shop.Product Product { get; set; }
-        //public Models.CartItem CartItems { get; set; }
      
         public Users User { get; set; }
        
         public Models.Shop.ProductOrder Order { get; set; }
 
-        //public int Count { get; set; }
-
         public void OnGet()
         {
-            //int id = LoginModel.LoggedInUser.UserId;
-            //Users CurrentUser = _userService.GetUser(id);
             CartItem = _shoppingCartService.GetAllCartItems();
-            //Product = _productService.GetProduct(id);
         }
 
+        // OnPost til at fjerne en enkelt vare fra indkøbskurven
         public IActionResult OnPostRemoveSingleCartItem(int productId)
         {
             _shoppingCartService.DeleteCartItem(productId);
             return RedirectToPage();
         }
 
+        // OnPost til at fjerne alle varer fra indkøbskurven
         public IActionResult OnPostRemoveAllCartItems()
         {
             _shoppingCartService.ClearCart();
             return RedirectToPage();
         }
 
+        //Beregner den samlede pris for varer i indkøbskurven
         public decimal TotalPrice
         {
             get
@@ -62,23 +56,28 @@ namespace Semesterprojekt2.Pages.ShoppingCart
                 return CartItem.Sum(item => (item.Product.Price ?? 0) * item.Quantity);
             }
         }
-        
+
+        //OnPost til at fuldføre købet og oprette en ordre
         public async Task<IActionResult> OnPost()
         {
+            // Tjekker om model state er gyldig
             if (!ModelState.IsValid)
             {
                 return Page();
             }
 
+            // Henter alle varer i indkøbskurven
             var cartItems = _shoppingCartService.GetAllCartItems();
             if (cartItems == null || !cartItems.Any())
             {
                 return RedirectToPage("/Error/Error");
             }
 
+            // Henter brugerens ID fra den loggede ind bruger
             int id = LoginModel.LoggedInUser.UserId;
             User = _userService.GetUser(id);
-           
+
+            // Opretter en ordre for hver vare i indkøbskurven
             foreach (var item in _shoppingCartService.GetAllCartItems())
             {
                 Order = new Models.Shop.ProductOrder();
@@ -90,7 +89,8 @@ namespace Semesterprojekt2.Pages.ShoppingCart
                 
                 await _orderService.AddOrderAsync(Order);
             }
-            //Slet alt i indkøbskurv efter
+
+            // Tømmer indkøbskurven efter ordreoprettelse
             _shoppingCartService.GetAllCartItems().Clear();
        
             return RedirectToPage("../Shop/Products/ThankYouforProductOrder", new {id=Order.OrderId});

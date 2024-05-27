@@ -6,27 +6,21 @@ using Semesterprojekt2.Service;
 
 namespace Semesterprojekt2.Pages.Shop.Products
 {
-	// Denne klasse håndterer logikken bag redigering af et eksisterende produkt.
 	public class EditProductModel : PageModel
     {
-		// Reference til en service, der styrer produktrelaterede dataoperationer.
 		private IProductService _productService;
 
-		// _webHostEnvironment bruges til at få adgang til serverens filsystem.
 		private IWebHostEnvironment _webHostEnvironment;
 
-		// Konstruktør der initialiserer services via dependency injection.
 		public EditProductModel(IProductService productService, IWebHostEnvironment webHost)
 		{
 			_productService = productService;
 			_webHostEnvironment = webHost;
 		}
 
-		// Denne property binder automatisk modellen fra en HTTP-forespørgsel til produktet.
 		[BindProperty]
         public Models.Shop.Product Product { get; set; }
 
-		// BindProperty for at håndtere filupload af produktbilleder.
 		[BindProperty]
 		public IFormFile? Photo { get; set; }
 
@@ -34,7 +28,7 @@ namespace Semesterprojekt2.Pages.Shop.Products
 		{
 			Product = _productService.GetProduct(id);
 			if (Product == null)
-				return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
+				return RedirectToPage("/Error/Error"); 
 
 			return Page();
 		}

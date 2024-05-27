@@ -5,9 +5,10 @@
     ViewData["Title"] = "Your Shopping Cart";
 }
 <style>
+    /* CSS klasse for links uden styling */
     .link-no-style {
-        text-decoration: none; /* Removes underline */
-        color: inherit; /* Keeps the text color consistent with surrounding text */
+        text-decoration: none; 
+        color: inherit; 
     }
 </style>
 
@@ -16,6 +17,8 @@
 <hr />
 <center><p>Please note that products can only be picked up.</p></center>
 <hr />
+
+<!-- Formular til at fjerne alle varer fra indkøbskurven -->
 <form method="post" asp-page-handler="RemoveAllCartItems" style="text-align: right;">
     <button type="submit" class="btn btn-warning">Clear Cart</button>
 </form>
@@ -24,6 +27,7 @@
 
 @if (Model.CartItem.Count > 0)
 {
+        <!-- Tabel, der viser indkøbskurvens indhold -->
     <table class="table">
         <thead>
             <tr>
@@ -35,6 +39,7 @@
             </tr>
         </thead>
         <tbody>
+                <!-- Løkke gennem hver vare i indkøbskurven -->
             @foreach (var item in Model.CartItem)
             {
                 <tr>
@@ -43,6 +48,7 @@
                     <td>@item.Quantity</td>
                     <td>@((item.Product.Price ?? 0) * item.Quantity)</td>
                     <td>
+                            <!-- Formular til at fjerne en enkelt vare fra indkøbskurven -->
                         <form method="post" asp-page-handler="RemoveSingleCartItem" asp-route-productId="@item.Product.Id">
                             <button type="submit" class="btn btn-danger">Remove</button>
                         </form>
@@ -52,6 +58,7 @@
         </tbody>
         <tfoot>
             <tr>
+                    <!-- Samlet pris for varerne i indkøbskurven -->
                 <td colspan="3" style="text-align: right;"><strong>Total Price:</strong></td>
                 <td colspan="2">@Model.TotalPrice.ToString("C")</td>
             </tr>
@@ -60,26 +67,23 @@
 }
 else
 {
+        <!-- Besked, der vises, hvis indkøbskurven er tom -->
     <p>Your shopping cart is waiting to be filled.</p>
 }
 
+    <!-- Link til at fortsætte med at shoppe -->
 <div style="text-align: center;">
     <h5><a asp-page="/Shop/Shop" class="link-no-style">Do you want to continue shopping?</a></h5>
 </div>
 
 <center><p>or</p></center>
 
+    <!-- Formular til at afslutte og reservere -->
 <div style="text-align: center;">
                 <form method="post">
                     <div class="form-group">
                         <input type="submit" style="background-color: transparent; color: black; font-size: 30px;"value="Finish and reserve" class="btn btn-primary" />
                     </div>
                 </form>
-</div>
-<div>
-   @*  <form method="post" asp-page-handler="AddToOrder">
-        <input type="hidden" name="productId" value="@Model.Product.Id" />
-        <button type="submit">Add to cart</button>
-    </form> *@
 </div>
 </body>

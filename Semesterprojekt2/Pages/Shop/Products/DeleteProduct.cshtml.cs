@@ -5,44 +5,46 @@ using Semesterprojekt2.Models.Shop;
 
 namespace Semesterprojekt2.Pages.Shop.Products
 {
-	// Denne klasse håndterer logikken bag at slette et produkt fra databasen.
 	public class DeleteProductModel : PageModel
     {
-		// En reference til ProductService, som håndterer databaselaget for produktoperationer.
-		private IProductService _productService;
+        // Reference til productService
+        private IProductService _productService;
 
-		// Konstruktør der initialiserer productService gennem dependency injection.
-		public DeleteProductModel(IProductService productService)
+        // Konstruktør, der initialiserer produktservicen via dependency injection
+        public DeleteProductModel(IProductService productService)
         {
             _productService = productService;
         }
 
-		// BindProperty markerer denne property, så den automatisk binder ved POST-forespørgsler.
-		[BindProperty]
+        // BindProperty til produktmodellen
+        [BindProperty]
         public Models.Shop.Product Product { get; set; }
 
-		// OnGet metoden kaldes ved GET-forespørgsler og bruges til at indlæse produktet fra databasen.
-		public IActionResult OnGet(int id)
+        public IActionResult OnGet(int id)
         {
-            // Henter produktet baseret på den angivne id.
+            // Henter produktet fra produktservicen baseret på ID
             Product = _productService.GetProduct(id);
-			// Hvis produktet ikke findes, omdirigeres brugeren til en 'Ikke fundet' side.
-			if (Product == null)
-                return RedirectToPage("/NotFound");
-			// Returnerer siden, hvis produktet findes.
-			return Page();
+
+            // Hvis produktet ikke findes, omdirigerer til Error-siden
+            if (Product == null)
+                return RedirectToPage("/Error/Error");
+
+            // Returnerer den aktuelle side
+            return Page();
         }
 
-		// OnPost metoden kaldes ved POST-forespørgsler og håndterer sletning af produktet.
+        //OnPost metoden sletter produktet
 		public async Task<IActionResult> OnPost()
 		{
-			// Kalder DeleteProduct på productService for at slette det givne produkt.
-			Models.Shop.Product deletedProduct = await _productService.DeleteProductAsync(Product.Id);
-			// Hvis der ikke findes et produkt at slette, omdirigeres brugeren til 'Ikke fundet' siden.
-			if (deletedProduct == null)
-            return RedirectToPage("/NotFound");
-			// Efter succesfuld sletning omdirigeres brugeren til shop-siden.
-			return RedirectToPage("/Shop/Shop");
+            // Sletter produktet ved hjælp af produktservicen
+            Models.Shop.Product deletedProduct = await _productService.DeleteProductAsync(Product.Id);
+
+            // Hvis produktet ikke findes, omdirigerer til Error-siden
+            if (deletedProduct == null)
+            return RedirectToPage("/Error/Error");
+
+            // Omdirigerer til shop-siden efter sletningen
+            return RedirectToPage("/Shop/Shop");
         }
     }
 }

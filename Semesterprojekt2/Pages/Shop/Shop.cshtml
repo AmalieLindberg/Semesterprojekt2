@@ -7,17 +7,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* Basal styling for hele siden */
+
+        /* Grundlæggende styling for body */
         body {
-            font-family: "Lato", sans-serif; /* Angiver skrifttype */
-            background-color: rgba(198, 81, 39, 0.08); /* Baggrundsfarve med transparens */
+            font-family: "Lato", sans-serif; 
+            background-color: rgba(198, 81, 39, 0.08); 
         }
 
-        /* Styling for produktkort */
+        /* Styling for kortene */
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            width: 100%; /* Change to 100% for responsiveness */
-            max-width: 300px; /* Maximum width of the card */
+            width: 100%;
+            max-width: 300px;
             margin: 10px;
             text-align: center;
             font-family: arial;
@@ -28,24 +29,25 @@
             height: 400px;
         }
 
+            /* Styling for billedet inde i kortet */
             .card img {
                 width: 100%;
                 height: 270px;
                 object-fit: cover;
             }
 
+            /* Styling for overskrift og paragraf inde i kortet */
             .card h3, .card p {
-                margin: 10px 0; /* Consistent spacing for title and price */
+                margin: 10px 0; 
             }
 
-
-        /* Styling for prisindikation på kort */
+        /* Styling for prisen */
         .price {
-            color: grey; /* Farve på pris */
-            font-size: 20px; /* Størrelse på pris tekst */
+            color: grey; 
+            font-size: 20px; 
         }
 
-        /* Styling for knapper på kort */
+        /* Styling for knappen inde i kortet */
         .card button {
             border: none;
             outline: 0;
@@ -59,28 +61,28 @@
             margin-top: auto;
         }
 
-            /* Hover-effekt for knapper */
+            /* Hover effekt for knappen */
             .card button:hover {
-                opacity: 0.7; /* Gør knappen delvist gennemsigtig ved hover */
+                opacity: 0.7; 
             }
 
-        /* Container til kort, som viser flere produkter */
+        /* Container for kortene */
         .card-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Center the cards */
-            margin: 0 auto; /* Center the container */
-            max-width: 100%; /* Set a max-width for the container */
+            justify-content: center; 
+            margin: 0 auto; 
+            max-width: 100%; 
         }
 
-        /* Stil for links inden i kort, så de nedarver farve og ingen dekoration */
+        /* Styling for links inde i kortet */
         .card a {
             display: block;
             color: inherit;
             text-decoration: none;
         }
 
-        /* Beskrivelsesfelt med ellipsis for at begrænse tekstvisning */
+        /* Styling for beskrivelsen */
         .description {
             white-space: nowrap;
             overflow: hidden;
@@ -89,18 +91,18 @@
 
         /* Styling for inputgruppen */
         .input-group {
-            margin-left: 8%; /* Remove auto margin */
-            max-width: 100%; /* Allow full width usage */
+            margin-left: 8%; 
+            max-width: 100%; 
             display: flex;
-            justify-content: left; /* Align items to the left */
+            justify-content: left; 
             align-items: center;
-            gap: 0px; /* Smaller gap between fields */
+            gap: 0px; 
         }
 
     </style>
 </head>
 <body>
-
+    <!-- Formular til søgning og filtrering -->
     <form method="post">
         <div class="input-group mb-3">
             <input asp-for="SearchString" class="form-control mr-1" style="max-width: 200px;" placeholder="Enter search term" />
@@ -117,6 +119,7 @@
         </div>
     </form>
 
+    <!-- Tjekker om brugeren er logget ind som admin og viser link til at oprette et nyt produkt -->
     @if (LoginModel.LoggedInUser != null && LoginModel.LoggedInUser.Role == "Admin")
     {
         <p>
@@ -124,11 +127,15 @@
         </p>
     }
 
+    <!-- Container for kortene -->
     <div class="card-container">
+        <!-- Tjekker om der er produkter at vise -->
         @if (@Model.Products != null)
         {
+            <!-- Loop gennem hvert produkt i modellen -->
             foreach (var product in Model.Products)
             {
+                <!-- Individuelt kort for hvert produkt -->
                 <div class="card">
                     <a href="@Url.Page("/Shop/Products/DetailProduct", new { id = product.Id })" style="text-decoration:none; color:inherit;">
                         <img src="~/images/Shop/@product.ProductImage" alt="Product Image">

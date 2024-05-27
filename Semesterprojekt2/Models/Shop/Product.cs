@@ -2,17 +2,8 @@
 
 namespace Semesterprojekt2.Models.Shop
 {
-	// En enumeration der definerer de forskellige typer af produkter som kan eksistere.
-	//public enum ProductType
-	//{
-	//	Clothing,
-	//	Soap,
-	//	Treats,
-	//	Toy
-	//}
 	public class Product
     {
-        // En property til at repræsentere produktets ID.
         [Key]
 		public int Id { get; set; }
 
@@ -48,10 +39,9 @@ namespace Semesterprojekt2.Models.Shop
 
 		
 
-		// En konstruktør der initialiserer et nyt produkt med specifikke værdier for hver egenskab.
+		// En konstruktør der initialiserer et nyt produkt med specifikke værdier for hver property.
 		public Product(string name, decimal price, string type, string brand, int amount, string description)
         {
-            /*Id = nextId++;*/ // Tildeler et unikt ID til produktet og inkrementerer det næste ID.
 			Name = name;
             Price = price;
             Type = type;

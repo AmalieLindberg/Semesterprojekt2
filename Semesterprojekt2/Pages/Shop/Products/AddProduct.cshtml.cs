@@ -5,76 +5,81 @@ using Semesterprojekt2.Service;
 
 namespace Semesterprojekt2.Pages.Shop.Products
 {
-	// Klassen AddProductModel styrer tilføjelsen af nye produkter via en webformular.
 	public class AddProductModel : PageModel
 	{
-		// _productService håndterer forretningslogik relateret til produktdata.
-		private IProductService _productService;
-		// _webHostEnvironment bruges til at få adgang til serverens filsystem.
-		private IWebHostEnvironment _webHostEnvironment;
+        // Afhængig af productService
+        private IProductService _productService;
 
-		// Konstruktør der initialiserer services via dependency injection.
+        // Afhængig af webHostEnvironment (leveres af ASP.NET Core)
+        private IWebHostEnvironment _webHostEnvironment;
+
 		public AddProductModel(IProductService productService, IWebHostEnvironment webHost)
         {
             _productService = productService;
 			_webHostEnvironment = webHost;
 		}
 
-		// BindProperty attributten binder modeldata automatisk fra HTTP-anmodninger.
-		[BindProperty]
+        // BindProperty til produktmodellen
+        [BindProperty]
         public Models.Shop.Product Product { get; set; }
 
-		// BindProperty for at håndtere filupload af produktbilleder.
-		[BindProperty]
+        // BindProperty til foto upload
+        [BindProperty]
 		public IFormFile? Photo { get; set; }
 
-		// OnGet metoden kaldes, når siden anmodes via GET. Den returnerer siden selv.
+		//GetMetoden returnerer standard siden
 		public IActionResult OnGet()
         {
             return Page();
         }
 
-		// OnPostAsync metoden håndterer POST-anmodninger, som sker når formularen indsendes.
 		public async Task<IActionResult> OnPostAsync()
 		{
-			// Tjekker at ModelState er gyldig (alle form-krav er opfyldt).
-			if (!ModelState.IsValid)
+            // Tjekker om modeltilstanden er gyldig, og returnerer samme side, hvis model er ugyldig
+            if (!ModelState.IsValid)
 			{
 				return Page();
 			}
-			// Hvis der er uploadet et foto, behandles og gemmes dette.
-			if (Photo != null)
+            // Hvis der er et billede uploadet
+            if (Photo != null)
 			{
-				// Hvis der allerede er et billede tilknyttet produktet, slettes det gamle først.
-				if (Product.ProductImage != null)
+                // Hvis produktet allerede har et billede, slettes det gamle billede
+                if (Product.ProductImage != null)
 				{
 					string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "/Images", "Shop", Product.ProductImage);
-					System.IO.File.Delete(filePath);
-				}
-				// ProcessUploadedFile håndterer oprettelse af filnavn og gemning af filen.
-				Product.ProductImage = ProcessUploadedFile();
+					System.IO.File.Delete(filePath); // Sletter det gamle billede
+                }
+                // Behandler og gemmer det nye billede
+                Product.ProductImage = ProcessUploadedFile();
 			}
-			// Tilføj det nye produkt til databasen via ProductService.
-			await _productService.AddProductAsync(Product);
-			// Redirect til butikssiden efter succesfuld tilføjelse.
-			return RedirectToPage("/Shop/Shop");
+            // Tilføjer produktet ved hjælp af produktservicen
+            await _productService.AddProductAsync(Product);
+            // Omdirigerer til shopsiden efter produktet er tilføjet
+            return RedirectToPage("/Shop/Shop");
 		}
 
-		// Hjælpemetode til at gemme det uploadede billede og returnere filnavnet.
-		private string ProcessUploadedFile()
+        // Hjælpemetode til at behandle det uploadede billede
+        private string ProcessUploadedFile()
 		{
-			string uniqueFileName = null;
-			if (Photo != null)
+            // Erklærer en variabel ved navn uniqueFileName af typen string og initialiserer den til null
+            string uniqueFileName = null;
+            // Hvis der er et billede uploadet
+            if (Photo != null)
 			{
-				string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images", "Shop");
-				uniqueFileName = Guid.NewGuid().ToString() + "_" + Photo.FileName;
-				string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-				using (var fileStream = new FileStream(filePath, FileMode.Create))
+                // Folder hvor billedet skal gemmes
+                string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images", "Shop");
+                // Opretter et unikt filnavn
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + Photo.FileName;
+                // Kombinerer folderen og det unikke filnavn for at få hele stien
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                // Opretter en filstream og kopierer billedet til stien
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
 				{
 					Photo.CopyTo(fileStream);
 				}
 			}
-			return uniqueFileName;
+            // Returnerer det unikke filnavn
+            return uniqueFileName;
 		}
 	}
 }

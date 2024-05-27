@@ -19,15 +19,16 @@ namespace Semesterprojekt2.Service
 
         public void AddToCart(Product product, int quantity)
         {
+            // Finder eksisterende vare i indkøbskurven baseret på produktets ID
             var existingCartItem = _cartItems.FirstOrDefault(ci => ci.Product.Id == product.Id);
             if (existingCartItem != null)
             {
-                // If the item already exists in the cart, increase its quantity
+                // Hvis varen allerede findes i kurven, øges mængden
                 existingCartItem.Quantity += quantity;
             }
             else
             {
-                // If the item is not in the cart, add it with the specified quantity
+                // Hvis varen ikke findes i kurven, tilføjes den med den angivne mængde
                 _cartItems.Add(new CartItem
                 {
                     Product = product,
@@ -40,7 +41,7 @@ namespace Semesterprojekt2.Service
         {
             foreach (CartItem cartItem in _cartItems)
             {
-                if (cartItem.Product.Id == productId) // Access Id from Product object
+                if (cartItem.Product.Id == productId) // Adgang til Id fra Product objektet
                 {
                     return cartItem;
                 }
@@ -55,22 +56,23 @@ namespace Semesterprojekt2.Service
 
         public bool DeleteCartItem(int productId)
         {
+            // Finder varen, der skal slettes, baseret på produktets ID
             CartItem cartItemToBeDeleted = _cartItems.FirstOrDefault(ci => ci.Product.Id == productId);
             if (cartItemToBeDeleted != null)
             {
+                // Hvis mængden er større end 1, reduceres mængden
                 if (cartItemToBeDeleted.Quantity > 1)
                 {
-                    // Reduce the quantity by one if more than one exists
                     cartItemToBeDeleted.Quantity -= 1;
                 }
                 else
                 {
-                    // Remove the item completely if only one is left
+                    // Hvis mængden er 1 eller mindre, fjernes varen helt fra kurven
                     _cartItems.Remove(cartItemToBeDeleted);
                 }
-                return true; // Indicates successful deletion or decrement
+                return true; 
             }
-            return false; // Indicates the item was not found and nothing was deleted
+            return false; 
         }
 
         public void ClearCart()
@@ -85,14 +87,12 @@ namespace Semesterprojekt2.Service
             {
                 if (cartItem.Product.Price != null)
                 {
-                    // Safely cast double to decimal and calculate total
                     total += (decimal)cartItem.Product.Price * cartItem.Quantity;
                 }
                 else
                 {
-                    // Handle the case where the price is null if needed
-                    // For example, you could assume a price of 0, or log an error, etc.
-                    // total += 0; // Uncomment this if you want to add 0 to the total when the price is null
+                    // Håndter tilfældet, hvis prisen er null 
+                    total += 0;
                 }
             }
             return total;

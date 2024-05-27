@@ -9,6 +9,7 @@ namespace Semesterprojekt2.Service
     public class ProductService : IProductService
     {
         private List<Product> _products {  get; set; }
+
         private DbGenericService<Product> _dbGenericService {  get; set; }
 
         private JsonFileProductService JsonFileProductService { get; set; }
@@ -95,7 +96,10 @@ namespace Semesterprojekt2.Service
             return productToBeDeleted;
         }
 
-        public List<Product> GetProducts() { return _products; }
+        public List<Product> GetProducts() 
+        { 
+            return _products; 
+        }
 
         public IEnumerable<Product> NameSearch(string str)
         {

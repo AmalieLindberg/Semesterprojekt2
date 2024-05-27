@@ -7,135 +7,143 @@
 <head>
     <title>Product Page</title>
     <style>
+        /* Grundlæggende styling for body */
         body {
-            font-family: 'Lato', sans-serif; /* Sætter skrifttypen for siden */
-            background-color: rgba(198, 81, 39, 0.08); /* Let orange baggrundsfarve */
+            font-family: 'Lato', sans-serif; 
+            background-color: rgba(198, 81, 39, 0.08); 
         }
 
-        /* Container der centrerer produktinformationen og giver spacing */
+        /* Container til produktet */
         .product-container {
-            display: flex; /* Flexbox til at arrangere billede og detaljer side om side */
-            padding: 20px; /* Afstand inden i containeren */
-            max-width: 1200px; /* Maksimal bredde for at undgå for bred visning */
-            margin: auto; /* Centrerer containeren horisontalt */
+            display: flex; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: auto; 
         }
 
-        /* Styling specifikt for produktbilledet */
+        /* Styling for produktbilledet */
         .product-image {
-            flex: 0 1 auto; /* Flex item der ikke vokser, men kan krympe */
-            width: 200%; /* Halvdelen af containerens bredde */
+            flex: 0 1 auto; 
+            width: 200%; 
             height: auto;
         }
-
+            /* Specifik styling for billedet inden i produktbilledet */
             .product-image img {
-                width: 400px; /* Set a specific width */
-                height: 400px; /* Set a specific height */
-                object-fit: cover; /* Ensure the image covers the specified dimensions */
+                width: 400px; 
+                height: 400px; 
+                object-fit: cover; 
             }
 
-        /* Container for tekstlige produktinformationer */
+        /* Styling for produktdetaljer */
         .product-details {
-            flex-grow: 1; /* Tager den resterende plads i containeren */
-            padding-left: 20px; /* Add some padding to the left for spacing */
-            padding-top: 20px; /* Add some padding to the top for spacing */
+            flex-grow: 1; 
+            padding-left: 20px; 
+            padding-top: 20px; 
         }
 
+            /* Styling for produktnavnet */
             .product-details h1 {
-                font-size: 24px; /* Større skriftstørrelse for produktnavn */
-                margin: 10px 0; /* Vertikal margin omkring produktnavnet */
+                font-size: 24px; 
+                margin: 10px 0; 
             }
 
+            /* Styling for prisen */
             .product-details .price {
-                font-size: 20px; /* Skriftstørrelse for pris */
-                font-weight: bold; /* Fed skrift for at fremhæve pris */
+                font-size: 20px;
+                font-weight: bold; 
             }
 
-        /* Container til handlingsknapper under produktinformationer */
+        /* Styling for handlingssektionen */
         .product-actions {
-            margin-top: 20px; /* Afstand fra produktinformationerne til knapperne */
+            margin-top: 20px;
         }
 
         /* Generel knap styling */
         .btn {
-            display: inline-block; /* Buttons displayed as inline-block elements */
-            width: max-content; /* Button width determined by content */
-            padding: 10px 20px; /* Padding around button text */
-            margin-top: 10px; /* Distance from elements above the button */
-            text-align: center; /* Center the text in the button */
-            text-decoration: none; /* Remove underline from links */
-            color: #fff; /* White text color */
-            background-color: #000; /* Black background color */
-            border: none; /* No border around the button */
-            cursor: pointer; /* Cursor changes to pointer on hover */
-            border-radius: 5px; /* Rounded corners */
+            display: inline-block;
+            width: max-content; 
+            padding: 10px 20px; 
+            margin-top: 10px; 
+            text-align: center; 
+            text-decoration: none; 
+            color: #fff; 
+            background-color: #000; 
+            border: none; 
+            cursor: pointer; 
+            border-radius: 5px; 
         }
 
-
-        /* Specifik styling for "Add to Cart" knappen */
+        /* Styling for "Add to cart" knappen */
         .add-to-cart {
-            width: 50%; /* Gør knappen bredere */
+            width: 50%; 
         }
 
-        /* Container der holder Rediger/Slet knapper ved siden af hinanden */
+        /* Container til rediger og slet knapper */
         .edit-delete-container {
-            display: flex; /* Use flexbox to arrange the buttons */
-            justify-content: space-between; /* Distribute buttons evenly */
-            width: 50%; /* Width same as 'Add to Cart' button */
-            box-sizing: border-box; /* Include padding in width */
+            display: flex; 
+            justify-content: space-between; 
+            width: 50%; 
+            box-sizing: border-box; 
         }
 
-        /* Ens stil for både rediger og slet knapperne */
+        /* Styling for rediger og slet knapperne */
         .edit-button, .delete-button {
-            flex: 1; /* Both buttons take up equal space */
-            margin: 0 1px; /* Space between buttons */
-            padding: 10px; /* Padding inside the buttons */
-            background-color: #FCC681; /* Background color for edit button */
-            color: #ffffff; /* White text color */
-            text-align: center; /* Center text in the button */
-            border-radius: 5px; /* Rounded corners */
+            flex: 1; 
+            margin: 0 1px; 
+            padding: 10px; 
+            background-color: #FCC681; 
+            color: #ffffff; 
+            text-align: center; 
+            border-radius: 5px; 
         }
 
+        /* Specifik baggrundsfarve for slet knappen */
         .delete-button {
-            background-color: #EAA193; /* Background color for delete button */
+            background-color: #EAA193; 
         }
 
+            /* Styling for ikoner inden i rediger og slet knapperne */
             .edit-button i, .delete-button i {
-                margin-right: 5px; /* Space between icon and text */
+                margin-right: 5px; 
             }
 
-        /* Hover styles for edit and delete buttons */
+        /* Hover effekt for rediger knappen */
         .edit-button:hover {
-            background-color: #e6b057; /* Slightly darker shade for hover */
+            background-color: #e6b057; 
         }
 
+        /* Hover effekt for slet knappen */
         .delete-button:hover {
-            background-color: #d29283; /* Slightly darker shade for hover */
+            background-color: #d29283; 
         }
 
     </style>
 </head>
 <body>
     <main>
-        <!-- Hoved container for produktvisning -->
+        <!-- Container til produktet -->
         <div class="product-container">
-            <!-- Billede container -->
+            <!-- Sektion til produktbilledet -->
             <div class="product-image">
                 <img src="~/images/Shop/@Model.Product.ProductImage" />
             </div>
-            <!-- Detaljer container -->
+            <!-- Sektion til produktdetaljer -->
             <div class="product-details">
                 <h1>@Model.Product.Name</h1>
                 <p class="price">@Model.Product.Price,-</p>
                 <p class="brand">Brand: @Model.Product.Brand</p>
                 <p>@Model.Product.Description</p>
 
-                <!-- Knapper til produktaktioner som tilføj til kurv, rediger og slet -->
+                <!-- Sektion til handlingsknapper -->
                 <div class="product-actions">
+                    <!-- Formular til at tilføje produktet til indkøbskurven -->
                     <form method="post" asp-page-handler="AddToCart">
                         <input type="hidden" name="productId" value="@Model.Product.Id" />
                         <button class="btn add-to-cart" type="submit">Add to cart</button>
                     </form>
+                    <!-- Container til rediger og slet knapper -->
                     <div class="edit-delete-container">
+                                            <!-- Viser kun rediger og slet knapperne, hvis brugeren er logget ind som admin -->
                                             @if (LoginModel.LoggedInUser != null && LoginModel.LoggedInUser.Role == "Admin")
                     {
                             <a class="btn btn-primary btn-sm edit-button" title="Edit" asp-page="/Shop/Products/EditProduct" asp-route-id="@Model.Product.Id"><i class="fa fa-edit"></i> Product</a>
