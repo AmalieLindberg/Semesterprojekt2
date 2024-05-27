@@ -26,7 +26,7 @@ namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
             Users = _UserService.GetUser(userid);
             BookATime = _BookATimeService.GetBookATimeById(id);
             if (BookATime == null)
-                return RedirectToPage("/Index"); 
+                return RedirectToPage("/NotFound"); 
 
             return Page();
         }
@@ -35,7 +35,7 @@ namespace Semesterprojekt2.Pages.Orderhistory.BookATimeOrder
             Models.BookATime.BookATime deletedBookATime = await _BookATimeService.DeleteBookATime(BookATime.Id);
             if (deletedBookATime == null)
                 return RedirectToPage("/Error/Error");
-            return RedirectToPage("/Orderhistory/BookATimeOverviw");
+            return RedirectToPage("/Orderhistory/BookATimeOverview");
         }
     }
 }
