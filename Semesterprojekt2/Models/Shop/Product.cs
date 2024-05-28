@@ -50,7 +50,7 @@ namespace Semesterprojekt2.Models.Shop
             Description = description;
         }
 
-		// En standard konstruktør uden parametre. Dette er nyttigt, hvis man opretter et produkt uden straks at kende alle detaljerne.
+		// En standard konstruktør uden parametre. 
 		public Product()
         {
         }
