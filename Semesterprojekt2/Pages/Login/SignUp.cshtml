@@ -150,7 +150,7 @@
                     \+?: Matches the plus sign + zero or one time. The ? makes the plus sign optional.
                     [0-9]{1,12}: Matches digits from 0 to 9, occurring between 1 to 13 times -> We do this cause we expect international numbers
                     $: Asserts the end of the string. -->
-                    <input asp-for="@Model.Phone" type="tel" placeholder="Phone" pattern="^\+?[0-9]{1,13}$" required />
+                    <input asp-for="@Model.Phone" type="tel" placeholder="Phone" value="" pattern="^\+?[0-9]{1,13}$" required />
                     <span asp-validation-for="@Model.Phone" class="text-danger"></span>
                     <i class='bx bxs-user'></i>
                 </div>
@@ -165,7 +165,7 @@
 
                 <div class="input-box">
                     <label asp-for="@Model.ConfirmPassword" class="hidden" class="control-lable">  Enter Password: 6 characters minimum</label>
-                    <input asp-for="@Model.ConfirmPassword" class="form-control" type="password" placeholder="Password" required />
+                    <input asp-for="@Model.ConfirmPassword" class="form-control" type="password" placeholder="Confirm Password" required />
                     <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
