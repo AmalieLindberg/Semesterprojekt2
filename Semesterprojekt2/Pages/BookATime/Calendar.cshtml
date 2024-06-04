@@ -199,8 +199,7 @@
         @{
             int dayCounter = 0; // Initialize the counter for days in the week. hvorfor vi starter på 0?
             // Når man arbejder med tællere i programmering, starter man ofte fra 0 afhængigt af konteksten. Dette skyldes, at mange programmeringssprog og datamodeller bruger 0-baserede indeksering.
-           
-            DateTime today = DateTime.Today; 
+          
 
         }
        
@@ -216,8 +215,6 @@
                     @: </tr><tr>
                     dayCounter = 0; // Reset the counter for the new row
                 }
-           
-                bool isPast = date < today;
              
            
                 <td class="@Model.DayClasses[date]">

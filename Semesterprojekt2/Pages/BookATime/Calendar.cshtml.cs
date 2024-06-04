@@ -82,20 +82,27 @@ namespace Semesterprojekt2.Pages.BookATime
                 //skaber et DateTime objekt for hver dag i måneden bruger sammen day som i for.
                 var date = new DateTime(year, month, day);
 
-                // Using an empty list for simplicity
+                //Vi bruger en tom list for mere fleksibel, så kan man på et tidspunkt.
+                //lave at man ikke dirket sætter den inden i database, 
+                //men første når den er godkent ellers er det gemt et andet sted
+                //det er den måde vi kan brug denne tom list
+               //men lige nu gør den ikke noget.
                 var additionalBookedTimes = new List<string>(); 
 
                 //tjekker om datoen er i fortiden ved hjælp af metoden IsPast.
                 bool isPast = IsPast(date);
                 //gemmer resultatet i et dictionary for hurtig adgang senere.
-                IsPastDict[date] = isPast;  // Store past status in dictionary
+                //Nølge date er den måde vi for den vidste på kalender på html siden.
+                IsPastDict[date] = isPast; 
                 //henter opdaterede tilgængelige tider for den givne dag asynkront.
                 var availableTimes = await _bookATimeService.GetUpdatedAvailableTimes(date, additionalBookedTimes);
                 //henter en farverne på dagene.
                 var dayClass = await _bookATimeService.GetColurDay(date, additionalBookedTimes);
                 //gemmer resultatet i et dictionary for hurtig adgang senere.
+                //Nølge date er den måde vi for den vidste på kalender på html siden.
                 AvailableTimesDict[date] = availableTimes;
                 //gemmer resultatet i et dictionary for hurtig adgang senere.
+                //Nølge date er den måde vi for den vidste på kalender på html siden.
                 DayClasses[date] = dayClass;
             }
          }

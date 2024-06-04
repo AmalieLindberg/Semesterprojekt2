@@ -126,11 +126,13 @@ namespace Semesterprojekt2.Service.BookATimeService
 
             //List<string> er en generisk liste, som bruges til at holde en samling af string. Her bruges denne liste til at gemme bookede tider, som hentes fra databasen.
             List<string> bookedTimesFromDb = await _bookATimeDbService.GetBookedTimesForDate(date);
-            //List<string skal holde en samling alle datoer,
+            //additionalBookedTimes er tom list men kan senere hen blive brugt til at holde en samling.
+            //andre tider.
             //hvor vi kombiner det vi har hente fra database med det fra kalenderne.
             //.Distinct(): Fjerner dubletter, så hver tid kun optræder én gang.
             //.ToList(): Konverterer resultatet tilbage til en liste.
-            //Resultat: Variablen allBookedTimes indeholder en unik liste af alle bookede tider fra både databasen og den ekstra liste.
+            //Variablen allBookedTimes indeholder en unik liste af alle bookede tider fra både databasen og den ekstra liste (som er tom).
+            //så indeholder kun fra databasen.
             List<string> allBookedTimes = bookedTimesFromDb.Concat(additionalBookedTimes).Distinct().ToList();
 
             // Få den opdaterede liste over tilgængelige tider ved at passere alle bookede tider
@@ -189,7 +191,7 @@ namespace Semesterprojekt2.Service.BookATimeService
             //Hvilket angiver, at der ikke er nogen tilgængelige tider.
             if (isMobileServiceDay && bookedTimes.Any())
                 {
-                    return new List<string>();  // Return an empty list indicating no availability
+                    return new List<string>();  //sætter listen til en ny tom list.
             }
             //Returner en liste over tilgængelige tider, som ikke er blokerede eller bookede.
             //serviceTimes.Where(time => !blockedTimes.Contains(time) && !bookedTimes.Contains(time)):

@@ -55,7 +55,7 @@ namespace Semesterprojekt2.Service.BookATimeService
             }
             return null;
         }
-
+        //Den første version: 
         //public List<string> GetBlockedTimesForDate(DateTime date)
         //{
         //    List<string> blockedTimes = new List<string>();
@@ -109,19 +109,25 @@ namespace Semesterprojekt2.Service.BookATimeService
         //    return blockedTimes.Distinct().ToList();
         //}
 
+
+        //DateTime date tager dato og tidspunkt er sat til defult som kl 00:00.
+        //fordi det eneste vi kigger på er dato
         public List<string> GetBlockedTimesForDate(DateTime date)
-        { //Formål: Opretter en tom liste, der skal holde de blokerede tider.
-           //Hvordan: Initialiserer en ny liste af typen string.
+        { 
+           //Initialiserer en ny liste af typen string.
               List<string> blockedTimes = new List<string>();
 
-            //Gennemløber hver booked periode i _bookedDays samlingen for at bestemme, om og hvordan date skal blokeres
+            //Gennemløber hver booked periode i _bookedDays listen for at bestemme, om og hvordan date skal blokeres
             foreach (var booked in _bookedDays)
             {
                 //Hvis date er inden for en booket periode (men ikke på start- eller slutdatoen),
                 //tilføjes alle tider for hele dagen til blockedTimes.
                 //Hvordan:
-                //date.Date > booked.StartDate.Date && date.Date < booked.EndDate.Date: Tjekker om date er mellem start-og slutdatoen for den bookede periode.
-                //blockedTimes.AddRange(BlockWholeDay(date)): Tilføjer alle blokerede tider for hele dagen til blockedTimes.
+                //Tjekker om dato som vi har indsætte i parameter
+                //er mellem start-og slutdatoen for den bookede periode.
+                //Tilføjer alle blokerede tider for hele dagen til blockedTimes.
+                //note: den tilføjer alle time adgang
+                //AddRange er ligesom Add, man kan bare tilføje flere ting adgang
                 if (date.Date > booked.StartDate.Date && date.Date < booked.EndDate.Date)
                 {
                     blockedTimes.AddRange(BlockWholeDay(date));
@@ -129,33 +135,39 @@ namespace Semesterprojekt2.Service.BookATimeService
                 //Hvis date er både start- og slutdatoen for en booket periode (dvs. en enkelt dag),
                 //tilføjes de blokerede tider for den dag til blockedTimes.
                 //Hvordan:
-                //date.Date == booked.StartDate.Date && date.Date == booked.EndDate.Date:
-                //Tjekker om date er både start- og slutdatoen for den bookede periode.
-                //blockedTimes.AddRange(BlockSingleDay(booked)): Tilføjer alle blokerede tider for den enkelte dag til blockedTimes.
+                //Tjekker om dato som er insætte i parameter
+                //er både start- og slutdatoen for den bookede periode.
+                //Tilføjer alle blokerede tider for den enkelte dag til blockedTimes.
+                //note: den tilføjer alle time adgang
+                //AddRange er ligesom Add, man kan bare tilføje flere ting adgang
                 else if (date.Date == booked.StartDate.Date && date.Date == booked.EndDate.Date)
                 {
                     blockedTimes.AddRange(BlockSingleDay(booked));
                 }
                 //Hvis date er startdatoen for en booket periode, tilføjes de blokerede tider for den startende dag til blockedTimes.
                 //Hvordan:
-                //date.Date == booked.StartDate.Date: Tjekker om date er startdatoen for den bookede periode.
-                //blockedTimes.AddRange(BlockStartingDay(booked, date)): Tilføjer alle blokerede tider for startdatoen til blockedTimes.
+                //Tjekker om dato som er i parameter er startdatoen for den bookede periode.
+                //Tilføjer alle blokerede tider for startdatoen til blockedTimes.
+                //note: den tilføjer alle time adgang
+                //AddRange er ligesom Add, man kan bare tilføje flere ting adgang
                 else if (date.Date == booked.StartDate.Date)
                 {
                     blockedTimes.AddRange(BlockStartingDay(booked, date));
                 }
                 //Hvis date er slutdatoen for en booket periode, tilføjes de blokerede tider for den afsluttende dag til blockedTimes.
                 //Hvordan:
-                //date.Date == booked.EndDate.Date: Tjekker om date er slutdatoen for den bookede periode.
-                //blockedTimes.AddRange(BlockEndingDay(booked, date)): Tilføjer alle blokerede tider for slutdatoen til blockedTimes.
+                //Tjekker om date er slutdatoen for den bookede periode.
+                //Tilføjer alle blokerede tider for slutdatoen til blockedTimes
+                //note: den tilføjer alle time adgang
+                //AddRange er ligesom Add, man kan bare tilføje flere ting adgang.
                 else if (date.Date == booked.EndDate.Date)
-                            {
+                {
                     blockedTimes.AddRange(BlockEndingDay(booked, date));
                 }
             }
             //Fjerner eventuelle duplikater fra blockedTimes og konverterer det tilbage til en liste.
             //Hvordan:
-            //blockedTimes.Distinct(): Distinct() Fjerner duplikater fra blockedTimes.
+            //Distinct() Fjerner duplikater fra blockedTimes.
             //.ToList(): Konverterer det filtrerede resultat tilbage til en liste.
             return blockedTimes.Distinct().ToList();
         }
@@ -167,7 +179,8 @@ namespace Semesterprojekt2.Service.BookATimeService
             //Genererer en liste over alle tidspunkter(i timer) fra 00:00 til 23:59 for en given dato.
             //Hvordan:
             //Enumerable.Range(0, 24): Skaber en sekvens af tal fra 0 til 23.
-            //.Select(hour => date.Date.AddHours(hour).ToString("HH:mm")): For hver time(hour), tilføj det til datoen(date.Date)
+            //.Select(hour => date.Date.AddHours(hour).ToString("HH:mm")):
+            //For hver time(hour), tilføj det til datoen(date.Date)
             //og konverter det til en streng i formatet "HH:mm".
             //.ToList(): Konverterer den genererede sekvens til en liste.
             return Enumerable.Range(0, 24).Select(hour => date.Date.AddHours(hour).ToString("HH:mm")).ToList();
@@ -181,17 +194,20 @@ namespace Semesterprojekt2.Service.BookATimeService
         
             List<string> times = new List<string>();
 
-            //new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day, bookedDays.StartDate.Hour, 0, 0): Initialiserer time til starttidspunktet på startdatoen.
+            //Initialiserer time til starttidspunktet på startdatoen.
+            //Sætter time til bookeddays, undtal minuter og sekunder som altid er 0.
             DateTime time = new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day,
                                          bookedDays.StartDate.Hour, 0, 0); 
-            //while (time <= bookedDays.EndDate): Itererer fra starttidspunktet til sluttidspunktet.
+            //Itererer fra starttidspunktet til sluttidspunktet.
+            //Den tilføjer en time adgang til listen
+            //Gå igennem indtil at den rammer sluttidspunkt
             while (time <= bookedDays.EndDate)
-            {   //times.Add(time.ToString("HH:mm")): Tilføjer hver time til listen i formatet "HH:mm".
+            {   //Tilføjer hver time til listen i formatet "HH:mm".
                 times.Add(time.ToString("HH:mm"));    
-                //time = time.AddHours(1): Inkrementerer time med én time.
+                //Derefter vil den inkrementerer time med én time.
                 time = time.AddHours(1);
             }
-           
+           //returner listen af timer.
             return times;
         }
 
@@ -206,17 +222,21 @@ namespace Semesterprojekt2.Service.BookATimeService
             //Genererer en liste over alle timer fra starttidspunktet til slutningen af den pågældende dag.
             List<string> times = new List<string>();
             //Hvordan:
-            //new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day, bookedDays.StartDate.Hour, 0, 0) : Initialiserer time til starttidspunktet på startdatoen.
+            //Initialiserer time til starttidspunktet på startdatoen.
+            //Sætter time til bookeddays, undtal minuter og sekunder som altid er 0.
             DateTime time = new DateTime(bookedDays.StartDate.Year, bookedDays.StartDate.Month, bookedDays.StartDate.Day,
                                          bookedDays.StartDate.Hour, 0, 0);
-            //while (time<date.Date.AddDays(1)): Itererer fra starttidspunktet til slutningen af dagen.
+            //Itererer fra starttidspunktet til slutningen af dagen.
+            //Den vil gå igemme loopedet indtil den rammer kl.00:00
             while (time < date.Date.AddDays(1))
             {
-                //times.Add(time.ToString("HH:mm")): Tilføjer hver time til listen i formatet "HH:mm".
+                //Tilføjer hver time til listen i formatet "HH:mm".
                 times.Add(time.ToString("HH:mm"));
-                //time = time.AddHours(1): Inkrementerer time med én time.
+                //Derefter vil den inkrementerer time med én time.
                 time = time.AddHours(1);
-            }
+            
+           }
+            //returner listen af timer.
             return times;
         }
 
@@ -226,16 +246,18 @@ namespace Semesterprojekt2.Service.BookATimeService
             //Genererer en liste over alle timer fra starten af dagen til sluttidspunktet på den pågældende dag.
             List<string> times = new List<string>();
             //Hvordan:
-            //date.Date: Initialiserer time til starten af dagen.
+            //Initialiserer time til starten af dagen som er kl 00:00
             DateTime time = date.Date;
-            //while (time <= bookedDays.EndDate): Itererer fra starten af dagen til sluttidspunktet.
+            //Itererer fra starten af dagen til sluttidspunktet. 
+            //loopet stopper når den rammer sluttidspunktet
             while (time <= bookedDays.EndDate)
             {
-                //times.Add(time.ToString("HH:mm")): Tilføjer hver time til listen i formatet "HH:mm".
+                //Tilføjer hver time til listen i formatet "HH:mm".
                 times.Add(time.ToString("HH:mm"));
-                //time = time.AddHours(1): Inkrementerer time med én time.
+                //Derefter vil den inkrementerer time med én time.
                 time = time.AddHours(1);
             }
+            //returner listen af timer.
             return times;
         }
         public IEnumerable<BookedDays> SortById()
