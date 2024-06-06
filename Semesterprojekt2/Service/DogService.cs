@@ -45,6 +45,7 @@ namespace Semesterprojekt2.Service
                         d.Name = dog.Name;
                         d.Age = dog.Age;
                         d.Race = dog.Race;
+                        d.Comments = dog.Comments;
                         if (dog.DogImage == null)
                         {
                             dog.DogImage = d.DogImage;
